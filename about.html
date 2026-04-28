@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Chunjun (Francisco) Wang</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.about-hero { padding: 88px 0 56px; }
+.about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; }
+.about-mark { font-family: var(--serif); font-size: 220px; font-weight: 400; line-height: 0.85; color: var(--navy); letter-spacing: -10px; }
+.about-photo { width: 100%; max-width: 320px; aspect-ratio: 4/5; object-fit: cover; display: block; filter: grayscale(0.15) contrast(1.02); }
+.about-meta { font-family: var(--mono); font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--char-dim); display: flex; flex-direction: column; gap: 8px; margin-top: 24px; }
+.about-name { font-family: var(--serif); font-size: clamp(40px, 5vw, 64px); font-weight: 400; letter-spacing: -1.5px; line-height: 1.05; margin: 16px 0 12px; }
+.about-tag { font-family: var(--mono); font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--char-dim); margin: 0 0 32px; }
+.about-lede { font-family: var(--serif); font-size: 28px; line-height: 1.35; font-style: italic; color: var(--navy); margin: 0 0 32px; max-width: 720px; }
+.about-summary { font-size: 18px; line-height: 1.6; max-width: 720px; }
+.timeline { margin-top: 80px; }
+.timeline-row { display: grid; grid-template-columns: 200px 1fr; gap: 48px; padding: 32px 0; border-top: 1px solid var(--char-rule); }
+.timeline-row:last-child { border-bottom: 1px solid var(--char-rule); }
+.timeline-year { font-family: var(--mono); font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--amber); padding-top: 8px; }
+.timeline-role { font-family: var(--serif); font-size: 26px; font-weight: 500; letter-spacing: -0.4px; margin: 0 0 4px; }
+.timeline-org { font-family: var(--mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--char-dim); margin: 0 0 16px; }
+.timeline-bullets { padding-left: 20px; margin: 0; }
+.timeline-bullets li { font-size: 16px; line-height: 1.55; color: var(--char); margin-bottom: 8px; }
+.creds-strip { background: var(--navy); color: var(--ink); padding: 64px 0; margin-top: 96px; }
+.creds-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; }
+.cred-h { font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--amber); margin: 0 0 16px; }
+.cred-list { font-family: var(--serif); font-size: 22px; line-height: 1.4; color: var(--ink); margin: 0; padding: 0; list-style: none; }
+.cred-list li { padding: 10px 0; border-top: 1px solid var(--rule); }
+@media (max-width: 1024px) {
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-mark { font-size: 140px; }
+  .timeline-row { grid-template-columns: 1fr; gap: 16px; }
+  .creds-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="assets/data.js"></script>
+<script type="text/babel" src="assets/components.jsx"></script>
+<script type="text/babel" src="assets/cover-mini.jsx"></script>
+<script type="text/babel">
+function AboutPage() {
+  return (<>
+    <SiteNav active="about"/>
+    <section className="about-hero">
+      <div className="container about-grid">
+        <div>
+          <img className="about-photo" src="assets/headshot.png" alt="Chunjun (Francisco) Wang"/>
+          <div className="about-meta">
+            <span>📍 {AUTHOR.location}</span>
+            <span>✉ {AUTHOR.email}</span>
+            <a href={AUTHOR.linkedin} target="_blank" rel="noopener">↗ LinkedIn</a>
+          </div>
+        </div>
+        <div>
+          <span className="kicker">About the author</span>
+          <h1 className="about-name">{AUTHOR.fullName}</h1>
+          <p className="about-tag">{AUTHOR.credentials.join(" · ")}</p>
+          <p className="about-lede">{AUTHOR.oneLiner}</p>
+          <p className="about-summary">{AUTHOR.summary}</p>
+        </div>
+      </div>
+    </section>
+
+    <section className="container">
+      <div className="timeline">
+        <span className="kicker">Career timeline</span>
+        <h2 style={{ fontFamily: "var(--serif)", fontSize: 36, fontWeight: 400, letterSpacing: "-0.6px", margin: "16px 0 32px" }}>
+          Twenty years across both ends of the global rail-signaling industry.
+        </h2>
+        {AUTHOR.timeline.map((t, i) => (
+          <div className="timeline-row" key={i}>
+            <div className="timeline-year">{t.year}</div>
+            <div>
+              <h3 className="timeline-role">{t.role}</h3>
+              <p className="timeline-org">{t.org}</p>
+              <ul className="timeline-bullets">{t.bullets.map((b, j) => <li key={j}>{b}</li>)}</ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section className="creds-strip">
+      <div className="container creds-grid">
+        <div>
+          <h4 className="cred-h">Patents</h4>
+          <ul className="cred-list">
+            <li>7 granted CBTC patents</li>
+            <li>Onboard ATP/ATO logic</li>
+            <li>Wayside zone controller architecture</li>
+            <li>Train-to-wayside data link</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="cred-h">Publications</h4>
+          <ul className="cred-list">
+            <li>13 peer-reviewed papers</li>
+            <li>2 book volumes (1,127 pp.)</li>
+            <li>International standards working groups</li>
+            <li>Conference proceedings</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="cred-h">Operating record</h4>
+          <ul className="cred-list">
+            <li>Founded $80M US subsidiary</li>
+            <li>Directed $200M renewable-energy investment</li>
+            <li>Active vibe-coding / AI prototyping</li>
+            <li>Open to remote / flex US roles</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <SiteFooter/>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<AboutPage/>);
+</script>
+</body>
+</html>

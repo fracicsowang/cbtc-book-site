@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figures Gallery — Inside the Books</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.fg-hero { padding: 80px 0 32px; }
+.fg-h { font-family: var(--serif); font-size: clamp(36px, 4.5vw, 56px); font-weight: 400; letter-spacing: -1px; margin: 16px 0 16px; line-height: 1.05; max-width: 900px; text-wrap: balance; }
+.fg-lede { font-size: 18px; line-height: 1.55; color: var(--char-dim); max-width: 720px; margin: 0 0 32px; }
+.fg-stats { display: flex; gap: 48px; padding: 24px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-top: 24px; flex-wrap: wrap; }
+.fg-stat { display: flex; flex-direction: column; gap: 4px; }
+.fg-stat .num { font-family: var(--serif); font-size: 36px; font-weight: 400; letter-spacing: -0.5px; }
+.fg-stat .lab { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--char-dim); }
+.fg-toc { padding: 32px 0; background: var(--paper-2); border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 10; }
+.fg-toc-grid { display: grid; grid-template-columns: 100px 1fr; gap: 24px; align-items: baseline; }
+.fg-toc-label { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--char-dim); }
+.fg-toc-links { display: flex; flex-wrap: wrap; gap: 6px 4px; }
+.fg-toc-links a { font-family: var(--mono); font-size: 11px; letter-spacing: 1px; padding: 6px 10px; background: var(--paper); color: var(--navy); text-decoration: none; border: 1px solid var(--rule); transition: all 0.15s; }
+.fg-toc-links a:hover { background: var(--navy); color: var(--paper); border-color: var(--navy); }
+.fg-section { padding: 48px 0 32px; scroll-margin-top: 96px; }
+.fg-section-h { display: flex; align-items: baseline; gap: 16px; padding-top: 16px; border-top: 2px solid var(--navy); margin-bottom: 32px; }
+.fg-section-h h2 { font-family: var(--serif); font-size: 28px; font-weight: 400; letter-spacing: -0.4px; margin: 0; }
+.fg-section-h .ch { font-family: var(--mono); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--amber); }
+.fg-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+.fg-card { background: var(--paper-2); padding: 16px; }
+.fg-card img { width: 100%; height: auto; display: block; }
+.fg-cap { padding: 14px 4px 4px; display: flex; gap: 12px; align-items: baseline; }
+.fg-cap .num { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--amber); font-weight: 500; }
+.fg-cap .title { font-family: var(--serif); font-size: 16px; font-weight: 500; }
+@media (max-width: 800px) { .fg-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="assets/data.js"></script>
+<script type="text/babel" src="assets/components.jsx"></script>
+<script type="text/babel">
+const FIGS = [
+  { ch: "01", title: "The Evolution of Train Control", vol: 1, items: [
+    { n: "1.1", t: "150-Year Evolution Timeline", f: "fig_01_01_evolution_timeline.png" },
+    { n: "1.2", t: "Typical Fixed-Block Signaling Layout", f: "fig_01_02_fixed_block_signaling.png" },
+    { n: "1.3", t: "Cab Signaling — Advisory vs. Enforcement", f: "fig_01_03_cab_signaling_comparison.png" },
+    { n: "1.4", t: "Fixed-Block Capacity Limitation", f: "fig_01_04_fixed_block_capacity.png" },
+    { n: "1.5", t: "Fixed-Block vs. Moving-Block Principle", f: "fig_01_05_fixed_vs_moving_block.png" },
+    { n: "1.6", t: "Movement Authority Concept", f: "fig_01_06_movement_authority.png" },
+    { n: "1.7", t: "ATC = ATP + ATO + ATS — Triad Architecture", f: "fig_01_07_atp_ato_ats_triad.png" },
+    { n: "1.8", t: "NYC L-Line Capacity Gain After CBTC", f: "fig_01_08_nyc_l_line_capacity.png" },
+    { n: "1.9", t: "Lifecycle Cost Profile — CBTC vs. Conventional", f: "fig_01_09_lifecycle_cost.png" },
+  ]},
+  { ch: "02", title: "Standards, Regulations & the US Framework", vol: 1, items: [
+    { n: "2.1", t: "Standards Framework for CBTC — US Context", f: "fig_02_01_standards_framework.png" },
+    { n: "2.2", t: "US CBTC Project Safety & Governance Workflow", f: "fig_02_02_safety_governance_workflow.png" },
+    { n: "2.3", t: "V-Model Lifecycle for Safety-Critical Systems", f: "fig_02_03_v_model_lifecycle.png" },
+    { n: "2.4", t: "SIL Pyramid — Safety Integrity Levels", f: "fig_02_04_sil_pyramid.png" },
+    { n: "2.5", t: "FTA State Safety Oversight Approval Pathway", f: "fig_02_05_fta_approval_pathway.png" },
+    { n: "2.6", t: "Regulatory Comparison — US vs. EU vs. China", f: "fig_02_06_regulatory_comparison.png" },
+  ]},
+  { ch: "03", title: "CBTC System Architecture Overview", vol: 1, items: [
+    { n: "3.1", t: "ATP / ATO / ATS — Functional Triad", f: "fig_03_01_atp_ato_ats_triad.png" },
+    { n: "3.2", t: "End-to-End CBTC Architecture", f: "fig_03_02_end_to_end_architecture.png" },
+    { n: "3.3", t: "Three-Tier Physical Architecture", f: "fig_03_03_three_tier_physical.png" },
+    { n: "3.4", t: "CBTC Heartbeat Cycle — 200 ms Loop", f: "fig_03_04_heartbeat_cycle.png" },
+    { n: "3.5", t: "Overlay vs. Standalone CBTC", f: "fig_03_05_overlay_vs_standalone.png" },
+  ]},
+  { ch: "04", title: "Onboard Equipment (VOBC)", vol: 1, items: [
+    { n: "4.1", t: "VOBC Functional Architecture", f: "fig_04_01_vobc_architecture.png" },
+    { n: "4.2", t: "Train Localization — Sensor Fusion", f: "fig_04_02_train_localization.png" },
+    { n: "4.3", t: "Braking Curve & Safe Stop Calculation", f: "fig_04_03_braking_curve.png" },
+    { n: "4.4", t: "Driver-Machine Interface (DMI) Layout", f: "fig_04_04_dmi_layout.png" },
+  ]},
+  { ch: "05", title: "Wayside Equipment", vol: 1, items: [
+    { n: "5.1", t: "Zone Controller Territory & Handover", f: "fig_05_01_zone_controller_territory.png" },
+    { n: "5.2", t: "Interlocking and CBTC Interface Logic", f: "fig_05_02_interlocking_cbtc_interface.png" },
+  ]},
+  { ch: "06", title: "Communication Systems", vol: 1, items: [
+    { n: "6.1", t: "CBTC Radio Communication Architecture", f: "fig_06_01_radio_architecture.png" },
+    { n: "6.2", t: "Trackside Wireless Coverage and Handover", f: "fig_06_02_wireless_coverage_handover.png" },
+    { n: "6.3", t: "Communication Loss Fallback Sequence", f: "fig_06_03_comm_loss_fallback.png" },
+    { n: "6.4", t: "Cybersecurity Defense-in-Depth", f: "fig_06_04_cybersecurity_defense.png" },
+  ]},
+  { ch: "07", title: "Central System / ATS", vol: 1, items: [
+    { n: "7.1", t: "ATS Architecture — Functional Layers", f: "fig_07_01_ats_architecture.png" },
+    { n: "7.2", t: "OCC Information Flow", f: "fig_07_02_occ_information_flow.png" },
+    { n: "7.3", t: "Operational Data Analytics Loop", f: "fig_07_03_data_analytics_loop.png" },
+    { n: "7.4", t: "ATS External System Integration", f: "fig_07_04_external_integration.png" },
+    { n: "7.5", t: "Predictive Maintenance Data Pipeline", f: "fig_07_05_predictive_maintenance.png" },
+    { n: "7.6", t: "Dispatcher Workstation — 4-Monitor Layout", f: "fig_07_06_dispatcher_workstation.png" },
+  ]},
+  { ch: "08", title: "Operating Modes & GoA", vol: 2, items: [
+    { n: "8.1", t: "GoA 0–4 Responsibility Matrix", f: "fig_08_01_goa_responsibility_matrix.png" },
+    { n: "8.2", t: "GoA Progression Ladder", f: "fig_08_02_goa_progression_ladder.png" },
+    { n: "8.3", t: "Global GoA Adoption Comparison", f: "fig_08_03_goa_adoption_comparison.png" },
+    { n: "8.4", t: "GoA 4 Prerequisites Checklist", f: "fig_08_04_goa4_prerequisites.png" },
+    { n: "8.5", t: "GoA Selection Decision Flowchart", f: "fig_08_05_goa_decision_flowchart.png" },
+    { n: "8.6", t: "Phased GoA Roadmap", f: "fig_08_06_phased_goa_roadmap.png" },
+  ]},
+  { ch: "09", title: "Operating Modes — State Logic", vol: 2, items: [
+    { n: "9.1", t: "VOBC Mode State Machine", f: "fig_09_01_mode_state_machine.png" },
+    { n: "9.2", t: "Territory Entry / Exit Sequence", f: "fig_09_02_territory_entry_exit.png" },
+    { n: "9.3", t: "Degraded-Mode Ladder", f: "fig_09_03_degraded_mode_ladder.png" },
+    { n: "9.5", t: "Modes — Continuum from Manual to UTO", f: "fig_09_05_modes_continuum.png" },
+    { n: "9.6", t: "Phantom Occupancy Failure Mode", f: "fig_09_06_phantom_occupancy.png" },
+  ]},
+  { ch: "10", title: "US Deployment Case Studies", vol: 2, items: [
+    { n: "10.1", t: "US CBTC Deployment Map", f: "fig_10_01_us_deployment_map.png" },
+    { n: "10.2", t: "US Deployment Timeline (1999–2025)", f: "fig_10_02_us_deployment_timeline.png" },
+    { n: "10.3", t: "Project Comparison Matrix", f: "fig_10_03_project_comparison_matrix.png" },
+    { n: "10.4", t: "NYC CBTC Expansion Map", f: "fig_10_04_nyc_expansion_map.png" },
+    { n: "10.5", t: "BART TCMP Phasing", f: "fig_10_05_bart_tcmp_phases.png" },
+    { n: "10.6", t: "US Cost & Schedule Performance", f: "fig_10_06_us_cost_schedule.png" },
+  ]},
+  { ch: "11", title: "Global Benchmarking", vol: 2, items: [
+    { n: "11.1", t: "Global Benchmark Comparison", f: "fig_11_01_benchmark_comparison.png" },
+    { n: "11.2", t: "Global UTO Maturity Map", f: "fig_11_02_global_uto_maturity.png" },
+    { n: "11.7", t: "Headway Comparison — Major Networks", f: "fig_11_07_headway_comparison.png" },
+    { n: "11.8", t: "UTO Availability — Top 10 Lines", f: "fig_11_08_uto_availability.png" },
+  ]},
+  { ch: "12", title: "Project Lifecycle, V&V, Safety Case", vol: 2, items: [
+    { n: "12.1", t: "Project Lifecycle Roadmap", f: "fig_12_01_lifecycle_roadmap.png" },
+    { n: "12.4", t: "Safety Case Document Structure", f: "fig_12_04_safety_case_structure.png" },
+    { n: "12.5", t: "Testing & Commissioning Timeline", f: "fig_12_05_testing_timeline.png" },
+  ]},
+  { ch: "13", title: "Performance, Reliability & Energy", vol: 2, items: [
+    { n: "13.1", t: "Headway Determinants", f: "fig_13_01_headway_determinants.png" },
+    { n: "13.5", t: "Redundancy & Failover Architecture", f: "fig_13_05_redundancy_failover.png" },
+    { n: "13.6", t: "Traction Energy Breakdown", f: "fig_13_06_energy_breakdown.png" },
+    { n: "13.9", t: "CBTC Energy Savings — Empirical Data", f: "fig_13_09_energy_savings.png" },
+  ]},
+  { ch: "14", title: "Lifecycle Cost & Procurement Economics", vol: 2, items: [
+    { n: "14.1", t: "30-Year Lifecycle Cost Stack", f: "fig_14_01_lifecycle_cost_stack.png" },
+    { n: "14.2", t: "Benefit / ROI Framework", f: "fig_14_02_benefit_roi_framework.png" },
+    { n: "14.3", t: "TCO Sensitivity Tornado", f: "fig_14_03_tco_tornado.png" },
+    { n: "14.4", t: "Funding Stack — Federal / State / Local", f: "fig_14_04_funding_stack.png" },
+  ]},
+  { ch: "15", title: "Vendor Landscape & Future Tech", vol: 2, items: [
+    { n: "15.1", t: "Global Supplier Landscape", f: "fig_15_01_supplier_landscape.png" },
+    { n: "15.2", t: "Technology Roadmap (2025–2040)", f: "fig_15_02_technology_roadmap.png" },
+    { n: "15.4", t: "5G Migration Path for CBTC", f: "fig_15_04_5g_migration.png" },
+    { n: "15.5", t: "PTC vs. CBTC — Functional Comparison", f: "fig_15_05_ptc_vs_cbtc.png" },
+    { n: "15.6", t: "AI / ML Application Zones", f: "fig_15_06_ai_ml_zones.png" },
+  ]},
+  { ch: "16", title: "China Comparative Case Studies", vol: 2, items: [
+    { n: "16.1", t: "China vs. US Comparison Dashboard", f: "fig_16_01_comparison_dashboard.png" },
+    { n: "16.2", t: "Delivery Model Comparison", f: "fig_16_02_delivery_model.png" },
+    { n: "16.3", t: "Regulatory Framework Comparison", f: "fig_16_03_regulatory_framework.png" },
+    { n: "16.4", t: "China CBTC Rollout Gantt", f: "fig_16_04_timeline_gantt.png" },
+    { n: "16.5", t: "Cross-Learning — What US Can Adopt", f: "fig_16_05_cross_learning.png" },
+  ]},
+];
+
+function FigsPage() {
+  return (<>
+    <SiteNav active=""/>
+    <section className="fg-hero">
+      <div className="container">
+        <span className="kicker">Figures gallery · all 16 chapters</span>
+        <h1 className="fg-h">Every CBTC subsystem, drawn at the level of detail engineers actually need.</h1>
+        <p className="fg-lede">All 92 original technical figures from both volumes, organized by chapter. Architectures, decision flowcharts, comparison matrices, deployment maps — drawn from scratch for this work, not lifted from vendor brochures.</p>
+        <div className="fg-stats">
+          <div className="fg-stat"><span className="num">92</span><span className="lab">figures total</span></div>
+          <div className="fg-stat"><span className="num">16</span><span className="lab">chapters covered</span></div>
+          <div className="fg-stat"><span className="num">2</span><span className="lab">volumes</span></div>
+        </div>
+      </div>
+    </section>
+    <nav className="fg-toc">
+      <div className="container">
+        <div className="fg-toc-grid">
+          <span className="fg-toc-label">Jump to</span>
+          <div className="fg-toc-links">
+            {FIGS.map(g => <a href={`#ch${g.ch}`} key={g.ch}>CH {g.ch}</a>)}
+          </div>
+        </div>
+      </div>
+    </nav>
+    {FIGS.map(group => (
+      <section className="fg-section" id={`ch${group.ch}`} key={group.ch}>
+        <div className="container">
+          <div className="fg-section-h">
+            <span className="ch">Vol {group.vol} · Chapter {group.ch}</span>
+            <h2>{group.title}</h2>
+          </div>
+          <div className="fg-grid">
+            {group.items.map(it => (
+              <a className="fg-card" href={`volume-${group.vol}.html`} key={it.n}>
+                <img src={`figures/${it.f}`} alt={it.t} loading="lazy"/>
+                <div className="fg-cap">
+                  <span className="num">Fig {it.n}</span>
+                  <span className="title">{it.t}</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))}
+    <SiteFooter/>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<FigsPage/>);
+</script>
+</body>
+</html>

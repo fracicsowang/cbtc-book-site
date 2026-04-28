@@ -1,0 +1,49 @@
+/* Volume detail */
+.vol-hero { padding: 80px 0 64px; }
+.vol-hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; align-items: center; }
+.vol-hero-title { font-family: var(--serif); font-size: clamp(36px, 4.5vw, 60px); font-weight: 400; letter-spacing: -1px; line-height: 1.05; margin: 16px 0 32px; text-wrap: balance; }
+.vol-hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 24px 0; border-top: 1px solid var(--char-rule); border-bottom: 1px solid var(--char-rule); margin-bottom: 32px; }
+.vol-hero-stats > div { display: flex; flex-direction: column; gap: 4px; font-family: var(--serif); font-size: 24px; font-weight: 400; color: var(--navy); }
+.vol-hero-stats span { font-family: var(--mono); font-size: 10px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--char-dim); }
+.vol-hero-blurb { font-size: 18px; line-height: 1.6; color: var(--char); margin: 0 0 32px; }
+.vol-hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.vol-hero-cover { display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px 0; }
+.vol-hero-cap { font-family: var(--mono); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--char-dim); }
+
+.vol-toc-wrap { padding-top: 32px; border-top: 2px solid var(--navy); }
+.vol-h2 { font-family: var(--serif); font-size: 36px; font-weight: 400; letter-spacing: -0.6px; margin: 16px 0 40px; }
+.vol-toc-list { display: flex; flex-direction: column; }
+.vol-toc-row { display: grid; grid-template-columns: 80px 1fr 100px; gap: 24px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--char-rule); }
+.vol-toc-num { font-family: var(--mono); font-size: 14px; color: var(--amber); font-weight: 500; }
+.vol-toc-title { font-family: var(--serif); font-size: 20px; font-weight: 400; }
+.vol-toc-pp { font-family: var(--mono); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--char-dim); text-align: right; }
+
+.vol-sample { background: var(--paper-2); padding: 80px 0; }
+.vol-sample-head { max-width: 760px; margin-bottom: 56px; }
+.vol-sample-head .vol-h2 { margin: 16px 0 16px; }
+.vol-sample-intro { font-size: 16px; line-height: 1.6; color: var(--char-dim); margin: 0; max-width: 640px; }
+.vol-excerpts { display: grid; grid-template-columns: 1fr 1fr; gap: 48px 48px; }
+.vol-excerpt { padding: 32px; background: var(--paper); border-top: 2px solid var(--navy); }
+.vol-excerpt-head { display: flex; gap: 16px; align-items: baseline; padding-bottom: 12px; border-bottom: 1px solid var(--char-rule); margin-bottom: 18px; }
+.vol-excerpt-num { font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--amber); font-weight: 500; }
+.vol-excerpt-ch { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--char-dim); }
+.vol-excerpt-h { font-family: var(--serif); font-size: 22px; font-weight: 400; letter-spacing: -0.3px; line-height: 1.25; margin: 0 0 18px; color: var(--navy); text-wrap: balance; }
+.vol-excerpt-body p { font-family: var(--serif); font-size: 16px; line-height: 1.65; margin: 0 0 14px; color: var(--char); text-wrap: pretty; }
+.vol-excerpt-body p:last-child { margin-bottom: 0; }
+.vol-sample-foot { margin-top: 48px; }
+
+.vol-other { padding: 80px 0; }
+.vol-other-card { display: grid; grid-template-columns: 1fr 200px; gap: 48px; align-items: center; padding: 40px; background: var(--navy); color: var(--ink); }
+.vol-other-num { font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--amber); }
+.vol-other-name { font-family: var(--serif); font-size: 32px; font-weight: 400; letter-spacing: -0.5px; margin: 8px 0 16px; color: var(--ink); }
+.vol-other-blurb { font-size: 15px; line-height: 1.55; color: var(--ink-dim); margin: 0 0 24px; max-width: 560px; }
+.vol-other-card .btn-primary { background: var(--amber); border-color: var(--amber); color: var(--navy); }
+.vol-other-card .btn-primary:hover { background: var(--ink); border-color: var(--ink); }
+
+@media (max-width: 1024px) {
+  .vol-hero-grid, .vol-other-card { grid-template-columns: 1fr; gap: 32px; }
+  .vol-hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .vol-toc-row { grid-template-columns: 60px 1fr; }
+  .vol-toc-pp { display: none; }
+  .vol-excerpts { grid-template-columns: 1fr; gap: 32px; }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Errata & Supplements — CBTC</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.err-hero { padding: 80px 0 32px; }
+.err-h { font-family: var(--serif); font-size: clamp(36px, 4.5vw, 56px); font-weight: 400; letter-spacing: -1px; margin: 16px 0 16px; line-height: 1.05; max-width: 900px; text-wrap: balance; }
+.err-lede { font-size: 18px; line-height: 1.55; color: var(--char-dim); max-width: 720px; margin: 0 0 32px; }
+.err-section { padding: 32px 0 64px; }
+.err-section h2 { font-family: var(--serif); font-size: 28px; font-weight: 400; letter-spacing: -0.4px; margin: 0 0 24px; }
+.err-list { display: grid; grid-template-columns: 1fr; gap: 0; }
+.err-row { display: grid; grid-template-columns: 140px 100px 1fr 100px; gap: 24px; padding: 18px 0; border-top: 1px solid var(--char-rule); align-items: baseline; }
+.err-row:last-child { border-bottom: 1px solid var(--char-rule); }
+.err-where { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--amber); }
+.err-page { font-family: var(--mono); font-size: 13px; color: var(--navy); font-weight: 500; }
+.err-text { font-size: 15px; line-height: 1.55; }
+.err-text del { color: var(--char-dim); text-decoration-color: rgba(180, 30, 30, 0.5); }
+.err-text ins { background: var(--amber-soft); text-decoration: none; padding: 1px 3px; }
+.err-date { font-family: var(--mono); font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--char-dim); text-align: right; }
+.err-empty { padding: 24px; background: var(--paper-2); font-family: var(--serif); font-size: 18px; font-style: italic; color: var(--char-dim); text-align: center; }
+.supp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.supp-card { background: var(--paper-2); padding: 24px; border-top: 2px solid var(--navy); }
+.supp-card h4 { font-family: var(--serif); font-size: 22px; font-weight: 500; margin: 0 0 8px; letter-spacing: -0.3px; }
+.supp-card p { font-size: 14px; line-height: 1.5; color: var(--char-dim); margin: 0 0 16px; }
+.supp-card a { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--navy); border-bottom: 1px solid var(--amber); padding-bottom: 2px; }
+.report-box { background: var(--navy); color: var(--ink); padding: 48px; }
+.report-box h3 { font-family: var(--serif); font-size: 28px; font-weight: 400; margin: 0 0 16px; letter-spacing: -0.4px; color: var(--ink); }
+.report-box p { color: var(--ink-dim); margin: 0 0 24px; max-width: 640px; line-height: 1.55; }
+@media (max-width: 1024px) {
+  .err-row { grid-template-columns: 100px 1fr; gap: 8px; }
+  .err-row > .err-text { grid-column: 1 / -1; }
+  .err-row > .err-date { grid-column: 1 / -1; text-align: left; }
+  .supp-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="assets/data.js"></script>
+<script type="text/babel" src="assets/components.jsx"></script>
+<script type="text/babel">
+function ErrataPage() {
+  return (<>
+    <SiteNav active="errata"/>
+    <section className="err-hero">
+      <div className="container">
+        <span className="kicker">Errata · Supplements · Reader resources</span>
+        <h1 className="err-h">Corrections and downloadable supplements for both volumes.</h1>
+        <p className="err-lede">A book this size will have errata. This page is the canonical, dated record — checked weekly. Supplements include the full chapter outlines, figure source files, and bibliography.</p>
+      </div>
+    </section>
+
+    <section className="err-section">
+      <div className="container">
+        <h2>Volume 1 — Errata</h2>
+        <div className="err-empty">
+          No errata reported yet. Volume 1 published April 2026.<br/>
+          Spotted something? Use the report form below — every confirmed correction is credited here.
+        </div>
+      </div>
+    </section>
+
+    <section className="err-section">
+      <div className="container">
+        <h2>Volume 2 — Errata</h2>
+        <div className="err-empty">
+          No errata reported yet. Volume 2 published April 2026.
+        </div>
+      </div>
+    </section>
+
+    <section className="err-section">
+      <div className="container">
+        <h2>Downloadable supplements</h2>
+        <div className="supp-grid">
+          <div className="supp-card">
+            <div style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: 1.4, textTransform: "uppercase", color: "var(--char-dim)", marginBottom: 8 }}>PDF · 18 pp</div>
+            <h4>Full chapter outline</h4>
+            <p>Section-by-section breakdown of all sixteen chapters across both volumes. Useful for procurement reviewers deciding which volume to cite.</p>
+            <a href="#">Download PDF →</a>
+          </div>
+          <div className="supp-card">
+            <div style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: 1.4, textTransform: "uppercase", color: "var(--char-dim)", marginBottom: 8 }}>SVG bundle</div>
+            <h4>Figure source files</h4>
+            <p>All system schematics from the book in editable SVG, licensed for non-commercial classroom and proposal use.</p>
+            <a href="#">Download bundle →</a>
+          </div>
+          <div className="supp-card">
+            <div style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: 1.4, textTransform: "uppercase", color: "var(--char-dim)", marginBottom: 8 }}>BibTeX · CSV</div>
+            <h4>Bibliography</h4>
+            <p>Full reference list with DOIs, organized by chapter. Drop into Zotero / Mendeley / your proposal manager of choice.</p>
+            <a href="#">Download →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="err-section">
+      <div className="container">
+        <div className="report-box">
+          <h3>Report an erratum</h3>
+          <p>Email the volume, page number, and a one-line description. Confirmed corrections are credited on this page (with attribution if you'd like) and rolled into the next print run.</p>
+          <a className="btn btn-primary" style={{ background: "var(--amber)", borderColor: "var(--amber)", color: "var(--navy)" }} href="mailto:franciscowang2008@gmail.com?subject=CBTC%20Errata%20Report">
+            Email errata →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <SiteFooter/>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<ErrataPage/>);
+</script>
+</body>
+</html>

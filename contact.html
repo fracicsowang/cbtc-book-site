@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Chunjun (Francisco) Wang</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.contact-hero { padding: 80px 0 64px; min-height: 60vh; display: flex; align-items: center; }
+.contact-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 80px; align-items: start; }
+.contact-h { font-family: var(--serif); font-size: clamp(40px, 5vw, 64px); font-weight: 400; letter-spacing: -1.5px; line-height: 1.05; margin: 16px 0 24px; text-wrap: balance; }
+.contact-lede { font-size: 19px; line-height: 1.55; color: var(--char); max-width: 560px; margin: 0 0 40px; }
+.contact-modes { padding-top: 24px; border-top: 1px solid var(--char-rule); }
+.contact-mode { padding: 24px 0; border-bottom: 1px solid var(--char-rule); display: grid; grid-template-columns: 80px 1fr auto; align-items: center; gap: 24px; }
+.contact-mode-icon { font-family: var(--serif); font-size: 28px; color: var(--amber); }
+.contact-mode h3 { font-family: var(--serif); font-size: 22px; font-weight: 500; letter-spacing: -0.3px; margin: 0 0 4px; }
+.contact-mode p { font-size: 14px; line-height: 1.5; color: var(--char-dim); margin: 0; }
+.contact-mode a { font-family: var(--mono); font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; padding: 10px 16px; background: var(--navy); color: var(--ink); }
+.contact-mode a:hover { background: var(--amber); color: var(--navy); }
+.contact-card { background: var(--navy); color: var(--ink); padding: 40px; }
+.contact-card-photo { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; margin: -40px -40px 24px; width: calc(100% + 80px); filter: grayscale(0.15) contrast(1.02); }
+.contact-card h4 { font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--amber); margin: 0 0 16px; }
+.contact-card-name { font-family: var(--serif); font-size: 32px; font-weight: 400; letter-spacing: -0.6px; margin: 0 0 8px; }
+.contact-card-tag { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--ink-dim); margin: 0 0 24px; }
+.contact-card p { font-size: 15px; line-height: 1.55; color: var(--ink-dim); margin: 0 0 16px; }
+.contact-card-meta { padding-top: 16px; border-top: 1px solid var(--rule); margin-top: 16px; font-family: var(--mono); font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--ink-dim); }
+.contact-card-meta div { padding: 6px 0; }
+@media (max-width: 1024px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  .contact-mode { grid-template-columns: 60px 1fr; gap: 16px; }
+  .contact-mode a { grid-column: 1 / -1; justify-self: start; margin-top: 8px; }
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="assets/data.js"></script>
+<script type="text/babel" src="assets/components.jsx"></script>
+<script type="text/babel">
+function ContactPage() {
+  return (<>
+    <SiteNav active="contact"/>
+    <section className="contact-hero">
+      <div className="container contact-grid">
+        <div>
+          <span className="kicker">Contact · Speaking · Consulting</span>
+          <h1 className="contact-h">Open to remote and flex US-based work — and to talking about CBTC.</h1>
+          <p className="contact-lede">If you're a transit agency, vendor, or program team with a CBTC question — or a recruiter / hiring manager looking at my background — the fastest channel is email. Speaking and guest-lecture inquiries also welcome.</p>
+
+          <div className="contact-modes">
+            <div className="contact-mode">
+              <div className="contact-mode-icon">✉</div>
+              <div>
+                <h3>Email</h3>
+                <p>Best for project inquiries, errata, and most everything else.</p>
+              </div>
+              <a href="mailto:franciscowang2008@gmail.com">franciscowang2008@gmail.com</a>
+            </div>
+
+            <div className="contact-mode">
+              <div className="contact-mode-icon">↗</div>
+              <div>
+                <h3>LinkedIn</h3>
+                <p>Full work history, recommendations, and the most recent updates.</p>
+              </div>
+              <a href="https://www.linkedin.com/in/chunjun-wang/" target="_blank" rel="noopener">linkedin.com/in/chunjun-wang</a>
+            </div>
+
+            <div className="contact-mode">
+              <div className="contact-mode-icon">◆</div>
+              <div>
+                <h3>Speaking & lectures</h3>
+                <p>Available for guest lectures, conference panels, and agency tech-talks on CBTC and US deployment practice.</p>
+              </div>
+              <a href="mailto:franciscowang2008@gmail.com?subject=Speaking%20inquiry">Email about speaking →</a>
+            </div>
+
+            <div className="contact-mode">
+              <div className="contact-mode-icon">▦</div>
+              <div>
+                <h3>Bulk / institutional orders</h3>
+                <p>Library, classroom, or agency-wide copies — both volumes available with discount on quantity.</p>
+              </div>
+              <a href="mailto:franciscowang2008@gmail.com?subject=Bulk%20order">Email about bulk →</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="contact-card">
+            <img className="contact-card-photo" src="assets/headshot.png" alt="Chunjun (Francisco) Wang"/>
+            <h4>The author</h4>
+            <h2 className="contact-card-name">Chunjun (Francisco) Wang</h2>
+            <p className="contact-card-tag">Booth MBA · CFA · CBTC Rail-Tech Expert</p>
+            <p>Twenty years in rail signaling — engineering design, system integration, and operating responsibility for an international rail-signaling group's US subsidiary. Currently Senior Research Engineer at Rutgers University CAIT, researching applied AI for rail and energy infrastructure.</p>
+            <p>Open to remote or flexible US roles. Comfortable in English and Mandarin.</p>
+            <div className="contact-card-meta">
+              <div>📍 Princeton, NJ</div>
+              <div>☎ (415) 996-4799</div>
+              <div>⊙ Open to remote / flex US</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <SiteFooter/>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<ContactPage/>);
+</script>
+</body>
+</html>
