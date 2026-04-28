@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { href: "volume-2.html", label: "Volume 2", key: "v2" },
   { href: "about.html", label: "About", key: "about" },
   { href: "figures.html", label: "Figures", key: "figures" },
+  { href: "slides.html", label: "Slides", key: "slides" },
   { href: "glossary.html", label: "Glossary", key: "glossary" },
   { href: "errata.html", label: "Errata", key: "errata" },
   { href: "contact.html", label: "Contact", key: "contact" },
@@ -59,6 +60,7 @@ function SiteFooter() {
           <a href="volume-1.html">Volume 1 — Foundations</a>
           <a href="volume-2.html">Volume 2 — Operations</a>
           <a href="figures.html">Figures gallery</a>
+          <a href="slides.html">Chapter slides</a>
           <a href="errata.html">Errata & supplements</a>
           <a href="glossary.html">CBTC glossary</a>
         </div>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free chapter-by-chapter slide decks (PDF) accompanying Communications-Based Train Control by Chunjun Wang. 16 chapters, ~400 slides total. Free to download for engineers, students, and trainers.">
+<link rel="canonical" href="https://cbtcbook.com/slides.html">
+<meta name="theme-color" content="#0A1628">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Communications-Based Train Control">
+<meta property="og:title" content="Chapter Slide Decks — CBTC Reference">
+<meta property="og:description" content="Free chapter-by-chapter slide decks (PDF) accompanying Communications-Based Train Control. 16 chapters, ~400 slides — free to download.">
+<meta property="og:url" content="https://cbtcbook.com/slides.html">
+<meta property="og:image" content="https://cbtcbook.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Communications-Based Train Control — a two-volume reference by Chunjun (Francisco) Wang.">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chapter Slide Decks — CBTC Reference">
+<meta name="twitter:description" content="Free chapter-by-chapter slide decks (PDF) accompanying Communications-Based Train Control. 16 chapters, ~400 slides — free to download.">
+<meta name="twitter:image" content="https://cbtcbook.com/assets/og-image.png">
+
+<title>Chapter Slide Decks — Communications-Based Train Control</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.sl-hero { padding: 80px 0 32px; }
+.sl-h { font-family: var(--serif); font-size: clamp(36px, 4.5vw, 56px); font-weight: 400; letter-spacing: -1px; margin: 16px 0 16px; line-height: 1.05; max-width: 900px; text-wrap: balance; }
+.sl-lede { font-size: 18px; line-height: 1.55; color: var(--char-dim); max-width: 720px; margin: 0 0 32px; }
+.sl-stats { display: flex; gap: 48px; padding: 24px 0; border-top: 1px solid var(--char-rule); border-bottom: 1px solid var(--char-rule); margin-top: 24px; flex-wrap: wrap; }
+.sl-stat { display: flex; flex-direction: column; gap: 4px; }
+.sl-stat .num { font-family: var(--serif); font-size: 36px; font-weight: 400; letter-spacing: -0.5px; }
+.sl-stat .lab { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--char-dim); }
+
+.sl-license { background: var(--paper-2); padding: 24px 28px; margin: 32px 0 16px; border-left: 3px solid var(--amber); }
+.sl-license h3 { font-family: var(--mono); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--amber); margin: 0 0 8px; }
+.sl-license p { margin: 0 0 8px; font-size: 15px; line-height: 1.55; }
+.sl-license p:last-child { margin-bottom: 0; color: var(--char-dim); font-size: 14px; }
+
+.sl-section { padding: 48px 0 16px; }
+.sl-section-h { display: flex; align-items: baseline; gap: 16px; padding-top: 16px; border-top: 2px solid var(--navy); margin-bottom: 32px; }
+.sl-section-h h2 { font-family: var(--serif); font-size: 28px; font-weight: 400; letter-spacing: -0.4px; margin: 0; }
+.sl-section-h .vol { font-family: var(--mono); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--amber); }
+
+.sl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+@media (max-width: 800px) { .sl-grid { grid-template-columns: 1fr; } }
+
+.sl-card { background: var(--paper-2); padding: 0; display: flex; flex-direction: column; }
+.sl-card-thumb { background: var(--navy); display: block; aspect-ratio: 16/9; overflow: hidden; }
+.sl-card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sl-card-body { padding: 20px 22px 22px; }
+.sl-card-num { font-family: var(--mono); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--amber); margin-bottom: 6px; }
+.sl-card-title { font-family: var(--serif); font-size: 22px; font-weight: 500; letter-spacing: -0.3px; margin: 0 0 12px; line-height: 1.2; }
+.sl-card-meta { font-family: var(--mono); font-size: 11px; letter-spacing: 1px; color: var(--char-dim); margin-bottom: 16px; text-transform: uppercase; }
+.sl-card-meta span { color: var(--char); font-weight: 500; }
+.sl-card-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.sl-btn { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; padding: 10px 16px; text-decoration: none; transition: all 0.15s; flex: 1; text-align: center; min-width: 120px; }
+.sl-btn-primary { background: var(--navy); color: var(--ink); }
+.sl-btn-primary:hover { background: var(--amber); color: var(--navy); }
+.sl-btn-ghost { background: transparent; color: var(--navy); border: 1px solid var(--char-rule); }
+.sl-btn-ghost:hover { border-color: var(--navy); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="assets/data.js"></script>
+<script type="text/babel" src="assets/components.jsx"></script>
+<script type="text/babel">
+const SLIDE_DECKS = [
+  // [ch, title, slides, sizeMB, vol]
+  ["01", "The Evolution of Train Control",          26, 1.20, 1],
+  ["02", "Standards & Regulations: US Framework",   25, 1.13, 1],
+  ["03", "CBTC System Architecture Overview",       23, 0.98, 1],
+  ["04", "Onboard Equipment",                       23, 0.74, 1],
+  ["05", "Wayside Equipment",                       23, 0.47, 1],
+  ["06", "Communication Systems",                   24, 0.78, 1],
+  ["07", "Central System / ATS",                    23, 1.11, 1],
+  ["08", "Grades of Automation",                    24, 1.13, 1],
+  ["09", "Operating Modes",                         26, 1.08, 2],
+  ["10", "CBTC in the United States",               24, 1.01, 2],
+  ["11", "International Benchmarks",                25, 1.11, 2],
+  ["12", "Project Lifecycle",                       25, 0.89, 2],
+  ["13", "Performance Criteria",                    27, 1.15, 2],
+  ["14", "Lifecycle Costs",                         26, 0.87, 2],
+  ["15", "Vendor Landscape",                        24, 1.27, 2],
+  ["16", "US–China Comparative Perspectives",       25, 1.08, 2],
+];
+
+const TOTAL_SLIDES = SLIDE_DECKS.reduce((a, [,, n]) => a + n, 0);
+const TOTAL_MB = SLIDE_DECKS.reduce((a, [,,,s]) => a + s, 0).toFixed(0);
+
+function Card({ ch, title, slides, sizeMB }) {
+  const pdf = `slides/cbtc_ch${ch}.pdf`;
+  const thumb = `slides/thumbs/cbtc_ch${ch}.jpg`;
+  return (
+    <div className="sl-card">
+      <a className="sl-card-thumb" href={pdf} target="_blank" rel="noopener">
+        <img src={thumb} alt={`Cover slide of Chapter ${ch}: ${title}`} loading="lazy"/>
+      </a>
+      <div className="sl-card-body">
+        <div className="sl-card-num">Chapter {ch}</div>
+        <h3 className="sl-card-title">{title}</h3>
+        <div className="sl-card-meta">
+          <span>{slides} slides</span>  ·  <span>{sizeMB} MB</span>  ·  PDF
+        </div>
+        <div className="sl-card-actions">
+          <a className="sl-btn sl-btn-primary" href={pdf} target="_blank" rel="noopener">View online</a>
+          <a className="sl-btn sl-btn-ghost" href={pdf} download>Download</a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SlidesPage() {
+  const v1 = SLIDE_DECKS.filter(d => d[4] === 1);
+  const v2 = SLIDE_DECKS.filter(d => d[4] === 2);
+  return (<>
+    <SiteNav active="slides"/>
+
+    <section className="sl-hero">
+      <div className="container">
+        <span className="kicker">Companion slide decks · all 16 chapters</span>
+        <h1 className="sl-h">A free slide deck for every chapter — built for engineers, trainers, and instructors.</h1>
+        <p className="sl-lede">
+          Chapter-by-chapter PDF presentations covering the structure, key arguments, and core figures of
+          Communications-Based Train Control. Use them as lecture material, internal training, conference handouts,
+          or your own self-study aid.
+        </p>
+        <div className="sl-stats">
+          <div className="sl-stat"><span className="num">{SLIDE_DECKS.length}</span><span className="lab">chapter decks</span></div>
+          <div className="sl-stat"><span className="num">{TOTAL_SLIDES}</span><span className="lab">slides total</span></div>
+          <div className="sl-stat"><span className="num">{TOTAL_MB}</span><span className="lab">MB · all PDFs</span></div>
+          <div className="sl-stat"><span className="num">$0</span><span className="lab">free · no signup</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section className="container">
+      <div className="sl-license">
+        <h3>Use & attribution</h3>
+        <p>You're welcome to use these decks for teaching, internal training, or self-study. Attribution
+        appreciated: <em>"Companion to Communications-Based Train Control by Chunjun Wang · cbtcbook.com"</em>.</p>
+        <p>The decks cover structure and headline arguments. The full chapter — case studies, citations,
+        regulatory language, vendor specifications — lives in the book.</p>
+      </div>
+    </section>
+
+    <section className="container sl-section">
+      <div className="sl-section-h">
+        <span className="vol">Volume 1 · Foundations & Architecture</span>
+        <h2>Chapters 01 – 08</h2>
+      </div>
+      <div className="sl-grid">
+        {v1.map(([ch, title, slides, sizeMB]) =>
+          <Card key={ch} ch={ch} title={title} slides={slides} sizeMB={sizeMB}/>
+        )}
+      </div>
+    </section>
+
+    <section className="container sl-section" style={{paddingBottom: 80}}>
+      <div className="sl-section-h">
+        <span className="vol">Volume 2 · Operations & Economics</span>
+        <h2>Chapters 09 – 16</h2>
+      </div>
+      <div className="sl-grid">
+        {v2.map(([ch, title, slides, sizeMB]) =>
+          <Card key={ch} ch={ch} title={title} slides={slides} sizeMB={sizeMB}/>
+        )}
+      </div>
+    </section>
+
+    <SiteFooter/>
+  </>);
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<SlidesPage/>);
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-0NF9Z0T953');
+
+// Track outbound Amazon clicks
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a[href*="amazon.com"]');
+  if (!a) return;
+  gtag('event', 'click_amazon', {
+    'page_path': window.location.pathname,
+    'link_url': a.href,
+    'link_text': (a.textContent || '').trim().slice(0, 60)
+  });
+});
+
+// Track slide deck downloads / views
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a[href*="slides/cbtc_ch"]');
+  if (!a) return;
+  var ch = (a.href.match(/cbtc_ch(\d+)\.pdf/) || [])[1] || '';
+  var isDownload = a.hasAttribute('download');
+  gtag('event', isDownload ? 'slides_download' : 'slides_view', {
+    'page_path': window.location.pathname,
+    'chapter': ch,
+    'link_url': a.href
+  });
+});
+</script>
+</body>
+</html>

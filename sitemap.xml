@@ -19,6 +19,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://cbtcbook.com/slides.html</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://cbtcbook.com/figures.html</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -48,4 +54,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <!-- Chapter slide decks (PDF) -->
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch01.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch02.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch03.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch04.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch05.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch06.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch07.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch08.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch09.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch10.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch11.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch12.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch13.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch14.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch15.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://cbtcbook.com/slides/cbtc_ch16.pdf</loc><lastmod>2026-04-28</lastmod><priority>0.6</priority></url>
 </urlset>
