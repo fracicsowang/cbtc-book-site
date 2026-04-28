@@ -4,8 +4,8 @@ Two-volume technical reference on CBTC by **Chunjun (Francisco) Wang**.
 This repository hosts the static marketing & companion site at **cbtcbook.com** (or wherever you deploy it).
 
 > *Communications-Based Train Control: Foundations, Architecture, Operations & Economics*  
-> Vol 1 — Foundations & Technical Architecture · 533 pp · ISBN 9798284614525  
-> Vol 2 — Operations, Deployment & Economics · 594 pp · ISBN 9798263901564
+> Vol 1 — Foundations & Technical Architecture · 533 pp · ISBN 979-8-258-54295-3  
+> Vol 2 — Operations, Deployment & Economics · 594 pp · ISBN 979-8-258-54528-2
 
 ---
 
