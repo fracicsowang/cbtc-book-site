@@ -18,7 +18,7 @@ const BOOK = {
     amazonKindle: "https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ",
     pricePrint: "$54.95",
     priceKindle: "$24.95",
-    blurb: "The technical foundation of CBTC — the wireless signaling architecture that has replaced fixed-block circuits across modern metro systems. From the hundred-year evolution of train control to onboard ATP/ATO, wayside zone controllers, the data-communication radio network, and the central ATS that supervises it all.",
+    blurb: "The technical foundation of CBTC — the wireless signaling architecture that has replaced fixed-block circuits across modern metro systems. From the hundred-year evolution of train control to onboard ATP/ATO, wayside zone controllers, the data-communication radio network, and the central ATS that supervises it all — closing with the GoA 0–4 framework that classifies every level of automation built on top.",
     chapters: [
       ["01", "The Evolution of Train Control",      45],
       ["02", "Standards & Regulations: US Framework", 60],
