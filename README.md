@@ -1,7 +1,7 @@
 # Communications-Based Train Control — Companion Site
 
 Two-volume technical reference on CBTC by **Chunjun (Francisco) Wang**.
-This repository hosts the static marketing & companion site at **cbtc-book.com** (or wherever you deploy it).
+This repository hosts the static marketing & companion site at **cbtcbook.com** (or wherever you deploy it).
 
 > *Communications-Based Train Control: Foundations, Architecture, Operations & Economics*  
 > Vol 1 — Foundations & Technical Architecture · 533 pp · ISBN 9798284614525  
@@ -63,7 +63,7 @@ python3 -m http.server 8000
 
 ### Custom domain
 
-Add a `CNAME` file at root containing your domain (e.g. `cbtc-book.com`), then point a CNAME DNS record at `<username>.github.io`.
+Add a `CNAME` file at root containing your domain (e.g. `cbtcbook.com`), then point a CNAME DNS record at `<username>.github.io`.
 
 ### Other hosts
 
