@@ -19,7 +19,7 @@ site/
 ├── about.html              ← author / career timeline
 ├── volume-1.html           ← Vol 1 detail
 ├── volume-2.html           ← Vol 2 detail
-├── figures.html            ← all 92 figures, by chapter
+├── figures.html            ← all 78 figures, by chapter
 ├── glossary.html           ← interactive CBTC glossary
 ├── errata.html             ← errata + supplementary downloads
 ├── contact.html            ← contact / speaking / bulk orders
@@ -37,7 +37,7 @@ site/
 │   ├── contact.jsx
 │   └── cover-mini.jsx      ← 3D book cover component
 │
-├── figures/                ← 92 .png technical figures
+├── figures/                ← 78 .png technical figures
 ├── images/                 ← author photo, cover scans, etc.
 └── print/                  ← print-ready cover PDFs (Amazon KDP)
 ```
@@ -76,7 +76,7 @@ Drag-drop the folder into Netlify, Vercel, or Cloudflare Pages — works out of 
 **Chunjun (Francisco) Wang**  
 Senior Research Engineer · Rutgers University, CAIT  
 Princeton, NJ · franciscowang2008@gmail.com  
-[LinkedIn](https://www.linkedin.com/in/chunjunwangk2/)
+[LinkedIn](https://www.linkedin.com/in/chunjun-wang/)
 
 ## License
 

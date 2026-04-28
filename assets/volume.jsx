@@ -112,7 +112,7 @@ function VolumePage({ vol }) {
             ))}
           </div>
           <div style={{ marginTop: 24 }}>
-            <a className="btn btn-ghost" href="figures.html">Browse all 92 figures →</a>
+            <a className="btn btn-ghost" href="figures.html">Browse all 78 figures →</a>
           </div>
         </section>
       )}
@@ -140,7 +140,7 @@ function VolumePage({ vol }) {
             ))}
           </div>
           <div style={{ marginTop: 24 }}>
-            <a className="btn btn-ghost" href="figures.html">Browse all 92 figures →</a>
+            <a className="btn btn-ghost" href="figures.html">Browse all 78 figures →</a>
           </div>
         </section>
       )}
