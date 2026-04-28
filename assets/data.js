@@ -61,6 +61,7 @@ const AUTHOR = {
   email: "franciscowang2008@gmail.com",
   linkedin: "https://www.linkedin.com/in/chunjun-wang/",
   googleScholar: "https://scholar.google.com/citations?user=JsYYeDUAAAAJ",
+  orcid: "https://orcid.org/0009-0005-6344-9934",
   oneLiner:
     "Two decades in rail signaling, spanning US and Chinese practice. Seven CBTC patents, thirteen peer-reviewed papers, and operating responsibility for a major rail-signaling group's US subsidiary.",
 
