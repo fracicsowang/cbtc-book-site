@@ -3,6 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact Chunjun Wang for CBTC consulting, speaking engagements, guest lectures, or bulk orders. Open to remote and flex US-based work.">
+<link rel="canonical" href="https://cbtcbook.com/contact.html">
+<meta name="theme-color" content="#0A1628">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Communications-Based Train Control">
+<meta property="og:title" content="Contact — Chunjun (Francisco) Wang">
+<meta property="og:description" content="Contact Chunjun Wang for CBTC consulting, speaking engagements, guest lectures, or bulk orders. Open to remote and flex US-based work.">
+<meta property="og:url" content="https://cbtcbook.com/contact.html">
+<meta property="og:image" content="https://cbtcbook.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Communications-Based Train Control — a two-volume reference by Chunjun (Francisco) Wang.">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — Chunjun (Francisco) Wang">
+<meta name="twitter:description" content="Contact Chunjun Wang for CBTC consulting, speaking engagements, guest lectures, or bulk orders. Open to remote and flex US-based work.">
+<meta name="twitter:image" content="https://cbtcbook.com/assets/og-image.png">
+
 <title>Contact — Chunjun (Francisco) Wang</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
@@ -31,7 +50,26 @@
   .contact-mode { grid-template-columns: 60px 1fr; gap: 16px; }
   .contact-mode a { grid-column: 1 / -1; justify-self: start; margin-top: 8px; }
 }
-</style>
+</style><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-0NF9Z0T953');
+
+// Track outbound Amazon clicks
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a[href*="amazon.com"]');
+  if (!a) return;
+  gtag('event', 'click_amazon', {
+    'page_path': window.location.pathname,
+    'link_url': a.href,
+    'link_text': (a.textContent || '').trim().slice(0, 60)
+  });
+});
+</script>
+
 </head>
 <body>
 <div id="root"></div>
