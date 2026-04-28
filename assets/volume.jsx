@@ -25,13 +25,13 @@ function VolumePage({ vol }) {
       heading: "The IEC 62290 boundary — and why it matters in procurement",
       body: `IEC 62290 establishes a clear system context diagram that delineates what is "inside" the CBTC system and what constitutes external systems. CBTC comprises three integrated functional layers: ATP (the safety-critical layer that enforces speed restrictions and calculates movement authorities), ATO (the automated driving layer, where implemented), and ATS (the fleet-level supervision layer that manages dispatching and dwell times).\n\nDuring an RFP, a transit agency might specify that CBTC "must control platform screen doors" or "must manage traction power." But if those are specified as external systems, CBTC's role is limited to sending control signals via defined interfaces. The external system retains responsibility for executing the command safely. This division of labor is critical: if CBTC directly controlled power contactors, a CBTC software failure could result in uncontrolled power loss. Instead, CBTC issues a request; the power system's independent logic decides whether to honor it.`,
     },
-  ] : [
     {
       ch: "8",
       title: "Grades of Automation (GoA 0–4)",
       heading: "GoA and CBTC are not synonymous",
       body: `The Grade of Automation framework addresses a simple question: who does what in train operation? GoA codifies the allocation of responsibility across setting the train in motion, stopping the train, door operation, obstacle and collision detection, response to disruption, and passenger evacuation.\n\nA persistent source of confusion in procurement documents is the conflation of automation level with control technology. GoA and CBTC are not synonymous. CBTC enables higher grades of automation, but it is fundamentally a signaling and control technology, not an automation level. A CBTC system can be deployed at GoA 2 (with a driver) or GoA 4 (fully unattended). Conversely, non-CBTC ATC systems with traditional fixed-block signaling can achieve GoA 1 or even GoA 2. Specifying "we want driverless" without separately specifying the underlying control technology — or vice versa — is a recurring source of scope ambiguity in US RFPs.`,
     },
+  ] : [
     {
       ch: "10",
       title: "CBTC in the United States",
@@ -90,7 +90,7 @@ function VolumePage({ vol }) {
 
       {vol === 1 && (
         <section className="container" style={{ paddingBottom: 64 }}>
-          <span className="kicker">Selected figures from Volume 1 · 56 total</span>
+          <span className="kicker">Selected figures from Volume 1 · 42 total</span>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16, marginTop: 24 }}>
             {[
               ["1.1", "150-Year Evolution Timeline", "fig_01_01_evolution_timeline.png"],
@@ -98,10 +98,10 @@ function VolumePage({ vol }) {
               ["1.8", "NYC L-Line Capacity Gain", "fig_01_08_nyc_l_line_capacity.png"],
               ["2.4", "SIL Pyramid", "fig_02_04_sil_pyramid.png"],
               ["3.2", "End-to-End Architecture", "fig_03_02_end_to_end_architecture.png"],
-              ["3.4", "200 ms Heartbeat Cycle", "fig_03_04_heartbeat_cycle.png"],
               ["4.1", "VOBC Functional Architecture", "fig_04_01_vobc_architecture.png"],
               ["4.3", "Braking Curve & Safe Stop", "fig_04_03_braking_curve.png"],
               ["6.1", "CBTC Radio Architecture", "fig_06_01_radio_architecture.png"],
+              ["8.1", "GoA 0–4 Responsibility Matrix", "fig_08_01_goa_responsibility_matrix.png"],
             ].map(([n, t, f]) => (
               <div key={n} style={{ background: "var(--navy)", padding: 10 }}>
                 <img src={`figures/${f}`} style={{ width: "100%", display: "block" }} alt={t}/>
@@ -121,8 +121,7 @@ function VolumePage({ vol }) {
           <span className="kicker">Selected figures from Volume 2 · 36 total</span>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16, marginTop: 24 }}>
             {[
-              ["8.1", "GoA 0–4 Responsibility Matrix", "fig_08_01_goa_responsibility_matrix.png"],
-              ["8.5", "GoA Selection Decision Flowchart", "fig_08_05_goa_decision_flowchart.png"],
+              ["9.1", "Mode State Machine", "fig_09_01_mode_state_machine.png"],
               ["10.1", "US CBTC Deployment Map", "fig_10_01_us_deployment_map.png"],
               ["10.3", "Project Comparison Matrix", "fig_10_03_project_comparison_matrix.png"],
               ["11.7", "Headway — Major Networks", "fig_11_07_headway_comparison.png"],
@@ -150,11 +149,11 @@ function VolumePage({ vol }) {
           <span className="kicker">Full table of contents</span>
           <h2 className="vol-h2">{v.chapters.length} chapters · grouped into {vol === 1 ? "four" : "five"} parts</h2>
           <div className="vol-toc-list">
-            {v.chapters.map(([num, title]) => (
+            {v.chapters.map(([num, title, pp]) => (
               <div className="vol-toc-row" key={num}>
                 <span className="vol-toc-num">{num}</span>
                 <span className="vol-toc-title">{title}</span>
-                <span className="vol-toc-pp">~{Math.round(v.pages / v.chapters.length)} pp</span>
+                <span className="vol-toc-pp">{pp} pp</span>
               </div>
             ))}
           </div>
