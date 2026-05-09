@@ -4,6 +4,7 @@ const NAV_LINKS = [
   { href: "index.html", label: "Home", key: "home" },
   { href: "volume-1.html", label: "Volume 1", key: "v1" },
   { href: "volume-2.html", label: "Volume 2", key: "v2" },
+  { href: "/blog/", label: "Articles", key: "articles" },
   { href: "about.html", label: "About", key: "about" },
   { href: "figures.html", label: "Figures", key: "figures" },
   { href: "slides.html", label: "Slides", key: "slides" },

@@ -1,0 +1,3 @@
+document.querySelectorAll("form[data-newsletter]").forEach(e=>{e.addEventListener("submit",async n=>{n.preventDefault();const o=new FormData(e),t=e.querySelector("button[type=submit]"),r=t.textContent||"Subscribe";t.disabled=!0,t.textContent="Subscribing…";try{if((await fetch(e.action,{method:"POST",body:o,headers:{Accept:"application/json"}})).ok)e.innerHTML=`<p style="color:var(--amber);font-family:var(--mono);
+            font-size:13px;letter-spacing:1.4px;margin:0;">
+            Thanks — check your inbox to confirm.</p>`;else throw new Error("Form submission failed")}catch{t.textContent="Try again — error",t.disabled=!1,setTimeout(()=>{t.textContent=r},2500)}})});
