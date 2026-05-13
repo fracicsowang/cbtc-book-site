@@ -14,6 +14,25 @@ const NAV_LINKS = [
 ];
 
 function SiteNav({ active }) {
+  // Hamburger menu open state — visible only on mobile (≤900px) via CSS.
+  const [open, setOpen] = React.useState(false);
+
+  // Close on Escape
+  React.useEffect(() => {
+    if (!open) return;
+    const onKey = (e) => { if (e.key === "Escape") setOpen(false); };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  const onBuy = (e) => {
+    setOpen(false);
+    if (!document.querySelector("#buy")) {
+      e.preventDefault();
+      window.location.href = "index.html#buy";
+    }
+  };
+
   return (
     <nav className="site-nav">
       <div className="site-nav-inner">
@@ -28,16 +47,35 @@ function SiteNav({ active }) {
             </a>
           ))}
         </div>
-        <a className="site-nav-cta" href="#buy" onClick={(e) => {
-          // If on home, scroll; else go to home#buy
-          if (!document.querySelector("#buy")) {
-            e.preventDefault();
-            window.location.href = "index.html#buy";
-          }
-        }}>
+        <a className="site-nav-cta" href="#buy" onClick={onBuy}>
           Buy on Amazon →
         </a>
+        <button
+          className="site-nav-burger"
+          type="button"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="site-nav-mobile"
+          onClick={() => setOpen(!open)}
+        >
+          <span /><span /><span />
+        </button>
       </div>
+      {/* Mobile drawer — CSS-hidden on desktop */}
+      {open && (
+        <div id="site-nav-mobile" className="site-nav-mobile">
+          {NAV_LINKS.map(l => (
+            <a key={l.key} href={l.href}
+               className={active === l.key ? "active" : ""}
+               onClick={() => setOpen(false)}>
+              {l.label}
+            </a>
+          ))}
+          <a className="site-nav-mobile__cta" href="#buy" onClick={onBuy}>
+            Buy on Amazon →
+          </a>
+        </div>
+      )}
     </nav>
   );
 }

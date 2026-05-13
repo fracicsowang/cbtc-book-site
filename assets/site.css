@@ -95,6 +95,77 @@ button { font: inherit; cursor: pointer; }
 }
 .site-nav-cta:hover { background: var(--char); }
 
+/* ─── Mobile hamburger + drawer ─────────────────────────────────────────── */
+.site-nav-burger {
+  display: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
+  width: 40px; height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+}
+.site-nav-burger span {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--char);
+  transition: transform .2s, opacity .2s, background-color .15s;
+  border-radius: 1px;
+}
+.site-nav-burger:hover span { background: var(--amber); }
+.site-nav-burger[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.site-nav-burger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.site-nav-burger[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.site-nav-mobile {
+  border-top: 1px solid var(--char-rule);
+  padding: 8px var(--gutter) 16px;
+  background: var(--paper);
+}
+.site-nav-mobile a {
+  display: block;
+  padding: 14px 0;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--char-dim);
+  border-bottom: 1px solid var(--char-rule);
+  text-decoration: none;
+}
+.site-nav-mobile a:hover,
+.site-nav-mobile a.active {
+  color: var(--char);
+  padding-left: 8px;
+  border-bottom-color: var(--amber);
+}
+.site-nav-mobile__cta {
+  display: inline-block !important;
+  margin-top: 16px;
+  padding: 12px 22px !important;
+  background: var(--navy);
+  color: var(--ink) !important;
+  border-bottom: 0 !important;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+.site-nav-mobile__cta:hover {
+  background: var(--amber);
+  color: var(--navy) !important;
+  padding-left: 22px !important;
+}
+
 /* ─── Footer ────────────────────────────────────────────────────────────── */
 .site-foot {
   background: var(--navy);
@@ -236,6 +307,11 @@ button { font: inherit; cursor: pointer; }
 /* Responsive */
 @media (max-width: 900px) {
   .site-nav-links { display: none; }
+  .site-nav-cta { display: none; }
+  .site-nav-burger { display: flex; }
   .site-foot-inner { grid-template-columns: 1fr 1fr; }
   .section { padding: 64px 0; }
+}
+@media (min-width: 901px) {
+  .site-nav-mobile { display: none !important; }
 }

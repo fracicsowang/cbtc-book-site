@@ -1,0 +1,1 @@
+import"./hoisted.D4J7EKPS.js";import"./Newsletter.astro_astro_type_script_index_0_lang.CH2BFQGB.js";window.dataLayer=window.dataLayer||[];function a(){dataLayer.push(arguments)}window.gtag=a;a("js",new Date);a("config","G-0NF9Z0T953",{send_page_view:!0});
