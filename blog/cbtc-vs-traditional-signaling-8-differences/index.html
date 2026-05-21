@@ -28,9 +28,24 @@
 <h2 id="8-the-vendor-and-supply-chain-many-versus-few">8. The vendor and supply chain: many versus few</h2>
 <p>US fixed-block signaling has a deep, fragmented supplier base. Track circuit modules, signal heads, switch machines, and relay logic come from a long list of US, Canadian, and European vendors, with substantial second-source availability and decades of installed-base spares.</p>
 <p>The CBTC market is concentrated. Five suppliers — Siemens Mobility (Trainguard MT), Alstom (Urbalis, the rebrand of the former Bombardier CITYFLO 650 platform after the 2021 acquisition), Thales (SelTrac, now part of Hitachi Rail after the 2024 acquisition), Hitachi Rail STS (the former Ansaldo STS), and CRSC — hold the global market. Build America, Buy America (BABA) compliance, introduced in 2021 under FTA grant policy, adds a 5 to 15 percent premium and limits some suppliers’ ability to bid in the US without domestic content commitments. Vendor selection has more strategic weight in CBTC than in fixed-block signaling, and the consequences of vendor lock-in extend over the 30-year service life of the system.</p>
-<p>[FIGURE: Comparison table summarizing the eight differences across separation, detection, capacity, safety, infrastructure, cost, degraded mode, and supplier landscape.
-Source: new figure to be generated.
-Caption: “The eight axes on which CBTC and traditional signaling diverge, with US deployment data points.”]</p>
+<figure class="blog-figure blog-figure--table">
+  <table class="blog-table">
+    <thead>
+      <tr><th>Aspect</th><th>Traditional Signaling</th><th>CBTC</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Separation Logic</td><td>Fixed sections</td><td>Computed buffers</td></tr>
+      <tr><td>Train Detection</td><td>Track circuit</td><td>Onboard report</td></tr>
+      <tr><td>Capacity Ceiling</td><td>24 to 28 trains/hour</td><td>30 trains/hour and beyond</td></tr>
+      <tr><td>Safety Model</td><td>Discrete signal compliance</td><td>Continuous supervision</td></tr>
+      <tr><td>Wayside Infrastructure</td><td>Dense</td><td>Consolidated</td></tr>
+      <tr><td>Capital and Lifecycle Cost</td><td>Front-loaded</td><td>Distributed</td></tr>
+      <tr><td>Degraded-Mode Behavior</td><td>Blunt</td><td>Graduated</td></tr>
+      <tr><td>Vendor and Supply Chain</td><td>Many</td><td>Few</td></tr>
+    </tbody>
+  </table>
+  <figcaption class="blog-figure__caption">The eight axes on which CBTC and traditional signaling diverge, with US deployment data points.</figcaption>
+</figure>
 <h2 id="what-this-means-in-practice">What this means in practice</h2>
 <ul>
 <li>Capacity is the headline benefit, but the safety model and degraded-mode behavior are what change the operational character of the railway.</li>

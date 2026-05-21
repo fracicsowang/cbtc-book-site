@@ -19,9 +19,8 @@
 <p>Response time. ATP must reduce a train’s Movement Authority within bounded latency when conditions change — typically a few seconds for non-emergency adjustments, much faster for emergency interventions.</p>
 <p>Accuracy. Train position must be determined within a defined envelope, typically on the order of one meter for modern systems. The standard does not specify which sensors to use; it specifies the accuracy.</p>
 <p>On-board autonomy. If communication with the wayside is lost, the train must enforce the most restrictive of (a) the most recent Movement Authority, (b) the worst-case speed for the current track segment, and (c) a distance-based safety envelope from on-board odometry. This is the requirement that prevents a radio-based CBTC system from becoming a runaway train when the radio drops.</p>
-<p>[FIGURE: Performance budget map showing IEEE 1474.1 mandates on the left (headway, safety, availability, response time, accuracy, on-board autonomy) and supplier design choices on the right (radio band, positioning method, redundancy topology, software language, architectural distribution).
-Source: new figure to be generated.
-Caption: “IEEE 1474.1 mandates performance outcomes; the supplier owns the design decisions that produce them.”]</p>
+<p><img src="/blog/img/ieee-1474-1-performance-based-standard-fig1.svg" alt="IEEE 1474.1 mandates performance outcomes; the supplier owns the design decisions that produce them.">
+<em><small>IEEE 1474.1 mandates performance outcomes; the supplier owns the design decisions that produce them.</small></em></p>
 <h2 id="what-ieee-14741-does-not-mandate">What IEEE 1474.1 does not mandate</h2>
 <p>The standard’s deliberate silences are as important as its mandates.</p>
 <p>Communication technology. Inductive loops, free-space radio at 2.4 or 5 GHz, licensed cellular, and emerging private 5G are all permitted as long as the system meets the performance budget. The standard does not pick.</p>

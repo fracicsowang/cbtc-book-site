@@ -10,9 +10,8 @@
 <p>What civil and structural work is in scope, including any required tunnel modifications, station platform adjustments, antenna mounting, or cable-tray installations — and which civil work is explicitly out of scope and will be performed by others under separate contracts.</p>
 <p>What legacy systems remain in service during and after cutover, including any signaling, interlocking, communications, power, or operational subsystems with which the CBTC system must interface.</p>
 <p>The fourth question is the one most often shortchanged. A brownfield CBTC retrofit is not just about the new system; it is about the legacy system the new system has to coexist with for the duration of the cutover. Agencies that under-specify legacy interface scope discover, twelve months into design, that they own a major systems-integration problem they had assumed the contractor would solve.</p>
-<p>[FIGURE: Annotated track schematic showing in-scope route, out-of-scope yard segments, interface boundaries with legacy interlockings, and station-platform modifications, color-coded by responsible party.
-Source: new figure to be generated.
-Caption: “A scope-boundary diagram drawn into the SOW prevents 60 percent of the boundary disputes that drive CBTC change orders.”]</p>
+<p><img src="/blog/img/cbtc-scope-of-work-template-fig1.svg" alt="A scope-boundary diagram drawn into the SOW prevents 60 percent of the boundary disputes that drive CBTC change orders.">
+<em><small>A scope-boundary diagram drawn into the SOW prevents 60 percent of the boundary disputes that drive CBTC change orders.</small></em></p>
 <h2 id="section-3-functional-and-performance-requirements">Section 3: Functional and performance requirements</h2>
 <p>This is the heart of the SOW. Reference IEEE 1474.1 as the procurement floor and write each performance requirement in measurable terms. A useful template structure:</p>
 <p><strong>Capacity and headway</strong>: minimum sustainable trains per hour per direction at peak; minimum sustainable headway under defined operational scenarios; minimum dwell time the system must support without capacity degradation.</p>
@@ -42,9 +41,21 @@ Caption: “A scope-boundary diagram drawn into the SOW prevents 60 percent of t
 <p><strong>Shadow Running</strong>: industry practice for US brownfield deployments is 6 to 12 months. Specify the data-collection and reporting cadence, the criteria for promoting to Parallel Operations, and the agency’s right to extend Shadow Running based on observed defect rates.</p>
 <p><strong>Parallel Operations and Revenue Service Demonstration</strong>: typically 2 to 8 weeks for Parallel Operations and 2 to 4 weeks for RSD, again with specified entry and exit criteria.</p>
 <p>The testing section also specifies the FTA Project Management Oversight Contractor (PMOC) System Integration Review (SIR) gate — a go/no-go decision point before revenue cutover — and binds the contractor to support the PMOC review.</p>
-<p>[FIGURE: Side-by-side comparison of testing-phase scope and duration on an under-specified SOW (FAT, SIT, integration, RSD lumped into “Testing”) versus a properly decomposed SOW (FAT, SIT, Dynamic, Shadow, Parallel, RSD as distinct phases with separate exit criteria).
-Source: new figure to be generated.
-Caption: “Decomposing testing into V-Model phases at the SOW stage prevents schedule compression that ‘Testing’ as a single line item invites.”]</p>
+<figure class="blog-figure blog-figure--table">
+  <table class="blog-table">
+    <thead>
+      <tr><th>Testing Phase</th><th>Scope</th><th>Duration</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Factory Acceptance Testing (FAT)</td><td>Functional coverage of the generic baseline at 60 to 90 percent</td><td>6 to 12 weeks</td></tr>
+      <tr><td>Site Integration Testing (SIT)</td><td>Scoped against legacy interlocking, power supply, Track-side Interface Unit, and ATS integration</td><td>12 to 20 weekends</td></tr>
+      <tr><td>Dynamic Testing</td><td>Static, low-speed linear, multi-zone, high-speed, multi-train, emergency, and degraded-mode scenarios</td><td>4 to 8 weeks</td></tr>
+      <tr><td>Shadow Running</td><td>Data-collection and reporting cadence specified</td><td>6 to 12 months</td></tr>
+      <tr><td>Parallel Operations and Revenue Service Demonstration</td><td>Specified entry and exit criteria</td><td>Parallel Operations: 2 to 8 weeks; RSD: 2 to 4 weeks</td></tr>
+    </tbody>
+  </table>
+  <figcaption class="blog-figure__caption">Decomposing testing into V-Model phases at the SOW stage prevents schedule compression that 'Testing' as a single line i</figcaption>
+</figure>
 <h2 id="section-6-cutover-and-revenue-service-entry">Section 6: Cutover and revenue service entry</h2>
 <p>Cutover is the highest-risk event in the entire project lifecycle, and the SOW is the place to establish which strategy the agency intends — Big Bang, phased segment, fleet-phased, or function-phased — and what each requires of the contractor. Recent US brownfield deployments overwhelmingly use phased-segment cutover; greenfield lines such as Honolulu Skyline have used Big Bang. The L Line (Canarsie) used a phased-segment approach with 3 to 4 day weekend and holiday closures; BART’s Train Control Modernization Program plans a fleet-phased rollout over multiple years.</p>
 <p>The cutover section binds the contractor to supply a Cutover Plan as a contract deliverable, with rehearsal procedures, rollback procedures, communication protocols, and operational coordination plans. It also specifies the agency’s right to defer cutover at the SIR gate based on objective criteria — defect counts, shadow-running anomaly rates, training completion percentages — without contractual penalty to the agency.</p>
