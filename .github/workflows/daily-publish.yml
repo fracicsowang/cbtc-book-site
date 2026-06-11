@@ -17,7 +17,12 @@ on:
     # GitHub cron is UTC-only and may be delayed under load; the back-fill
     # logic makes the exact minute irrelevant.
     - cron: "0 13 * * *"
-  workflow_dispatch: {}   # adds a manual "Run workflow" button + API trigger
+  workflow_dispatch:
+    inputs:
+      force_date:
+        description: 'Pretend "today" is this YYYY-MM-DD (testing / backfill). Blank = real today.'
+        required: false
+        default: ''
 
 # Least privilege: write commits back (publish state) + deploy Pages.
 permissions:
@@ -55,6 +60,8 @@ jobs:
 
       - name: Publish due articles (catch-up) + build
         id: publish
+        env:
+          FORCE_DATE: ${{ inputs.force_date }}
         run: python3 blog-tools/ci_publish.py
 
       - name: Commit publish state if changed
