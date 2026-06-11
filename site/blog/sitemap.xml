@@ -145,6 +145,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://cbtcbook.com/blog/next-gen-train-control-after-cbtc/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://cbtcbook.com/blog/nyc-mta-cbtc-roadmap-7-line-queens-boulevard/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
