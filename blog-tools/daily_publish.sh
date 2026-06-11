@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
-# daily_publish.sh — runs once a day via launchd. Reads publish-queue.yml,
-# finds today's slugs, copies them into the Astro content collection,
-# builds, and (optionally) commits & pushes the deployed /site/ repo.
+# daily_publish.sh — local manual-fallback publisher. Daily publishing is
+# now done in the cloud (.github/workflows/daily-publish.yml). This script
+# is kept as a backup: it reads publish-queue.yml, finds due slugs (with
+# catch-up), copies them into the Astro content collection, builds, and
+# commits + pushes the /site/blog/ output. Pages deploys via Actions, so
+# a local push will not deploy until the cloud workflow next runs (cron
+# or manually via `gh workflow run "Daily blog publish"`).
 #
 # Behavior:
 #   - If today's date isn't in the queue (weekends, holidays, after end):
@@ -141,8 +145,8 @@ if [[ "${DRY_PUBLISH:-0}" == "1" ]]; then
   exit 0
 fi
 
-cd "$SITE"
-git add -A blog/
+cd "$ROOT"
+git add -A site/blog/
 if git diff --staged --quiet; then
   log "no git changes after build — exiting"
   notify "No-op" "$DATE — no diff"
