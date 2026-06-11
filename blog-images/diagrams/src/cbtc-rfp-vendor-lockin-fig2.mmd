@@ -1,0 +1,37 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    A["Agency Procurement Decision"] --> B{Bundled\nDesign-Build}
+    A --> C{Unbundled\nMulti-Package}
+    
+    subgraph Bundled
+        B --> D["Single Vendor"]
+        D --> E["Design-Build Contract"]
+    end
+    
+    subgraph Unbundled
+        C --> F["Separate Contracts"]
+        F --> G["Onboard Systems"]
+        F --> H["Wayside Systems"]
+        F --> I["Central Systems"]
+    end
+    
+    E --> J["Vendor Leverage"]
+    G --> K["Agency Integration"]
+    H --> K
+    I --> K
+    
+    J --> L["Competitive Leverage\non Vendor"]
+    K --> M["Competitive Leverage\non Components"]

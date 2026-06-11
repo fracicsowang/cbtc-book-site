@@ -1,0 +1,39 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart LR
+    subgraph Initial_Alignment
+        A1["Madeleine"] --> A2["Pyramides"]
+        A2 --> A3["Châtelet"]
+        A3 --> A4["Gare de Lyon"]
+        A4 --> A5["Bercy"]
+        A5 --> A6["Cour Saint-Émilion"]
+        A6 --> A7["Bibliothèque François Mitterrand"]
+    end
+
+    subgraph Extensions
+        B1["Saint-Lazare (2003)"]
+        B2["Olympiades (2007)"]
+        B3["Saint-Ouen (2020)"]
+        B4["Mairie de Saint-Ouen (2020)"]
+        B5["Saint-Denis Pleyel (2024)"]
+        B6["Aéroport d'Orly (2024)"]
+    end
+
+    Initial_Alignment --> B1
+    B1 --> B2
+    B2 --> B3
+    B3 --> B4
+    B4 --> B5
+    B5 --> B6

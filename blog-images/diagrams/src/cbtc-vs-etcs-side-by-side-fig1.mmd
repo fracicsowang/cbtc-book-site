@@ -1,0 +1,36 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph ETCS_Level_2
+        A["GSM-R Radio"]
+        B["Eurobalise"]
+        C["RBC"]
+        D["Track Circuits/\nAxle Counters"]
+    end
+
+    subgraph CBTC
+        E["DCS Radio"]
+        F["CBTC Balise"]
+        G["Zone Controller"]
+        H["Onboard\nPosition Reporting"]
+    end
+
+    A --> C
+    B --> C
+    C --> D
+
+    E --> G
+    F --> G
+    G --> H

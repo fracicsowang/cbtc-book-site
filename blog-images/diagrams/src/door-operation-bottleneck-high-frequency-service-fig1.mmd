@@ -1,0 +1,29 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+sequenceDiagram
+    participant A as "Train Approaches\nStation"
+    participant B as "Precision Stop"
+    participant C as "Berthing Detection"
+    participant D as "Door Open Cycle"
+    participant E as "Passenger Phase"
+    participant F as "Door Close Cycle"
+    participant G as "Train Departs"
+
+    A ->> B: 5 sec
+    B ->> C: 1 sec
+    C ->> D: 4 sec
+    D ->> E: 25 sec
+    E ->> F: 4 sec
+    F ->> G: 2 sec

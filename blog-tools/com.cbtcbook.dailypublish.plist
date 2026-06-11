@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  launchd plist for cbtcbook.com daily blog publish.
+
+  Behavior:
+    - Triggers EVERY DAY at 09:00 America/New_York (incl. weekends). launchd's
+      StartCalendarInterval uses LOCAL time, so it's correct year-round.
+    - SLEEP: if the Mac is asleep at 09:00, launchd fires the job as soon as the
+      system wakes (unlike crontab). The script's catch-up then publishes every
+      still-unpublished queue date <= today, so no day is dropped.
+    - SHUTDOWN: launchd does NOT replay missed StartCalendarInterval fires after
+      a power-off. RunAtLoad=true closes that gap — the job also runs at login,
+      so the first login after a shutdown triggers a run, and catch-up back-fills
+      all the days that were missed while powered off (batched into one run).
+    - Running more often than needed is safe: the script is idempotent — if
+      today's article is already live it finds no git diff and exits cleanly.
+    - StandardOutPath / StandardErrorPath capture all script output for
+      after-the-fact debugging (last-run.log).
+
+  Install:
+    cp blog-tools/com.cbtcbook.dailypublish.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.cbtcbook.dailypublish.plist
+
+  Uninstall:
+    launchctl unload -w ~/Library/LaunchAgents/com.cbtcbook.dailypublish.plist
+    rm ~/Library/LaunchAgents/com.cbtcbook.dailypublish.plist
+
+  Trigger manually (for testing):
+    launchctl start com.cbtcbook.dailypublish
+
+  View next scheduled run:
+    launchctl list | grep cbtcbook
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.cbtcbook.dailypublish</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/chunjun/CBTC_book_site/blog-tools/daily_publish.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/chunjun/CBTC_book_site</string>
+
+    <!-- Environment for npm and git to find their tools -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/chunjun</string>
+        <key>LANG</key>
+        <string>en_US.UTF-8</string>
+    </dict>
+
+    <!-- Schedule: EVERY DAY at 9:00 AM local time. A StartCalendarInterval
+         dict that omits the Weekday key matches all 7 days. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key><integer>9</integer>
+        <key>Minute</key><integer>0</integer>
+    </dict>
+
+    <!-- Also run at login: catches the case where the Mac was powered OFF at
+         09:00 (launchd does not replay missed calendar fires after a boot).
+         Safe because the script is idempotent + back-fills missed days. -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Capture stdout/stderr for debugging -->
+    <key>StandardOutPath</key>
+    <string>/Users/chunjun/CBTC_book_site/last-run.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/chunjun/CBTC_book_site/last-run.log</string>
+
+    <!-- Throttle: don't restart if it dies within 60s (likely config error) -->
+    <key>ThrottleInterval</key>
+    <integer>60</integer>
+</dict>
+</plist>

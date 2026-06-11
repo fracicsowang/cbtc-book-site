@@ -1,0 +1,34 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph IEEE1474_1_Clauses
+        A["Continuous train control"]
+        B["High-res location\nindependent of track circuits"]
+        C["Bidirectional data\ncommunications"]
+        D["Vital onboard and\nwayside processors"]
+    end
+
+    subgraph Architectural_Components
+        E["Train location\ndetermination"]
+        F["Digital communication\nsystem"]
+        G["Onboard processors"]
+        H["Wayside processors"]
+    end
+
+    A --> E
+    B --> E
+    C --> F
+    D --> G
+    D --> H

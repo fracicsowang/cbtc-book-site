@@ -1,0 +1,70 @@
+---
+// Site nav — clones the structure used in /site/assets/components.jsx.
+// Mobile (≤900px): the desktop link row collapses; a hamburger button
+// reveals the same links stacked. Toggle is pure HTML+inline JS,
+// no framework.
+const { active = "articles" } = Astro.props;
+
+const links = [
+  { href: "/index.html",     label: "Home",      key: "home" },
+  { href: "/volume-1.html",  label: "Volume 1",  key: "v1" },
+  { href: "/volume-2.html",  label: "Volume 2",  key: "v2" },
+  { href: "/blog/",          label: "Articles",  key: "articles" },
+  { href: "/about.html",     label: "About",     key: "about" },
+  { href: "/figures.html",   label: "Figures",   key: "figures" },
+  { href: "/slides.html",    label: "Slides",    key: "slides" },
+  { href: "/glossary.html",  label: "Glossary",  key: "glossary" },
+  { href: "/errata.html",    label: "Errata",    key: "errata" },
+  { href: "/contact.html",   label: "Contact",   key: "contact" },
+];
+---
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a href="/index.html" class="site-nav-brand">
+      <span class="dot"></span>
+      <span>CBTC&nbsp;·&nbsp;Wang</span>
+    </a>
+    <div class="site-nav-links">
+      {links.map((l) => (
+        <a href={l.href} class={active === l.key ? "active" : ""}>{l.label}</a>
+      ))}
+    </div>
+    <a class="site-nav-cta" href="/index.html#buy">Buy on Amazon →</a>
+    <button class="site-nav-burger" type="button" aria-label="Open menu"
+            aria-expanded="false" aria-controls="site-nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile drawer — display:none on desktop via @media -->
+  <div id="site-nav-mobile" class="site-nav-mobile" hidden>
+    {links.map((l) => (
+      <a href={l.href} class={active === l.key ? "active" : ""}>{l.label}</a>
+    ))}
+    <a class="site-nav-mobile__cta" href="/index.html#buy">Buy on Amazon →</a>
+  </div>
+</nav>
+
+<script>
+  const burger = document.querySelector(".site-nav-burger") as HTMLButtonElement | null;
+  const drawer = document.getElementById("site-nav-mobile");
+  if (burger && drawer) {
+    burger.addEventListener("click", () => {
+      const isOpen = burger.getAttribute("aria-expanded") === "true";
+      if (isOpen) {
+        drawer.setAttribute("hidden", "");
+        burger.setAttribute("aria-expanded", "false");
+      } else {
+        drawer.removeAttribute("hidden");
+        burger.setAttribute("aria-expanded", "true");
+      }
+    });
+    // Close drawer on Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && burger.getAttribute("aria-expanded") === "true") {
+        drawer.setAttribute("hidden", "");
+        burger.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+</script>

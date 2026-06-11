@@ -1,0 +1,38 @@
+---
+// Footer — same structure as the static site footer.
+const year = new Date().getFullYear();
+---
+<footer class="site-foot">
+  <div class="site-foot-inner">
+    <div>
+      <div class="site-foot-mark">
+        Communications-Based<br/>
+        Train <em>Control</em>
+      </div>
+      <p style="font-family:var(--sans);font-size:14px;color:var(--ink-dim);max-width:380px;line-height:1.55;margin:0;">
+        A two-volume reference for US transit professionals.
+        By Chunjun (Francisco) Wang. Published April 2026.
+      </p>
+    </div>
+    <div>
+      <h4>The Book</h4>
+      <a href="/volume-1.html">Volume 1</a>
+      <a href="/volume-2.html">Volume 2</a>
+      <a href="/figures.html">Figures</a>
+      <a href="/slides.html">Slides (PDF)</a>
+      <a href="/glossary.html">Glossary</a>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <a href="/about.html">About the Author</a>
+      <a href="/blog/">Articles</a>
+      <a href="/contact.html">Contact</a>
+      <a href="https://www.linkedin.com/in/chunjun-wang/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=JsYYeDUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
+  </div>
+  <div class="site-foot-bottom">
+    <span>© {year} Chunjun Wang. All rights reserved.</span>
+    <span>cbtcbook.com</span>
+  </div>
+</footer>

@@ -1,0 +1,44 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph Central_ATS
+        A["Central ATS"]
+    end
+
+    subgraph Wayside_Zone_Controller
+        B["Zone Controller"]
+    end
+
+    subgraph Train_Onboard
+        C["Onboard System"]
+    end
+
+    subgraph Supplier_Remote_Access
+        D["Remote Access"]
+    end
+
+    subgraph Data_Communication_System
+        E["Data Comm System"]
+    end
+
+    A -->|Conduit| E
+    B -->|Conduit| E
+    C -->|Conduit| E
+    D -->|Conduit| E
+
+    E -->|Conduit| A
+    E -->|Conduit| B
+    E -->|Conduit| C
+    E -->|Conduit| D

@@ -1,0 +1,38 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart LR
+    subgraph Legacy_Systems
+        A["1979 Fixed-Block"]
+        B["Cab Signaling"]
+    end
+    subgraph Partial_Modernization
+        C["ATP Enforcement"]
+        D["Comms Upgrades"]
+        E["Station Equipment\nModernization"]
+    end
+    subgraph Full_CBTC
+        F["Moving-Block"]
+        G["ATO"]
+        H["Energy Efficiency"]
+    end
+    A --> C
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    A -->|Deferred\nModernization| F
+    C -->|Deferred\nModernization| F

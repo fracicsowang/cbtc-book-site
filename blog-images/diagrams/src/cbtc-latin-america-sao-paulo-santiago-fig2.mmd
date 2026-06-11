@@ -1,0 +1,26 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+sequenceDiagram
+    participant SP4 as São Paulo Line 4\n(2010, Siemens)
+    participant S6 as Santiago Line 6\n(2018, Alstom)
+    participant S3 as Santiago Line 3\n(2019, Alstom)
+    participant MC12 as Mexico City Line 12\n(2012, Multi-vendor)
+    participant L2 as Lima Line 2\n(2026-2028, Alstom)
+
+    SP4->>S6: Pioneering GoA 4
+    S6->>S3: Similar Architecture
+    S3->>MC12: CBTC Adoption
+    MC12->>L2: Future Expansion
+    L2->>SP4: Largest Greenfield\nGoA 4 in Western Hemisphere

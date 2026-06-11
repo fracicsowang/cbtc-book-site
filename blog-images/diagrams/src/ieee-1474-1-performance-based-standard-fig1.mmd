@@ -1,0 +1,38 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph IEEE1474_1_Mandates
+        A["Headway"]
+        B["Safety"]
+        C["Availability"]
+        D["Response Time"]
+        E["Accuracy"]
+    end
+
+    subgraph Supplier_Decisions
+        F["Radio Frequency"]
+        G["Positioning Method"]
+        H["Hardware Architecture"]
+        I["Software Language"]
+    end
+
+    IEEE1474_1_Mandates --> Supplier_Decisions
+
+    A --> F
+    B --> G
+    C --> H
+    D --> I
+    E --> F
+    E --> G

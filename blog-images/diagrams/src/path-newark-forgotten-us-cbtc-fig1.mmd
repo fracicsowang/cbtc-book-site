@@ -1,0 +1,41 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TD
+    subgraph PATH
+        A["FRA Jurisdiction"]
+        B["PTC Compliance"]
+        C["High-frequency Service"]
+        A --> B
+        B --> C
+    end
+    
+    subgraph PATCO
+        D["GoA 1"]
+        E["CBTC Advisory"]
+        F["Manual Driving"]
+        D --> E
+        E --> F
+    end
+    
+    subgraph Newark
+        G["Legacy Light Rail"]
+        H["No Modernization"]
+        I["Line-of-Sight Operation"]
+        G --> H
+        H --> I
+    end
+    
+    PATH --> PATCO
+    PATCO --> Newark

@@ -1,0 +1,49 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TD
+    subgraph GoA_Levels
+        A["GoA 0\nLine-of-sight"] 
+        B["GoA 1\nFixed-block\nsignaling"]
+        C["GoA 2\nCBTC with\nDriver Supervision"]
+        D["GoA 3\nDriverless\nStaff on board"]
+        E["GoA 4\nUnattended\nTrain Operation"]
+    end
+
+    subgraph Global_Systems
+        F["Paris Métro\nLines 1 & 14"]
+        G["Singapore MRT\nMultiple Lines"]
+        H["Copenhagen Metro\nM1, M2, M3, M4"]
+        I["Dubai Metro\nRed & Green Lines"]
+        J["Vancouver SkyTrain\nExpo, Millennium,\nCanada Lines"]
+        K["Honolulu Skyline"]
+        L["Beijing Subway\nSelected Lines"]
+        M["Madrid Metro\nSelected Lines"]
+        N["Airport People-Movers"]
+    end
+
+    A -->|No automation| B
+    B -->|ATP| C
+    C -->|ATO| D
+    D -->|No staff on board| E
+
+    E -->|UTO| F
+    E --> G
+    E --> H
+    E --> I
+    E --> J
+    E --> K
+    E --> L
+    E --> M
+    E --> N

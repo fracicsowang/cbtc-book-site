@@ -1,0 +1,45 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph 4LM_Scope
+        A["Circle Line"]
+        B["District Line"]
+        C["Hammersmith & City"]
+        D["Metropolitan Line"]
+    end
+
+    subgraph Infrastructure
+        E["Zone Controllers"]
+        F["Track-to-Train\nWi-Fi"]
+        G["Automatic Train\nSupervision"]
+        H["Legacy Signaling\nFallback"]
+    end
+
+    subgraph Fleet
+        I["S-Stock Trains"]
+        J["CBTC Retrofit"]
+    end
+
+    A --> E
+    B --> E
+    C --> E
+    D --> E
+
+    E --> F
+    F --> G
+    G --> H
+
+    I --> J
+    J --> G

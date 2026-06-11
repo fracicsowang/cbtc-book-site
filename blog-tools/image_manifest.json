@@ -1,0 +1,735 @@
+[
+  {
+    "slug": "5g-train-to-wayside-communication-where-we-are",
+    "figure": 1,
+    "description": "WLAN to 5G-R migration pathway diagram showing the three credible US transit paths: hybrid (WLAN primary, LTE/5G seconda",
+    "source_hint": "existing book figure fig_15_04_5g_migration.png",
+    "caption": "The credible US transit migration paths from Wi-Fi-based CBTC to LTE-R or 5G-R communication, with timelines projected b",
+    "bucket": "reuse",
+    "existing_figure": "fig_15_04_5g_migration.png"
+  },
+  {
+    "slug": "apta-standards-cbtc-industry-guidance",
+    "figure": 1,
+    "description": "Standards stack diagram showing the layered relationship: APTA at the US transit operational layer, IEEE 1474 at the US",
+    "source_hint": "new figure to be generated",
+    "caption": "APTA documents are the US transit operational layer of the CBTC standards stack, complementing rather than competing wit",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "cbtc-engineering-salary-us-2026",
+    "figure": 1,
+    "description": "Bar chart showing 2026 base salary ranges for junior, mid-career, and senior CBTC engineers in the four major US metro a",
+    "source_hint": "new figure to be generated",
+    "caption": "Working ranges for CBTC engineering compensation in 2026. Individual offers can land outside these ranges; the metro and",
+    "bucket": "chart"
+  },
+  {
+    "slug": "cbtc-heartbeat-cycle",
+    "figure": 1,
+    "description": "Latency budget bar chart showing the four end-to-end stages (VOBC processing, uplink, ZC processing, downlink) with allo",
+    "source_hint": "new figure to be generated",
+    "caption": "End-to-end latency budget across the four heartbeat phases. Cycles that exceed the budget force wider position-uncertain",
+    "bucket": "chart"
+  },
+  {
+    "slug": "cbtc-latin-america-sao-paulo-santiago",
+    "figure": 1,
+    "description": "Latin American CBTC portfolio overview — São Paulo Lines 4, 5, 6, 17 with operators and GoA grades; Santiago Lines 3 and",
+    "source_hint": "new figure to be generated",
+    "caption": "Latin America's CBTC portfolio is small by route-kilometers but includes consequential GoA 4 deployments.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "cbtc-latin-america-sao-paulo-santiago",
+    "figure": 2,
+    "description": "Latin American GoA 4 timeline — São Paulo Line 4 (2010, Siemens), Santiago Line 6 (2018, Alstom), Santiago Line 3 (2019,",
+    "source_hint": "new figure to be generated",
+    "caption": "Latin America has been a quiet GoA 4 pioneer. Lima Line 2 will be the largest greenfield GoA 4 in the Western Hemisphere",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "cbtc-procurement-cost-drivers",
+    "figure": 1,
+    "description": "Stacked bar chart showing the gap between contractor sticker price and total program cost on a representative US brownfi",
+    "source_hint": "new figure to be generated",
+    "caption": "The contractor's bid is typically 60 to 75 percent of the all-in program cost on a US brownfield CBTC project.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "cbtc-projects-over-budget",
+    "figure": 1,
+    "description": "Bar chart of typical US CBTC project cost growth by driver category (scope, cutover, testing, BABA, ISA, change orders,",
+    "source_hint": "new figure to be generated",
+    "caption": "Cost growth on US CBTC projects is rarely a single failure. It accumulates across seven recurring driver categories.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "cbtc-rfp-vendor-lockin",
+    "figure": 1,
+    "description": "Layered diagram showing the four lock-in defense layers — performance-based specification at the foundation, then mandat",
+    "source_hint": "new figure to be generated",
+    "caption": "Four contractual layers that, used together, reduce CBTC vendor lock-in to a manageable residual.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "cbtc-rfp-vendor-lockin",
+    "figure": 2,
+    "description": "Decision tree for agency procurement structure choice — bundled single-vendor Design-Build vs. unbundled multi-package o",
+    "source_hint": "new figure to be generated",
+    "caption": "Bundled and unbundled CBTC procurement each preserve different forms of competitive leverage. The right answer depends o",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "cbtc-roi-calculation",
+    "figure": 1,
+    "description": "Stacked-bar chart showing benefit composition by category for representative brownfield heavy-rail CBTC BCA — capacity (",
+    "source_hint": "new figure to be generated",
+    "caption": "Capacity dominates the brownfield BCR; safety, O&M savings, and ridership add the credibility margin that survives PMOC",
+    "bucket": "chart"
+  },
+  {
+    "slug": "cbtc-scope-of-work-template",
+    "figure": 1,
+    "description": "Annotated track schematic showing in-scope route, out-of-scope yard segments, interface boundaries with legacy interlock",
+    "source_hint": "new figure to be generated",
+    "caption": "A scope-boundary diagram drawn into the SOW prevents 60 percent of the boundary disputes that drive CBTC change orders.",
+    "bucket": "map"
+  },
+  {
+    "slug": "cbtc-scope-of-work-template",
+    "figure": 2,
+    "description": "Side-by-side comparison of testing-phase scope and duration on an under-specified SOW (FAT, SIT, integration, RSD lumped",
+    "source_hint": "new figure to be generated",
+    "caption": "Decomposing testing into V-Model phases at the SOW stage prevents schedule compression that 'Testing' as a single line i",
+    "bucket": "table"
+  },
+  {
+    "slug": "cbtc-storage-yards",
+    "figure": 1,
+    "description": "Yard architecture schematic showing the boundary between CBTC mainline and non-CBTC yard, with the handoff zone at the y",
+    "source_hint": "new figure to be generated",
+    "caption": "Most US deployments excise the yard from CBTC scope. The interesting engineering is in the handoff at the yard throat.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "cbtc-vs-distance-to-go",
+    "figure": 1,
+    "description": "Decision flowchart comparing distance-to-go and CBTC across capacity demand, fleet age, capital availability, GoA target",
+    "source_hint": "new figure to be generated",
+    "caption": "The CBTC vs distance-to-go decision is categorical, not continuous; specific corridor characteristics drive the right an",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "cbtc-vs-ertms-hybrid-level-3",
+    "figure": 1,
+    "description": "Architectural comparison diagram showing CBTC (Zone Controllers, IEEE 802.11 radio, VOBC) and ERTMS Hybrid Level 3 (Radi",
+    "source_hint": "new figure to be generated",
+    "caption": "CBTC and ERTMS Hybrid Level 3 share moving-block architecture but differ at the wayside, communications, and integrity-r",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "cbtc-vs-ertms-hybrid-level-3",
+    "figure": 2,
+    "description": "Side-by-side migration timelines for European mainline rail (ERTMS Level 2 to Hybrid Level 3 to full Level 3, with FRMCS",
+    "source_hint": "existing book figure fig_15_04_5g_migration.png",
+    "caption": "European Hybrid Level 3 and US cellular-class CBTC are converging on similar capabilities along parallel timelines.",
+    "bucket": "reuse",
+    "existing_figure": "fig_15_04_5g_migration.png"
+  },
+  {
+    "slug": "cbtc-vs-etcs-side-by-side",
+    "figure": 1,
+    "description": "Architecture comparison showing ETCS Level 2 (GSM-R radio, eurobalise, RBC, track circuits/axle counters) and CBTC (DCS",
+    "source_hint": "new figure to be generated",
+    "caption": "ETCS Level 2 retains track-circuit-based detection; CBTC replaces it with onboard position reporting.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "cbtc-vs-traditional-signaling-8-differences",
+    "figure": 1,
+    "description": "Comparison table summarizing the eight differences across separation, detection, capacity, safety, infrastructure, cost,",
+    "source_hint": "new figure to be generated",
+    "caption": "The eight axes on which CBTC and traditional signaling diverge, with US deployment data points.",
+    "bucket": "table"
+  },
+  {
+    "slug": "cbtc-wrong-solution-mainline-freight",
+    "figure": 1,
+    "description": "Side-by-side comparison of US freight and US metro operating profiles, plotting train length, train weight, trains per d",
+    "source_hint": "new figure to be generated",
+    "caption": "The US freight and US metro networks differ on every operational dimension that drives train control technology choice.",
+    "bucket": "table"
+  },
+  {
+    "slug": "change-orders-cbtc-projects",
+    "figure": 1,
+    "description": "Change-order taxonomy showing the six recurring categories with typical dollar magnitude (small, medium, large) and typi",
+    "source_hint": "new figure to be generated",
+    "caption": "Change orders cluster into six recurring categories. Naming them at contract execution is the first step toward bounding",
+    "bucket": "table"
+  },
+  {
+    "slug": "change-orders-cbtc-projects",
+    "figure": 2,
+    "description": "Change-order pricing decision tree showing scope-clarity axis vs. risk-allocation axis, with fixed-price, NTE, and T&M p",
+    "source_hint": "new figure to be generated",
+    "caption": "Pricing structure should match scope clarity. Fixed-price for bounded scope; NTE for moderately defined scope; T&M with",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "chinese-metro-cbtc-50-cities",
+    "figure": 1,
+    "description": "Chinese metro CBTC cumulative deployment 2002–2025 — line count and route-kilometers by year, marked with milestone open",
+    "source_hint": "new figure to be generated derived from Chapter 16 manuscript Table 16.1",
+    "caption": "China deployed more CBTC route-kilometers in 23 years than the rest of the world combined.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "chinese-metro-cbtc-50-cities",
+    "figure": 2,
+    "description": "Mechanisms transferable from Chinese CBTC scale-up to US transit context. Three columns: standardization and design reus",
+    "source_hint": "new figure to be generated",
+    "caption": "What transfers is the institutional pattern, not the cost or calendar.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "door-control-cbtc-failures",
+    "figure": 1,
+    "description": "Door control architecture diagram showing the VOBC vital permission layer (SIL 4) feeding into the TMS non-vital command",
+    "source_hint": "new figure to be generated",
+    "caption": "The vital permission gates the action; the non-vital command layer adds operational context; the field layer executes. E",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "door-operation-bottleneck-high-frequency-service",
+    "figure": 1,
+    "description": "Timeline diagram of a station stop showing precision stop (5 sec), berthing detection (1 sec), door open cycle (4 sec),",
+    "source_hint": "new figure to be generated",
+    "caption": "Dwell as the dispatcher sees it. The 25-second passenger phase is governed by physics; the 16 seconds around it are gove",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "driverless-operation-engineering-labor-public-acceptance",
+    "figure": 1,
+    "description": "Stack diagram of GoA 4 prerequisites — platform screen doors, obstacle detection, 2oo3 VOBC, two-way intercom, OCC visib",
+    "source_hint": "existing book figure fig_08_04_goa4_prerequisites.png",
+    "caption": "Driverless operation rests on a stack of independent prerequisites. CBTC is the bottom layer, not the whole system.",
+    "bucket": "reuse",
+    "existing_figure": "fig_08_04_goa4_prerequisites.png"
+  },
+  {
+    "slug": "driverless-operation-engineering-labor-public-acceptance",
+    "figure": 2,
+    "description": "Side-by-side comparison of GoA 2, GoA 3, GoA 4 — staffing, capital cost relative index, labor cost index, safety case co",
+    "source_hint": "new figure to be generated",
+    "caption": "GoA 3 sits in the middle and rarely wins on its merits. The choice in practice is GoA 2 or GoA 4.",
+    "bucket": "table"
+  },
+  {
+    "slug": "driverless-operations-worldwide-goa-4",
+    "figure": 1,
+    "description": "Global GoA 4 metro map and table showing the systems above with route-km, opening year, vendor, and GoA grade. Different",
+    "source_hint": "new figure to be generated derived from Chapter 11 manuscript Table 11.3 and Cha",
+    "caption": "Approximately 75–80 lines globally operate at full UTO. The rest are GoA 3 or lower, regardless of marketing.",
+    "bucket": "map"
+  },
+  {
+    "slug": "driverless-operations-worldwide-goa-4",
+    "figure": 2,
+    "description": "GoA grade comparison decision matrix. Rows: on-board staff role, platform screen doors, labor cost per train-km, safety",
+    "source_hint": "new figure to be generated derived from Chapter 8 manuscript framework",
+    "caption": "GoA 2, GoA 3, and GoA 4 are different products with different cost and safety case implications.",
+    "bucket": "table"
+  },
+  {
+    "slug": "evaluating-cbtc-bids-12-criteria",
+    "figure": 1,
+    "description": "Radar chart comparing two hypothetical CBTC bids across the 12 evaluation criteria, with weighted scores summed to a fin",
+    "source_hint": "new figure to be generated",
+    "caption": "Best-value scoring across 12 criteria distinguishes proposals that low-bid scoring would treat as identical.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "evaluating-cbtc-bids-12-criteria",
+    "figure": 2,
+    "description": "Stacked bar chart of typical CBTC bid evaluation weights for a US brownfield procurement (Technical 40-50%, Past Perform",
+    "source_hint": "new figure to be generated",
+    "caption": "Typical US CBTC bid evaluation weights — best-value, not low-bid, drives every recent major procurement.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "from-software-to-cbtc-why-software-engineers",
+    "figure": 1,
+    "description": "Skill-transfer matrix mapping common software-engineering specializations (embedded, distributed systems, web/full-stack",
+    "source_hint": "new figure to be generated",
+    "caption": "Most modern software engineering specializations map cleanly onto one or two CBTC subsystems.",
+    "bucket": "table"
+  },
+  {
+    "slug": "funding-cbtc-fta-federal-state-local",
+    "figure": 1,
+    "description": "Comparison table of federal funding sources (CIG, TIFIA, RAISE, MEGA), with eligibility, federal share, typical award si",
+    "source_hint": "new figure to be generated",
+    "caption": "Multiple federal funding sources can contribute to a US CBTC funding stack. CIG is the dominant grant source; TIFIA is t",
+    "bucket": "table"
+  },
+  {
+    "slug": "goa-2-to-goa-4-prerequisites",
+    "figure": 1,
+    "description": "GoA 4 prerequisite stack showing physical infrastructure (platform screen doors, obstacle detection, yard automation), s",
+    "source_hint": "existing book figure fig_08_04_goa4_prerequisites.png",
+    "caption": "GoA 4 is a stack of physical, system, and organizational prerequisites, not a software switch.",
+    "bucket": "reuse",
+    "existing_figure": "fig_08_04_goa4_prerequisites.png"
+  },
+  {
+    "slug": "hidden-cost-of-cbtc-vendor-lockin",
+    "figure": 1,
+    "description": "Stacked bar chart of CBTC vendor lock-in cost across the 30-year asset life, decomposed into initial procurement premium",
+    "source_hint": "new figure to be generated",
+    "caption": "Lock-in cost is the sum of five recurring premiums across a 30-year asset life. The largest component is cross-line expa",
+    "bucket": "chart"
+  },
+  {
+    "slug": "hidden-cost-of-cbtc-vendor-lockin",
+    "figure": 2,
+    "description": "Decision tree for the bundled vs. unbundled CBTC procurement choice, with the lock-in premium and operational complexity",
+    "source_hint": "new figure to be generated",
+    "caption": "Bundled and unbundled CBTC procurement each preserve different forms of competitive leverage. The right answer depends o",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "honolulu-skyline-newest-us-cbtc-metro",
+    "figure": 1,
+    "description": "Honolulu Skyline route map showing Phase 1 opened June 2023 (East Kapolei to Aloha Stadium) plus subsequent phases exten",
+    "source_hint": "new figure to be generated",
+    "caption": "Honolulu Skyline phased deployment with full GoA 4 CBTC architecture from opening day.",
+    "bucket": "map"
+  },
+  {
+    "slug": "honolulu-skyline-newest-us-cbtc-metro",
+    "figure": 2,
+    "description": "Comparison matrix of Honolulu Skyline (greenfield, 2023, GoA 4, Hitachi Rail STS) against the four prior US transit-mode",
+    "source_hint": "new figure to be generated",
+    "caption": "Honolulu Skyline establishes a fifth US transit-modernization archetype: greenfield GoA 4 from inception.",
+    "bucket": "table"
+  },
+  {
+    "slug": "iec-62443-cybersecurity-rail-signaling",
+    "figure": 1,
+    "description": "CBTC system decomposed into IEC 62443 security zones, with the central ATS as one zone, the wayside Zone Controller terr",
+    "source_hint": "new figure to be generated",
+    "caption": "IEC 62443 zone-and-conduit decomposition applied to a typical CBTC architecture.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "ieee-1474-1-performance-based-standard",
+    "figure": 1,
+    "description": "Performance budget map showing IEEE 1474.1 mandates on the left (headway, safety, availability, response time, accuracy,",
+    "source_hint": "new figure to be generated",
+    "caption": "IEEE 1474.1 mandates performance outcomes; the supplier owns the design decisions that produce them.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "jfk-airtrain-cbtc-driverless",
+    "figure": 1,
+    "description": "JFK AirTrain network map showing 8.1-mile guideway with three service routes (Howard Beach, Jamaica, central terminal ci",
+    "source_hint": "new figure to be generated",
+    "caption": "JFK AirTrain network: three routes, 8.1 miles, operating GoA 4 since December 2003.",
+    "bucket": "map"
+  },
+  {
+    "slug": "jfk-airtrain-cbtc-driverless",
+    "figure": 2,
+    "description": "Comparison table of factors driving GoA 4 adoption in US airport APMs (mission alignment, regulatory clarity, technology",
+    "source_hint": "new figure to be generated",
+    "caption": "Airport APMs operate under conditions distinct from urban transit; the GoA 4 saturation in airports does not directly tr",
+    "bucket": "table"
+  },
+  {
+    "slug": "london-underground-4lm-largest-cbtc-retrofit",
+    "figure": 1,
+    "description": "4LM scope schematic showing the four lines (Circle, District, Hammersmith & City, Metropolitan) overlaid on the London U",
+    "source_hint": "new figure to be generated",
+    "caption": "4LM is the largest CBTC retrofit ever awarded by route-kilometers, and the underlying infrastructure is the oldest.",
+    "bucket": "map"
+  },
+  {
+    "slug": "london-underground-4lm-largest-cbtc-retrofit",
+    "figure": 2,
+    "description": "4LM delivery timeline from 2011 contract award to Bombardier, 2013 termination, 2014 re-tender, 2015 Thales contract awa",
+    "source_hint": "new figure to be generated",
+    "caption": "Multi-line brownfield CBTC retrofits run on multi-decade calendars. 4LM is the largest, and the schedule shows it.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "marta-atlanta-cbtc-underdog",
+    "figure": 1,
+    "description": "Spectrum of US transit signaling modernization postures from 1979-vintage fixed-block (no modernization) through partial",
+    "source_hint": "new figure to be generated",
+    "caption": "MARTA's partial-modernization posture sits between legacy fixed-block and full CBTC retrofit.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "marta-atlanta-cbtc-underdog",
+    "figure": 2,
+    "description": "Comparison matrix of MARTA's mid-sized profile against MTA (large multi-line), BART (large full-replacement), Baltimore",
+    "source_hint": "new figure to be generated",
+    "caption": "MARTA's mid-sized profile sits between large-network and small-agency procurement archetypes.",
+    "bucket": "table"
+  },
+  {
+    "slug": "negotiating-performance-guarantees-cbtc",
+    "figure": 1,
+    "description": "Headway demonstration timeline showing a 90-day demonstration window with peak-hour TPHPD measurements daily, allowable",
+    "source_hint": "new figure to be generated",
+    "caption": "The headway demonstration is the contractual proof that the agency got the capacity uplift it paid for. Duration, condit",
+    "bucket": "chart"
+  },
+  {
+    "slug": "nyc-mta-cbtc-roadmap-7-line-queens-boulevard",
+    "figure": 1,
+    "description": "Comparison of MTA original 2005–2010 program vision (CBTC by 2025-to-2030, $15-to-$30 billion) versus realistic 2026 tra",
+    "source_hint": "new figure to be generated",
+    "caption": "MTA CBTC program: original vision versus realistic trajectory.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "nyct-mainline-vs-branch-lines-pace",
+    "figure": 1,
+    "description": "Side-by-side schematic comparing L Line and 7 Line topology with Queens Boulevard, 8th Avenue, and Lexington Avenue trun",
+    "source_hint": "new figure to be generated",
+    "caption": "The branch-versus-trunk distinction is topological, and it determines CBTC pace.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "nyct-mainline-vs-branch-lines-pace",
+    "figure": 2,
+    "description": "NYCT CBTC pace timeline showing L Line (1997 RFP, 2009 full revenue, 12 years), 7 Line (2010 contract, 2018 revenue, 8 y",
+    "source_hint": "new figure to be generated derived from Chapter 10 manuscript Figure 10.4",
+    "caption": "Branch-line CBTC ships in roughly a decade. Trunk-line CBTC takes two.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "open-vs-proprietary-cbtc-cost",
+    "figure": 1,
+    "description": "Procurement-mechanism layer diagram showing where each open-architecture lever applies (ICDs at all subsystem boundaries",
+    "source_hint": "new figure to be generated",
+    "caption": "Open architecture in US CBTC is a stack of procurement mechanisms, not a single specification.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "open-vs-proprietary-cbtc-cost",
+    "figure": 2,
+    "description": "Cost-benefit analysis chart showing each open-architecture mechanism (ICDs, source-code escrow, patent licensing, modula",
+    "source_hint": "new figure to be generated",
+    "caption": "Some open-architecture mechanisms have high payoff at low cost; others require substantial agency capability to realize.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "paris-metro-line-14-driverless-showcase",
+    "figure": 1,
+    "description": "Line 14 schematic from original 1998 alignment (Madeleine to Bibliothèque François Mitterrand, 9.3 km, 8 stations) throu",
+    "source_hint": "new figure to be generated",
+    "caption": "Line 14 has grown from a 9.3-kilometer showcase to a 17.5-kilometer airport-connected GoA 4 metro across 26 years, all o",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "paris-metro-line-14-driverless-showcase",
+    "figure": 2,
+    "description": "GoA 4 international benchmark dashboard comparing Line 14 (1998), Vancouver SkyTrain (1985), Singapore Downtown Line (20",
+    "source_hint": "new figure to be generated derived from Chapter 11 manuscript Figure 11.1",
+    "caption": "Line 14 set the GoA 4 reference in 1998. Twenty-five years of follow-on deployments confirm the pattern.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "path-newark-forgotten-us-cbtc",
+    "figure": 1,
+    "description": "Three northeastern US transit systems with non-standard train control posture — PATH (FRA heavy-rail with PTC), PATCO (G",
+    "source_hint": "new figure to be generated",
+    "caption": "PATH, PATCO, and the Newark City Subway: three forgotten northeastern systems on distinct modernization pathways.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "path-newark-forgotten-us-cbtc",
+    "figure": 2,
+    "description": "Decision matrix mapping US transit system characteristics (FRA versus FTA jurisdiction, ridership density, network lengt",
+    "source_hint": "new figure to be generated",
+    "caption": "Train control modernization pathway depends on regulatory jurisdiction, ridership density, and network characteristics.",
+    "bucket": "table"
+  },
+  {
+    "slug": "phantom-train-detection",
+    "figure": 1,
+    "description": "Phantom train threat model diagram showing the four mechanism families (corrupted report, undetected VOBC localization f",
+    "source_hint": "new figure to be generated",
+    "caption": "Phantom train mechanisms and the defense layers that catch them. The architecture pattern is defense in depth — no singl",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "phoenix-seattle-denver-lrt-no-cbtc",
+    "figure": 1,
+    "description": "Side-by-side schematic showing the operational profile differences. Heavy-rail metro corridor (e.g., NYC L Line) with 90",
+    "source_hint": "new figure to be generated",
+    "caption": "CBTC value depends on the binding capacity constraint. On LRT corridors, signaling is rarely the constraint.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "phoenix-seattle-denver-lrt-no-cbtc",
+    "figure": 2,
+    "description": "Decision matrix for transit agencies evaluating CBTC for a corridor. Rows: peak headway, grade separation, fleet homogen",
+    "source_hint": "new figure to be generated derived from Chapter 1 manuscript Figure 1.9",
+    "caption": "The CBTC suitability decision is structural, and most US LRT corridors fall outside the green zone.",
+    "bucket": "table"
+  },
+  {
+    "slug": "radio-based-vs-inductive-loop-cbtc",
+    "figure": 1,
+    "description": "Decision matrix scoring radio-based and inductive-loop CBTC against capital cost, operating cost, RF tolerance, scalabil",
+    "source_hint": "new figure to be generated",
+    "caption": "Radio-based CBTC dominates most US procurement decisions in 2026, but specific corridor profiles still favor inductive l",
+    "bucket": "table"
+  },
+  {
+    "slug": "real-cost-of-a-single-vobc",
+    "figure": 1,
+    "description": "Stacked bar chart of per-VOBC cost components — processor and firmware, radio modem, sensors, DMI, integration engineeri",
+    "source_hint": "new figure to be generated",
+    "caption": "Per-VOBC cost varies more with fleet uniformity than with vendor selection. Aged retrofit fleets can cost two to three t",
+    "bucket": "chart"
+  },
+  {
+    "slug": "real-cost-of-a-single-vobc",
+    "figure": 2,
+    "description": "Side-by-side bar comparison of supplier-quoted onboard CAPEX versus all-in onboard CAPEX, with the gap broken into insta",
+    "source_hint": "new figure to be generated",
+    "caption": "The supplier's onboard equipment bid is typically 60 to 75 percent of the all-in onboard CAPEX on a US brownfield retrof",
+    "bucket": "table"
+  },
+  {
+    "slug": "rfp-red-flags-vendor-responses",
+    "figure": 1,
+    "description": "Eight-flag checklist diagram showing each red flag with severity tier (single-flag concern vs. two-flag warning vs. thre",
+    "source_hint": "new figure to be generated",
+    "caption": "Two red flags in the same proposal predict a difficult contract. Three is grounds for an evaluation downgrade.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "sfmta-muni-tcup-2024-rfp",
+    "figure": 1,
+    "description": "SFMTA TCUP five-phase deployment plan, with Central Subway live since November 2022, Market Street Subway and K/T Line i",
+    "source_hint": "new figure to be generated",
+    "caption": "SFMTA TCUP phased deployment from Central Subway through full system commissioning.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "sfmta-muni-tcup-2024-rfp",
+    "figure": 2,
+    "description": "Comparison of SFMTA TCUP single-vendor structure versus the MTA multi-vendor approach, showing tradeoffs in integration",
+    "source_hint": "new figure to be generated",
+    "caption": "Single-vendor (SFMTA) versus multi-vendor (MTA) procurement structures impose different lifecycle tradeoffs.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "singapore-mrt-nel-original-greenfield-cbtc",
+    "figure": 1,
+    "description": "Singapore MRT GoA 4 line family — North-East Line (2003, Alstom, 20 km), Circle Line (2009 onward, Thales SelTrac), Down",
+    "source_hint": "new figure to be generated",
+    "caption": "LTA's GoA 4 portfolio is multi-vendor by design. The architectural standard is the operating concept, not the supplier.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "single-vendor-vs-multi-vendor-cbtc-nyc",
+    "figure": 1,
+    "description": "Decision matrix mapping agency context (single line vs multi-line, GoA 2 vs GoA 4, total program scale) to recommended p",
+    "source_hint": "new figure to be generated",
+    "caption": "The right vendor strategy depends on agency scale, program horizon, and operational context.",
+    "bucket": "table"
+  },
+  {
+    "slug": "switching-from-conventional-signaling-to-cbtc",
+    "figure": 1,
+    "description": "Two-column skill map. Left column: skills that transfer cleanly (failure-mode reasoning, track circuits and wayside dete",
+    "source_hint": "new figure to be generated",
+    "caption": "What transfers, and what has to be unlearned, in the conventional-to-CBTC transition.",
+    "bucket": "table"
+  },
+  {
+    "slug": "the-2030-cbtc-landscape-5-predictions",
+    "figure": 1,
+    "description": "Five-prediction summary chart showing for each prediction: the metric, the 2026 baseline, the 2030 base case, the high-s",
+    "source_hint": "new figure to be generated",
+    "caption": "Five 2030 predictions for US CBTC, with base case, high side, and low side, and a confidence indicator for each.",
+    "bucket": "table"
+  },
+  {
+    "slug": "the-hidden-skill-gap-us-transit-engineering",
+    "figure": 1,
+    "description": "Three-tier diagram of the US transit engineering skill gap (entry-level shortage, mid-career scarcity, senior-engineer s",
+    "source_hint": "new figure to be generated",
+    "caption": "The US transit engineering skill gap is layered. Each layer has different drivers and different remedies.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "time-synchronization-cbtc-gps-not-enough",
+    "figure": 1,
+    "description": "CBTC time synchronization architecture showing GNSS receivers at OCC and surface sites, PTP grandmasters disciplined to",
+    "source_hint": "new figure to be generated",
+    "caption": "PTP delivers the network distribution; holdover oscillators provide the GNSS-loss fallback. Neither alone satisfies the",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "tokyo-metro-vs-beijing-metro-high-density",
+    "figure": 1,
+    "description": "Tokyo Metro vs Beijing Subway snapshot — route-kilometers (195 vs 800), lines (9 vs 27), peak headway (110s Marunouchi v",
+    "source_hint": "new figure to be generated",
+    "caption": "Same operational outcome at urban scale; profoundly different signaling modernization paths.",
+    "bucket": "table"
+  },
+  {
+    "slug": "tokyo-metro-vs-beijing-metro-high-density",
+    "figure": 2,
+    "description": "Tokyo–Beijing modernization path comparison. Tokyo: incremental ATC evolution (ATC-2 → ATC-6 → ATC-10 → selective CBTC p",
+    "source_hint": "new figure to be generated",
+    "caption": "Two reasonable answers to the same problem. Each reflects the institutional context that produced it.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "top-10-books-courses-rail-signaling-engineer",
+    "figure": 1,
+    "description": "Reading-list flowchart organized by reader profile (new graduate, lateral transfer, agency engineer, procurement enginee",
+    "source_hint": "new figure to be generated",
+    "caption": "The reading list is not linear. Different starting points, different first reads.",
+    "bucket": "table"
+  },
+  {
+    "slug": "top-us-universities-rail-engineering",
+    "figure": 1,
+    "description": "Map of the United States showing the five named rail engineering programs (UIUC, Michigan Tech, Penn State, Virginia Tec",
+    "source_hint": "new figure to be generated",
+    "caption": "US universities with named rail engineering programs or adjacent strengths relevant to transit and CBTC engineering.",
+    "bucket": "map"
+  },
+  {
+    "slug": "train-to-train-communication-future-or-fantasy",
+    "figure": 1,
+    "description": "Side-by-side comparison of conventional wayside-mediated CBTC and proposed train-to-train architecture. The left panel s",
+    "source_hint": "new figure to be generated",
+    "caption": "Train-to-train cuts the safety-message latency by removing one hop, but retains a wayside computer for switches, signals",
+    "bucket": "table"
+  },
+  {
+    "slug": "trainguard-mt-vs-urbalis-architecture",
+    "figure": 1,
+    "description": "Side-by-side block diagram of Trainguard MT and Urbalis architectures, showing onboard, wayside, ATS, and DCS layers and",
+    "source_hint": "new figure to be generated",
+    "caption": "Both platforms implement the same reference architecture with different boundary placement; Trainguard MT centralizes wa",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "trainguard-mt-vs-urbalis-architecture",
+    "figure": 2,
+    "description": "Comparative wayside layout for a hypothetical 12-mile US metro line under Trainguard MT (3 ZCs, centralized) and Urbalis",
+    "source_hint": "new figure to be generated",
+    "caption": "The wayside architecture is the most consequential point of divergence between Trainguard MT and Urbalis.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "vancouver-skytrain-lessons-for-us",
+    "figure": 1,
+    "description": "Vancouver SkyTrain network map showing Expo Line (1985), Millennium Line, and Canada Line, with operational milestones o",
+    "source_hint": "new figure to be generated",
+    "caption": "Vancouver SkyTrain has operated four decades of continuous Grade of Automation 4 revenue service across three lines and",
+    "bucket": "map"
+  },
+  {
+    "slug": "vancouver-skytrain-lessons-for-us",
+    "figure": 2,
+    "description": "Comparison of operational metrics between Vancouver SkyTrain (40+ years GoA 4), Honolulu Skyline (since 2023 GoA 4), and",
+    "source_hint": "new figure to be generated",
+    "caption": "Operational metrics from mature GoA 4 systems consistently exceed comparable GoA 2 deployments.",
+    "bucket": "table"
+  },
+  {
+    "slug": "vital-vs-non-vital-functions-cbtc",
+    "figure": 1,
+    "description": "Vital/non-vital partition diagram for a representative CBTC system, showing SIL 4 functions (MA generation, ATP supervis",
+    "source_hint": "new figure to be generated",
+    "caption": "Every cross-boundary interface between non-vital and vital is where safety-case attention concentrates. The vital side c",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "what-is-cbtc-2026-guide",
+    "figure": 1,
+    "description": "Annotated breakdown of the IEEE 1474.1 definition, with arrows pointing from each clause to the architectural component",
+    "source_hint": "new figure to be generated",
+    "caption": "Each clause of the IEEE 1474.1 CBTC definition maps to a specific architectural commitment.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "when-cbtc-is-a-bad-investment",
+    "figure": 1,
+    "description": "Decision tree mapping the five failure profiles to alternative investments. Branches by capacity utilization, infrastruc",
+    "source_hint": "new figure to be generated",
+    "caption": "When the CBTC business case fails, the alternative investments are usually targeted modernization, deferred procurement,",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "when-cbtc-is-a-bad-investment",
+    "figure": 2,
+    "description": "Comparison table of the five failure profiles with primary symptom, BCR impact, and recommended alternative investment f",
+    "source_hint": "new figure to be generated",
+    "caption": "Five operating profiles where the CBTC business case typically fails. Each maps to a more cost-effective alternative.",
+    "bucket": "table"
+  },
+  {
+    "slug": "why-madrid-has-more-cbtc-lines-than-us",
+    "figure": 1,
+    "description": "Madrid Metro CBTC line family — Lines 1 through 12 plus ML1 light metro, with vendor (Siemens or Bombardier/Alstom Urbal",
+    "source_hint": "new figure to be generated",
+    "caption": "Madrid Metro alone operates more CBTC lines than every US transit agency combined.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "why-madrid-has-more-cbtc-lines-than-us",
+    "figure": 2,
+    "description": "Mechanisms transferable from the Madrid Metro CBTC pattern to US transit. Three columns: standardized architectural base",
+    "source_hint": "new figure to be generated",
+    "caption": "What transfers from Madrid is the institutional pattern, not the cost or the calendar.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "wifi-vs-lte-r-train-wayside",
+    "figure": 1,
+    "description": "Side-by-side comparison of Wi-Fi-based CBTC (IEEE 802.11ac on unlicensed 5 GHz, AP spacing 200 to 400 meters, fast roami",
+    "source_hint": "existing book figure fig_15_04_5g_migration.png",
+    "caption": "Wi-Fi-based CBTC dominates US revenue service in 2026; cellular-class alternatives are emerging on parallel migration ti",
+    "bucket": "reuse",
+    "existing_figure": "fig_15_04_5g_migration.png"
+  },
+  {
+    "slug": "wifi-vs-lte-r-train-wayside",
+    "figure": 2,
+    "description": "Layered procurement specification model showing primary Wi-Fi commitment, future LTE-R/5G-R upgrade path, open-interface",
+    "source_hint": "new figure to be generated",
+    "caption": "A 2026 CBTC procurement specification should commit to Wi-Fi for safety-critical traffic and design for cellular-class m",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "wmata-cbtc-aspirations",
+    "figure": 1,
+    "description": "WMATA Metro system map highlighting current signaling generation (1976-to-1990 base) versus CBTC modernization staging b",
+    "source_hint": "new figure to be generated",
+    "caption": "WMATA legacy signaling installed base by line, with CBTC modernization phasing under planning.",
+    "bucket": "map"
+  },
+  {
+    "slug": "wmata-cbtc-aspirations",
+    "figure": 2,
+    "description": "Decision tree for WMATA CBTC procurement strategy: single-vendor versus multi-vendor, bundled rolling stock versus signa",
+    "source_hint": "new figure to be generated",
+    "caption": "Strategic procurement choices facing WMATA CBTC modernization.",
+    "bucket": "diagram"
+  }
+]

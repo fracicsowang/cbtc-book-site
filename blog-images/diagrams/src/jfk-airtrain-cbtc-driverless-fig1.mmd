@@ -1,0 +1,34 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph S1["JFK AirTrain Network"]
+        A["Howard Beach Route"]
+        B["Jamaica Route"]
+        C["Central Terminal Circulator"]
+    end
+    subgraph S2["System Components"]
+        D["Onboard Equipment"]
+        E["Wayside Zone Controllers"]
+        F["Central Control Facility"]
+        G["Platform Screen Doors"]
+    end
+    S1 --> S2
+    D --> E
+    E --> F
+    F --> G
+    G --> D
+    A -->|8.1 miles| B
+    B -->|8.1 miles| C
+    C -->|8.1 miles| A

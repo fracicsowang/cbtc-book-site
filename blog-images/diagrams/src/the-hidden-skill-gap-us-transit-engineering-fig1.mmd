@@ -1,0 +1,36 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph EntryLevel["Entry-Level Shortage"]
+        A["Few graduates\nwith rail coursework"]
+        B["High demand\nfrom agencies & vendors"]
+        C["Competition with\nother industries"]
+    end
+    subgraph MidCareer["Mid-Career Scarcity"]
+        D["Limited deployment\nexperience"]
+        E["Tight market for\nexperienced engineers"]
+        F["Slow skill-building\ndue to project cadence"]
+    end
+    subgraph SeniorEngineer["Senior-Engineer Scarcity"]
+        G["Small pool of\nsenior engineers"]
+        H["Many near\nretirement"]
+        I["Thin succession\npipeline"]
+    end
+    A --> B
+    B --> C
+    D --> E
+    E --> F
+    G --> H
+    H --> I

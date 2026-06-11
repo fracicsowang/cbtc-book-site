@@ -1,0 +1,31 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph SFMTA_Single_Vendor
+        A1["Reduced Integration Risk"]
+        A2["Vendor Lock-in"]
+        A3["Lifecycle Premium"]
+    end
+    subgraph MTA_Multi_Vendor
+        B1["Higher Integration Overhead"]
+        B2["Competitive Pressure"]
+        B3["Complex Lifecycle Management"]
+    end
+    SFMTA_Single_Vendor -->|Pros| A1
+    SFMTA_Single_Vendor -->|Cons| A2
+    SFMTA_Single_Vendor -->|Cons| A3
+    MTA_Multi_Vendor -->|Cons| B1
+    MTA_Multi_Vendor -->|Pros| B2
+    MTA_Multi_Vendor -->|Cons| B3

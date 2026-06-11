@@ -1,10 +1,61 @@
+# ── Private / do-not-publish content (CRITICAL for the cloud-migration commit) ──
+# When the git root moves from site/ up to here, `git add -A` would otherwise
+# sweep these into a PUBLIC repo. Review `git status` before the first commit.
+# NOTE: .gitignore does NOT support inline (trailing) comments — keep patterns
+# on their own lines, or they silently match nothing.
+# full book manuscript — the product being sold; keep private:
+cbtcbook/
+# third-party reference PDFs (copyright) — never publish:
+cbtcreference/
+
+# Earlier-session git backups
 .git-*
 *.lock
-.DS_Store
-slides/thumbs/tmp_*
 
 # Secrets — never commit
 .env
 .env.*
 *.key
 *.pem
+
+# OS / Editor
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (Astro project)
+node_modules/
+dist/
+.astro/
+
+# Build artifacts
+*.log
+last-run.log
+
+# ── Internal docs / strategy — keep out of the public repo ──
+# Handoffs and operations contain identity-management strategy, anti-spam tactics, internal voice rules.
+HANDOFF.md
+BLOG_OPERATIONS.md
+AGENTS.md
+SESSION_LOG_*.md
+# Blog production planning + agent reference (SEO/content strategy, forbidden phrases, term lists).
+cbtcbook-blog-PLAN.md
+cbtcbook-blog-100-articles.md
+cbtcbook-blog-glossary.md
+# Agent QA reports + image-todo notes; live in blog-drafts/ next to the article .md files.
+blog-drafts/_*.md
+# Personal / belongs-elsewhere singletons.
+github-profile-README.md
+orcid-import.bib
+
+# ── Large directories not used by the cloud build ──
+pptx/
+codex-video-lab/

@@ -1,0 +1,34 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph SP["São Paulo"]
+        A["Line 4\n(Yellow)"] -->|GoA 4| B["ViaQuatro"]
+        C["Line 5\n(Lilac)"] -->|GoA 3| D["ViaMobilidade"]
+        E["Line 6\n(Orange)"] -->|GoA 4| F["Under Construction"]
+        G["Line 17\n(Gold)"] -->|GoA 4| F
+    end
+    subgraph ST["Santiago"]
+        H["Line 3\n(Brown)"] -->|GoA 4| I["Metro de Santiago"]
+        J["Line 6\n(Purple)"] -->|GoA 4| I
+    end
+    subgraph MC["Mexico City"]
+        K["Line 12\n(Golden)"] -->|CBTC| L["Multi-vendor"]
+    end
+    subgraph LM["Lima"]
+        M["Line 2"] -->|GoA 4| N["Under Construction"]
+    end
+    SP --> ST
+    ST --> MC
+    MC --> LM

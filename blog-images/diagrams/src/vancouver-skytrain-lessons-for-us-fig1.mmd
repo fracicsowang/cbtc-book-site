@@ -1,0 +1,32 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph A["Vancouver SkyTrain"]
+        direction LR
+        A1["Expo Line\n(1985)"]
+        A2["Millennium Line"]
+        A3["Canada Line"]
+    end
+    subgraph B["Operational Milestones"]
+        direction TB
+        B1["1985: GoA 4 Inception"]
+        B2["40 Years Continuous\nOperation"]
+        B3["80+ km Network"]
+    end
+    A1 --> B1
+    A2 --> B2
+    A3 --> B3
+    B1 --> B2
+    B2 --> B3

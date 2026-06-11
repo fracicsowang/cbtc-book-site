@@ -1,0 +1,106 @@
+---
+// /blog/ landing — paginated grid of all articles, newest first.
+
+import { getCollection } from "astro:content";
+import { existsSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
+import "../styles/blog.css";
+import SiteNav from "../components/SiteNav.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import Newsletter from "../components/Newsletter.astro";
+
+const posts = (await getCollection("blog", ({ data }) => data.draft !== true))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+// Build a Set of slugs that actually have a hero card image, so cards
+// without one render gracefully (no broken-image icon during ramp-up).
+const __dir = dirname(fileURLToPath(import.meta.url));
+const publicImg = resolve(__dir, "../../public/img");
+const hasHero = (slug: string) =>
+  existsSync(`${publicImg}/${slug}-hero.png`);
+
+const url = "https://cbtcbook.com/blog/";
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Articles — cbtcbook.com</title>
+  <meta name="description" content="Technical articles on Communications-Based Train Control. Procurement, agency case studies, standards, and operations — drawn from twenty years of US deployment experience." />
+  <link rel="canonical" href={url} />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Articles — cbtcbook.com" />
+  <meta property="og:description" content="Technical articles on Communications-Based Train Control." />
+  <meta property="og:url" content={url} />
+  <meta property="og:image" content="https://cbtcbook.com/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="alternate" type="application/rss+xml" title="cbtcbook.com Articles" href="/blog/feed.xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@400;500;600&display=swap" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag("js", new Date());
+    gtag("config", "G-0NF9Z0T953", { send_page_view: true });
+  </script>
+</head>
+<body>
+  <SiteNav active="articles" />
+
+  <main class="blog-index">
+    <p class="blog-kicker" style="margin-bottom:18px;">Articles · cbtcbook.com</p>
+    <h1>Technical articles on CBTC</h1>
+    <p class="lede">
+      Procurement, agency case studies, technical deep-dives, standards, and
+      operations — drawn from the manuscript of <em>Communications-Based Train
+      Control</em> and twenty years of US deployment experience. New articles
+      ship two or three times a week.
+    </p>
+
+    {posts.length === 0 ? (
+      <p style="color:var(--char-dim); font-style:italic;">
+        First articles ship soon. Subscribe below to be notified.
+      </p>
+    ) : (
+      <div class="blog-cards">
+        {posts.map((p) => (
+          <a class="blog-card" href={`/blog/${p.slug}/`}>
+            {hasHero(p.slug) && (
+              <img class="blog-card__hero" src={`/blog/img/${p.slug}-hero.png`}
+                   alt="" loading="lazy" />
+            )}
+            <div class="blog-card__body">
+              <span class="blog-card__cat">{p.data.category}</span>
+              <h2 class="blog-card__title">{p.data.title}</h2>
+              <p class="blog-card__desc">{p.data.description}</p>
+              <div class="blog-card__meta">
+                <span>{p.data.date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
+                {p.data.read_time && <span>{p.data.read_time}</span>}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+
+    <div style="margin-top:64px;">
+      <Newsletter />
+    </div>
+  </main>
+
+  <SiteFooter />
+</body>
+</html>

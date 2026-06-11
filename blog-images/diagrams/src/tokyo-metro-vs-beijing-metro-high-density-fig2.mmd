@@ -1,0 +1,32 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph Tokyo
+        A1["1954: Marunouchi Line\nFixed-block"]
+        A2["ATC Evolution\n(ATC-2 to ATC-10)"]
+        A3["Selective CBTC Pilots"]
+    end
+    subgraph Beijing
+        B1["2007: Line 5\nCBTC Introduction"]
+        B2["CBTC Expansion\n27 Lines by 2024"]
+        B3["GoA 4 Deployment\nSelected Lines"]
+    end
+    C1["High Throughput\n30+ Trains/Hour"]
+    C2["Operational\nExcellence"]
+    A3 --> C1
+    B3 --> C1
+    A2 --> C2
+    B2 --> C2
+    C1 --> C2

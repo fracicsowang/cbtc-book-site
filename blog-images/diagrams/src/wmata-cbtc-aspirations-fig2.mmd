@@ -1,0 +1,32 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    A["WMATA CBTC Procurement"] --> B["Vendor Selection"]
+    B --> C["Single Vendor"]
+    B --> D["Multi Vendor"]
+    C --> E["Bundled Rolling Stock"]
+    C --> F["Separate Signaling"]
+    D --> G["Phased Line Modernization"]
+    D --> H["Concurrent Deployment"]
+    subgraph I["Strategic Considerations"]
+        E
+        F
+        G
+        H
+    end
+    I --> J["Open Interface Compliance"]
+    I --> K["Buy America Compliance"]
+    J --> L["Interface Control Docs"]
+    K --> M["Source Code Escrow"]

@@ -1,0 +1,44 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph Named Rail Programs
+        UIUC["University of Illinois\nUrbana-Champaign"]
+        MTU["Michigan Tech"]
+        PSU["Penn State"]
+        VT["Virginia Tech"]
+        SJSU["San José State University"]
+    end
+
+    subgraph Adjacent Strengths
+        MIT["Massachusetts Institute\nof Technology"]
+        UPenn["University of Pennsylvania"]
+        ISU["Iowa State University"]
+        CMU["Carnegie Mellon\nUniversity"]
+        GT["Georgia Tech"]
+        UTA["University of Texas\nat Austin"]
+        UCB["University of California\nBerkeley"]
+    end
+
+    UIUC --> MTU
+    MTU --> PSU
+    PSU --> VT
+    VT --> SJSU
+
+    MIT --> UPenn
+    UPenn --> ISU
+    ISU --> CMU
+    CMU --> GT
+    GT --> UTA
+    UTA --> UCB

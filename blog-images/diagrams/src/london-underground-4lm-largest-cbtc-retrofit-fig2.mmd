@@ -1,0 +1,27 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+sequenceDiagram
+    participant A as 2011\nBombardier Contract
+    participant B as 2013\nContract Termination
+    participant C as 2014\nRe-tender
+    participant D as 2015\nThales Contract
+    participant E as 2024\nStage 1 Revenue Service
+    participant F as 2027\nFull Service Target
+
+    A->>B: Contract Issues
+    B->>C: Re-tender Decision
+    C->>D: New Contract Award
+    D->>E: Stage 1 Delivery
+    E->>F: Full Service Plan

@@ -1,0 +1,27 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TD
+    A["Start Decision Process"] --> B{"Capacity Demand"}
+    B -->|High| C["Consider CBTC"]
+    B -->|Low| D["Consider Distance-to-Go"]
+    C --> E{"Fleet Age"}
+    D --> E
+    E -->|Old Fleet| F["Distance-to-Go Advantage"]
+    E -->|New Fleet| G{"Capital Availability"}
+    G -->|High Capital| H["CBTC Investment"]
+    G -->|Low Capital| I["Distance-to-Go Feasible"]
+    H --> J{"GoA Target"}
+    J -->|GoA 4| K["CBTC Preferred"]
+    J -->|Lower GoA| L["Evaluate Both Options"]

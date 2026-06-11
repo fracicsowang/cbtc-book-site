@@ -1,0 +1,40 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph Open_Architecture
+        direction TB
+        A["Interface Control\nDocuments (ICDs)"]
+        B["Source-code\nEscrow"]
+        C["Royalty-free\nPatent Licensing"]
+        D["Open APIs\n(non-safety)"]
+    end
+    
+    subgraph Modular_Procurement
+        direction TB
+        E["Modular Procurement\nPackages"]
+        F["Framework Agreements\nwith Multiple Suppliers"]
+    end
+    
+    subgraph Proprietary_CBTC
+        direction TB
+        G["Single Vendor\nIntegrated Stack"]
+        H["Vendor-specific\nInterfaces"]
+        I["Vendor-owned\nSource Code"]
+    end
+    
+    Open_Architecture -->|Reduces Lock-in| Modular_Procurement
+    Modular_Procurement -->|Challenges| Proprietary_CBTC
+    Open_Architecture -->|Challenges| Proprietary_CBTC
+    Proprietary_CBTC -->|Higher Lock-in Cost| Open_Architecture

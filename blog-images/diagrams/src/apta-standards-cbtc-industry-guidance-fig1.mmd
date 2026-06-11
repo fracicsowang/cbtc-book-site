@@ -1,0 +1,35 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph APTA
+        A1["APTA Standards"]
+        A2["APTA Recommended\nPractices"]
+        A3["APTA Guidelines\nand Reports"]
+    end
+    subgraph IEEE
+        B1["IEEE 1474"]
+    end
+    subgraph IEC_CENELEC
+        C1["IEC 62290"]
+        C2["CENELEC EN 50126"]
+    end
+    subgraph FTA
+        D1["FTA Guidance"]
+    end
+    APTA --> B1
+    APTA --> C1
+    B1 --> D1
+    C1 --> D1
+    C2 --> D1

@@ -1,0 +1,38 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph Heavy_Rail_Metro
+        A["NYC L Line"]
+        B["90-second headways"]
+        C["CBTC eliminates\nfixed-block limits"]
+        A --> B
+        B --> C
+    end
+    
+    subgraph Light_Rail_Corridors
+        D["Phoenix Valley Metro"]
+        E["Seattle Sound Transit"]
+        F["Denver RTD"]
+        G["Headways 6-15 mins"]
+        H["Grade crossings\nlimit capacity"]
+        D --> G
+        E --> G
+        F --> G
+        G --> H
+    end
+    
+    I["CBTC value depends\non capacity constraint"]
+    C --> I
+    H --> I

@@ -1,0 +1,40 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart LR
+    subgraph Mainline
+        A["CBTC Supervision"]
+        B["Zone Controller"]
+        C["Movement Authority"]
+    end
+    
+    subgraph Handoff Zone
+        D["Boundary Beacon"]
+        E["Access Point Coverage"]
+    end
+    
+    subgraph Yard
+        F["Non-CBTC Mode"]
+        G["Voice Radio Dispatch"]
+        H["Legacy Signaling"]
+    end
+    
+    A -->|Approach| D
+    D -->|Transition| F
+    F -->|Manual Operation| G
+    G -->|Authorize Movement| H
+    B -->|Issue MA| C
+    C -->|Ends at Boundary| D
+    E -->|Supports Transition| D
+    F -->|Exit to Mainline| A

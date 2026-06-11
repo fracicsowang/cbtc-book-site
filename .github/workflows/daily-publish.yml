@@ -1,0 +1,89 @@
+name: Daily blog publish
+
+# Cloud replacement for the macOS LaunchAgent (com.cbtcbook.dailypublish).
+# Runs in GitHub's Linux runners, so the blog publishes every day whether or
+# not any laptop is awake. ci_publish.py back-fills every still-unpublished
+# queue date <= today, so a delayed or skipped run never silently drops an
+# article.
+#
+# Prereq (one-time, see blog-tools/CLOUD_MIGRATION.md):
+#   - The repo root must contain the full project: site/, site-src/,
+#     blog-drafts/, blog-tools/, publish-queue.yml.
+#   - Settings ▸ Pages ▸ Source = "GitHub Actions".
+
+on:
+  schedule:
+    # 13:00 UTC daily ≈ 09:00 America/New_York (EDT) / 08:00 (EST).
+    # GitHub cron is UTC-only and may be delayed under load; the back-fill
+    # logic makes the exact minute irrelevant.
+    - cron: "0 13 * * *"
+  workflow_dispatch: {}   # adds a manual "Run workflow" button + API trigger
+
+# Least privilege: write commits back (publish state) + deploy Pages.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Never run two publishes at once; let an in-flight deploy finish.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: site-src/package-lock.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Astro dependencies
+        working-directory: site-src
+        run: npm ci
+
+      - name: Publish due articles (catch-up) + build
+        id: publish
+        run: python3 blog-tools/ci_publish.py
+
+      - name: Commit publish state if changed
+        run: |
+          git config user.name  "cbtcbook-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A site-src/src/content/blog site/blog
+          if git diff --staged --quiet; then
+            echo "No publish-state changes to commit."
+          else
+            git commit -m "blog: auto-publish for $(date -u +%F) [skip ci]"
+            git push
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact (the static site/ folder)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

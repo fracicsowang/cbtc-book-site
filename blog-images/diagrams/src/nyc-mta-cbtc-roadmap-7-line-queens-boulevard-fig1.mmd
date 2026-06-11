@@ -1,0 +1,41 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph Original_Vision
+        A["CBTC by 2025-2030"]
+        B["Cost: $15-$30 billion"]
+    end
+    subgraph Realistic_Projection
+        C["Full CBTC by 2040s"]
+        D["Cost: Inflation-adjusted"]
+    end
+    subgraph Deployment_Status
+        E["L Line: Full service"]
+        F["7 Line: Full service"]
+        G["Queens Blvd: Partial service"]
+        H["Culver Line: Early construction"]
+        I["8th Avenue: Planning"]
+    end
+    subgraph Challenges
+        J["24/7 Service Constraint"]
+        K["Legacy Infrastructure"]
+        L["Workforce Training"]
+    end
+    Original_Vision --> Realistic_Projection
+    Realistic_Projection --> Deployment_Status
+    Deployment_Status --> Challenges
+    Challenges --> J
+    Challenges --> K
+    Challenges --> L

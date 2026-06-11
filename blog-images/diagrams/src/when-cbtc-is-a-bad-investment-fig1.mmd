@@ -1,0 +1,26 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    A["CBTC Business Case"] --> B{"Capacity Utilization"}
+    B -->|Low| C["Targeted Modernization"]
+    B -->|High| D{"Infrastructure Life"}
+    D -->|Short| E["Deferred Procurement"]
+    D -->|Long| F{"Regulatory Context"}
+    F -->|FRA Jurisdiction| G["PTC Modernization"]
+    F -->|FTA Jurisdiction| H{"Operational Complexity"}
+    H -->|Simple| I["Simpler Train Control"]
+    H -->|Complex| J{"Organizational Capacity"}
+    J -->|Adequate| K["Proceed with CBTC"]
+    J -->|Inadequate| L["Capacity Building"]

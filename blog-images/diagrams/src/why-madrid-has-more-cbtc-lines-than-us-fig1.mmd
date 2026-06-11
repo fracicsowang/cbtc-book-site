@@ -1,0 +1,40 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph Madrid_Metro_CBTC
+        A["Line 1\n(Siemens)"]
+        B["Line 2\n(Siemens)"]
+        C["Line 3\n(Siemens)"]
+        D["Line 4\n(Siemens)"]
+        E["Line 5\n(Bombardier/Alstom)"]
+        F["Line 6\n(Bombardier/Alstom)"]
+        G["Line 7\n(Siemens)"]
+        H["Line 8\n(Siemens)"]
+        I["Line 9\n(Bombardier/Alstom)"]
+        J["Line 10\n(Siemens)"]
+        K["Line 11\n(Siemens)"]
+        L["Line 12\n(Bombardier/Alstom)"]
+        M["ML1 Light Metro\n(Siemens)"]
+    end
+    subgraph US_CBTC_Lines
+        N["NYCT L Line"]
+        O["NYCT 7 Line"]
+        P["NYCT Queens Blvd\n(Partial)"]
+        Q["Honolulu Skyline"]
+        R["BART TCMP\n(Phased)"]
+        S["SFMTA TCUP\n(Commissioning)"]
+    end
+    Madrid_Metro_CBTC --> |More lines| US_CBTC_Lines
+    US_CBTC_Lines --> |Fewer lines| Madrid_Metro_CBTC

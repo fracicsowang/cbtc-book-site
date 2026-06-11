@@ -1,0 +1,10 @@
+.git-*
+*.lock
+.DS_Store
+slides/thumbs/tmp_*
+
+# Secrets — never commit
+.env
+.env.*
+*.key
+*.pem

@@ -1,0 +1,34 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#F4EFE6',
+    'primaryTextColor': '#0A1628',
+    'primaryBorderColor': '#D4A84B',
+    'secondaryColor': '#0A1628',
+    'secondaryTextColor': '#F4EFE6',
+    'tertiaryColor': '#EAE2D2',
+    'lineColor': '#1A1A1A',
+    'fontFamily': 'IBM Plex Sans, system-ui, sans-serif',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph A["Performance-Based Spec"]
+        A1["IEEE 1474 Compliance"]
+        A2["Outcome-Based Targets"]
+    end
+    subgraph B["Interface Control Docs"]
+        B1["Subsystem Boundaries"]
+        B2["Editable Formats"]
+    end
+    subgraph C["IP & Source-Code Escrow"]
+        C1["Source-Code Escrow"]
+        C2["Royalty-Free Licenses"]
+    end
+    subgraph D["Open APIs & Modularity"]
+        D1["Open APIs for Non-Vital"]
+        D2["Modular Spare Parts"]
+    end
+    A --> B
+    B --> C
+    C --> D

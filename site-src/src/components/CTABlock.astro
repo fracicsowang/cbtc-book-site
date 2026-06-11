@@ -1,0 +1,59 @@
+---
+// End-of-article CTA block: Buy on Amazon + Download chapter slides.
+// Driven by the article's `related_chapters` frontmatter — points the
+// reader to the most relevant book chapter and its slides PDF.
+//
+// Volume mapping: chapters 1-8 → Volume 1; chapters 9-16 → Volume 2.
+// Amazon ASIN → Volume 1 = B0GYHLYQZZ, Volume 2 = B0GYHHNL2H.
+
+interface Props {
+  related_chapters: number[];
+}
+const { related_chapters } = Astro.props;
+
+// Derive primary chapter (first in list) and which volume it belongs to.
+const primaryChapter = related_chapters[0];
+const inVolume2 = primaryChapter && primaryChapter >= 9;
+const volNum = inVolume2 ? "2" : "1";
+const asin = inVolume2 ? "B0GYHHNL2H" : "B0GYHLYQZZ";
+const amazonURL = `https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/${asin}`;
+
+const chapterPad = primaryChapter ? String(primaryChapter).padStart(2, "0") : null;
+const slidesURL = chapterPad ? `/slides/cbtc_ch${chapterPad}.pdf` : null;
+---
+<section class="blog-cta">
+  <h3>Read the full treatment in the book</h3>
+  <p>
+    {primaryChapter
+      ? `Chapter ${primaryChapter} of Communications-Based Train Control, Volume ${volNum}, covers this in depth.`
+      : "Communications-Based Train Control is available now in two volumes."}
+  </p>
+  <div class="blog-cta__buttons">
+    <a class="blog-cta__btn" href={amazonURL} target="_blank" rel="noopener"
+       data-event="click_amazon" data-source="blog">
+      Buy Volume {volNum} on Amazon →
+    </a>
+    {slidesURL && (
+      <a class="blog-cta__btn blog-cta__btn--ghost" href={slidesURL} target="_blank" rel="noopener"
+         data-event="slides_download" data-source="blog">
+        Download Chapter {primaryChapter} slides (PDF)
+      </a>
+    )}
+  </div>
+</section>
+
+<script>
+  // Hook into the existing GA4 setup — gtag is loaded site-wide via the
+  // <head> snippet on every page (the Astro layout includes it too).
+  document.querySelectorAll<HTMLAnchorElement>("a[data-event]").forEach((el) => {
+    el.addEventListener("click", () => {
+      const w = window as any;
+      if (typeof w.gtag === "function") {
+        w.gtag("event", el.dataset.event!, {
+          source: el.dataset.source || "unknown",
+          page_path: location.pathname,
+        });
+      }
+    });
+  });
+</script>
