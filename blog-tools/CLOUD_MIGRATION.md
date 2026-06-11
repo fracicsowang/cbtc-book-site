@@ -1,5 +1,16 @@
 # Cloud migration runbook — move daily blog publishing off the Mac
 
+> **Status: COMPLETED 2026-06-11.** All steps below ran successfully. The repo
+> root is now `/Users/chunjun/CBTC_book_site/` (was `site/`), Pages **Source =
+> GitHub Actions**, the LaunchAgent `com.cbtcbook.dailypublish` is unloaded,
+> the remote is SSH (`git@github.com:fracicsowang/cbtc-book-site.git`), and the
+> daily cron runs at 13:00 UTC. Verified end-to-end by publishing a real article
+> via `gh workflow run "Daily blog publish" --field force_date=2026-06-12` —
+> `cbtcbook-bot` committed the publish state, Pages deployed, and the new URL
+> returned 200. Day-to-day there is nothing to do; edit `publish-queue.yml`
+> and push, and the next cron picks it up. The runbook below is kept as
+> historical reference and as the rollback procedure.
+
 **Goal:** the blog should publish one article every calendar day, on time,
 whether or not any laptop is awake. Today it depends on a macOS LaunchAgent
 (`com.cbtcbook.dailypublish`) that (a) only fired Mon–Fri and (b) didn't
