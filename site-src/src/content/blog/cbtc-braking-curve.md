@@ -62,7 +62,7 @@ Substituting into the kinematic equation, the stopping distance grows from 246 m
 s = (22.2)² / (2 × 0.61) = 404 m
 ```
 
-A 64 percent penalty for a 4 percent downgrade. Upgrades work the opposite way — gravity assists braking, shortening stopping distance. The ATP must apply gradient compensation continuously based on the track database (covered in How CBTC Trains Know Where They Are (Without Track Circuits)) and the train's current position; no static stopping-distance table is sufficient.
+A 64 percent penalty for a 4 percent downgrade. Upgrades work the opposite way — gravity assists braking, shortening stopping distance. The ATP must apply gradient compensation continuously based on the track database (covered in [How CBTC Trains Know Where They Are (Without Track Circuits)](/blog/how-cbtc-trains-know-where-they-are)) and the train's current position; no static stopping-distance table is sufficient.
 
 ## Adhesion: the wheel-rail friction ceiling
 

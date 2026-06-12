@@ -9,7 +9,7 @@ tags: [CBTC, train localization, tachometer, Doppler radar, balise, Kalman filte
 primary_keyword: "CBTC train localization"
 secondary_keywords: ["tachometer Doppler balise fusion", "CBTC odometry", "Kalman filter train position", "balise position correction", "Doppler radar CBTC"]
 related_chapters: [4]
-internal_links: ["/blog/cbtc-braking-curve"]
+internal_links: ["/blog/how-cbtc-trains-know-where-they-are", "/blog/cbtc-braking-curve"]
 og_image: "/blog/img/train-localization-tachometer-doppler-beacon.png"
 read_time: "11 min"
 ---
