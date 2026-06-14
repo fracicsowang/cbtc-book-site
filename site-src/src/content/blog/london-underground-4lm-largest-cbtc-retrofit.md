@@ -9,7 +9,7 @@ tags: [CBTC, London Underground, 4LM, Four Lines Modernisation, Thales SelTrac, 
 primary_keyword: "London Underground 4LM CBTC"
 secondary_keywords: ["Four Lines Modernisation Thales", "London Tube CBTC retrofit", "Sub-Surface Lines CBTC", "TfL signaling modernization", "world's largest CBTC retrofit"]
 related_chapters: [11, 12, 15]
-internal_links: ["/blog/nyc-mta-l-line-cbtc-25-years", "/blog/cbtc-projects-over-budget"]
+internal_links: ["/blog/overlay-vs-greenfield-cbtc", "/blog/nyc-mta-l-line-cbtc-25-years", "/blog/cbtc-projects-over-budget"]
 og_image: "/blog/img/london-underground-4lm-largest-cbtc-retrofit.png"
 read_time: "11 min"
 ---
@@ -24,7 +24,7 @@ The Sub-Surface Lines (SSL) of the London Underground are the older, larger-bore
 
 The pre-4LM signaling on these lines was a layered accumulation of fixed-block infrastructure spanning multiple eras: lever frame interlockings dating to the 1920s in places, route-relay interlockings from the 1960s and 1970s, and two-aspect and four-aspect color-light signals layered on top. Practical capacity through central London was approximately 24 trains per hour. The 4LM target is 32 trains per hour through the central core — an approximately 33 percent throughput gain — together with major reliability and performance improvements.
 
-The 4LM scope encompasses a complete CBTC overlay across all four lines: zone controllers along the route, full track-to-train Wi-Fi-band radio infrastructure, replacement of the legacy interlocking framework with a modern Automatic Train Supervision (ATS) layer, integration of the Thales SelTrac CBTC system with the existing S-Stock fleet (which had been delivered with provision for CBTC retrofit), full Automatic Train Operation (ATO) under driver supervision, and migration of the legacy signaling to fallback status during cutover. (For the broader pattern, see Overlay CBTC vs Greenfield CBTC: Migration Tradeoffs.)
+The 4LM scope encompasses a complete CBTC overlay across all four lines: zone controllers along the route, full track-to-train Wi-Fi-band radio infrastructure, replacement of the legacy interlocking framework with a modern Automatic Train Supervision (ATS) layer, integration of the Thales SelTrac CBTC system with the existing S-Stock fleet (which had been delivered with provision for CBTC retrofit), full Automatic Train Operation (ATO) under driver supervision, and migration of the legacy signaling to fallback status during cutover. (For the broader pattern, see [Overlay CBTC vs Greenfield CBTC: Migration Tradeoffs](/blog/overlay-vs-greenfield-cbtc).)
 
 ## The 2011 cancellation and the 2014 re-tender
 

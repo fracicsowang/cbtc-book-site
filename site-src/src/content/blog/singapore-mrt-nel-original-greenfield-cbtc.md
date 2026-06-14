@@ -9,7 +9,7 @@ tags: [CBTC, Singapore MRT, North-East Line, NEL, LTA, GoA 4, Alstom, greenfield
 primary_keyword: "Singapore MRT NEL CBTC"
 secondary_keywords: ["NEL North-East Line driverless", "Singapore LTA greenfield CBTC", "world's first underground driverless metro", "NEL 2003 opening", "Alstom CBTC Singapore"]
 related_chapters: [8, 11, 13]
-internal_links: ["/blog/paris-metro-line-14-driverless-showcase"]
+internal_links: ["/blog/paris-metro-line-14-driverless-showcase", "/blog/overlay-vs-greenfield-cbtc"]
 og_image: "/blog/img/singapore-mrt-nel-original-greenfield-cbtc.png"
 read_time: "10 min"
 ---
@@ -38,7 +38,7 @@ Third, **regulatory clarity**. Singapore's transport regulator established the s
 
 Fourth, **labor was structured around the new operating model from inception**. The NEL operated from day one without train operators in the cab. There was no displacement question because there was no legacy workforce to displace on the line itself. The operator labor force was hired and trained against the GoA 4 operating concept.
 
-Fifth, **the LTA model is iterative and institutional**. The NEL was the first of what is now a four-line GoA 4 portfolio in Singapore. Each subsequent line — Circle Line, Downtown Line, Thomson-East Coast Line — preserved the GoA 4 operating concept and the platform screen door standard while procuring from a different CBTC vendor. The result is that LTA has now built and retained an in-house CBTC engineering capability that is the institutional structural counterweight to vendor-specific dependency. (See Overlay CBTC vs Greenfield CBTC: Migration Tradeoffs for the architectural framing.)
+Fifth, **the LTA model is iterative and institutional**. The NEL was the first of what is now a four-line GoA 4 portfolio in Singapore. Each subsequent line — Circle Line, Downtown Line, Thomson-East Coast Line — preserved the GoA 4 operating concept and the platform screen door standard while procuring from a different CBTC vendor. The result is that LTA has now built and retained an in-house CBTC engineering capability that is the institutional structural counterweight to vendor-specific dependency. (See [Overlay CBTC vs Greenfield CBTC: Migration Tradeoffs](/blog/overlay-vs-greenfield-cbtc) for the architectural framing.)
 
 ## What 20-plus years of operation has shown
 
