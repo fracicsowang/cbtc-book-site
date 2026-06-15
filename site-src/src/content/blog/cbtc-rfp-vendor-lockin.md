@@ -9,7 +9,7 @@ tags: [CBTC, RFP, procurement, vendor neutrality, US transit, IEEE 1474, BABA]
 primary_keyword: "CBTC RFP"
 secondary_keywords: ["CBTC procurement", "vendor lock-in CBTC", "supplier-agnostic CBTC specification", "CBTC scope of work", "open architecture CBTC"]
 related_chapters: [12, 14, 15]
-internal_links: ["/blog/cbtc-scope-of-work-template"]
+internal_links: ["/blog/cbtc-scope-of-work-template", "/blog/evaluating-cbtc-bids-12-criteria"]
 og_image: "/blog/img/cbtc-rfp-vendor-lockin.png"
 read_time: "10 min"
 ---

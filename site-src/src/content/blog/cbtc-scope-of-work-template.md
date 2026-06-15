@@ -9,7 +9,7 @@ tags: [CBTC, scope of work, RFP, procurement, US transit, FTA, IEEE 1474]
 primary_keyword: "CBTC scope of work"
 secondary_keywords: ["CBTC SOW template", "CBTC RFP technical specification", "CBTC procurement specification", "CBTC functional requirements", "FTA CBTC procurement"]
 related_chapters: [2, 12, 15]
-internal_links: ["/blog/cbtc-rfp-vendor-lockin", "/blog/cbtc-procurement-cost-drivers"]
+internal_links: ["/blog/cbtc-rfp-vendor-lockin", "/blog/evaluating-cbtc-bids-12-criteria", "/blog/cbtc-procurement-cost-drivers"]
 og_image: "/blog/img/cbtc-scope-of-work-template.png"
 read_time: "11 min"
 ---
@@ -155,7 +155,7 @@ A good rule: the SOW should specify what the system does and what evidence the a
 
 This article is a template walk-through. Chapter 12 of *Communications-Based Train Control*, Volume 2: Operations, Deployment & Economics ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)) treats each phase in detail with US case-study references. [Download Chapter 12 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch12.pdf).
 
-For the bid-evaluation rubric that the SOW supports, see Evaluating CBTC Bids: The 12 Criteria That Matter. For the contract-side counterpart on vendor lock-in, see [How to Write a CBTC RFP That Doesn't Lock You Into One Vendor](/blog/cbtc-rfp-vendor-lockin).
+For the bid-evaluation rubric that the SOW supports, see [Evaluating CBTC Bids: The 12 Criteria That Matter](/blog/evaluating-cbtc-bids-12-criteria). For the contract-side counterpart on vendor lock-in, see [How to Write a CBTC RFP That Doesn't Lock You Into One Vendor](/blog/cbtc-rfp-vendor-lockin).
 
 ## Sources
 
