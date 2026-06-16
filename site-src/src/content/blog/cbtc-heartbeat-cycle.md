@@ -9,7 +9,7 @@ tags: [CBTC, heartbeat cycle, latency, ATP, position report, Movement Authority,
 primary_keyword: "CBTC heartbeat cycle"
 secondary_keywords: ["CBTC latency budget", "CBTC position report", "CBTC Movement Authority cycle", "CBTC end-to-end latency", "CBTC real-time"]
 related_chapters: [3, 4, 6]
-internal_links: []
+internal_links: ["/blog/communication-loss-fallback"]
 og_image: "/blog/img/cbtc-heartbeat-cycle.png"
 read_time: "10 min"
 ---
@@ -65,7 +65,7 @@ If total latency exceeds the budget, the system's assumed worst-case train posit
 
 Manuscript Chapter 3.4 names a critical safety parameter that the heartbeat cycle structure depends on: the communication loss timeout, typically set at 3 to 5 seconds. If a VOBC does not receive an MA update within this window, it assumes communication has failed and initiates a safe stopping protocol — applying service braking to bring the train to a controlled stop within its last valid MA.
 
-The timeout interacts with the heartbeat cycle in two ways. First, it sets a floor on cycle period: cycles much shorter than the timeout produce many missed cycles before the timeout triggers, but the safety logic still works. Second, it interacts with headway directly. A 3 second timeout permits brief radio dropouts of one to four cycles without triggering a stop; a 5 second timeout permits longer dropouts but requires larger safety margins because trains continue under the cached MA for longer. The communication-loss behavior is covered in detail in Communication-Loss Fallback: How Trains Behave When the Radio Drops.
+The timeout interacts with the heartbeat cycle in two ways. First, it sets a floor on cycle period: cycles much shorter than the timeout produce many missed cycles before the timeout triggers, but the safety logic still works. Second, it interacts with headway directly. A 3 second timeout permits brief radio dropouts of one to four cycles without triggering a stop; a 5 second timeout permits longer dropouts but requires larger safety margins because trains continue under the cached MA for longer. The communication-loss behavior is covered in detail in [Communication-Loss Fallback: How Trains Behave When the Radio Drops](/blog/communication-loss-fallback).
 
 
 ![End-to-end latency budget across the four heartbeat phases. Cycles that exceed the budget force wider position-uncertain.](/blog/img/cbtc-heartbeat-cycle-fig1.png)
@@ -100,7 +100,7 @@ Three system-design implications fall out of the heartbeat structure. First, cyc
 
 This post is a 10-minute walk through the heartbeat cycle. The full architecture and communications treatment lives in Chapter 3 (System Architecture) and Chapter 6 (Communication Systems) of *Communications-Based Train Control*, Volume 1: Foundations & Technical Architecture ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 3 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch03.pdf) for the architecture and data-flow diagrams.
 
-For the onboard cycle in detail, see The Onboard Side of CBTC: Inside the VOBC. For how the system behaves when the heartbeat fails, see Communication-Loss Fallback: How Trains Behave When the Radio Drops.
+For the onboard cycle in detail, see The Onboard Side of CBTC: Inside the VOBC. For how the system behaves when the heartbeat fails, see [Communication-Loss Fallback: How Trains Behave When the Radio Drops](/blog/communication-loss-fallback).
 
 ## Sources
 

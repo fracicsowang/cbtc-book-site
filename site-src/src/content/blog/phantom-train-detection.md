@@ -9,7 +9,7 @@ tags: [CBTC, phantom train, phantom occupancy, failure mode, ATP, ZC, integrity,
 primary_keyword: "CBTC phantom train detection"
 secondary_keywords: ["CBTC failure mode", "phantom train CBTC", "false train report CBTC", "CBTC integrity check", "Zone Controller occupancy validation"]
 related_chapters: [3, 4, 5, 9]
-internal_links: ["/blog/cbtc-heartbeat-cycle"]
+internal_links: ["/blog/cbtc-heartbeat-cycle", "/blog/communication-loss-fallback"]
 og_image: "/blog/img/phantom-train-detection.png"
 read_time: "10 min"
 ---
@@ -113,7 +113,7 @@ The choice of response is a system-design decision that the safety case has to d
 
 This post is a 10-minute walkthrough of a failure mode that deserves more procurement attention. The depth on safety architecture, FMEA, FTA, and the SIL 4 framework lives in Chapter 12 (Project Lifecycle) section 12.4 of *Communications-Based Train Control*, Volume 2, and the underlying onboard and wayside architecture lives in Chapters 3, 4, and 5 of Volume 1 ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 12 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch12.pdf) for the safety case structure.
 
-For the heartbeat cycle and protocol layer that house the first two defense layers, see [The Heartbeat Cycle: 200 ms That Keep Modern Metros Safe](/blog/cbtc-heartbeat-cycle). For the related question of what trains do when communication fails, see Communication-Loss Fallback: How Trains Behave When the Radio Drops.
+For the heartbeat cycle and protocol layer that house the first two defense layers, see [The Heartbeat Cycle: 200 ms That Keep Modern Metros Safe](/blog/cbtc-heartbeat-cycle). For the related question of what trains do when communication fails, see [Communication-Loss Fallback: How Trains Behave When the Radio Drops](/blog/communication-loss-fallback).
 
 ## Sources
 
