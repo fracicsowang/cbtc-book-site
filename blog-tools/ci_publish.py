@@ -156,6 +156,7 @@ def main():
         with open(gh_out, "a") as fh:
             fh.write(f"copied_count={len(copied)}\n")
             fh.write(f"copied_slugs={','.join(copied)}\n")
+            fh.write(f"date={today}\n")
     print("=" * 60)
     print(f"date={today}  newly_published={len(copied)}  missing_drafts={len(missing)}")
     if missing:

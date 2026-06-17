@@ -79,6 +79,20 @@ jobs:
             git push
           fi
 
+      # Email the author a "today's publish + queue status" summary, matching
+      # the old Mac notify step. Only fires when an article actually published
+      # (copied_count > 0). Non-fatal: a flaky SMTP send must not fail a deploy
+      # that already succeeded. Needs the GMAIL_APP_PASSWORD repo secret.
+      - name: Email publish summary
+        if: steps.publish.outputs.copied_count != '0'
+        continue-on-error: true
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          python3 blog-tools/notify_publish.py \
+            --slugs "${{ steps.publish.outputs.copied_slugs }}" \
+            --date  "${{ steps.publish.outputs.date }}"
+
       - name: Configure Pages
         uses: actions/configure-pages@v6
 
