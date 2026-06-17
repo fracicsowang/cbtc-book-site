@@ -13,10 +13,13 @@ name: Daily blog publish
 
 on:
   schedule:
-    # 13:00 UTC daily ≈ 09:00 America/New_York (EDT) / 08:00 (EST).
+    # 10:00 UTC daily ≈ 06:00 America/New_York (EDT) / 05:00 (EST).
+    # Set 3h earlier than the original 13:00 UTC on 2026-06-17 to absorb
+    # GitHub's scheduled-run queueing (observed 1–5h late), so the actual
+    # publish lands in the US morning instead of drifting into the afternoon.
     # GitHub cron is UTC-only and may be delayed under load; the back-fill
     # logic makes the exact minute irrelevant.
-    - cron: "0 13 * * *"
+    - cron: "0 10 * * *"
   workflow_dispatch:
     inputs:
       force_date:
