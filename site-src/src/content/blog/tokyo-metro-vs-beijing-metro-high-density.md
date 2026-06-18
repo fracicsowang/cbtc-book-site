@@ -9,7 +9,7 @@ tags: [CBTC, Tokyo Metro, Beijing Subway, ATC, JR East, Mitsubishi, CRSC, intern
 primary_keyword: "Tokyo Metro vs Beijing Metro CBTC"
 secondary_keywords: ["Tokyo Metro signaling ATC", "Beijing Subway CBTC scale", "Asian metro CBTC comparison", "high-density metro signaling", "Tokyo train control modernization"]
 related_chapters: [11, 16]
-internal_links: ["/blog/london-underground-4lm-largest-cbtc-retrofit", "/blog/cbtc-vs-traditional-signaling-8-differences"]
+internal_links: ["/blog/chinese-metro-cbtc-50-cities", "/blog/london-underground-4lm-largest-cbtc-retrofit", "/blog/cbtc-vs-traditional-signaling-8-differences"]
 og_image: "/blog/img/tokyo-metro-vs-beijing-metro-high-density.png"
 read_time: "11 min"
 ---
@@ -30,7 +30,7 @@ The result is that Tokyo runs one of the highest-throughput metro networks in th
 
 Beijing's signaling history is much shorter and substantially more aggressive. The original Beijing Subway Line 1 opened in 1969 with conventional fixed-block. Capacity expansion in the 1980s and 1990s was modest. The acceleration began in the mid-2000s, when the Beijing Subway entered a 15-year program of construction and modernization that, by 2024, had expanded the network from approximately 160 route-kilometers to approximately 800 route-kilometers across 27 lines.
 
-The signaling baseline for this expansion was CBTC. From Line 4 (opened 2009 with Thales CBTC) and Line 5 (opened 2007 with Bombardier CBTC) onward, CBTC has been the default specification for new line construction in Beijing. By 2024, more than 24 of Beijing Subway's 27 lines operated on CBTC. The Yanfang Line (S1, opened December 2017) was the first commercial GoA 4 deployment on a Chinese metro line; subsequent lines including the Daxing Airport Express, Lines 19 and 11, and the Capital International Airport Express have operated at GoA 4 from inception. (For the broader Chinese metro CBTC pattern, see Chinese Metro CBTC: 50 Cities, 11,000+ Route-km, in 25 Years.)
+The signaling baseline for this expansion was CBTC. From Line 4 (opened 2009 with Thales CBTC) and Line 5 (opened 2007 with Bombardier CBTC) onward, CBTC has been the default specification for new line construction in Beijing. By 2024, more than 24 of Beijing Subway's 27 lines operated on CBTC. The Yanfang Line (S1, opened December 2017) was the first commercial GoA 4 deployment on a Chinese metro line; subsequent lines including the Daxing Airport Express, Lines 19 and 11, and the Capital International Airport Express have operated at GoA 4 from inception. (For the broader Chinese metro CBTC pattern, see [Chinese Metro CBTC: 50 Cities, 11,000+ Route-km, in 25 Years](/blog/chinese-metro-cbtc-50-cities).)
 
 The vendor landscape on Beijing Subway has shifted in parallel. Early CBTC contracts went to foreign vendors — Thales, Bombardier, Alstom, Siemens. From approximately 2012 onward, domestic Chinese vendors — China Railway Signal & Communication (CRSC), CASCO (Alstom-Shanghai joint venture), and Beijing Traffic Control Technology (TCT) — have taken progressively larger market share. By the late 2010s, domestic suppliers accounted for the majority of new CBTC line awards in Beijing. (See Chapter 16 of *Communications-Based Train Control* (Volume 2) for the comparative procurement analysis.)
 
