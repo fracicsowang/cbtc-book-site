@@ -9,7 +9,7 @@ tags: [SIL 4, IEC 61508, EN 50129, functional safety, CBTC ATP, safety integrity
 primary_keyword: "SIL 4"
 secondary_keywords: ["SIL 4 rail signaling", "Safety Integrity Level 4", "IEC 61508 CBTC", "SIL 4 failure rate", "ATP SIL 4"]
 related_chapters: [2, 12]
-internal_links: ["/blog/atp-ato-ats-triad"]
+internal_links: ["/blog/v-model-lifecycle-safety-critical-train-control", "/blog/atp-ato-ats-triad"]
 og_image: "/blog/img/sil-4-rail-signaling-what-it-means.png"
 read_time: "9 min"
 ---
@@ -70,7 +70,7 @@ The engineering effort multiplier from SIL 2 to SIL 4 is typically in the range 
 - Testing effort: roughly 3 times. Exhaustive coverage and traceability matrices add substantial work.
 - Documentation and safety case effort: roughly 3 times. The safety case is the largest single SIL 4 deliverable.
 
-Direct costs add to that. Formal methods tools, certified development environments, automated static analysis platforms, and Independent Safety Assessor services all add to the SIL 4 budget. A reasonable industry assumption for the SIL 4 engineering and certification cost on a CBTC ATP subsystem is in the low single millions of dollars, depending on system complexity and the supplier's existing CBTC platform maturity. (For the V-model lifecycle that organizes this effort, see The V-Model Lifecycle for Safety-Critical Train Control.)
+Direct costs add to that. Formal methods tools, certified development environments, automated static analysis platforms, and Independent Safety Assessor services all add to the SIL 4 budget. A reasonable industry assumption for the SIL 4 engineering and certification cost on a CBTC ATP subsystem is in the low single millions of dollars, depending on system complexity and the supplier's existing CBTC platform maturity. (For the V-model lifecycle that organizes this effort, see [The V-Model Lifecycle for Safety-Critical Train Control](/blog/v-model-lifecycle-safety-critical-train-control).)
 
 ## SIL 4 versus PTC
 
