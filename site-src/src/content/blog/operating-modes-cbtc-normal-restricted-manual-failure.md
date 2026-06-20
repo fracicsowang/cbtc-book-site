@@ -9,7 +9,7 @@ tags: [CBTC operating modes, restricted manual, bypass mode, degraded operation,
 primary_keyword: "CBTC operating modes"
 secondary_keywords: ["CBTC normal mode", "restricted manual mode", "CBTC bypass mode", "CBTC failure mode", "CBTC mode transitions"]
 related_chapters: [9, 8, 13]
-internal_links: ["/blog/atp-ato-ats-triad"]
+internal_links: ["/blog/atp-ato-ats-triad", "/blog/phantom-occupancy-service-delays"]
 og_image: "/blog/img/operating-modes-cbtc-normal-restricted-manual-failure.png"
 read_time: "11 min"
 ---
@@ -61,7 +61,7 @@ The system response is structured. The affected train is brought to a controlled
 
 A line-wide Failure event — total CBTC unavailability with no overlay legacy fallback — is the worst credible operational scenario short of an actual collision. The procedure converges on Non-CBTC bypass for the corridor while the maintenance team works on restoration, with reduced speed (10 to 15 mph in some properties), strictly dispatcher-authorized movement, and continuous radio contact between every train and the OCC. Mature CBTC operators publish target recovery times: under 5 minutes for communication loss, under 1 minute for an automatic Zone Controller failover, under 30 minutes for a manual Zone Controller restart, and under 60 minutes to clear a single failed train from the corridor.
 
-The safety case for any CBTC procurement has to address every credible failure scenario, define which mode the system enters, prove that the entry transition itself does not introduce new hazards, and specify the recovery path back to Normal. (For the specific failure mode that legacy fleets create on overlay CBTC lines, see Phantom Occupancy and Why It Causes Service Delays.)
+The safety case for any CBTC procurement has to address every credible failure scenario, define which mode the system enters, prove that the entry transition itself does not introduce new hazards, and specify the recovery path back to Normal. (For the specific failure mode that legacy fleets create on overlay CBTC lines, see [Phantom Occupancy and Why It Causes Service Delays](/blog/phantom-occupancy-service-delays).)
 
 ## Mode transitions are where most of the safety case lives
 
