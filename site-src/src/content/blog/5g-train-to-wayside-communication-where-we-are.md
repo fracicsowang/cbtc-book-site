@@ -9,7 +9,7 @@ tags: [5G CBTC, FRMCS, 5G-R, LTE-R, private LTE rail, CBRS transit, train-to-way
 primary_keyword: "5G in CBTC"
 secondary_keywords: ["FRMCS US transit", "LTE-R CBTC", "5G train control", "private LTE transit", "CBRS rail signaling", "train-to-wayside 5G"]
 related_chapters: [6, 15]
-internal_links: ["/blog/what-is-cbtc-2026-guide"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/the-2030-cbtc-landscape-5-predictions"]
 og_image: "/blog/img/5g-train-to-wayside-communication-where-we-are.png"
 read_time: "10 min"
 ---
@@ -94,7 +94,7 @@ Require open documentation of the radio interface to the VOBC. The lifecycle rad
 
 Plan for the cybersecurity architecture upfront, not as a bolt-on. The TSA SD 1580 and 1582 baseline applies regardless of radio choice; the cellular migration makes the SD requirements more consequential. The agency that builds zero-trust architecture from procurement is in a better position than the agency that retrofits it later.
 
-Engage with the FCC and the FTA early on CBRS-dependent paths. CBRS-based safety-critical CBTC is feasible in principle but requires regulatory engagement to clear the SIL 4 questions and the spectrum-relinquishment procedures. The agencies that have moved fastest on CBRS for non-safety uses are also the ones that have engaged the regulators earliest. (For the longer-arc projection, see The 2030 CBTC Landscape: 5 Predictions.)
+Engage with the FCC and the FTA early on CBRS-dependent paths. CBRS-based safety-critical CBTC is feasible in principle but requires regulatory engagement to clear the SIL 4 questions and the spectrum-relinquishment procedures. The agencies that have moved fastest on CBRS for non-safety uses are also the ones that have engaged the regulators earliest. (For the longer-arc projection, see [The 2030 CBTC Landscape: 5 Predictions](/blog/the-2030-cbtc-landscape-5-predictions).)
 
 ## What this means in practice
 

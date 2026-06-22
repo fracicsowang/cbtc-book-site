@@ -9,7 +9,7 @@ tags: [AI in CBTC, machine learning rail, predictive maintenance transit, AI dis
 primary_keyword: "AI in CBTC"
 secondary_keywords: ["machine learning train control", "predictive maintenance CBTC", "AI dispatch transit", "ML CBTC use cases", "SIL 4 AI safety", "transit AI deployments"]
 related_chapters: [7, 15]
-internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/atp-ato-ats-triad"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/atp-ato-ats-triad", "/blog/the-2030-cbtc-landscape-5-predictions"]
 og_image: "/blog/img/ai-ml-in-cbtc-real-use-cases-vs-hype-2026.png"
 read_time: "10 min"
 ---
@@ -87,7 +87,7 @@ Three projections that are reasonably hedged.
 
 Production predictive-maintenance programs are expected to expand from the early adopters (WMATA, MTA, BART, CTA) to most US transit agencies with operational CBTC by 2028 to 2030. The benefits are reproducible enough and the vendor platforms are mature enough that the laggards face increasing pressure to adopt.
 
-Advisory-mode dispatch optimization is likely to expand from the current pilot deployments to operational use in several US transit agencies by 2028 to 2030. Closed-loop autonomous dispatch is unlikely in revenue service before 2030 and is more likely to remain advisory through the decade. (For the broader 2030 picture, see The 2030 CBTC Landscape: 5 Predictions.)
+Advisory-mode dispatch optimization is likely to expand from the current pilot deployments to operational use in several US transit agencies by 2028 to 2030. Closed-loop autonomous dispatch is unlikely in revenue service before 2030 and is more likely to remain advisory through the decade. (For the broader 2030 picture, see [The 2030 CBTC Landscape: 5 Predictions](/blog/the-2030-cbtc-landscape-5-predictions).)
 
 Machine-learned safety-critical functions are unlikely to enter US CBTC revenue service before 2032 to 2035, and the path forward depends on consensus emerging in the international standards bodies. The European Union Agency for Railways and the IEC are the venues to watch. US agencies should expect to be implementers of standards developed elsewhere rather than first adopters of any safety-critical AI capability.
 

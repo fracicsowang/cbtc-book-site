@@ -9,7 +9,7 @@ tags: [next-generation train control, virtual coupling, GNSS train control, ETCS
 primary_keyword: "next-generation train control"
 secondary_keywords: ["virtual coupling rail", "VCTS train control", "GNSS moving block", "ETCS Level 3", "CBTC ETCS hybrid", "software-defined CBTC", "rail post-quantum cryptography"]
 related_chapters: [11, 15]
-internal_links: ["/blog/what-is-cbtc-2026-guide"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/the-2030-cbtc-landscape-5-predictions"]
 og_image: "/blog/img/next-gen-train-control-after-cbtc.png"
 read_time: "10 min"
 ---

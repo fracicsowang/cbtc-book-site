@@ -9,7 +9,7 @@ tags: [CBTC vs PTC, mainline freight, US freight rail, FRA regulation, I-ETMS, C
 primary_keyword: "CBTC freight"
 secondary_keywords: ["CBTC mainline freight", "why CBTC not freight", "PTC freight rail", "I-ETMS Class I", "FRA train control mandate", "freight train control US"]
 related_chapters: [1, 2, 15]
-internal_links: ["/blog/what-is-cbtc-2026-guide"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/the-2030-cbtc-landscape-5-predictions"]
 og_image: "/blog/img/cbtc-wrong-solution-mainline-freight.png"
 read_time: "10 min"
 ---
@@ -90,7 +90,7 @@ Convergence between CBTC-style moving block and US PTC is plausible only in narr
 
 The most credible candidates are high-density commuter rail trunk lines approaching saturation: Long Island Rail Road and Metro-North on their Manhattan trunk approaches, Caltrain on the Peninsula, perhaps Metra Rock Island. These corridors have train volumes (200 to 400 trains per day) closer to metro than to freight, are FRA-regulated because they share track with freight or operate on FRA-jurisdiction corridors, and face capacity constraints that fixed-block PTC cannot relieve. A moving-block overlay or a hybrid PTC-CBTC system on these specific corridors is technically plausible.
 
-The realistic timeline is the 2030s. Vendor product portfolios are still modularizing. The European FRMCS radio standardization has not propagated into US deployments. The FRA has not opened a rulemaking on next-generation train control. The Rail Safety Improvement Act provides the regulatory framework for PTC, not for moving-block overlays. The probable trajectory is incremental enhancement through 2030, first production deployments of hybrid systems on selected commuter corridors in 2030 to 2040, and broader convergence — if it happens at all — in 2040 to 2050. (For the longer-arc projection, see The 2030 CBTC Landscape: 5 Predictions.)
+The realistic timeline is the 2030s. Vendor product portfolios are still modularizing. The European FRMCS radio standardization has not propagated into US deployments. The FRA has not opened a rulemaking on next-generation train control. The Rail Safety Improvement Act provides the regulatory framework for PTC, not for moving-block overlays. The probable trajectory is incremental enhancement through 2030, first production deployments of hybrid systems on selected commuter corridors in 2030 to 2040, and broader convergence — if it happens at all — in 2040 to 2050. (For the longer-arc projection, see [The 2030 CBTC Landscape: 5 Predictions](/blog/the-2030-cbtc-landscape-5-predictions).)
 
 The freight network proper is a different conversation. A 130,000-route-mile freight network with 20 to 60 trains per day per corridor, interoperable across multiple Class I carriers, with mile-long heavy consists and no FRA mandate for capacity-driven train control, is unlikely to deploy CBTC under any plausible scenario this decade or next. PTC will continue to be the right answer for the freight network's problem because PTC was designed for that problem. Replacing it would require a different problem.
 
