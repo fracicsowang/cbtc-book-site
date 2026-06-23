@@ -55,6 +55,8 @@ blog-drafts/_*.md
 # Personal / belongs-elsewhere singletons.
 github-profile-README.md
 orcid-import.bib
+# Reusable cross-project playbook (meant for Luya etc., not the public CBTC repo).
+BLOG_SEO_PLAYBOOK.md
 
 # ── Large directories not used by the cloud build ──
 pptx/
