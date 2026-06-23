@@ -51,7 +51,7 @@ US transit history has several examples of agencies that selected distance-to-go
 
 The third is the institutional capacity to absorb a major program. CBTC procurement, integration, and cutover require a project team that the agency has rarely run before; distance-to-go upgrades are smaller, more bounded, and less likely to consume the agency's executive attention for a decade. An agency that has multiple competing priorities (fleet replacement, station accessibility, traction-power renewal) may rationally defer CBTC and bridge with distance-to-go for one capital cycle.
 
-The fourth is regulatory and corridor characteristics. Lines that share track with mainline rail under FRA jurisdiction, or corridors that are explicitly multimodal, may face institutional barriers to CBTC that distance-to-go cab-signaling does not trigger. (The US regulatory split is unpacked in CBTC vs PTC: Why US Commuter Rail Picked One and US Metro Picked the Other.)
+The fourth is regulatory and corridor characteristics. Lines that share track with mainline rail under FRA jurisdiction, or corridors that are explicitly multimodal, may face institutional barriers to CBTC that distance-to-go cab-signaling does not trigger. (The US regulatory split is unpacked in [CBTC vs PTC: Why US Commuter Rail Picked One and US Metro Picked the Other](/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro).)
 
 
 ![The CBTC vs distance-to-go decision is categorical, not continuous; specific corridor characteristics drive the right an.](/blog/img/cbtc-vs-distance-to-go-fig1.svg)

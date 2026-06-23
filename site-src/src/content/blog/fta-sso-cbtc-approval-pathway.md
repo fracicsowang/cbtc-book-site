@@ -9,7 +9,7 @@ tags: [FTA, State Safety Oversight, SSO, 49 CFR 674, CBTC approval, US transit s
 primary_keyword: "FTA State Safety Oversight"
 secondary_keywords: ["SSO CBTC approval", "49 CFR Part 674", "transit safety oversight", "FTA safety management system", "PTASP"]
 related_chapters: [2, 12]
-internal_links: ["/blog/ieee-1474-1-performance-based-standard"]
+internal_links: ["/blog/ieee-1474-1-performance-based-standard", "/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro"]
 og_image: "/blog/img/fta-sso-cbtc-approval-pathway.png"
 read_time: "10 min"
 ---
@@ -87,7 +87,7 @@ The agencies that follow this protocol typically get revenue-service authorizati
 
 ## The Buy America layer
 
-Buy America, codified at 49 CFR Part 661, is not strictly an SSO matter, but it sits in the same federal review pathway and routinely affects CBTC procurement. The current threshold for signal and train control equipment is approximately 60 percent US-manufactured content, calculated on delivered cost. Major CBTC vendors (Siemens, Alstom, Hitachi Rail STS) maintain US assembly and engineering operations at facilities including Sacramento, Pittsburgh, and elsewhere to satisfy the requirement. The Buy America compliance plan is a routine deliverable in any FTA-funded CBTC procurement. Failure to plan for it has caused project delays at multiple US agencies. (For the broader regulatory context including PTC, see CBTC vs PTC: Why US Commuter Rail Picked One and US Metro Picked the Other.)
+Buy America, codified at 49 CFR Part 661, is not strictly an SSO matter, but it sits in the same federal review pathway and routinely affects CBTC procurement. The current threshold for signal and train control equipment is approximately 60 percent US-manufactured content, calculated on delivered cost. Major CBTC vendors (Siemens, Alstom, Hitachi Rail STS) maintain US assembly and engineering operations at facilities including Sacramento, Pittsburgh, and elsewhere to satisfy the requirement. The Buy America compliance plan is a routine deliverable in any FTA-funded CBTC procurement. Failure to plan for it has caused project delays at multiple US agencies. (For the broader regulatory context including PTC, see [CBTC vs PTC: Why US Commuter Rail Picked One and US Metro Picked the Other](/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro).)
 
 ## What the SSO does not do
 

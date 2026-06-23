@@ -9,7 +9,7 @@ tags: [IEEE 1474, IEEE 1474.1, CBTC standards, performance based, FTA, US transi
 primary_keyword: "IEEE 1474.1"
 secondary_keywords: ["IEEE 1474 explained", "performance based standard CBTC", "IEEE 1474 vs IEC 62290", "CBTC procurement standard", "IEEE 1474 compliance"]
 related_chapters: [2, 12]
-internal_links: ["/blog/iec-62290-international-cbtc-standard", "/blog/cbtc-rfp-vendor-lockin"]
+internal_links: ["/blog/iec-62290-international-cbtc-standard", "/blog/cbtc-rfp-vendor-lockin", "/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro"]
 og_image: "/blog/img/ieee-1474-1-performance-based-standard.png"
 read_time: "9 min"
 ---

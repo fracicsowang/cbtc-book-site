@@ -9,7 +9,7 @@ tags: [CBTC vs PTC, mainline freight, US freight rail, FRA regulation, I-ETMS, C
 primary_keyword: "CBTC freight"
 secondary_keywords: ["CBTC mainline freight", "why CBTC not freight", "PTC freight rail", "I-ETMS Class I", "FRA train control mandate", "freight train control US"]
 related_chapters: [1, 2, 15]
-internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/the-2030-cbtc-landscape-5-predictions"]
+internal_links: ["/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro", "/blog/what-is-cbtc-2026-guide", "/blog/the-2030-cbtc-landscape-5-predictions"]
 og_image: "/blog/img/cbtc-wrong-solution-mainline-freight.png"
 read_time: "10 min"
 ---
@@ -18,7 +18,7 @@ A reasonable question, when a transit-curious software engineer or a policy read
 
 ## The split that defines US train control
 
-The single most important fact about US train control is the regulatory split between the Federal Railroad Administration and the Federal Transit Administration. The FRA owns mainline freight, intercity passenger rail, and most commuter rail operating on shared or owned mainline track. The FTA owns rapid transit, light rail, and other urban passenger systems. The two regulators have different statutes, different standards, different funding mechanisms, and different histories of accident response. Everything else in the CBTC-versus-PTC discussion follows from this split. (For the regulator-by-regulator breakdown, see CBTC vs PTC: Why US Commuter Rail Picked One and US Metro Picked the Other.)
+The single most important fact about US train control is the regulatory split between the Federal Railroad Administration and the Federal Transit Administration. The FRA owns mainline freight, intercity passenger rail, and most commuter rail operating on shared or owned mainline track. The FTA owns rapid transit, light rail, and other urban passenger systems. The two regulators have different statutes, different standards, different funding mechanisms, and different histories of accident response. Everything else in the CBTC-versus-PTC discussion follows from this split. (For the regulator-by-regulator breakdown, see [CBTC vs PTC: Why US Commuter Rail Picked One and US Metro Picked the Other](/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro).)
 
 PTC is the train control technology the FRA mandated. The mandate flows from the Rail Safety Improvement Act of 2008, signed into law a few weeks after the September 2008 Chatsworth collision in California killed 25 people. The Act required Class I freight railroads, Amtrak, and most US commuter rail operators on FRA-regulated corridors to implement PTC by the original 2015 deadline. After several extensions, the final implementation deadline was December 31, 2020, by which most regulated railroads had completed deployment across approximately 57,000 route-miles of track. The vast majority of those deployments use Interoperable Electronic Train Management System, an architecture developed primarily by Wabtec and standardized for cross-railroad operation.
 
