@@ -9,7 +9,7 @@ tags: [CBTC, cost overrun, project management, US transit, FTA, BART, MTA]
 primary_keyword: "CBTC project overrun"
 secondary_keywords: ["CBTC over budget", "CBTC cost overrun", "transit signaling project delay", "CBTC schedule slippage", "BART TCMP cost"]
 related_chapters: [12, 14]
-internal_links: ["/blog/cbtc-procurement-cost-drivers"]
+internal_links: ["/blog/cbtc-procurement-cost-drivers", "/blog/cbtc-lifecycle-cost-30-year-model"]
 og_image: "/blog/img/cbtc-projects-over-budget.png"
 read_time: "10 min"
 ---
@@ -90,7 +90,7 @@ These OPEX figures are not budget overruns in the strict sense — they are the 
 
 This piece is the field-tested checklist. The full lifecycle treatment lives in Chapter 12 (Project Lifecycle) and Chapter 14 (Lifecycle Costs and Economic Justification) of *Communications-Based Train Control*, Volume 2 ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 12 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch12.pdf).
 
-For the procurement-side counterpart, see [CBTC Procurement: Cost Drivers Beyond the Sticker Price](/blog/cbtc-procurement-cost-drivers). For the 30-year financial picture, see CBTC Lifecycle Cost: A 30-Year Model Walk-Through.
+For the procurement-side counterpart, see [CBTC Procurement: Cost Drivers Beyond the Sticker Price](/blog/cbtc-procurement-cost-drivers). For the 30-year financial picture, see [CBTC Lifecycle Cost: A 30-Year Model Walk-Through](/blog/cbtc-lifecycle-cost-30-year-model).
 
 ## Sources
 

@@ -9,7 +9,7 @@ tags: [CBTC, procurement, cost, US transit, FTA, BABA, lifecycle cost]
 primary_keyword: "CBTC procurement cost drivers"
 secondary_keywords: ["CBTC project cost", "CBTC capital cost", "CBTC sticker price", "FTA CBTC funding cost", "BABA premium CBTC"]
 related_chapters: [12, 14, 15]
-internal_links: ["/blog/cbtc-projects-over-budget"]
+internal_links: ["/blog/cbtc-projects-over-budget", "/blog/cbtc-lifecycle-cost-30-year-model"]
 og_image: "/blog/img/cbtc-procurement-cost-drivers.png"
 read_time: "10 min"
 ---
