@@ -49,7 +49,7 @@ The TCMP is being deployed in parallel with BART's Fleet of the Future program, 
 
 The coupling has both benefits and costs. On the benefit side, BART avoids retrofit of CBTC equipment onto legacy cars (the way the L Line did); the FoF cars enter service already equipped, which simplifies integration testing. On the cost side, the two programs run on related-but-not-identical schedules; vehicle deliveries and signaling commissioning have to coordinate across multiple acceptance testing cycles. Either program slipping creates schedule pressure on the other. Both programs have slipped relative to original projections, in part because of supply chain disruption during the 2020-to-2022 period and in part because of the integration coordination overhead itself.
 
-This is a generalizable lesson. Combined rolling stock and signaling procurement reduces integration risk if both procurements are run as a single program (the Baltimore Metro model — discussed in the MARTA underdog article for comparison). Parallel-but-separate rolling stock and signaling procurements reduce some risk and add new risks that the agency must manage actively.
+This is a generalizable lesson. Combined rolling stock and signaling procurement reduces integration risk if both procurements are run as a single program (the Baltimore Metro model — discussed in the [MARTA underdog article](/blog/marta-atlanta-cbtc-underdog) for comparison). Parallel-but-separate rolling stock and signaling procurements reduce some risk and add new risks that the agency must manage actively.
 
 ## The eight-phase deployment strategy
 
