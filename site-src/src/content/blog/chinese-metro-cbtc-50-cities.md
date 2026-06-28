@@ -9,7 +9,7 @@ tags: [CBTC, Chinese metro, Beijing Subway, Shanghai Metro, CRSC, CASCO, TCT, Go
 primary_keyword: "Chinese metro CBTC scale"
 secondary_keywords: ["China CBTC 50 cities", "China CBTC route-kilometers", "Chinese CBTC vendors CRSC TCT", "Chinese metro CBTC cost", "China GoA 4 metro"]
 related_chapters: [11, 15, 16]
-internal_links: ["/blog/tokyo-metro-vs-beijing-metro-high-density", "/blog/cbtc-procurement-cost-drivers"]
+internal_links: ["/blog/tokyo-metro-vs-beijing-metro-high-density", "/blog/why-madrid-has-more-cbtc-lines-than-us", "/blog/cbtc-procurement-cost-drivers"]
 og_image: "/blog/img/chinese-metro-cbtc-50-cities.png"
 read_time: "11 min"
 ---
@@ -80,7 +80,7 @@ First, **standardization and design reuse drive cost reduction even within the U
 
 Second, **competitive vendor structure improves bargaining power**. China's three to four competing domestic suppliers (CRSC, CASCO, TCT, plus regional variants) drove unit costs down approximately 40 to 50 percent over the past decade. US agencies cannot procure from Chinese suppliers, but they can preserve and encourage the four-vendor US market structure (Alstom, Hitachi Rail STS, Siemens Mobility, plus emerging entrants). Single-source procurement on multi-decade programs erodes this.
 
-Third, **rolling stock interoperability across an operator's fleet is achievable**. Shanghai Metro's specifications requiring Vehicle On-Board Controller (VOBC) interoperability across multiple rolling stock manufacturers reduces per-vehicle VOBC cost and improves operational flexibility. US operators can specify, in CBTC RFPs, a commitment to interface standards that allow rolling stock from multiple manufacturers to operate on a single CBTC platform. The procurement language is straightforward; the willingness to specify it has been the binding constraint historically. (For European context, see Why Madrid Metro Has More CBTC Lines Than the Entire US.)
+Third, **rolling stock interoperability across an operator's fleet is achievable**. Shanghai Metro's specifications requiring Vehicle On-Board Controller (VOBC) interoperability across multiple rolling stock manufacturers reduces per-vehicle VOBC cost and improves operational flexibility. US operators can specify, in CBTC RFPs, a commitment to interface standards that allow rolling stock from multiple manufacturers to operate on a single CBTC platform. The procurement language is straightforward; the willingness to specify it has been the binding constraint historically. (For European context, see [Why Madrid Metro Has More CBTC Lines Than the Entire US](/blog/why-madrid-has-more-cbtc-lines-than-us).)
 
 ## What this means for US transit agencies
 
