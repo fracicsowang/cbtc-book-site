@@ -9,7 +9,7 @@ tags: [CBTC operating modes, restricted manual, bypass mode, degraded operation,
 primary_keyword: "CBTC operating modes"
 secondary_keywords: ["CBTC normal mode", "restricted manual mode", "CBTC bypass mode", "CBTC failure mode", "CBTC mode transitions"]
 related_chapters: [9, 8, 13]
-internal_links: ["/blog/atp-ato-ats-triad", "/blog/phantom-occupancy-service-delays"]
+internal_links: ["/blog/atp-ato-ats-triad", "/blog/degraded-mode-ladder-cbtc", "/blog/phantom-occupancy-service-delays"]
 og_image: "/blog/img/operating-modes-cbtc-normal-restricted-manual-failure.png"
 read_time: "11 min"
 ---
@@ -46,7 +46,7 @@ Non-CBTC bypass mode, sometimes called fallback mode, is the operating state in 
 
 The trigger is almost always a more serious fault: total CBTC system unavailability across a corridor, sustained loss of communications beyond the system's recovery window (typically 30 minutes to 2 hours depending on operating rules), or environmental conditions — heavy snow, flooding, severe electromagnetic interference — that compromise both onboard sensors and wayside equipment.
 
-Capacity in bypass mode collapses. On overlay systems with retained legacy signaling, headways open from 2 to 3 minutes to 5 to 6 minutes, and revenue speed drops to whatever the legacy signaling allows (40 mph on the L Line in bypass). System capacity falls 35 to 60 percent. On standalone corridors with dispatcher-only authorization, capacity falls 60 to 80 percent and yard-style speed limits (15 to 25 mph) prevail until the legacy authority can be re-established or CBTC restored. (For the failure cascade that determines when bypass becomes the right answer, see The Degraded-Mode Ladder: How Service Survives Equipment Faults.)
+Capacity in bypass mode collapses. On overlay systems with retained legacy signaling, headways open from 2 to 3 minutes to 5 to 6 minutes, and revenue speed drops to whatever the legacy signaling allows (40 mph on the L Line in bypass). System capacity falls 35 to 60 percent. On standalone corridors with dispatcher-only authorization, capacity falls 60 to 80 percent and yard-style speed limits (15 to 25 mph) prevail until the legacy authority can be re-established or CBTC restored. (For the failure cascade that determines when bypass becomes the right answer, see [The Degraded-Mode Ladder: How Service Survives Equipment Faults](/blog/degraded-mode-ladder-cbtc).)
 
 Two design choices govern how survivable bypass mode is. The first is whether the deployment is overlay or standalone. Overlay CBTC retains legacy fixed-block signaling beneath the moving-block CBTC layer; the legacy signals continue to govern train separation when CBTC is unavailable. Standalone CBTC has no such fallback; bypass operation collapses to dispatcher voice authority, which is operationally expensive and capacity-restrictive. NYC's L Line, 7 Line, and Queens Boulevard segments are all overlay deployments for exactly this reason. The second is the design of the yard-to-mainline boundary, where bypass-mode rules govern continuously inside the yard and CBTC rules govern on the mainline; the boundary handoff procedures are addressed in detail in Chapter 9 of the manuscript.
 
