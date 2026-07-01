@@ -9,7 +9,7 @@ tags: [rail engineering education, US universities, transit engineering, signali
 primary_keyword: "US universities rail engineering"
 secondary_keywords: ["rail engineering programs US", "transit engineering universities", "RailTEC UIUC", "Mineta Transportation Institute", "rail signaling education", "CBTC academic programs"]
 related_chapters: [12, 14]
-internal_links: ["/blog/how-to-become-a-cbtc-engineer-2026", "/blog/top-10-books-courses-rail-signaling-engineer"]
+internal_links: ["/blog/how-to-become-a-cbtc-engineer-2026", "/blog/top-10-books-courses-rail-signaling-engineer", "/blog/the-hidden-skill-gap-us-transit-engineering"]
 og_image: "/blog/img/top-us-universities-rail-engineering.png"
 read_time: "9 min"
 ---
@@ -20,7 +20,7 @@ A common opening question from a junior engineer asking how to get into rail in 
 
 The United States has approximately 130 accredited civil engineering programs and roughly 200 accredited electrical and electronics engineering programs. The number with a named rail engineering specialization, a rail-focused research center, or a track of coursework that prepares an engineer for transit signaling work is in the single digits. Several reasons. Rail in the US is a smaller employer than highways, aerospace, or general utilities, so the labor demand has not pulled curriculum toward the discipline. Federal research funding for rail has been smaller than for other transport modes, so the research-center economics have not pushed universities to build named programs. And the US transit industry historically trained its engineers in-house and at the vendor level, which reduced the demand on universities to graduate field-ready talent.
 
-The result is a discipline that is undertaught at the undergraduate level and partially taught at the graduate and continuing-education levels. (For why this matters for the workforce, see The Hidden Skill Gap in US Transit Engineering — and What to Do About It.)
+The result is a discipline that is undertaught at the undergraduate level and partially taught at the graduate and continuing-education levels. (For why this matters for the workforce, see [The Hidden Skill Gap in US Transit Engineering — and What to Do About It](/blog/the-hidden-skill-gap-us-transit-engineering).)
 
 ## The schools with named rail programs
 
