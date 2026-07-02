@@ -9,7 +9,7 @@ tags: [CBTC, ERTMS, ETCS Level 3, Hybrid Level 3, mainline signaling, moving blo
 primary_keyword: "CBTC vs ERTMS Hybrid Level 3"
 secondary_keywords: ["ERTMS Hybrid Level 3", "ETCS Level 3", "CBTC vs ETCS", "moving block mainline", "European train control"]
 related_chapters: [3, 15]
-internal_links: ["/blog/moving-block-explained", "/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro"]
+internal_links: ["/blog/cbtc-vs-etcs-side-by-side", "/blog/moving-block-explained", "/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro"]
 og_image: "/blog/img/cbtc-vs-ertms-hybrid-level-3.png"
 read_time: "10 min"
 ---
@@ -20,7 +20,7 @@ For two decades, the cleanest answer to "what does CBTC look like for mainline r
 
 CBTC is a metro-grade architecture governed by IEEE 1474 in the United States and IEC 62290 internationally. It is the dominant signaling technology for urban rapid transit, with deployments in dozens of cities and operational maturity stretching back to Vancouver SkyTrain's 1985 opening and Paris Métro Line 14's 1998 commissioning. The institutional environment is the Federal Transit Administration (FTA) in the US and the corresponding metro regulators internationally.
 
-ERTMS Hybrid Level 3 is a mainline-rail architecture defined within the European Rail Traffic Management System (ERTMS) program, governed by ETCS specifications under EU Agency for Railways (ERA) oversight. It is the most recent extension of the ETCS family that already includes Level 1 (intermittent communication, traditional fixed-block signaling), Level 2 (continuous wireless cab-signaling with fixed-block separation), and the long-anticipated Level 3 (continuous wireless cab-signaling with moving-block separation). Hybrid Level 3 sits between Level 2 and Level 3: it adds moving-block operation for trains that report integrity, while retaining trackside detection for trains that do not. (For the Level 2 baseline, see CBTC vs ETCS: A Side-by-Side for US Engineers.)
+ERTMS Hybrid Level 3 is a mainline-rail architecture defined within the European Rail Traffic Management System (ERTMS) program, governed by ETCS specifications under EU Agency for Railways (ERA) oversight. It is the most recent extension of the ETCS family that already includes Level 1 (intermittent communication, traditional fixed-block signaling), Level 2 (continuous wireless cab-signaling with fixed-block separation), and the long-anticipated Level 3 (continuous wireless cab-signaling with moving-block separation). Hybrid Level 3 sits between Level 2 and Level 3: it adds moving-block operation for trains that report integrity, while retaining trackside detection for trains that do not. (For the Level 2 baseline, see [CBTC vs ETCS: A Side-by-Side for US Engineers](/blog/cbtc-vs-etcs-side-by-side).)
 
 The capabilities are converging because both systems now offer continuous bidirectional communication, moving-block separation, high-resolution train position reporting, and integrated automatic train protection. The procurement decisions remain different because the regulatory environments, vendor ecosystems, fleet types, and operational profiles are different.
 

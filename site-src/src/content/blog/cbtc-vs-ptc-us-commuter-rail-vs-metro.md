@@ -9,7 +9,7 @@ tags: [CBTC, PTC, FRA, FTA, Positive Train Control, US transit, signaling]
 primary_keyword: "CBTC vs PTC"
 secondary_keywords: ["CBTC and PTC difference", "Positive Train Control vs CBTC", "PTC US commuter rail", "FRA PTC mandate", "US train control comparison"]
 related_chapters: [1, 2, 15]
-internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/cbtc-vs-traditional-signaling-8-differences"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/cbtc-vs-etcs-side-by-side", "/blog/cbtc-vs-traditional-signaling-8-differences"]
 og_image: "/blog/img/cbtc-vs-ptc-us-commuter-rail-vs-metro.png"
 read_time: "11 min"
 ---
@@ -67,7 +67,7 @@ The CBTC vendor base is dominated globally by Siemens Mobility (Trainguard MT), 
 
 Some US systems sit at the boundary. Commuter rail operators that share track with freight (most of them) need PTC for FRA compliance on shared trackage, and may want CBTC-style capabilities on dedicated transit corridors. Light rail and streetcar systems crossing FRA-jurisdiction track at grade need PTC compatibility on those segments. Heavy-rail transit systems that historically operated under FRA jurisdiction (PATH, Staten Island Railway) face hybrid regulatory questions.
 
-The pragmatic answer for hybrid corridors is usually: comply with FRA via PTC where required, deploy CBTC where the operational benefits justify it, and design the cutover and interface points carefully. The interface engineering is non-trivial. (For the comparable European debate over moving block, see CBTC vs ETCS: A Side-by-Side for US Engineers.)
+The pragmatic answer for hybrid corridors is usually: comply with FRA via PTC where required, deploy CBTC where the operational benefits justify it, and design the cutover and interface points carefully. The interface engineering is non-trivial. (For the comparable European debate over moving block, see [CBTC vs ETCS: A Side-by-Side for US Engineers](/blog/cbtc-vs-etcs-side-by-side).)
 
 ## Practical takeaways
 

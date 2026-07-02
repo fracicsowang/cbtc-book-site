@@ -9,7 +9,7 @@ tags: [next-generation train control, virtual coupling, GNSS train control, ETCS
 primary_keyword: "next-generation train control"
 secondary_keywords: ["virtual coupling rail", "VCTS train control", "GNSS moving block", "ETCS Level 3", "CBTC ETCS hybrid", "software-defined CBTC", "rail post-quantum cryptography"]
 related_chapters: [11, 15]
-internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/the-2030-cbtc-landscape-5-predictions"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/cbtc-vs-etcs-side-by-side", "/blog/the-2030-cbtc-landscape-5-predictions"]
 og_image: "/blog/img/next-gen-train-control-after-cbtc.png"
 read_time: "10 min"
 ---
@@ -34,7 +34,7 @@ For US transit, virtual coupling is likely a 2035-or-later capability. Commercia
 
 Present-day CBTC positioning relies on fusion of wayside balises, onboard tachometer odometry, and Doppler radar. This works robustly in tunnels but is economically and operationally cumbersome for at-grade or elevated corridors over long distances. Global Navigation Satellite System positioning — anchored on multi-constellation satellite coverage (US GPS, European Galileo, Russian GLONASS, Chinese BeiDou) and augmented with Satellite-Based Augmentation Systems and ground-based Real-Time Kinematic correction — offers a path toward reducing wayside infrastructure dependency.
 
-The European reference architecture is ERTMS / ETCS Level 3, which is intended to operate without trackside train detection — train integrity is reported by the train itself and position is determined by GNSS plus onboard sensors. ETCS Level 3 has been demonstrated in research and in pilot programs but has not been deployed widely in revenue service. The capacity gains are real on lightly-trafficked corridors; the difficulty is the safety case for a system that depends entirely on trains' self-reporting of position and integrity. (For the European-versus-US comparison, see CBTC vs ETCS: A Side-by-Side for US Engineers.)
+The European reference architecture is ERTMS / ETCS Level 3, which is intended to operate without trackside train detection — train integrity is reported by the train itself and position is determined by GNSS plus onboard sensors. ETCS Level 3 has been demonstrated in research and in pilot programs but has not been deployed widely in revenue service. The capacity gains are real on lightly-trafficked corridors; the difficulty is the safety case for a system that depends entirely on trains' self-reporting of position and integrity. (For the European-versus-US comparison, see [CBTC vs ETCS: A Side-by-Side for US Engineers](/blog/cbtc-vs-etcs-side-by-side).)
 
 In the US, Positive Train Control already employs GPS as the primary positioning source. Extending this to safety-critical moving-block train control requires multi-constellation GNSS receivers, integrity monitoring to detect spoofing or jamming, ground-side RTK correction infrastructure, and a SIL 4 certification pathway that current standards do not yet provide. For transit, GNSS-based moving block on light-rail or commuter-rail lines that lack the density to justify a full balise network is a plausible incremental capability for 2028 to 2032 pilot deployments. Tunnel sections will continue to use balises; hybrid GNSS-plus-balise architectures are the realistic deployment pattern.
 
