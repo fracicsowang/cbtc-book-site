@@ -9,7 +9,7 @@ tags: [CBTC radio, inductive loop, IEEE 802.11, CBTC architecture, US transit]
 primary_keyword: "radio-based vs inductive-loop CBTC"
 secondary_keywords: ["inductive loop CBTC", "radio-based CBTC", "IEEE 802.11 CBTC", "CBTC DCS", "trackside loop"]
 related_chapters: [3, 6]
-internal_links: []
+internal_links: ["/blog/wifi-vs-lte-r-train-wayside"]
 og_image: "/blog/img/radio-based-vs-inductive-loop-cbtc.png"
 read_time: "10 min"
 ---
@@ -37,7 +37,7 @@ Radio-based CBTC uses spread-spectrum radio on standardized frequencies, typical
 
 The architectural advantages are the inverse of inductive-loop's disadvantages. Capital cost per route-mile is lower because the access points are commodity equipment and the cable infrastructure is conventional Ethernet plus power-over-Ethernet. Data rates are abundant; modern 802.11ac access points support hundreds of megabits per second per train, far in excess of CBTC's actual bandwidth requirements (tens of kilobits per second per train for safety-critical traffic). Adding capacity or new applications is a software and configuration exercise, not a civil-works project. The integration with the agency's broader IT infrastructure is straightforward.
 
-The architectural disadvantages are the inverse of inductive-loop's advantages. The 2.4 GHz band in particular is heavily contested with passenger devices, neighboring networks, and consumer Wi-Fi; modern deployments use 5 GHz as the primary CBTC channel for that reason. Even at 5 GHz, the unlicensed band is shared, and the agency cannot guarantee that no future regulatory or environmental change will impair link performance. Handover between access points must be engineered carefully (fast-roaming techniques, key caching, predictive handover orchestration) to meet the sub-250-millisecond CBTC handover deadline. Cybersecurity exposure is broader because the radio interface reaches further than any inductive-loop signal. (The DCS architecture is unpacked further in the future article on Wi-Fi vs LTE-R for Train-to-Wayside.)
+The architectural disadvantages are the inverse of inductive-loop's advantages. The 2.4 GHz band in particular is heavily contested with passenger devices, neighboring networks, and consumer Wi-Fi; modern deployments use 5 GHz as the primary CBTC channel for that reason. Even at 5 GHz, the unlicensed band is shared, and the agency cannot guarantee that no future regulatory or environmental change will impair link performance. Handover between access points must be engineered carefully (fast-roaming techniques, key caching, predictive handover orchestration) to meet the sub-250-millisecond CBTC handover deadline. Cybersecurity exposure is broader because the radio interface reaches further than any inductive-loop signal. (The DCS architecture is unpacked further in the future article on [Wi-Fi vs LTE-R for Train-to-Wayside](/blog/wifi-vs-lte-r-train-wayside).)
 
 ## Comparative behavior under fault
 

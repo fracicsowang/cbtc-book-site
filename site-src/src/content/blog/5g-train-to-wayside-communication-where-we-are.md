@@ -9,7 +9,7 @@ tags: [5G CBTC, FRMCS, 5G-R, LTE-R, private LTE rail, CBRS transit, train-to-way
 primary_keyword: "5G in CBTC"
 secondary_keywords: ["FRMCS US transit", "LTE-R CBTC", "5G train control", "private LTE transit", "CBRS rail signaling", "train-to-wayside 5G"]
 related_chapters: [6, 15]
-internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/the-2030-cbtc-landscape-5-predictions"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/wifi-vs-lte-r-train-wayside", "/blog/the-2030-cbtc-landscape-5-predictions"]
 og_image: "/blog/img/5g-train-to-wayside-communication-where-we-are.png"
 read_time: "10 min"
 ---
