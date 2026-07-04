@@ -57,7 +57,7 @@ SelTrac's wayside architecture is relatively centralized, with Zone Controllers 
 
 The Ansaldo-heritage CBTC, particularly in the BART configuration, integrates more directly with mainline-rail style track geometry and signaling overlays. The wayside controllers are designed to interface with existing track-circuit-based legacy systems for cutover staging; the architecture reflects assumptions about long, geometrically variable corridors. The localization stack is similar in principle to SelTrac's but with vendor-specific balises.
 
-The procurement implication is the same lock-in surface that applies to every CBTC platform: once the wayside balise inventory and onboard antenna geometry are committed, the agency is committed for the life of the asset. A multi-vendor agency now finds itself maintaining multiple balise inventories per line if it has procured both Hitachi product lines. (The general lock-in dynamics live in the future article on Hidden Cost of CBTC Vendor Lock-In; the multi-vendor lessons live in Single-Vendor vs Multi-Vendor CBTC: NYC's Lessons Learned.)
+The procurement implication is the same lock-in surface that applies to every CBTC platform: once the wayside balise inventory and onboard antenna geometry are committed, the agency is committed for the life of the asset. A multi-vendor agency now finds itself maintaining multiple balise inventories per line if it has procured both Hitachi product lines. (The general lock-in dynamics live in the future article on [Hidden Cost of CBTC Vendor Lock-In](/blog/hidden-cost-of-cbtc-vendor-lockin); the multi-vendor lessons live in Single-Vendor vs Multi-Vendor CBTC: NYC's Lessons Learned.)
 
 ## What this means in practice
 

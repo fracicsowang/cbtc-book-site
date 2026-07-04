@@ -9,7 +9,7 @@ tags: [CBTC, RFP, procurement, vendor neutrality, US transit, IEEE 1474, BABA]
 primary_keyword: "CBTC RFP"
 secondary_keywords: ["CBTC procurement", "vendor lock-in CBTC", "supplier-agnostic CBTC specification", "CBTC scope of work", "open architecture CBTC"]
 related_chapters: [12, 14, 15]
-internal_links: ["/blog/cbtc-scope-of-work-template", "/blog/evaluating-cbtc-bids-12-criteria"]
+internal_links: ["/blog/cbtc-scope-of-work-template", "/blog/evaluating-cbtc-bids-12-criteria", "/blog/hidden-cost-of-cbtc-vendor-lockin"]
 og_image: "/blog/img/cbtc-rfp-vendor-lockin.png"
 read_time: "10 min"
 ---
@@ -93,7 +93,7 @@ A simple specifying sentence: "All non-safety-critical operational data produced
 
 This post is a procurement-desk summary. The full lifecycle treatment lives in Chapter 12 (Project Lifecycle) and Chapter 15 (Vendor Landscape) of *Communications-Based Train Control*, Volume 2: Operations, Deployment & Economics ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 12 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch12.pdf) for the design-review and ICD framework slides.
 
-For the companion procurement piece on writing the technical statement of work itself, see [CBTC Scope of Work: A Template for US Transit Agencies](/blog/cbtc-scope-of-work-template). For how the lock-in cost actually compounds over a 30-year asset life, see Hidden Cost of CBTC Vendor Lock-In (and How to Avoid It).
+For the companion procurement piece on writing the technical statement of work itself, see [CBTC Scope of Work: A Template for US Transit Agencies](/blog/cbtc-scope-of-work-template). For how the lock-in cost actually compounds over a 30-year asset life, see [Hidden Cost of CBTC Vendor Lock-In (and How to Avoid It)](/blog/hidden-cost-of-cbtc-vendor-lockin).
 
 ## Sources
 
