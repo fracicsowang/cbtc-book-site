@@ -54,7 +54,7 @@ Procurement practice. APTA Recommended Practices include guidance on RFP structu
 
 Reliability, availability, and maintainability metrics. While IEEE 1474 specifies that availability targets must be met, APTA documents provide US-specific measurement conventions, target ranges from peer agencies, and reporting practices that align with FTA performance reporting expectations.
 
-Cybersecurity practice. APTA has published cybersecurity guidance for transit, complementing the IEEE 1686 and IEC 62443 standards with operational practice and incident response recommendations specific to US transit operators. (For the IEC 62443 angle, see Cybersecurity Standards: IEC 62443 in Rail Signaling Context.)
+Cybersecurity practice. APTA has published cybersecurity guidance for transit, complementing the IEEE 1686 and IEC 62443 standards with operational practice and incident response recommendations specific to US transit operators. (For the IEC 62443 angle, see [Cybersecurity Standards: IEC 62443 in Rail Signaling Context](/blog/iec-62443-cybersecurity-rail-signaling).)
 
 
 ![APTA documents are the US transit operational layer of the CBTC standards stack, complementing rather than competing wit.](/blog/img/apta-standards-cbtc-industry-guidance-fig1.svg)

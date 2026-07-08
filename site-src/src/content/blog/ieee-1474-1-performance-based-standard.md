@@ -74,7 +74,7 @@ The most common procurement mistake is to issue an RFP that says, in effect, "th
 
 A procurement that uses IEEE 1474.1 well typically supplements it with additional specifications addressing:
 
-- Cybersecurity. IEEE 1474 historically deferred to IEEE 1686 and now increasingly to IEC 62443. (For the rail-specific reading of IEC 62443, see Cybersecurity Standards: IEC 62443 in Rail Signaling Context.)
+- Cybersecurity. IEEE 1474 historically deferred to IEEE 1686 and now increasingly to IEC 62443. (For the rail-specific reading of IEC 62443, see [Cybersecurity Standards: IEC 62443 in Rail Signaling Context](/blog/iec-62443-cybersecurity-rail-signaling).)
 - Communication architecture. If the agency requires LTE-R or has an existing radio band that constrains the choice, that is an agency decision and must be in the spec.
 - Integration with adjacent systems. PTC interfaces on shared trackage, interlocking signal interfaces, fare collection, and security systems are out of scope for IEEE 1474.1 and must be addressed separately.
 - Asset management and maintenance. Spare parts strategy, maintenance interval requirements, and total-cost-of-ownership terms are out of scope and must be specified.
