@@ -9,7 +9,7 @@ tags: [phantom occupancy, mixed-fleet operation, overlay CBTC, track circuit, NY
 primary_keyword: "phantom occupancy"
 secondary_keywords: ["phantom train CBTC", "mixed-fleet CBTC", "overlay CBTC capacity", "track circuit failure CBTC", "legacy fleet CBTC"]
 related_chapters: [9, 5, 13]
-internal_links: ["/blog/operating-modes-cbtc-normal-restricted-manual-failure"]
+internal_links: ["/blog/operating-modes-cbtc-normal-restricted-manual-failure", "/blog/headway-optimization-beyond-theoretical-minimum"]
 og_image: "/blog/img/phantom-occupancy-service-delays.png"
 read_time: "10 min"
 ---
@@ -63,7 +63,7 @@ The second lever is automated phantom-occupancy validity checks. The zone contro
 
 The third lever is mixed-fleet retirement planning. The deepest fix is to remove the cause, which means retiring the legacy fleet and removing the track-circuit interface from the routine operating envelope. The MTA has been retrofitting remaining legacy cars on its CBTC lines with the goal of full CBTC fleet status by 2026 to 2028 according to its public plans. Once the legacy fleet is gone, the zone controller can be reconfigured to treat all track-circuit indications as faults rather than possible trains, and the phantom-occupancy capacity penalty disappears.
 
-The fourth lever is RFP language for the legacy interface itself. Specifying the message rate, the failure detection logic, the stale-state timeout, and the dispatcher override pathway in the procurement avoids the situation in which the vendor implements the legacy interface as an afterthought and the operational team discovers the gaps in the first year of revenue service. Mixed-fleet operation is the hardest CBTC operational case, and the interface to legacy detection is where the hardest problems live. (For the capacity arithmetic that determines how much phantom occupancy actually costs, see Headway Optimization: Beyond the Theoretical Minimum.)
+The fourth lever is RFP language for the legacy interface itself. Specifying the message rate, the failure detection logic, the stale-state timeout, and the dispatcher override pathway in the procurement avoids the situation in which the vendor implements the legacy interface as an afterthought and the operational team discovers the gaps in the first year of revenue service. Mixed-fleet operation is the hardest CBTC operational case, and the interface to legacy detection is where the hardest problems live. (For the capacity arithmetic that determines how much phantom occupancy actually costs, see [Headway Optimization: Beyond the Theoretical Minimum](/blog/headway-optimization-beyond-theoretical-minimum).)
 
 ## What this means in practice
 
