@@ -9,7 +9,7 @@ tags: [CBTC, train localization, balise, tachometer, Doppler radar, odometry, US
 primary_keyword: "CBTC train localization"
 secondary_keywords: ["how CBTC trains know position", "balise transponder", "tachometer odometry", "Doppler radar train", "sensor fusion train position"]
 related_chapters: [4, 5]
-internal_links: ["/blog/what-is-cbtc-2026-guide"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/movement-authority-concept"]
 og_image: "/blog/img/how-cbtc-trains-know-where-they-are.png"
 read_time: "10 min"
 ---
@@ -53,7 +53,7 @@ Between balise reads, the position estimate accumulates uncertainty as the train
 
 When the train passes a balise, the absolute position is reset and the uncertainty collapses to a small fixed value (typically 0.5 meter, set by the balise's surveyed installation tolerance). The system then begins accumulating uncertainty again until the next balise read. This is the core of why balise spacing matters: closer spacing means tighter uncertainty bounds, which means less conservative Movement Authorities, which means tighter achievable headways.
 
-In normal operation on a well-instrumented metro line, the system reports localization accuracy of one to two meters, with sub-second update cadence to the wayside. (For how the wayside uses this position to compute authority, see The Movement Authority Concept: How a CBTC Train Decides How Far to Go.)
+In normal operation on a well-instrumented metro line, the system reports localization accuracy of one to two meters, with sub-second update cadence to the wayside. (For how the wayside uses this position to compute authority, see [The Movement Authority Concept: How a CBTC Train Decides How Far to Go](/blog/movement-authority-concept).)
 
 ## Failure modes and how the architecture handles them
 

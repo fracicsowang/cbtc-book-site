@@ -9,7 +9,7 @@ tags: [moving block, fixed block, CBTC, headway, capacity, signaling, US transit
 primary_keyword: "moving block signaling"
 secondary_keywords: ["moving block vs fixed block", "moving block explained", "CBTC moving block", "moving block headway", "virtual block signaling"]
 related_chapters: [1, 3, 5]
-internal_links: ["/blog/cbtc-vs-traditional-signaling-8-differences", "/blog/atp-ato-ats-triad"]
+internal_links: ["/blog/cbtc-vs-traditional-signaling-8-differences", "/blog/movement-authority-concept", "/blog/atp-ato-ats-triad"]
 og_image: "/blog/img/moving-block-explained.png"
 read_time: "10 min"
 ---
@@ -37,7 +37,7 @@ Safe Following Distance = Braking Distance at Current Speed + Communication and 
 
 Each term is concrete. Braking distance comes from the train's certified service-brake performance and current speed; on a typical metro train at 50 km/h, this is roughly 80 meters. The localization margin captures the worst-case error in the lead train's reported position, which depends on time since the last balise read; modern systems carry this at one to two meters. The position uncertainty term accounts for radio latency: a position reported a moment ago has effectively moved further by the time the wayside acts on it. The engineering safety margin is fixed by the safety case, often 20 to 30 meters for metro applications.
 
-Every term in this computation either shrinks (because the train is going slowly) or grows (because the train is at higher speed) in real time. The wayside re-issues a fresh Movement Authority every one to three seconds. (For the underlying authority concept, see The Movement Authority Concept: How a CBTC Train Decides How Far to Go.)
+Every term in this computation either shrinks (because the train is going slowly) or grows (because the train is at higher speed) in real time. The wayside re-issues a fresh Movement Authority every one to three seconds. (For the underlying authority concept, see [The Movement Authority Concept: How a CBTC Train Decides How Far to Go](/blog/movement-authority-concept).)
 
 ## Where the headway gain comes from
 

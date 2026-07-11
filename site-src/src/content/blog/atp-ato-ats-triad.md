@@ -9,7 +9,7 @@ tags: [ATP, ATO, ATS, CBTC, SIL 4, automatic train protection, automatic train o
 primary_keyword: "ATP ATO ATS"
 secondary_keywords: ["automatic train protection", "automatic train operation", "automatic train supervision", "ATP vs ATO", "CBTC functional architecture"]
 related_chapters: [3, 7, 8]
-internal_links: ["/blog/what-is-cbtc-2026-guide"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/movement-authority-concept"]
 og_image: "/blog/img/atp-ato-ats-triad.png"
 read_time: "10 min"
 ---

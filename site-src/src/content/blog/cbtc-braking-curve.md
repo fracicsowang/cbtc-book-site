@@ -9,7 +9,7 @@ tags: [CBTC, braking curve, ATP, safe stopping distance, EBD, SBD, kinematic, si
 primary_keyword: "CBTC braking curve"
 secondary_keywords: ["CBTC safe stopping distance", "Emergency Braking Distance EBD", "Service Braking Distance SBD", "CBTC ATP envelope", "kinematic braking distance"]
 related_chapters: [4, 5, 13]
-internal_links: ["/blog/cbtc-heartbeat-cycle"]
+internal_links: ["/blog/movement-authority-concept", "/blog/cbtc-heartbeat-cycle"]
 og_image: "/blog/img/cbtc-braking-curve.png"
 read_time: "11 min"
 ---
@@ -115,7 +115,7 @@ The kinematic component alone would suggest 246 m. The full EBD is 318 m — abo
 
 The MA defines an End of Authority (EoA) — the exact position to which the train is authorized to proceed. Beyond the EoA, movement is prohibited. To account for position uncertainty, modern CBTC systems also define a Supervised Location (SvL) that is offset from the EoA by the worst-case position error.
 
-If the EoA is at km 10.500 and position uncertainty is ±15 meters, the SvL is at km 10.485. The ATP computes braking curves to the SvL, treating the train as if it were 15 meters farther along than its best-estimate position. This guarantees that even in worst-case position error, the train physically stops at or before the true EoA. The 15 meters is invisible to the operator but is the difference between a CBTC system that survives an audit and one that does not. (For how the EoA is generated and updated upstream, see The Movement Authority Concept: How a CBTC Train Decides How Far to Go.)
+If the EoA is at km 10.500 and position uncertainty is ±15 meters, the SvL is at km 10.485. The ATP computes braking curves to the SvL, treating the train as if it were 15 meters farther along than its best-estimate position. This guarantees that even in worst-case position error, the train physically stops at or before the true EoA. The 15 meters is invisible to the operator but is the difference between a CBTC system that survives an audit and one that does not. (For how the EoA is generated and updated upstream, see [The Movement Authority Concept: How a CBTC Train Decides How Far to Go](/blog/movement-authority-concept).)
 
 ## Why braking curves drive headway
 
@@ -151,7 +151,7 @@ The 50 to 100 ms cycle ensures that the system responds to overspeed within 50 t
 
 This post is an 11-minute engineer's primer. The full speed-supervision and braking-curve treatment lives in Chapter 4 (Onboard Equipment), section 4.3, of *Communications-Based Train Control*, Volume 1: Foundations & Technical Architecture ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 4 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch04.pdf) for the speed envelope and ATP cycle diagrams.
 
-For the onboard hardware that runs the cycle, see The Onboard Side of CBTC: Inside the VOBC. For how the Movement Authority that bounds the EBD is generated upstream, see The Movement Authority Concept: How a CBTC Train Decides How Far to Go.
+For the onboard hardware that runs the cycle, see The Onboard Side of CBTC: Inside the VOBC. For how the Movement Authority that bounds the EBD is generated upstream, see [The Movement Authority Concept: How a CBTC Train Decides How Far to Go](/blog/movement-authority-concept).
 
 ## Sources
 

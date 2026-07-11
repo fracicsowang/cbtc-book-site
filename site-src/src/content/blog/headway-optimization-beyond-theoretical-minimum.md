@@ -9,7 +9,7 @@ tags: [headway optimization, CBTC capacity, theoretical minimum headway, dwell t
 primary_keyword: "headway optimization"
 secondary_keywords: ["CBTC theoretical minimum headway", "achievable headway CBTC", "dwell time reduction", "terminal turnback headway", "trains per hour metro"]
 related_chapters: [13, 8, 9]
-internal_links: ["/blog/operating-modes-cbtc-normal-restricted-manual-failure"]
+internal_links: ["/blog/movement-authority-concept", "/blog/operating-modes-cbtc-normal-restricted-manual-failure"]
 og_image: "/blog/img/headway-optimization-beyond-theoretical-minimum.png"
 read_time: "11 min"
 ---
@@ -22,7 +22,7 @@ Theoretical minimum headway is the smallest headway physically possible given th
 
 The capacity formula is simple. Trains per hour equals 3,600 divided by headway in seconds. A 90-second headway yields 40 tph; 120 seconds yields 30 tph; 180 seconds yields 20 tph. Every second of headway saved across the full minimum is one additional fractional train per hour, and on a line running near capacity, fractional trains compound into meaningful annual ridership.
 
-Achievable headway is what the line actually delivers in revenue service. It is consistently 20 to 40 percent higher (less frequent) than the theoretical minimum on a well-designed CBTC line. The MTA L Line, designed for up to 30 tph, runs 24 to 29 tph in revenue service — a 67 to 81 percent realization of theoretical minimum. BART's Train Control Modernization Program targets 30 tph against a theoretical minimum closer to 40, a 75 percent realization. These are strong results. Achieving 80 percent of theoretical minimum on a US heavy-rail line is considered excellent. (For the underlying mechanics that govern how Movement Authority interacts with each component of the theoretical minimum, see The Movement Authority Concept: How a CBTC Train Decides How Far to Go.)
+Achievable headway is what the line actually delivers in revenue service. It is consistently 20 to 40 percent higher (less frequent) than the theoretical minimum on a well-designed CBTC line. The MTA L Line, designed for up to 30 tph, runs 24 to 29 tph in revenue service — a 67 to 81 percent realization of theoretical minimum. BART's Train Control Modernization Program targets 30 tph against a theoretical minimum closer to 40, a 75 percent realization. These are strong results. Achieving 80 percent of theoretical minimum on a US heavy-rail line is considered excellent. (For the underlying mechanics that govern how Movement Authority interacts with each component of the theoretical minimum, see [The Movement Authority Concept: How a CBTC Train Decides How Far to Go](/blog/movement-authority-concept).)
 
 The gap between theoretical and achievable is not a deficiency of CBTC. It is the structural cost of operating a real line.
 

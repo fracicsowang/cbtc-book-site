@@ -9,7 +9,7 @@ tags: [CBTC, heartbeat cycle, latency, ATP, position report, Movement Authority,
 primary_keyword: "CBTC heartbeat cycle"
 secondary_keywords: ["CBTC latency budget", "CBTC position report", "CBTC Movement Authority cycle", "CBTC end-to-end latency", "CBTC real-time"]
 related_chapters: [3, 4, 6]
-internal_links: ["/blog/communication-loss-fallback"]
+internal_links: ["/blog/movement-authority-concept", "/blog/communication-loss-fallback"]
 og_image: "/blog/img/cbtc-heartbeat-cycle.png"
 read_time: "10 min"
 ---

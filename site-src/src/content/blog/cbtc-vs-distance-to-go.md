@@ -9,7 +9,7 @@ tags: [CBTC, distance-to-go, cab signaling, train control, authority, ATC]
 primary_keyword: "CBTC vs distance-to-go"
 secondary_keywords: ["distance-to-go signaling", "cab signaling vs CBTC", "movement authority", "ATC vs CBTC", "speed code enforcement"]
 related_chapters: [1, 3]
-internal_links: ["/blog/moving-block-explained", "/blog/what-is-cbtc-2026-guide"]
+internal_links: ["/blog/movement-authority-concept", "/blog/moving-block-explained", "/blog/what-is-cbtc-2026-guide"]
 og_image: "/blog/img/cbtc-vs-distance-to-go.png"
 read_time: "10 min"
 ---
@@ -35,7 +35,7 @@ The architectural elements are recognizable to anyone who has read about CBTC. T
 
 CBTC's Movement Authority is the same concept as distance-to-go in principle but a different object in practice. The wayside Zone Controller continuously tracks the position of every train in its territory to roughly one-to-two-meter accuracy. It computes the safe-braking-distance buffer behind each train, accounting for that train's speed, the worst-case grade, the worst-case brake-effort fall-off, and a margin for system uncertainty. It generates a Movement Authority for the successor train that ends at the front of that buffer (in other words, just short of the lead train's actual rear plus the worst-case stopping distance). It transmits the authority to the train every 200 to 500 milliseconds through a digital data channel, typically IEEE 802.11 radio. The train's onboard ATP enforces the resulting braking curve.
 
-Two architectural commitments in this paragraph make CBTC categorically different from distance-to-go. The first is that the wayside knows the actual position of every train, not just which block each train is in. The second is that the data channel is bidirectional and continuous; the train reports its own position and integrity status, and the wayside replies with an updated authority. Distance-to-go is unidirectional in the safety-critical path; the train receives but does not report. CBTC closes the loop, and the closing of the loop is what unlocks the moving-block paradigm. (For the deeper mechanics of MA generation, see The Movement Authority Concept.)
+Two architectural commitments in this paragraph make CBTC categorically different from distance-to-go. The first is that the wayside knows the actual position of every train, not just which block each train is in. The second is that the data channel is bidirectional and continuous; the train reports its own position and integrity status, and the wayside replies with an updated authority. Distance-to-go is unidirectional in the safety-critical path; the train receives but does not report. CBTC closes the loop, and the closing of the loop is what unlocks the moving-block paradigm. (For the deeper mechanics of MA generation, see [The Movement Authority Concept](/blog/movement-authority-concept).)
 
 ## Capacity, cost, and the procurement fork
 
