@@ -9,7 +9,7 @@ tags: [GoA 4, GoA 2 to GoA 4, driverless metro, platform screen doors, unattende
 primary_keyword: "GoA 2 to GoA 4"
 secondary_keywords: ["GoA 4 prerequisites", "driverless metro requirements", "platform screen doors CBTC", "GoA 4 retrofit", "unattended train operation requirements"]
 related_chapters: [8]
-internal_links: ["/blog/goa-0-4-explained-grades-of-automation", "/blog/iec-62290-international-cbtc-standard"]
+internal_links: ["/blog/goa-0-4-explained-grades-of-automation", "/blog/iec-62290-international-cbtc-standard", "/blog/safety-case-document-cbtc"]
 og_image: "/blog/img/goa-2-to-goa-4-prerequisites.png"
 read_time: "10 min"
 ---
@@ -28,7 +28,7 @@ Full-height PSDs (2.4 to 3.0 meters, extending the full platform length) are str
 
 The cost is significant. Industry references put PSDs at roughly $50,000 to $100,000 per door set, with 8 to 12 sets per station on a typical metro line. Retrofitting PSDs onto an existing station with platform geometry that was not designed for them adds further cost: structural reinforcement, platform edge modification, accessibility compliance, and historic preservation review where applicable. A reasonable order-of-magnitude figure for retrofit PSD on a US legacy metro station is in the multi-million-dollar range per station; multiplied across a 30-station line, the PSD program alone can be a $100 million to $300 million capital line item.
 
-Stations with curved platforms, stations with substandard platform width, and stations with historic preservation constraints can be effectively unbuildable for PSD retrofit without major reconstruction. Many of the older US metro stations (parts of the NYC subway system, Chicago's elevated stations, parts of the BART network) fall into one or more of these categories. (For why this drives the safety case, see The Safety Case Document: What's Inside, How It's Reviewed.)
+Stations with curved platforms, stations with substandard platform width, and stations with historic preservation constraints can be effectively unbuildable for PSD retrofit without major reconstruction. Many of the older US metro stations (parts of the NYC subway system, Chicago's elevated stations, parts of the BART network) fall into one or more of these categories. (For why this drives the safety case, see [The Safety Case Document: What's Inside, How It's Reviewed](/blog/safety-case-document-cbtc).)
 
 ## Prerequisite 2: Onboard and trackside obstacle detection
 

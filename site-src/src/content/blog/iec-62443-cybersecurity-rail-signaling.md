@@ -9,7 +9,7 @@ tags: [IEC 62443, cybersecurity, rail signaling, TS 50701, CBTC security, OT sec
 primary_keyword: "IEC 62443 rail signaling"
 secondary_keywords: ["IEC 62443 CBTC", "rail cybersecurity standard", "TS 50701", "transit OT cybersecurity", "CBTC cybersecurity"]
 related_chapters: [2, 6]
-internal_links: ["/blog/ieee-1474-1-performance-based-standard", "/blog/sil-4-rail-signaling-what-it-means"]
+internal_links: ["/blog/ieee-1474-1-performance-based-standard", "/blog/sil-4-rail-signaling-what-it-means", "/blog/safety-case-document-cbtc"]
 og_image: "/blog/img/iec-62443-cybersecurity-rail-signaling.png"
 read_time: "9 min"
 ---

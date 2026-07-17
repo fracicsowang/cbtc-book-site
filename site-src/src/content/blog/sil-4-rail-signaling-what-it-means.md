@@ -9,7 +9,7 @@ tags: [SIL 4, IEC 61508, EN 50129, functional safety, CBTC ATP, safety integrity
 primary_keyword: "SIL 4"
 secondary_keywords: ["SIL 4 rail signaling", "Safety Integrity Level 4", "IEC 61508 CBTC", "SIL 4 failure rate", "ATP SIL 4"]
 related_chapters: [2, 12]
-internal_links: ["/blog/v-model-lifecycle-safety-critical-train-control", "/blog/atp-ato-ats-triad"]
+internal_links: ["/blog/v-model-lifecycle-safety-critical-train-control", "/blog/safety-case-document-cbtc", "/blog/atp-ato-ats-triad"]
 og_image: "/blog/img/sil-4-rail-signaling-what-it-means.png"
 read_time: "9 min"
 ---
@@ -55,7 +55,7 @@ Software lifecycle. EN 50128 prescribes the development practices: formal specif
 
 Test coverage. SIL 4 software typically achieves greater than 90 percent code coverage through testing, with safety-critical execution paths exercised at 100 percent.
 
-Independent Safety Assessment. An external assessor — TÜV, Ricardo, Mott MacDonald, Bureau Veritas, Intertek, or a comparable firm — reviews the design, audits the development process, witnesses key tests, and certifies that the system meets its SIL claim. (For the safety case the ISA reviews, see The Safety Case Document: What's Inside, How It's Reviewed.)
+Independent Safety Assessment. An external assessor — TÜV, Ricardo, Mott MacDonald, Bureau Veritas, Intertek, or a comparable firm — reviews the design, audits the development process, witnesses key tests, and certifies that the system meets its SIL claim. (For the safety case the ISA reviews, see [The Safety Case Document: What's Inside, How It's Reviewed](/blog/safety-case-document-cbtc).)
 
 ![Each SIL is a tenfold reduction in tolerable failure rate, with engineering rigor compounding upward.](/figures/fig_02_04_sil_pyramid.png)
 *<small>Each SIL is a tenfold reduction in tolerable failure rate, with engineering rigor compounding upward.</small>*

@@ -9,7 +9,7 @@ tags: [V-model, CBTC lifecycle, EN 50126, EN 50128, EN 50129, safety-critical so
 primary_keyword: "V-model lifecycle"
 secondary_keywords: ["V-model rail signaling", "EN 50126 RAMS", "CBTC verification validation", "safety-critical software lifecycle", "requirements traceability matrix"]
 related_chapters: [2, 12]
-internal_links: ["/blog/sil-4-rail-signaling-what-it-means", "/blog/ieee-1474-1-performance-based-standard"]
+internal_links: ["/blog/sil-4-rail-signaling-what-it-means", "/blog/safety-case-document-cbtc", "/blog/ieee-1474-1-performance-based-standard"]
 og_image: "/blog/img/v-model-lifecycle-safety-critical-train-control.png"
 read_time: "9 min"
 ---
@@ -41,7 +41,7 @@ The V-model fails when requirements management fails. A typical large US CBTC pr
 
 Bidirectional traceability links each lower-level requirement to its parent and back again. This is what allows impact analysis when a requirement changes. Modern requirements management tools (IBM DOORS, Jama, Polarion) maintain these linkages; managing 5,000 requirements without tool support is impractical. Requirements quality follows INCOSE principles: each requirement must be verifiable (testable), unambiguous, non-conflicting, traceable, and ranked by criticality.
 
-The traceability work is also the starting point for the safety case. Each safety-related requirement traces to a hazard in the Hazard Log; each hazard traces to a mitigation; each mitigation traces to a verification activity. When the State Safety Oversight reviewer asks how the agency knows that a particular hazard is mitigated, the answer is a traceable chain from requirement to test result. If that chain is broken anywhere, the safety case is incomplete. (For the safety case structure, see The Safety Case Document: What's Inside, How It's Reviewed.)
+The traceability work is also the starting point for the safety case. Each safety-related requirement traces to a hazard in the Hazard Log; each hazard traces to a mitigation; each mitigation traces to a verification activity. When the State Safety Oversight reviewer asks how the agency knows that a particular hazard is mitigated, the answer is a traceable chain from requirement to test result. If that chain is broken anywhere, the safety case is incomplete. (For the safety case structure, see [The Safety Case Document: What's Inside, How It's Reviewed](/blog/safety-case-document-cbtc).)
 
 ## Interface Control Documents and the architecture phase
 

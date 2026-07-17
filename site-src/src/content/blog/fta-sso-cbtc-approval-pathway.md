@@ -9,7 +9,7 @@ tags: [FTA, State Safety Oversight, SSO, 49 CFR 674, CBTC approval, US transit s
 primary_keyword: "FTA State Safety Oversight"
 secondary_keywords: ["SSO CBTC approval", "49 CFR Part 674", "transit safety oversight", "FTA safety management system", "PTASP"]
 related_chapters: [2, 12]
-internal_links: ["/blog/ieee-1474-1-performance-based-standard", "/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro"]
+internal_links: ["/blog/ieee-1474-1-performance-based-standard", "/blog/safety-case-document-cbtc", "/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro"]
 og_image: "/blog/img/fta-sso-cbtc-approval-pathway.png"
 read_time: "10 min"
 ---
@@ -48,7 +48,7 @@ State capacity varies. New York, California, Illinois, and Massachusetts have ma
 
 Before the SSO can approve a CBTC project, the agency must demonstrate that the project fits coherently within its Public Transportation Agency Safety Plan. The PTASP is the agency's living SMS document, and the CBTC project will appear in it as a Safety Risk Assessment, a set of Safety Performance Targets, and a set of Safety Control Measures.
 
-The Safety Risk Assessment must cover not just the future CBTC operating state but the transition. A typical SRA for a CBTC project covers: hazards in the existing legacy signaling, hazards in the proposed CBTC design, hazards specific to the multi-year transition during which legacy and CBTC operate on the same line, and hazards in the cutover itself. (For why cutover dominates project risk, see The Safety Case Document: What's Inside, How It's Reviewed.)
+The Safety Risk Assessment must cover not just the future CBTC operating state but the transition. A typical SRA for a CBTC project covers: hazards in the existing legacy signaling, hazards in the proposed CBTC design, hazards specific to the multi-year transition during which legacy and CBTC operate on the same line, and hazards in the cutover itself. (For why cutover dominates project risk, see [The Safety Case Document: What's Inside, How It's Reviewed](/blog/safety-case-document-cbtc).)
 
 This is where the shift from compliance-based to performance-based federal safety oversight becomes operationally visible. Under the older model, the agency demonstrated that it had followed the prescribed steps. Under the SMS model, the agency demonstrates that it has identified the hazards, mitigated them, and committed to monitoring the outcomes. The SSO is auditing the process, not the technology specification.
 
