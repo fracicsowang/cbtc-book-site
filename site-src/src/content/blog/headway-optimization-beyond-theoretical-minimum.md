@@ -9,7 +9,7 @@ tags: [headway optimization, CBTC capacity, theoretical minimum headway, dwell t
 primary_keyword: "headway optimization"
 secondary_keywords: ["CBTC theoretical minimum headway", "achievable headway CBTC", "dwell time reduction", "terminal turnback headway", "trains per hour metro"]
 related_chapters: [13, 8, 9]
-internal_links: ["/blog/movement-authority-concept", "/blog/operating-modes-cbtc-normal-restricted-manual-failure"]
+internal_links: ["/blog/door-operation-bottleneck-high-frequency-service", "/blog/movement-authority-concept", "/blog/operating-modes-cbtc-normal-restricted-manual-failure"]
 og_image: "/blog/img/headway-optimization-beyond-theoretical-minimum.png"
 read_time: "11 min"
 ---
@@ -51,7 +51,7 @@ Typical US urban metro dwell ranges from 20 seconds at lightly loaded suburban s
 
 Reducing dwell requires structural interventions, not signaling improvements. The manuscript identifies four levers. Platform screen doors save 5 to 8 seconds per stop by allowing earlier door opening and reducing draft-related door-cycle delays. Level boarding (platform-to-floor gap eliminated) saves 5 to 8 seconds by removing wheelchair boarding delay and reducing elderly passenger boarding time. Wider doors and more doors per car save 10-plus seconds on crowded lines by parallelizing the boarding flow. Improved boarding discipline (clear-aisle markings, staff-managed boarding flow at major interchanges) saves 2 to 3 seconds on average.
 
-The total impact of full dwell optimization is 15 to 30 seconds system-wide. On a heavily dwell-constrained line — a 50-second baseline dwell — a 20-second reduction translates to a 30 to 60 percent capacity uplift, which on a 150-second baseline headway is the difference between 24 tph and 30 tph. (For why door operation specifically is the dominant constraint at the highest service frequencies, see Why Door Operation Is the Bottleneck in High-Frequency Service.)
+The total impact of full dwell optimization is 15 to 30 seconds system-wide. On a heavily dwell-constrained line — a 50-second baseline dwell — a 20-second reduction translates to a 30 to 60 percent capacity uplift, which on a 150-second baseline headway is the difference between 24 tph and 30 tph. (For why door operation specifically is the dominant constraint at the highest service frequencies, see [Why Door Operation Is the Bottleneck in High-Frequency Service](/blog/door-operation-bottleneck-high-frequency-service).)
 
 The procurement implication is that the highest-leverage capacity decisions on a CBTC retrofit are often not in the CBTC scope. They are platform-modification decisions, rolling-stock decisions, and station-design decisions that have to be coordinated with the signaling project to actually realize the capacity the CBTC business case promised.
 
