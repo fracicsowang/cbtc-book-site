@@ -9,7 +9,7 @@ tags: [Siemens Trainguard MT, Alstom Urbalis, CBTC vendors, procurement, compari
 primary_keyword: "Trainguard MT vs Urbalis"
 secondary_keywords: ["Siemens CBTC", "Alstom CBTC", "Urbalis architecture", "Trainguard MT architecture", "CBTC vendor comparison"]
 related_chapters: [3, 15]
-internal_links: []
+internal_links: ["/blog/what-is-a-zone-controller"]
 og_image: "/blog/img/trainguard-mt-vs-urbalis-architecture.png"
 read_time: "11 min"
 ---
@@ -39,7 +39,7 @@ Neither approach is universally superior. Centralized architectures concentrate 
 
 Both platforms target IEEE 802.11 spread-spectrum radio in the 2.4 GHz and 5 GHz unlicensed bands as the default DCS. In practice, modern deployments from both vendors use 5 GHz as the primary control channel because of less competition with passenger Wi-Fi and lower interference from non-rail sources. Both vendors also offer roadmaps to LTE-R or private 5G overlays for future deployments, although as of 2026 neither has a US revenue-service deployment of cellular-class CBTC at scale.
 
-The architectural difference that matters in procurement is how each platform handles handover. Trainguard MT uses pre-authentication and key caching across 802.11r-style fast-roaming infrastructure, with handover times in the well-tuned 100-to-150 millisecond range. Urbalis uses a similar fast-roaming approach but, in some configurations, places more handover orchestration logic in a centralized roaming controller at the wayside rather than relying on station-to-station handoff in the access points themselves. The behavior is similar in steady state; the difference shows up in how each platform behaves when one access point fails. Procurement specifications should require the vendor to demonstrate handover time under representative AP failure scenarios, not just under nominal conditions. (For the underlying DCS choices, see [Wi-Fi vs LTE-R for Train-to-Wayside](/blog/wifi-vs-lte-r-train-wayside) once that article is published; for now, use What Is a Zone Controller for the wayside half of this story.)
+The architectural difference that matters in procurement is how each platform handles handover. Trainguard MT uses pre-authentication and key caching across 802.11r-style fast-roaming infrastructure, with handover times in the well-tuned 100-to-150 millisecond range. Urbalis uses a similar fast-roaming approach but, in some configurations, places more handover orchestration logic in a centralized roaming controller at the wayside rather than relying on station-to-station handoff in the access points themselves. The behavior is similar in steady state; the difference shows up in how each platform behaves when one access point fails. Procurement specifications should require the vendor to demonstrate handover time under representative AP failure scenarios, not just under nominal conditions. (For the underlying DCS choices, see [Wi-Fi vs LTE-R for Train-to-Wayside](/blog/wifi-vs-lte-r-train-wayside) once that article is published; for now, use [What Is a Zone Controller](/blog/what-is-a-zone-controller) for the wayside half of this story.)
 
 ## Onboard controller and braking-curve calculation
 

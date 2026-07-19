@@ -9,7 +9,7 @@ tags: [CBTC, wayside, antennas, equipment rooms, fiber, cable, US transit, field
 primary_keyword: "CBTC wayside layout"
 secondary_keywords: ["CBTC access point spacing", "wayside equipment room", "fiber ring CBTC", "CBTC cable tray", "trackside antenna placement"]
 related_chapters: [5, 6]
-internal_links: []
+internal_links: ["/blog/what-is-a-zone-controller"]
 og_image: "/blog/img/wayside-equipment-layout-antennas-cabinets-cables.png"
 read_time: "10 min"
 ---
@@ -38,7 +38,7 @@ Each AP draws 30 to 95 watts via Power-over-Ethernet from the nearest equipment 
 
 Each Zone Controller (ZC) pair lives in a wayside equipment room. The footprint is modest — roughly 20 square meters of floor space for a redundant ZC pair plus power, HVAC, cabling, and access room — but the siting decision drives a substantial fraction of civil-works cost.
 
-Equipment rooms are sited at four kinds of locations. **At major stations** is the preferred option when station architecture has space; the room can share electrical service, fiber drops, and physical security with station systems, and maintenance access is straightforward. **At junctions and crossovers** is the right choice when route complexity calls for local interlocking — the ZC and the Electronic Interlocking can co-locate, reducing latency on the route-setting interface (covered in detail in What Is a Zone Controller? CBTC's Wayside Brain Explained). **At maintenance facilities** consolidates spare-parts logistics and operational control. **In purpose-built wayside enclosures** is the option of last resort when none of the above is geographically near where the zone boundary needs to be — typically on long elevated stretches.
+Equipment rooms are sited at four kinds of locations. **At major stations** is the preferred option when station architecture has space; the room can share electrical service, fiber drops, and physical security with station systems, and maintenance access is straightforward. **At junctions and crossovers** is the right choice when route complexity calls for local interlocking — the ZC and the Electronic Interlocking can co-locate, reducing latency on the route-setting interface (covered in detail in [What Is a Zone Controller? CBTC's Wayside Brain Explained](/blog/what-is-a-zone-controller)). **At maintenance facilities** consolidates spare-parts logistics and operational control. **In purpose-built wayside enclosures** is the option of last resort when none of the above is geographically near where the zone boundary needs to be — typically on long elevated stretches.
 
 The equipment room itself includes the redundant ZC computers in a 19-inch rack, an Uninterruptible Power Supply (UPS) battery sized for two to four hours of run-time, two independent AC feeds with automatic switchover, an HVAC unit maintaining 18 to 25 degrees Celsius and 40 to 60 percent relative humidity, a fire-suppression system (typically gaseous like FM-200 to avoid water damage to electronics), card-access security, and surveillance. HVAC failure is a more common operational problem than electronic failure; the room should be instrumented to alarm to the Operations Control Center (OCC) on temperature or humidity excursion within ten minutes, before the ZC trips on its own thermal protection.
 
@@ -88,7 +88,7 @@ Maintenance access is easy to omit at design time and impossible to retrofit che
 
 This post is a 10-minute summary. The full treatment of wayside equipment, equipment-room infrastructure, and communication-network layout lives in Chapter 5 and Chapter 6 of *Communications-Based Train Control* ([Volume 1 on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 5 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch05.pdf) and [Chapter 6 slides](https://cbtcbook.com/slides/cbtc_ch06.pdf).
 
-For how the Zone Controller in the equipment room generates Movement Authorities, see What Is a Zone Controller? CBTC's Wayside Brain Explained. For why storage yards present a different layout problem, see CBTC in Storage Yards: Why It's a Different Engineering Problem.
+For how the Zone Controller in the equipment room generates Movement Authorities, see [What Is a Zone Controller? CBTC's Wayside Brain Explained](/blog/what-is-a-zone-controller). For why storage yards present a different layout problem, see CBTC in Storage Yards: Why It's a Different Engineering Problem.
 
 ## Sources
 

@@ -9,7 +9,7 @@ tags: [CBTC radio, inductive loop, IEEE 802.11, CBTC architecture, US transit]
 primary_keyword: "radio-based vs inductive-loop CBTC"
 secondary_keywords: ["inductive loop CBTC", "radio-based CBTC", "IEEE 802.11 CBTC", "CBTC DCS", "trackside loop"]
 related_chapters: [3, 6]
-internal_links: ["/blog/wifi-vs-lte-r-train-wayside"]
+internal_links: ["/blog/wifi-vs-lte-r-train-wayside", "/blog/what-is-a-zone-controller"]
 og_image: "/blog/img/radio-based-vs-inductive-loop-cbtc.png"
 read_time: "10 min"
 ---

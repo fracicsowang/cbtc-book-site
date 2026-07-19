@@ -9,7 +9,7 @@ tags: [phantom occupancy, mixed-fleet operation, overlay CBTC, track circuit, NY
 primary_keyword: "phantom occupancy"
 secondary_keywords: ["phantom train CBTC", "mixed-fleet CBTC", "overlay CBTC capacity", "track circuit failure CBTC", "legacy fleet CBTC"]
 related_chapters: [9, 5, 13]
-internal_links: ["/blog/operating-modes-cbtc-normal-restricted-manual-failure", "/blog/headway-optimization-beyond-theoretical-minimum"]
+internal_links: ["/blog/operating-modes-cbtc-normal-restricted-manual-failure", "/blog/headway-optimization-beyond-theoretical-minimum", "/blog/what-is-a-zone-controller"]
 og_image: "/blog/img/phantom-occupancy-service-delays.png"
 read_time: "10 min"
 ---
@@ -20,7 +20,7 @@ In the early years of the L Line CBTC retrofit, MTA dispatchers occasionally wat
 
 The literature uses "phantom occupancy" and "phantom train" almost interchangeably, but they refer to two related but distinct phenomena. Phantom occupancy is a fixed-block failure mode: a track circuit reports occupancy when no train is present. The cause is usually electrical — a wet ballast section that creates a parallel resistance path, a failed insulated joint, a broken bond wire, a corroded relay contact — and the consequence in legacy signaling is straightforward: the next train is held until the indication clears.
 
-Phantom train is the CBTC analogue: the zone controller carries a train object in its database that has no real-world counterpart. In a pure standalone CBTC system this is rare, because the zone controller's train objects are created by handshake with onboard VOBCs and removed when those VOBCs hand off or terminate cleanly. The path from rare to common in operational CBTC runs through overlay deployments, where legacy track-circuit detection and CBTC moving-block detection are designed to coexist, and where the failure modes of each layer can become phantom trains in the other. (For the broader CBTC architecture context, see What Is a Zone Controller? CBTC's Wayside Brain Explained.)
+Phantom train is the CBTC analogue: the zone controller carries a train object in its database that has no real-world counterpart. In a pure standalone CBTC system this is rare, because the zone controller's train objects are created by handshake with onboard VOBCs and removed when those VOBCs hand off or terminate cleanly. The path from rare to common in operational CBTC runs through overlay deployments, where legacy track-circuit detection and CBTC moving-block detection are designed to coexist, and where the failure modes of each layer can become phantom trains in the other. (For the broader CBTC architecture context, see [What Is a Zone Controller? CBTC's Wayside Brain Explained](/blog/what-is-a-zone-controller).)
 
 This post explains both, why they matter, and how procurement and design choices control how often they happen.
 

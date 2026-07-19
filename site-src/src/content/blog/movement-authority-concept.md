@@ -9,7 +9,7 @@ tags: [Movement Authority, CBTC, ATP, Zone Controller, VOBC, end of authority]
 primary_keyword: "Movement Authority CBTC"
 secondary_keywords: ["CBTC Movement Authority explained", "MA end of authority", "how CBTC computes MA", "Movement Authority message", "CBTC braking curve"]
 related_chapters: [3, 4, 5]
-internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/atp-ato-ats-triad"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/atp-ato-ats-triad", "/blog/what-is-a-zone-controller"]
 og_image: "/blog/img/movement-authority-concept.png"
 read_time: "10 min"
 ---
@@ -83,7 +83,7 @@ The first is a corrupted or unauthenticated MA. The onboard ATP rejects it; the 
 
 The second is an MA that ends prematurely — typically because the train ahead reported an unexpected position, the Zone Controller reduced the safe-following distance accordingly, and the new end-of-authority falls behind where the following train would have proceeded. The onboard ATP responds by computing a new deceleration curve and applying brakes if necessary. This is also correct behavior; conservative authority shrinkage is preferable to unsafe extension.
 
-The third is the absence of an MA at zone handover. As a train approaches a Zone Controller boundary, the current Zone Controller and the next one must coordinate to ensure continuous authority across the boundary. (For the handover protocol, see What Is a Zone Controller? CBTC's Wayside Brain Explained.) If handover fails, the train applies the brake at the boundary; service is degraded but safe.
+The third is the absence of an MA at zone handover. As a train approaches a Zone Controller boundary, the current Zone Controller and the next one must coordinate to ensure continuous authority across the boundary. (For the handover protocol, see [What Is a Zone Controller? CBTC's Wayside Brain Explained](/blog/what-is-a-zone-controller).) If handover fails, the train applies the brake at the boundary; service is degraded but safe.
 
 ## Practical takeaways
 

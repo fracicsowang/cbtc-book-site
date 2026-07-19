@@ -38,7 +38,7 @@ ATO operates strictly inside the envelope ATP has drawn. If ATP says "you cannot
 
 ATO is typically certified to SIL 0, 1, or 2 depending on the deployment. The reasoning is structural: ATO failure cannot cause a safety event because ATP catches every safety violation. ATO failure causes a service event — the train operates manually, or stops and waits, or fails over to a backup ATO module — but never an unsafe one. This separation is what allows ATO algorithms to be modified through software updates with relatively lighter re-certification burden. Modern ATO uses model-predictive control or fuzzy logic to optimize for energy and dwell time; on Washington Metro's Red Line CBTC modernization, energy consumption decreased by approximately 12 percent after ATO commissioning.
 
-ATO is mandatory at GoA 3 and GoA 4 (driverless and unattended) and optional at lower Grades of Automation. The vast majority of deployed CBTC lines globally operate at GoA 2 with ATO active and a human operator monitoring; the operator approves departure and handles exceptions, while ATO drives. (For the GoA framework, see What Is a Zone Controller? CBTC's Wayside Brain Explained.)
+ATO is mandatory at GoA 3 and GoA 4 (driverless and unattended) and optional at lower Grades of Automation. The vast majority of deployed CBTC lines globally operate at GoA 2 with ATO active and a human operator monitoring; the operator approves departure and handles exceptions, while ATO drives. (For the GoA framework, see [What Is a Zone Controller? CBTC's Wayside Brain Explained](/blog/what-is-a-zone-controller).)
 
 ## ATS: the dispatcher's brain
 

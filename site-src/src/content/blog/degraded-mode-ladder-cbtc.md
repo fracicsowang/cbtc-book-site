@@ -9,7 +9,7 @@ tags: [degraded mode, CBTC failure modes, restricted manual, hot standby, zone c
 primary_keyword: "CBTC degraded mode"
 secondary_keywords: ["CBTC degraded operation", "CBTC fault recovery", "zone controller failover", "CBTC failure modes", "CBTC service continuity"]
 related_chapters: [9, 5, 13]
-internal_links: ["/blog/operating-modes-cbtc-normal-restricted-manual-failure", "/blog/phantom-occupancy-service-delays"]
+internal_links: ["/blog/operating-modes-cbtc-normal-restricted-manual-failure", "/blog/phantom-occupancy-service-delays", "/blog/what-is-a-zone-controller"]
 og_image: "/blog/img/degraded-mode-ladder-cbtc.png"
 read_time: "11 min"
 ---
@@ -63,7 +63,7 @@ Recovery from bypass is the slowest of the rungs. Returning a corridor to CBTC o
 
 The last rung is reserved for trains that cannot remain in revenue service even at degraded performance. A confirmed brake fault, a confirmed VOBC ATP fault, a door interlock failure that cannot be cleared, or a confirmed loss of position localization beyond dead-reckoning recovery all force the train out of any safe operating envelope. The system response is structured: brake the train to a controlled stop, evacuate passengers to the nearest safe location under attendant or operator supervision and OCC coordination, move the train out of the revenue corridor under tow or under heavily restricted manual control with maintenance escort, and absorb the capacity hit in downstream service while the failed train is cleared.
 
-A line-wide Withdrawn Service event is the worst credible operational scenario short of an actual collision. It is rare on a mature deployment, but the procurement has to specify how it is handled because the safety case has to prove that even this scenario does not introduce new hazards — that the brake-to-stop is controlled, that the evacuation path is safe, that the recovery move does not collide with downstream traffic. (For the central CBTC architecture context that defines what each subsystem owns at each rung, see What Is a Zone Controller? CBTC's Wayside Brain Explained.)
+A line-wide Withdrawn Service event is the worst credible operational scenario short of an actual collision. It is rare on a mature deployment, but the procurement has to specify how it is handled because the safety case has to prove that even this scenario does not introduce new hazards — that the brake-to-stop is controlled, that the evacuation path is safe, that the recovery move does not collide with downstream traffic. (For the central CBTC architecture context that defines what each subsystem owns at each rung, see [What Is a Zone Controller? CBTC's Wayside Brain Explained](/blog/what-is-a-zone-controller).)
 
 ## Designing the ladder in the RFP
 
