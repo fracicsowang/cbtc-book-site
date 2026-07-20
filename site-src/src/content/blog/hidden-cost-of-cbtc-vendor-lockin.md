@@ -9,7 +9,7 @@ tags: [CBTC, vendor lock-in, procurement, US transit, IEEE 1474, ICD]
 primary_keyword: "CBTC vendor lock-in"
 secondary_keywords: ["CBTC lock-in cost", "CBTC supplier dependency", "CBTC interoperability cost", "CBTC source code escrow", "open architecture CBTC"]
 related_chapters: [12, 14, 15]
-internal_links: ["/blog/cbtc-rfp-vendor-lockin", "/blog/cbtc-lifecycle-cost-30-year-model"]
+internal_links: ["/blog/cbtc-rfp-vendor-lockin", "/blog/single-vendor-vs-multi-vendor-cbtc-nyc", "/blog/cbtc-lifecycle-cost-30-year-model"]
 og_image: "/blog/img/hidden-cost-of-cbtc-vendor-lockin.png"
 related_keywords: ["vendor neutrality", "supplier lock-in", "CBTC modular procurement"]
 read_time: "10 min"
@@ -105,7 +105,7 @@ None of the three is wrong. Each reflects the agency's internal engineering capa
 
 This piece quantifies the lock-in surface. The full vendor and architecture treatment lives in Chapter 15 (Vendor Landscape and Technology Trends) of *Communications-Based Train Control*, Volume 2 ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 15 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch15.pdf).
 
-For the procurement-side counterpart, see [How to Write a CBTC RFP That Doesn't Lock You Into One Vendor](/blog/cbtc-rfp-vendor-lockin). For the multi-vendor strategy in practice, see Single-Vendor vs Multi-Vendor CBTC: NYC's Lessons Learned.
+For the procurement-side counterpart, see [How to Write a CBTC RFP That Doesn't Lock You Into One Vendor](/blog/cbtc-rfp-vendor-lockin). For the multi-vendor strategy in practice, see [Single-Vendor vs Multi-Vendor CBTC: NYC's Lessons Learned](/blog/single-vendor-vs-multi-vendor-cbtc-nyc).
 
 ## Sources
 

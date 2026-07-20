@@ -9,7 +9,7 @@ tags: [CBTC procurement, open architecture, proprietary CBTC, vendor lock-in, li
 primary_keyword: "open vs proprietary CBTC"
 secondary_keywords: ["CBTC open architecture", "CBTC vendor lock-in", "EULYNX CBTC", "OCORA", "interface control documents"]
 related_chapters: [12, 15]
-internal_links: ["/blog/trainguard-mt-vs-urbalis-architecture"]
+internal_links: ["/blog/single-vendor-vs-multi-vendor-cbtc-nyc", "/blog/trainguard-mt-vs-urbalis-architecture"]
 og_image: "/blog/img/open-vs-proprietary-cbtc-cost.png"
 read_time: "10 min"
 ---
@@ -38,7 +38,7 @@ The US transit market has no functional equivalent of EULYNX or OCORA for CBTC. 
 
 **Modular procurement packages**. The agency awards separate contracts for onboard (VOBC), wayside (Zone Controller and interlocking), and Operations Control Center systems, with the agency assuming the role of system integrator. This is organizationally demanding and is rare in US procurement, but it materially reduces vendor dominance over the integrated stack.
 
-**Framework agreements with multiple qualified suppliers**. The agency pre-qualifies multiple vendors and runs follow-on procurements among the qualified set. New York City Transit's deliberate multi-vendor strategy across the L Line, 7 Line, and Queens Boulevard is the most-cited US example. (Detailed in Single-Vendor vs Multi-Vendor CBTC: NYC's Lessons Learned.)
+**Framework agreements with multiple qualified suppliers**. The agency pre-qualifies multiple vendors and runs follow-on procurements among the qualified set. New York City Transit's deliberate multi-vendor strategy across the L Line, 7 Line, and Queens Boulevard is the most-cited US example. (Detailed in [Single-Vendor vs Multi-Vendor CBTC: NYC's Lessons Learned](/blog/single-vendor-vs-multi-vendor-cbtc-nyc).)
 
 **Open APIs for non-safety integrations**. The vendor commits to expose standardized REST or OPC UA APIs from the ATS to the agency's enterprise systems (asset management, predictive maintenance, customer information, crew scheduling). Non-safety integrations are where most of the post-deployment cost lives; open APIs prevent the vendor from charging integration premiums for routine connections.
 

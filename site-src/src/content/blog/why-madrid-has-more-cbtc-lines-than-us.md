@@ -9,7 +9,7 @@ tags: [CBTC, Madrid Metro, Spain, Siemens, Bombardier, Barcelona Metro, Valencia
 primary_keyword: "Madrid Metro CBTC lines"
 secondary_keywords: ["Spain CBTC leadership", "Madrid Metro 12 lines CBTC", "Barcelona Metro CBTC", "Spanish metro signaling", "Madrid CBTC vs US"]
 related_chapters: [11, 15]
-internal_links: ["/blog/chinese-metro-cbtc-50-cities", "/blog/london-underground-4lm-largest-cbtc-retrofit"]
+internal_links: ["/blog/chinese-metro-cbtc-50-cities", "/blog/london-underground-4lm-largest-cbtc-retrofit", "/blog/single-vendor-vs-multi-vendor-cbtc-nyc"]
 og_image: "/blog/img/why-madrid-has-more-cbtc-lines-than-us.png"
 read_time: "11 min"
 ---
@@ -55,7 +55,7 @@ Third, **Spain's CBTC concentration in tier-one urban metro masks gaps elsewhere
 
 Three things from the Madrid pattern transfer directly to US transit agencies, regardless of cost and calendar differences.
 
-First, **multi-line standardized procurement specifications**. Madrid Metro's procurement team specifies CBTC against a stable architectural baseline that has evolved incrementally rather than being re-invented each project. The result is design reuse, vendor familiarity with the operator's preferences, and lower commissioning friction across successive lines. US agencies with multi-line CBTC ambitions — NYC MTA, BART, Washington Metropolitan Area Transit Authority (WMATA), Massachusetts Bay Transportation Authority (MBTA) — can replicate this with explicit program-level standardization documents that survive across individual procurements. (See Single-Vendor vs Multi-Vendor CBTC: NYC's Lessons Learned for the related procurement discussion.)
+First, **multi-line standardized procurement specifications**. Madrid Metro's procurement team specifies CBTC against a stable architectural baseline that has evolved incrementally rather than being re-invented each project. The result is design reuse, vendor familiarity with the operator's preferences, and lower commissioning friction across successive lines. US agencies with multi-line CBTC ambitions — NYC MTA, BART, Washington Metropolitan Area Transit Authority (WMATA), Massachusetts Bay Transportation Authority (MBTA) — can replicate this with explicit program-level standardization documents that survive across individual procurements. (See [Single-Vendor vs Multi-Vendor CBTC: NYC's Lessons Learned](/blog/single-vendor-vs-multi-vendor-cbtc-nyc) for the related procurement discussion.)
 
 Second, **multi-vendor competition preserved across multi-decade horizons**. Madrid has procured both Siemens and Bombardier (now Alstom) CBTC across its network without lapsing into single-vendor dependency. The institutional precondition is in-house owner engineering capability of sufficient depth to specify, evaluate, and integrate across vendor families. This is achievable in the US procurement context with deliberate investment.
 

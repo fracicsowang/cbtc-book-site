@@ -9,7 +9,7 @@ tags: [Thales SelTrac, Hitachi Rail, Ansaldo STS, CBTC vendors, procurement]
 primary_keyword: "SelTrac vs Hitachi"
 secondary_keywords: ["Thales SelTrac CBTC", "Hitachi Rail STS", "Ansaldo CBTC", "BART Hitachi", "CBTC vendor consolidation"]
 related_chapters: [10, 15]
-internal_links: ["/blog/trainguard-mt-vs-urbalis-architecture"]
+internal_links: ["/blog/trainguard-mt-vs-urbalis-architecture", "/blog/single-vendor-vs-multi-vendor-cbtc-nyc"]
 og_image: "/blog/img/seltrac-vs-hitachi-procurement.png"
 read_time: "10 min"
 ---
@@ -57,7 +57,7 @@ SelTrac's wayside architecture is relatively centralized, with Zone Controllers 
 
 The Ansaldo-heritage CBTC, particularly in the BART configuration, integrates more directly with mainline-rail style track geometry and signaling overlays. The wayside controllers are designed to interface with existing track-circuit-based legacy systems for cutover staging; the architecture reflects assumptions about long, geometrically variable corridors. The localization stack is similar in principle to SelTrac's but with vendor-specific balises.
 
-The procurement implication is the same lock-in surface that applies to every CBTC platform: once the wayside balise inventory and onboard antenna geometry are committed, the agency is committed for the life of the asset. A multi-vendor agency now finds itself maintaining multiple balise inventories per line if it has procured both Hitachi product lines. (The general lock-in dynamics live in the future article on [Hidden Cost of CBTC Vendor Lock-In](/blog/hidden-cost-of-cbtc-vendor-lockin); the multi-vendor lessons live in Single-Vendor vs Multi-Vendor CBTC: NYC's Lessons Learned.)
+The procurement implication is the same lock-in surface that applies to every CBTC platform: once the wayside balise inventory and onboard antenna geometry are committed, the agency is committed for the life of the asset. A multi-vendor agency now finds itself maintaining multiple balise inventories per line if it has procured both Hitachi product lines. (The general lock-in dynamics live in the future article on [Hidden Cost of CBTC Vendor Lock-In](/blog/hidden-cost-of-cbtc-vendor-lockin); the multi-vendor lessons live in [Single-Vendor vs Multi-Vendor CBTC: NYC's Lessons Learned](/blog/single-vendor-vs-multi-vendor-cbtc-nyc).)
 
 ## What this means in practice
 
