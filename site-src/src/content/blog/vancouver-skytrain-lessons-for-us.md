@@ -9,7 +9,7 @@ tags: [CBTC, Vancouver SkyTrain, GoA 4, driverless, North American transit, Cana
 primary_keyword: "Vancouver SkyTrain CBTC"
 secondary_keywords: ["Vancouver SkyTrain driverless", "GoA 4 North America", "SkyTrain lessons US transit", "TransLink SkyTrain", "Vancouver automated metro"]
 related_chapters: [1, 10, 15]
-internal_links: ["/blog/cbtc-vs-traditional-signaling-8-differences"]
+internal_links: ["/blog/jfk-airtrain-cbtc-driverless", "/blog/cbtc-vs-traditional-signaling-8-differences"]
 og_image: "/blog/img/vancouver-skytrain-lessons-for-us.png"
 read_time: "12 min"
 ---
@@ -18,7 +18,7 @@ In 1985, the British Columbia government opened the Vancouver SkyTrain Expo Line
 
 ## Why SkyTrain matters to United States transit
 
-The Vancouver SkyTrain is the most consequential North American transit system that almost no US transit board cites in its procurement deliberations. The Manuscript Chapter 1 framing is direct: SkyTrain is "the world's first large-scale automated rapid transit network (80-plus km), fully driverless (GoA 4) using Bombardier Innovia automated systems, operating continuously since 1985. While predating modern IEEE 1474.1-compliant CBTC, SkyTrain demonstrates the long-term viability and safety of Grade 4 automation in North America, providing an existence proof for full automation feasibility that informed later CBTC deployments." (For the framing of GoA 4 in the global landscape, see JFK AirTrain: How CBTC Works on a Driverless Airport System and Honolulu Skyline (HART): The Newest US Metro Built on CBTC.)
+The Vancouver SkyTrain is the most consequential North American transit system that almost no US transit board cites in its procurement deliberations. The Manuscript Chapter 1 framing is direct: SkyTrain is "the world's first large-scale automated rapid transit network (80-plus km), fully driverless (GoA 4) using Bombardier Innovia automated systems, operating continuously since 1985. While predating modern IEEE 1474.1-compliant CBTC, SkyTrain demonstrates the long-term viability and safety of Grade 4 automation in North America, providing an existence proof for full automation feasibility that informed later CBTC deployments." (For the framing of GoA 4 in the global landscape, see [JFK AirTrain: How CBTC Works on a Driverless Airport System](/blog/jfk-airtrain-cbtc-driverless) and Honolulu Skyline (HART): The Newest US Metro Built on CBTC.)
 
 The relevant manuscript Chapter 15 attribution is equally direct: "Hitachi Rail SelTrac is one of the world's longest-deployed CBTC platforms, originating with Vancouver SkyTrain's 1985 opening and now operating on Toronto, Dubai, London Underground Jubilee and Northern lines, and Hong Kong MTR (400-plus route-kilometers globally). The platform exemplifies GoA 4 maturity; Vancouver SkyTrain represents four decades of driverless operation."
 

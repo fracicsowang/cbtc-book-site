@@ -42,7 +42,7 @@ The published GoA 4 reference set, with high confidence, includes the following.
 
 **Several Madrid Metro lines** operating with full-height platform screen doors and UTO architecture. Specific line counts vary by source; Metro de Madrid does not always publish GoA grade by line in English-language summaries.
 
-**Several airport people-movers including the JFK AirTrain (NYC, USA, 2003), the Denver International Airport Train (1995), the Hartsfield–Jackson Skytrain (Atlanta, USA, 2014), the Dulles AeroTrain (Washington, USA, 2010), and the MIA Mover (Miami, USA, 2020)**. All operate at GoA 4 on captive airport corridors. (See JFK AirTrain: How CBTC Works on a Driverless Airport System.)
+**Several airport people-movers including the JFK AirTrain (NYC, USA, 2003), the Denver International Airport Train (1995), the Hartsfield–Jackson Skytrain (Atlanta, USA, 2014), the Dulles AeroTrain (Washington, USA, 2010), and the MIA Mover (Miami, USA, 2020)**. All operate at GoA 4 on captive airport corridors. (See [JFK AirTrain: How CBTC Works on a Driverless Airport System](/blog/jfk-airtrain-cbtc-driverless).)
 
 **Other European and Asian lines** including Nuremberg U-Bahn U2 and U3 (2008 conversion), Barcelona Metro Lines 9 and 10 (selectively GoA 4 since 2009), and Santiago Metro Lines 3 and 6 (2019 and 2022 with full GoA 4).
 

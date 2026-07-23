@@ -9,7 +9,7 @@ tags: [CBTC, Paris Métro, Line 14, RATP, GoA 4, driverless, Siemens, platform s
 primary_keyword: "Paris Métro Line 14 driverless"
 secondary_keywords: ["Line 14 METEOR", "RATP driverless metro", "world's first GoA 4 heavy metro", "Paris driverless 1998", "platform screen doors Line 14"]
 related_chapters: [8, 11, 13]
-internal_links: ["/blog/cbtc-vs-traditional-signaling-8-differences"]
+internal_links: ["/blog/jfk-airtrain-cbtc-driverless", "/blog/cbtc-vs-traditional-signaling-8-differences"]
 og_image: "/blog/img/paris-metro-line-14-driverless-showcase.png"
 read_time: "11 min"
 ---
@@ -30,7 +30,7 @@ The line has been extended in stages since 1998: to Saint-Lazare (2003), to Olym
 
 The hard work on Line 14 was not the CBTC technology, which by the late 1990s was already proven on the Vancouver SkyTrain (1985), the Bombardier-platformed airport people movers in the United States, and the original San Francisco Muni LRT CBTC (1998). The hard work was system integration: getting the Siemens CBTC, the platform screen doors, the rolling stock automation, the central control room, the operating procedures, and the regulatory safety case to all converge on a single, defensible operating concept before opening day. The greenfield context made this tractable. There was no legacy signaling to interface with, no legacy fleet performance envelope to accommodate, and no existing passenger expectation about how the line was supposed to feel.
 
-Three structural decisions made the convergence possible. First, **full-height platform screen doors at every station from day one**. RATP and the French regulatory framework established that GoA 4 — fully unattended train operation — required a physical separation between the platform and the train envelope as the primary engineered safety control against intrusion. Every Line 14 station was constructed with full-height PSDs, and the entire safety case was built around their presence. (See JFK AirTrain: How CBTC Works on a Driverless Airport System for the US airport-people-mover counterpart.)
+Three structural decisions made the convergence possible. First, **full-height platform screen doors at every station from day one**. RATP and the French regulatory framework established that GoA 4 — fully unattended train operation — required a physical separation between the platform and the train envelope as the primary engineered safety control against intrusion. Every Line 14 station was constructed with full-height PSDs, and the entire safety case was built around their presence. (See [JFK AirTrain: How CBTC Works on a Driverless Airport System](/blog/jfk-airtrain-cbtc-driverless) for the US airport-people-mover counterpart.)
 
 Second, **the operating concept locked before procurement**. By the time the Siemens contract was signed for Line 14, RATP had finalized the headway target, the dwell-time policy, the dispatch model, the failure-mode response procedures, and the labor concept. Siemens did not have to design the CBTC against an evolving requirement; the requirement was settled. International benchmarking studies cite this as the single most consequential decision RATP made on Line 14, and it is the same lesson Chapter 11 of *Communications-Based Train Control* (Volume 2) extracts from every successful international deployment.
 
