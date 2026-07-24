@@ -9,7 +9,7 @@ tags: [Siemens Trainguard MT, Alstom Urbalis, CBTC vendors, procurement, compari
 primary_keyword: "Trainguard MT vs Urbalis"
 secondary_keywords: ["Siemens CBTC", "Alstom CBTC", "Urbalis architecture", "Trainguard MT architecture", "CBTC vendor comparison"]
 related_chapters: [3, 15]
-internal_links: ["/blog/what-is-a-zone-controller"]
+internal_links: ["/blog/what-is-a-zone-controller", "/blog/onboard-side-of-cbtc-vobc"]
 og_image: "/blog/img/trainguard-mt-vs-urbalis-architecture.png"
 read_time: "11 min"
 ---

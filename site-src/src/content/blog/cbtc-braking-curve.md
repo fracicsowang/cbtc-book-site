@@ -9,7 +9,7 @@ tags: [CBTC, braking curve, ATP, safe stopping distance, EBD, SBD, kinematic, si
 primary_keyword: "CBTC braking curve"
 secondary_keywords: ["CBTC safe stopping distance", "Emergency Braking Distance EBD", "Service Braking Distance SBD", "CBTC ATP envelope", "kinematic braking distance"]
 related_chapters: [4, 5, 13]
-internal_links: ["/blog/movement-authority-concept", "/blog/cbtc-heartbeat-cycle"]
+internal_links: ["/blog/onboard-side-of-cbtc-vobc", "/blog/movement-authority-concept", "/blog/cbtc-heartbeat-cycle"]
 og_image: "/blog/img/cbtc-braking-curve.png"
 read_time: "11 min"
 ---
@@ -151,7 +151,7 @@ The 50 to 100 ms cycle ensures that the system responds to overspeed within 50 t
 
 This post is an 11-minute engineer's primer. The full speed-supervision and braking-curve treatment lives in Chapter 4 (Onboard Equipment), section 4.3, of *Communications-Based Train Control*, Volume 1: Foundations & Technical Architecture ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 4 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch04.pdf) for the speed envelope and ATP cycle diagrams.
 
-For the onboard hardware that runs the cycle, see The Onboard Side of CBTC: Inside the VOBC. For how the Movement Authority that bounds the EBD is generated upstream, see [The Movement Authority Concept: How a CBTC Train Decides How Far to Go](/blog/movement-authority-concept).
+For the onboard hardware that runs the cycle, see [The Onboard Side of CBTC: Inside the VOBC](/blog/onboard-side-of-cbtc-vobc). For how the Movement Authority that bounds the EBD is generated upstream, see [The Movement Authority Concept: How a CBTC Train Decides How Far to Go](/blog/movement-authority-concept).
 
 ## Sources
 

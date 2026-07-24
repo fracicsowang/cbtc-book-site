@@ -9,7 +9,7 @@ tags: [Zone Controller, CBTC, wayside, ATP, Movement Authority, US transit]
 primary_keyword: "Zone Controller CBTC"
 secondary_keywords: ["CBTC Zone Controller architecture", "wayside ATP", "zone boundary handover", "ZC redundancy", "Zone Controller territory"]
 related_chapters: [3, 5]
-internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/movement-authority-concept"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/movement-authority-concept", "/blog/onboard-side-of-cbtc-vobc"]
 og_image: "/blog/img/what-is-a-zone-controller.png"
 read_time: "11 min"
 ---

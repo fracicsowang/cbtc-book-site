@@ -9,7 +9,7 @@ tags: [CBTC, train localization, tachometer, Doppler radar, balise, Kalman filte
 primary_keyword: "CBTC train localization"
 secondary_keywords: ["tachometer Doppler balise fusion", "CBTC odometry", "Kalman filter train position", "balise position correction", "Doppler radar CBTC"]
 related_chapters: [4]
-internal_links: ["/blog/how-cbtc-trains-know-where-they-are", "/blog/cbtc-braking-curve"]
+internal_links: ["/blog/onboard-side-of-cbtc-vobc", "/blog/how-cbtc-trains-know-where-they-are", "/blog/cbtc-braking-curve"]
 og_image: "/blog/img/train-localization-tachometer-doppler-beacon.png"
 read_time: "11 min"
 ---
@@ -110,7 +110,7 @@ This is why localization sensor specification is one of the most-leveraged decis
 
 This post is an 11-minute walkthrough of the localization stack. The full treatment, including the worked Kalman filter mathematics, the dark-start initialization procedures, the balise placement strategy, and emerging GNSS and visual odometry technologies, lives in Chapter 4 (Onboard Equipment), section 4.2, of *Communications-Based Train Control*, Volume 1: Foundations & Technical Architecture ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 4 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch04.pdf) for the localization architecture diagrams.
 
-For the broader picture of what the VOBC does with the position estimate, see The Onboard Side of CBTC: Inside the VOBC. For how localization accuracy translates into braking distance and headway, see [Inside the CBTC Braking Curve: How Safe Stopping Distance Is Calculated](/blog/cbtc-braking-curve).
+For the broader picture of what the VOBC does with the position estimate, see [The Onboard Side of CBTC: Inside the VOBC](/blog/onboard-side-of-cbtc-vobc). For how localization accuracy translates into braking distance and headway, see [Inside the CBTC Braking Curve: How Safe Stopping Distance Is Calculated](/blog/cbtc-braking-curve).
 
 ## Sources
 

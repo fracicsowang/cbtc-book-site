@@ -9,7 +9,7 @@ tags: [CBTC, communication loss, fallback, degraded mode, ATP, radio dropout, sa
 primary_keyword: "CBTC communication loss fallback"
 secondary_keywords: ["CBTC radio dropout", "CBTC degraded mode", "CBTC safe stopping protocol", "CBTC limp-home mode", "CBTC communication loss timeout"]
 related_chapters: [3, 6, 9]
-internal_links: ["/blog/cbtc-heartbeat-cycle", "/blog/phantom-train-detection"]
+internal_links: ["/blog/cbtc-heartbeat-cycle", "/blog/onboard-side-of-cbtc-vobc", "/blog/phantom-train-detection"]
 og_image: "/blog/img/communication-loss-fallback.png"
 read_time: "10 min"
 ---

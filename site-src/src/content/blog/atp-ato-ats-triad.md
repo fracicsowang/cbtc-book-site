@@ -9,7 +9,7 @@ tags: [ATP, ATO, ATS, CBTC, SIL 4, automatic train protection, automatic train o
 primary_keyword: "ATP ATO ATS"
 secondary_keywords: ["automatic train protection", "automatic train operation", "automatic train supervision", "ATP vs ATO", "CBTC functional architecture"]
 related_chapters: [3, 7, 8]
-internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/movement-authority-concept"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/movement-authority-concept", "/blog/onboard-side-of-cbtc-vobc"]
 og_image: "/blog/img/atp-ato-ats-triad.png"
 read_time: "10 min"
 ---
@@ -28,7 +28,7 @@ ATP runs on the onboard Vehicle On-Board Controller (VOBC) and on the wayside Zo
 
 If the train exceeds the envelope, ATP commands the brake. There is no consultation with the operator, with ATO, or with the dispatcher. The brake applies. The system logs the event. Service resumes only when the train has been brought to a controlled stop and the operator has acknowledged the intervention.
 
-ATP achieves SIL 4 through redundant hardware (typically 2-out-of-2 or 2-out-of-3 voting), diverse software implementations (two independent code bases derived from the same specification, often in different languages), formal verification of the safety logic, and continuous self-test of every input and output. The development lifecycle is governed by the V-model laid out in EN 50126, EN 50128, and EN 50129. The cost of this rigor is substantial: ATP development consumes roughly 60 to 70 percent of nonrecurring CBTC engineering effort. The benefit is the ability to retire a century of operator-mediated SPAD risk. (For a closer look at the onboard side, see The Onboard Side of CBTC: Inside the VOBC.)
+ATP achieves SIL 4 through redundant hardware (typically 2-out-of-2 or 2-out-of-3 voting), diverse software implementations (two independent code bases derived from the same specification, often in different languages), formal verification of the safety logic, and continuous self-test of every input and output. The development lifecycle is governed by the V-model laid out in EN 50126, EN 50128, and EN 50129. The cost of this rigor is substantial: ATP development consumes roughly 60 to 70 percent of nonrecurring CBTC engineering effort. The benefit is the ability to retire a century of operator-mediated SPAD risk. (For a closer look at the onboard side, see [The Onboard Side of CBTC: Inside the VOBC](/blog/onboard-side-of-cbtc-vobc).)
 
 ## ATO: the performance optimizer
 

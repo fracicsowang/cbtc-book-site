@@ -9,7 +9,7 @@ tags: [CBTC, train localization, balise, tachometer, Doppler radar, odometry, US
 primary_keyword: "CBTC train localization"
 secondary_keywords: ["how CBTC trains know position", "balise transponder", "tachometer odometry", "Doppler radar train", "sensor fusion train position"]
 related_chapters: [4, 5]
-internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/movement-authority-concept"]
+internal_links: ["/blog/what-is-cbtc-2026-guide", "/blog/onboard-side-of-cbtc-vobc", "/blog/movement-authority-concept"]
 og_image: "/blog/img/how-cbtc-trains-know-where-they-are.png"
 read_time: "10 min"
 ---

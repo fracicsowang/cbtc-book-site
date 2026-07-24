@@ -9,7 +9,7 @@ tags: [CBTC, vital functions, SIL 4, ATP, ATO, ATS, safety case, US transit]
 primary_keyword: "vital vs non-vital CBTC"
 secondary_keywords: ["CBTC safety boundary", "SIL 4 ATP", "vital functions signaling", "non-vital ATO ATS", "CBTC safety partition"]
 related_chapters: [3, 4, 5]
-internal_links: ["/blog/atp-ato-ats-triad", "/blog/cbtc-braking-curve"]
+internal_links: ["/blog/atp-ato-ats-triad", "/blog/onboard-side-of-cbtc-vobc", "/blog/cbtc-braking-curve"]
 og_image: "/blog/img/vital-vs-non-vital-functions-cbtc.png"
 read_time: "10 min"
 ---
@@ -100,7 +100,7 @@ An **upgrade impact analysis** describing what kinds of changes can be made in t
 
 This post is a 10-minute summary. The full treatment of CBTC functional architecture, SIL 4 design mandates, and the safety boundary lives in Chapter 3 of *Communications-Based Train Control* ([Volume 1 on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 3 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch03.pdf) for the partition diagrams.
 
-For the onboard side of the vital partition, see The Onboard Side of CBTC: Inside the VOBC. For how vital ATP enforces the speed envelope inside the partition, see [Inside the CBTC Braking Curve: How Safe Stopping Distance Is Calculated](/blog/cbtc-braking-curve).
+For the onboard side of the vital partition, see [The Onboard Side of CBTC: Inside the VOBC](/blog/onboard-side-of-cbtc-vobc). For how vital ATP enforces the speed envelope inside the partition, see [Inside the CBTC Braking Curve: How Safe Stopping Distance Is Calculated](/blog/cbtc-braking-curve).
 
 ## Sources
 

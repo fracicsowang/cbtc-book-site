@@ -9,7 +9,7 @@ tags: [CBTC, heartbeat cycle, latency, ATP, position report, Movement Authority,
 primary_keyword: "CBTC heartbeat cycle"
 secondary_keywords: ["CBTC latency budget", "CBTC position report", "CBTC Movement Authority cycle", "CBTC end-to-end latency", "CBTC real-time"]
 related_chapters: [3, 4, 6]
-internal_links: ["/blog/movement-authority-concept", "/blog/communication-loss-fallback"]
+internal_links: ["/blog/onboard-side-of-cbtc-vobc", "/blog/movement-authority-concept", "/blog/communication-loss-fallback"]
 og_image: "/blog/img/cbtc-heartbeat-cycle.png"
 read_time: "10 min"
 ---
@@ -31,7 +31,7 @@ The standard cycle period for a modern US deployment is 500 ms to 1 second, with
 
 ## The 200 ms slice: what the VOBC does
 
-In a typical 500 ms cycle, the VOBC owns the first 100 to 200 ms. The work breaks into four phases that have to complete every cycle without exception (the cycle structure is documented in detail in The Onboard Side of CBTC: Inside the VOBC).
+In a typical 500 ms cycle, the VOBC owns the first 100 to 200 ms. The work breaks into four phases that have to complete every cycle without exception (the cycle structure is documented in detail in [The Onboard Side of CBTC: Inside the VOBC](/blog/onboard-side-of-cbtc-vobc)).
 
 **Phase 1, input ingest (about 5 to 20 ms)**. The VOBC reads sensor data from tachometers, Doppler radar, balise antenna, accelerometer, and door, brake, and traction status switches. It receives messages from the Data Communication System (DCS) radio and from the Train Management System bus. Each input is range-checked and plausibility-checked against rate-of-change limits and cross-checked against redundant sources where available.
 
@@ -100,7 +100,7 @@ Three system-design implications fall out of the heartbeat structure. First, cyc
 
 This post is a 10-minute walk through the heartbeat cycle. The full architecture and communications treatment lives in Chapter 3 (System Architecture) and Chapter 6 (Communication Systems) of *Communications-Based Train Control*, Volume 1: Foundations & Technical Architecture ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 3 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch03.pdf) for the architecture and data-flow diagrams.
 
-For the onboard cycle in detail, see The Onboard Side of CBTC: Inside the VOBC. For how the system behaves when the heartbeat fails, see [Communication-Loss Fallback: How Trains Behave When the Radio Drops](/blog/communication-loss-fallback).
+For the onboard cycle in detail, see [The Onboard Side of CBTC: Inside the VOBC](/blog/onboard-side-of-cbtc-vobc). For how the system behaves when the heartbeat fails, see [Communication-Loss Fallback: How Trains Behave When the Radio Drops](/blog/communication-loss-fallback).
 
 ## Sources
 

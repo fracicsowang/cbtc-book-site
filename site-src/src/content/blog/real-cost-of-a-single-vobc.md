@@ -9,7 +9,7 @@ tags: [CBTC, VOBC, onboard equipment, procurement, US transit, fleet retrofit]
 primary_keyword: "VOBC cost"
 secondary_keywords: ["VOBC price", "CBTC onboard cost", "Vehicle On-Board Controller cost", "VOBC retrofit cost", "CBTC fleet cost"]
 related_chapters: [4, 14]
-internal_links: ["/blog/cbtc-procurement-cost-drivers", "/blog/cbtc-lifecycle-cost-30-year-model"]
+internal_links: ["/blog/onboard-side-of-cbtc-vobc", "/blog/cbtc-procurement-cost-drivers", "/blog/cbtc-lifecycle-cost-30-year-model"]
 og_image: "/blog/img/real-cost-of-a-single-vobc.png"
 read_time: "9 min"
 ---
@@ -18,7 +18,7 @@ A US transit agency planning a 100-car CBTC fleet retrofit will allocate roughly
 
 ## Why per-VOBC economics matter
 
-Onboard CAPEX is 12 to 18 percent of total CBTC project cost — substantial but not the largest single category. What makes per-VOBC cost worth analyzing separately is that it scales with fleet size, not with route-mileage, and it varies enormously with rolling-stock age and prior modification history. A 100-car retrofit on aging fleets costs more per cab than a 200-car retrofit on uniform new procurement. A single-cab-equipped consist (typical NYC subway) costs differently from a dual-cab-equipped consist (typical commuter rail). And the per-VOBC cost shows up again every 15 to 20 years in the form of midlife refresh, with type-approval recertification timelines that are not compressible. This piece is for the procurement officer, the rolling-stock chief mechanical officer, and the program manager building the fleet-side budget. It assumes familiarity with the VOBC's role in the CBTC architecture. The numbers below are drawn from manuscript Chapter 4 and Chapter 14, and reflect industry-standard ranges for US procurement in 2026.
+Onboard CAPEX is 12 to 18 percent of total CBTC project cost — substantial but not the largest single category. What makes per-VOBC cost worth analyzing separately is that it scales with fleet size, not with route-mileage, and it varies enormously with rolling-stock age and prior modification history. A 100-car retrofit on aging fleets costs more per cab than a 200-car retrofit on uniform new procurement. A single-cab-equipped consist (typical NYC subway) costs differently from a dual-cab-equipped consist (typical commuter rail). And the per-VOBC cost shows up again every 15 to 20 years in the form of midlife refresh, with type-approval recertification timelines that are not compressible. This piece is for the procurement officer, the rolling-stock chief mechanical officer, and the program manager building the fleet-side budget. It assumes familiarity with [the VOBC's role in the CBTC architecture](/blog/onboard-side-of-cbtc-vobc). The numbers below are drawn from manuscript Chapter 4 and Chapter 14, and reflect industry-standard ranges for US procurement in 2026.
 
 ## The five hardware components
 
@@ -131,7 +131,7 @@ NYC's MTA encountered Scenario C costs on the L Line and the 7 Line; uniform fle
 
 This piece is the per-cab budget walkthrough. The full onboard-architecture treatment lives in Chapter 4 (Onboard Equipment) of *Communications-Based Train Control*, Volume 1 ([Volume 1 on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)) and the lifecycle cost treatment in Chapter 14 of Volume 2. [Download Chapter 4 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch04.pdf).
 
-For the architectural picture, see The Onboard Side of CBTC: Inside the VOBC. For the all-in budget context, see [CBTC Procurement: Cost Drivers Beyond the Sticker Price](/blog/cbtc-procurement-cost-drivers) and [CBTC Lifecycle Cost: A 30-Year Model Walk-Through](/blog/cbtc-lifecycle-cost-30-year-model).
+For the architectural picture, see [The Onboard Side of CBTC: Inside the VOBC](/blog/onboard-side-of-cbtc-vobc). For the all-in budget context, see [CBTC Procurement: Cost Drivers Beyond the Sticker Price](/blog/cbtc-procurement-cost-drivers) and [CBTC Lifecycle Cost: A 30-Year Model Walk-Through](/blog/cbtc-lifecycle-cost-30-year-model).
 
 ## Sources
 

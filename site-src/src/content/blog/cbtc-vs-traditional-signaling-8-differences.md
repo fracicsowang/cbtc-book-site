@@ -53,7 +53,7 @@ CBTC moves enforcement into the system. Automatic Train Protection compares the 
 
 A 50-kilometer fixed-block metro line typically carries 150 to 200 wayside signal heads, a comparable number of track circuits, and four to six relay houses. Each component has a maintenance cycle, a spare-parts catalog, and a workforce trained to fix it. Much of the equipment outlives its design life by decades; some MTA relay logic predates transistors.
 
-A CBTC line consolidates this into a small number of zone controllers (one per 2 to 5 kilometers of track) housed in equipment rooms, plus wayside access points (radio antennas) every 250 to 500 meters and balises every 200 meters or so. The total count of distributed safety-critical hardware drops sharply. The maintenance workforce shifts from electromechanical signal technicians to network and software specialists — itself a labor planning challenge worth its own article. (For the strategic implications, see The Onboard Side of CBTC: Inside the VOBC.)
+A CBTC line consolidates this into a small number of zone controllers (one per 2 to 5 kilometers of track) housed in equipment rooms, plus wayside access points (radio antennas) every 250 to 500 meters and balises every 200 meters or so. The total count of distributed safety-critical hardware drops sharply. The maintenance workforce shifts from electromechanical signal technicians to network and software specialists — itself a labor planning challenge worth its own article. (For the strategic implications, see [The Onboard Side of CBTC: Inside the VOBC](/blog/onboard-side-of-cbtc-vobc).)
 
 ## 6. Capital and lifecycle cost: front-loaded versus distributed
 

@@ -9,7 +9,7 @@ tags: [door operation, dwell time, CBTC capacity, platform screen doors, high-fr
 primary_keyword: "door operation high-frequency service"
 secondary_keywords: ["CBTC door cycle", "platform screen doors capacity", "metro dwell time door", "door interface VOBC", "level boarding metro"]
 related_chapters: [13, 4, 8]
-internal_links: ["/blog/headway-optimization-beyond-theoretical-minimum", "/blog/driverless-operation-engineering-labor-public-acceptance"]
+internal_links: ["/blog/headway-optimization-beyond-theoretical-minimum", "/blog/onboard-side-of-cbtc-vobc", "/blog/driverless-operation-engineering-labor-public-acceptance"]
 og_image: "/blog/img/door-operation-bottleneck-high-frequency-service.png"
 read_time: "10 min"
 ---
@@ -49,7 +49,7 @@ The full sequence — precision stop, berthing, door open, dwell, door close, de
 
 Door faults are not just a capacity issue; they are the leading cause of in-service incidents on operational CBTC lines. A door interlock failure that prevents the train from departing, a door obstruction that triggers repeated re-open cycles, a door-position sensor anomaly that produces a "doors not closed" indication when the doors are physically closed, a passenger pulling an emergency cord because their bag is caught — all of these present operationally as "the train is not moving" and consume dispatcher and operator attention disproportionate to their root cause.
 
-The manuscript's Chapter 4 treatment of the VOBC notes that door fault detection is a leading source of in-service incidents on CBTC lines and that many failure modes that look like signaling issues are actually door interface issues. The traction interface, the brake interface, the door interface, and the Train Management System interface together form the small network of vital and non-vital connections between the VOBC and the train's existing systems, and the door interface is where retrofit projects spend a disproportionate share of their integration effort. (For the broader VOBC-to-train integration picture, see The Onboard Side of CBTC: Inside the VOBC.)
+The manuscript's Chapter 4 treatment of the VOBC notes that door fault detection is a leading source of in-service incidents on CBTC lines and that many failure modes that look like signaling issues are actually door interface issues. The traction interface, the brake interface, the door interface, and the Train Management System interface together form the small network of vital and non-vital connections between the VOBC and the train's existing systems, and the door interface is where retrofit projects spend a disproportionate share of their integration effort. (For the broader VOBC-to-train integration picture, see [The Onboard Side of CBTC: Inside the VOBC](/blog/onboard-side-of-cbtc-vobc).)
 
 The implication is that door system reliability is part of the CBTC capacity case, not a separate rolling-stock concern. A line with 99.5 percent door cycle reliability spends a measurable fraction of its operating day in door-fault recovery; a line with 99.95 percent reliability does not. The procurement language for the VOBC-door interface, for the door obstruction detection, and for the door-fault recovery procedure shapes that reliability number directly.
 

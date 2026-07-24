@@ -9,7 +9,7 @@ tags: [CBTC, phantom train, phantom occupancy, failure mode, ATP, ZC, integrity,
 primary_keyword: "CBTC phantom train detection"
 secondary_keywords: ["CBTC failure mode", "phantom train CBTC", "false train report CBTC", "CBTC integrity check", "Zone Controller occupancy validation"]
 related_chapters: [3, 4, 5, 9]
-internal_links: ["/blog/cbtc-heartbeat-cycle", "/blog/communication-loss-fallback"]
+internal_links: ["/blog/onboard-side-of-cbtc-vobc", "/blog/cbtc-heartbeat-cycle", "/blog/communication-loss-fallback"]
 og_image: "/blog/img/phantom-train-detection.png"
 read_time: "10 min"
 ---
@@ -28,7 +28,7 @@ A phantom train can arise from at least four mechanism families.
 
 The first is **a corrupted position report in transit**. A radio-link bit error, a network glitch, or a malformed packet could in principle produce a position report that the ZC parses with values far from reality. CBTC protocols defend against this with cyclic redundancy checks (CRC), sequence numbering, and message authentication codes — the report has to validate cryptographically and sequentially before the ZC processes it. A corrupted report fails one of these checks and is rejected. (For the heartbeat protocol structure, see [The Heartbeat Cycle: 200 ms That Keep Modern Metros Safe](/blog/cbtc-heartbeat-cycle).)
 
-The second is **a Vehicle On-Board Controller (VOBC) localization failure that the onboard logic does not detect**. If the Kalman filter integrating tachometer, Doppler, and balise data produces a wrong estimate — and the redundant safety processors do not catch the error through 2-out-of-3 voting or 2-out-of-2 comparison — the train transmits a confidently wrong position. The defense is the redundancy architecture itself: independent processors running diverse implementations of the same logic, with hardware voting that cannot be fooled by software fault. (For the VOBC redundancy and voting architecture, see The Onboard Side of CBTC: Inside the VOBC.)
+The second is **a Vehicle On-Board Controller (VOBC) localization failure that the onboard logic does not detect**. If the Kalman filter integrating tachometer, Doppler, and balise data produces a wrong estimate — and the redundant safety processors do not catch the error through 2-out-of-3 voting or 2-out-of-2 comparison — the train transmits a confidently wrong position. The defense is the redundancy architecture itself: independent processors running diverse implementations of the same logic, with hardware voting that cannot be fooled by software fault. (For the VOBC redundancy and voting architecture, see [The Onboard Side of CBTC: Inside the VOBC](/blog/onboard-side-of-cbtc-vobc).)
 
 The third is **an adversarial injection** — a message that did not originate from a legitimate train but was crafted to look like one. Cybersecurity defense layers (covered in Chapter 6 of the manuscript) protect against this through cryptographic authentication of every report, mutual authentication between train and wayside, and intrusion detection on the wayside backbone. The phantom train scenario is one of the standard threat models a CBTC cybersecurity assessment addresses.
 
