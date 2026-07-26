@@ -9,7 +9,7 @@ tags: [CBTC, procurement, cost, US transit, FTA, BABA, lifecycle cost]
 primary_keyword: "CBTC procurement cost drivers"
 secondary_keywords: ["CBTC project cost", "CBTC capital cost", "CBTC sticker price", "FTA CBTC funding cost", "BABA premium CBTC"]
 related_chapters: [12, 14, 15]
-internal_links: ["/blog/cbtc-projects-over-budget", "/blog/cbtc-lifecycle-cost-30-year-model"]
+internal_links: ["/blog/cbtc-projects-over-budget", "/blog/cbtc-lifecycle-cost-30-year-model", "/blog/funding-cbtc-fta-federal-state-local"]
 og_image: "/blog/img/cbtc-procurement-cost-drivers.png"
 read_time: "10 min"
 ---
@@ -111,7 +111,7 @@ The mitigation is the multi-vendor strategy that NYC's MTA has pursued across th
 
 This piece is the all-in budget walkthrough. The full lifecycle treatment lives in Chapter 14 (Lifecycle Costs and Economic Justification) and Chapter 15 (Vendor Landscape) of *Communications-Based Train Control*, Volume 2 ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 14 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch14.pdf).
 
-For the change-order pattern that drives mid-project overruns, see [Why CBTC Projects Run 30%+ Over Budget — and How to Prevent It](/blog/cbtc-projects-over-budget). For the federal funding structure, see Funding a CBTC Project: FTA, Federal, State, and Local Sources.
+For the change-order pattern that drives mid-project overruns, see [Why CBTC Projects Run 30%+ Over Budget — and How to Prevent It](/blog/cbtc-projects-over-budget). For the federal funding structure, see [Funding a CBTC Project: FTA, Federal, State, and Local Sources](/blog/funding-cbtc-fta-federal-state-local).
 
 ## Sources
 
