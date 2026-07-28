@@ -9,7 +9,7 @@ tags: [CBTC, Singapore MRT, North-East Line, NEL, LTA, GoA 4, Alstom, greenfield
 primary_keyword: "Singapore MRT NEL CBTC"
 secondary_keywords: ["NEL North-East Line driverless", "Singapore LTA greenfield CBTC", "world's first underground driverless metro", "NEL 2003 opening", "Alstom CBTC Singapore"]
 related_chapters: [8, 11, 13]
-internal_links: ["/blog/paris-metro-line-14-driverless-showcase", "/blog/overlay-vs-greenfield-cbtc"]
+internal_links: ["/blog/paris-metro-line-14-driverless-showcase", "/blog/honolulu-skyline-newest-us-cbtc-metro", "/blog/overlay-vs-greenfield-cbtc"]
 og_image: "/blog/img/singapore-mrt-nel-original-greenfield-cbtc.png"
 read_time: "10 min"
 ---
@@ -73,7 +73,7 @@ Third, **the NEL did not eliminate human staffing on the system**. LTA's GoA 4 l
 
 Five points follow from the NEL that US transit agencies considering greenfield GoA 4 should price into their planning explicitly.
 
-First, **greenfield CBTC at GoA 4 has been operationally viable on heavy metro since 2003**. The technology and the operating concept have more than two decades of underground revenue-service evidence. The decision in the US is institutional and procurement-related, not technological. (See Honolulu Skyline (HART): The Newest US Metro Built on CBTC for the US data point.)
+First, **greenfield CBTC at GoA 4 has been operationally viable on heavy metro since 2003**. The technology and the operating concept have more than two decades of underground revenue-service evidence. The decision in the US is institutional and procurement-related, not technological. (See [Honolulu Skyline (HART): The Newest US Metro Built on CBTC](/blog/honolulu-skyline-newest-us-cbtc-metro) for the US data point.)
 
 Second, **lock the operating concept before issuing the procurement**. The NEL, Line 14, Honolulu Skyline, and the Copenhagen Metro all did this. The single highest-impact decision an agency can make on a greenfield CBTC project is to write a finalized Operating Concept (OpCon) — including GoA target, headway, dwell policy, platform screen door specification, labor framework, and safety case approach — before the RFP closes.
 

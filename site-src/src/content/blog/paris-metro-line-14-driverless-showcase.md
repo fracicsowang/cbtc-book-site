@@ -9,7 +9,7 @@ tags: [CBTC, Paris Métro, Line 14, RATP, GoA 4, driverless, Siemens, platform s
 primary_keyword: "Paris Métro Line 14 driverless"
 secondary_keywords: ["Line 14 METEOR", "RATP driverless metro", "world's first GoA 4 heavy metro", "Paris driverless 1998", "platform screen doors Line 14"]
 related_chapters: [8, 11, 13]
-internal_links: ["/blog/jfk-airtrain-cbtc-driverless", "/blog/cbtc-vs-traditional-signaling-8-differences"]
+internal_links: ["/blog/honolulu-skyline-newest-us-cbtc-metro", "/blog/jfk-airtrain-cbtc-driverless", "/blog/cbtc-vs-traditional-signaling-8-differences"]
 og_image: "/blog/img/paris-metro-line-14-driverless-showcase.png"
 read_time: "11 min"
 ---
@@ -24,7 +24,7 @@ Line 14 is a clean-sheet greenfield metro line. RATP designed it without legacy 
 
 The line opened on 15 October 1998. By the end of its first year of revenue service, Line 14 had carried more than 50 million passenger-journeys with a published reliability and on-time performance profile that matched or exceeded the broader RATP network. The driverless feature was not marketed as a selling point. RATP presented Line 14 to passengers as a new metro service. The "no driver" element was visible to anyone who looked through the front window — Line 14 trains famously have a forward-facing passenger view in the lead car, where a driver's cab would have been — but not advertised in the way US discussions of driverless transit sometimes assume.
 
-The line has been extended in stages since 1998: to Saint-Lazare (2003), to Olympiades (2007), to Saint-Ouen and Mairie de Saint-Ouen (2020), to Saint-Denis Pleyel and Aéroport d'Orly (December 2024). Each extension preserved the GoA 4 operating model, the platform screen door standard, and the same Siemens CBTC technology family — extended and updated, but architecturally continuous. (For a US comparison point, see Honolulu Skyline (HART): The Newest US Metro Built on CBTC, the United States' first GoA 4 heavy metro from inception, opened in 2023.)
+The line has been extended in stages since 1998: to Saint-Lazare (2003), to Olympiades (2007), to Saint-Ouen and Mairie de Saint-Ouen (2020), to Saint-Denis Pleyel and Aéroport d'Orly (December 2024). Each extension preserved the GoA 4 operating model, the platform screen door standard, and the same Siemens CBTC technology family — extended and updated, but architecturally continuous. (For a US comparison point, see [Honolulu Skyline (HART): The Newest US Metro Built on CBTC](/blog/honolulu-skyline-newest-us-cbtc-metro), the United States' first GoA 4 heavy metro from inception, opened in 2023.)
 
 ## Why Line 14 worked as a greenfield case
 

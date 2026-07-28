@@ -9,7 +9,7 @@ tags: [CBTC, JFK AirTrain, GoA 4, driverless, airport people mover, Bombardier I
 primary_keyword: "JFK AirTrain CBTC"
 secondary_keywords: ["JFK AirTrain driverless", "Bombardier Innovia 300 JFK", "airport people mover CBTC", "GoA 4 US transit", "JFK AirTrain operations"]
 related_chapters: [8, 10, 15]
-internal_links: ["/blog/vancouver-skytrain-lessons-for-us", "/blog/cbtc-vs-traditional-signaling-8-differences"]
+internal_links: ["/blog/vancouver-skytrain-lessons-for-us", "/blog/honolulu-skyline-newest-us-cbtc-metro", "/blog/cbtc-vs-traditional-signaling-8-differences"]
 og_image: "/blog/img/jfk-airtrain-cbtc-driverless.png"
 read_time: "11 min"
 ---
@@ -75,7 +75,7 @@ These four factors are airport-specific. The institutional, labor, equity, and a
 
 For US urban transit, the airport APM sector demonstrates that GoA 4 is technically proven, operationally reliable, and financially justified in appropriate use cases. The lessons translate to urban transit with care.
 
-First, GoA 4 with CBTC is not an untested architecture in the US. Two decades of JFK AirTrain operation, plus comparable durations at SFO, Atlanta, Dulles, Denver, and other US airports, plus 40-plus years of Vancouver SkyTrain operation across the border, plus recent operating data from the Honolulu Skyline. The operational record exists. (For the Honolulu greenfield US deployment, see Honolulu Skyline (HART): The Newest US Metro Built on CBTC. For the Vancouver record, see [Vancouver SkyTrain (Canada): What US Agencies Should Learn From It](/blog/vancouver-skytrain-lessons-for-us).)
+First, GoA 4 with CBTC is not an untested architecture in the US. Two decades of JFK AirTrain operation, plus comparable durations at SFO, Atlanta, Dulles, Denver, and other US airports, plus 40-plus years of Vancouver SkyTrain operation across the border, plus recent operating data from the Honolulu Skyline. The operational record exists. (For the Honolulu greenfield US deployment, see [Honolulu Skyline (HART): The Newest US Metro Built on CBTC](/blog/honolulu-skyline-newest-us-cbtc-metro). For the Vancouver record, see [Vancouver SkyTrain (Canada): What US Agencies Should Learn From It](/blog/vancouver-skytrain-lessons-for-us).)
 
 Second, platform screen doors are an enabling technology for GoA 4. Every US airport APM running at GoA 4 has integrated PSDs. The Honolulu Skyline has PSDs. The international GoA 4 fleet (Paris Métro, Singapore MRT, Dubai Metro, Copenhagen Metro) is essentially universally PSD-equipped. US urban transit's slow PSD adoption — driven by retrofit cost on existing platforms, station design constraints, and historical risk-tolerance norms — is one of the structural barriers to GoA 4 retrofit in US urban metros. Programs that aspire to GoA 4 should specify PSD design from project inception.
 

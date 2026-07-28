@@ -9,7 +9,7 @@ tags: [CBTC, GoA 4, driverless, UTO, unattended train operation, Paris Métro, S
 primary_keyword: "GoA 4 driverless metro worldwide"
 secondary_keywords: ["unattended train operation UTO", "GoA 4 vs GoA 3", "driverless metro list", "real driverless metro systems", "GoA 4 platform screen doors"]
 related_chapters: [8, 11]
-internal_links: ["/blog/paris-metro-line-14-driverless-showcase", "/blog/singapore-mrt-nel-original-greenfield-cbtc"]
+internal_links: ["/blog/paris-metro-line-14-driverless-showcase", "/blog/singapore-mrt-nel-original-greenfield-cbtc", "/blog/honolulu-skyline-newest-us-cbtc-metro"]
 og_image: "/blog/img/driverless-operations-worldwide-goa-4.png"
 read_time: "11 min"
 ---
@@ -36,7 +36,7 @@ The published GoA 4 reference set, with high confidence, includes the following.
 
 **Vancouver SkyTrain Expo, Millennium, and Canada Lines (TransLink/BCRTC, Canada)**. Expo Line from 1985 (Bombardier ATC, predating IEEE 1474.1-compliant CBTC); Millennium Line from 2002; Canada Line from 2009. The world's first large-scale automated rapid transit network. UTO across the system. SkyTrain has now operated continuously for more than 40 years at GoA 4.
 
-**Honolulu Skyline (HART, Hawaii, USA)**. Phase 1 from June 2023. Hitachi Rail STS CBTC. The first US heavy-metro line to operate at GoA 4 from inception. Full-height platform screen doors. (See Honolulu Skyline (HART): The Newest US Metro Built on CBTC.)
+**Honolulu Skyline (HART, Hawaii, USA)**. Phase 1 from June 2023. Hitachi Rail STS CBTC. The first US heavy-metro line to operate at GoA 4 from inception. Full-height platform screen doors. (See [Honolulu Skyline (HART): The Newest US Metro Built on CBTC](/blog/honolulu-skyline-newest-us-cbtc-metro).)
 
 **Selected Beijing Subway lines including Yanfang (S1) from December 2017, Daxing Airport Express, Lines 11 and 19**, plus equivalent lines in Shanghai (Pujiang Line from 2018), Guangzhou, Shenzhen, and other Chinese cities. By 2024, more than 20 Chinese metro lines operated at GoA 4 representing approximately 600-plus route-kilometers.
 
