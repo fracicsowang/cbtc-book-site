@@ -9,7 +9,7 @@ tags: [Thales SelTrac, Hitachi Rail, Ansaldo STS, CBTC vendors, procurement]
 primary_keyword: "SelTrac vs Hitachi"
 secondary_keywords: ["Thales SelTrac CBTC", "Hitachi Rail STS", "Ansaldo CBTC", "BART Hitachi", "CBTC vendor consolidation"]
 related_chapters: [10, 15]
-internal_links: ["/blog/trainguard-mt-vs-urbalis-architecture", "/blog/single-vendor-vs-multi-vendor-cbtc-nyc"]
+internal_links: ["/blog/trainguard-mt-vs-urbalis-architecture", "/blog/single-vendor-vs-multi-vendor-cbtc-nyc", "/blog/cbtc-glossary-50-terms"]
 og_image: "/blog/img/seltrac-vs-hitachi-procurement.png"
 read_time: "10 min"
 ---

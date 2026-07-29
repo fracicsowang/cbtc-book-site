@@ -9,7 +9,7 @@ tags: [overlay CBTC, greenfield CBTC, brownfield retrofit, CBTC migration, US tr
 primary_keyword: "overlay vs greenfield CBTC"
 secondary_keywords: ["overlay CBTC", "greenfield CBTC", "CBTC retrofit", "brownfield CBTC", "CBTC cutover"]
 related_chapters: [3, 10]
-internal_links: ["/blog/cbtc-vs-traditional-signaling-8-differences"]
+internal_links: ["/blog/cbtc-vs-traditional-signaling-8-differences", "/blog/cbtc-glossary-50-terms"]
 og_image: "/blog/img/overlay-vs-greenfield-cbtc.png"
 read_time: "10 min"
 ---

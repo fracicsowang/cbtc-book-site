@@ -9,7 +9,7 @@ tags: [Wi-Fi CBTC, LTE-R, 5G-R, FRMCS, CBTC DCS, train-to-wayside]
 primary_keyword: "Wi-Fi vs LTE-R CBTC"
 secondary_keywords: ["LTE-R CBTC", "Wi-Fi CBTC", "5G-R rail", "FRMCS US", "train-to-wayside communication"]
 related_chapters: [6, 15]
-internal_links: ["/blog/radio-based-vs-inductive-loop-cbtc", "/blog/cbtc-vs-ertms-hybrid-level-3"]
+internal_links: ["/blog/radio-based-vs-inductive-loop-cbtc", "/blog/cbtc-vs-ertms-hybrid-level-3", "/blog/cbtc-glossary-50-terms"]
 og_image: "/blog/img/wifi-vs-lte-r-train-wayside.png"
 read_time: "10 min"
 ---

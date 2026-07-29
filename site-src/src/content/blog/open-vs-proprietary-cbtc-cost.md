@@ -9,7 +9,7 @@ tags: [CBTC procurement, open architecture, proprietary CBTC, vendor lock-in, li
 primary_keyword: "open vs proprietary CBTC"
 secondary_keywords: ["CBTC open architecture", "CBTC vendor lock-in", "EULYNX CBTC", "OCORA", "interface control documents"]
 related_chapters: [12, 15]
-internal_links: ["/blog/single-vendor-vs-multi-vendor-cbtc-nyc", "/blog/trainguard-mt-vs-urbalis-architecture"]
+internal_links: ["/blog/single-vendor-vs-multi-vendor-cbtc-nyc", "/blog/trainguard-mt-vs-urbalis-architecture", "/blog/cbtc-glossary-50-terms"]
 og_image: "/blog/img/open-vs-proprietary-cbtc-cost.png"
 read_time: "10 min"
 ---
