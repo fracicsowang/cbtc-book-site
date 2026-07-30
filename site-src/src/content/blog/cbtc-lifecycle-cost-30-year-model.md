@@ -9,7 +9,7 @@ tags: [CBTC, lifecycle cost, TCO, FTA, NPV, 30-year model, US transit]
 primary_keyword: "CBTC lifecycle cost"
 secondary_keywords: ["CBTC 30-year cost", "CBTC TCO model", "CBTC NPV", "discounted CBTC cost", "CBTC lifecycle cost analysis"]
 related_chapters: [14]
-internal_links: ["/blog/cbtc-procurement-cost-drivers", "/blog/cbtc-projects-over-budget"]
+internal_links: ["/blog/cbtc-procurement-cost-drivers", "/blog/cbtc-projects-over-budget", "/blog/cbtc-roi-calculation"]
 og_image: "/blog/img/cbtc-lifecycle-cost-30-year-model.png"
 read_time: "11 min"
 ---

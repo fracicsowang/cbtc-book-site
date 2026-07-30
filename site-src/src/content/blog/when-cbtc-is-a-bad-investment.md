@@ -9,7 +9,7 @@ tags: [CBTC, business case, FTA, BCR, US transit, operating profile, alternative
 primary_keyword: "when CBTC is not worth it"
 secondary_keywords: ["CBTC business case", "CBTC alternatives", "when not to deploy CBTC", "CBTC vs PTC for commuter rail", "low-density CBTC"]
 related_chapters: [12, 14]
-internal_links: ["/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro", "/blog/cbtc-procurement-cost-drivers"]
+internal_links: ["/blog/cbtc-roi-calculation", "/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro", "/blog/cbtc-procurement-cost-drivers"]
 og_image: "/blog/img/when-cbtc-is-a-bad-investment.png"
 read_time: "10 min"
 ---
@@ -114,7 +114,7 @@ Two cases that look like failure profiles but are not.
 
 This piece is the contrarian's checklist. The full feasibility and BCA framework lives in Chapter 12 (Project Lifecycle) and Chapter 14 (Lifecycle Costs and Economic Justification) of *Communications-Based Train Control*, Volume 2 ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 14 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch14.pdf).
 
-For the ROI side of the analysis, see CBTC ROI Calculation: Headway Gains vs Capital Outlay. For the regulatory boundary that drives Profile 3, see [CBTC vs PTC: Why US Commuter Rail Picked One and US Metro Picked the Other](/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro).
+For the ROI side of the analysis, see [CBTC ROI Calculation: Headway Gains vs Capital Outlay](/blog/cbtc-roi-calculation). For the regulatory boundary that drives Profile 3, see [CBTC vs PTC: Why US Commuter Rail Picked One and US Metro Picked the Other](/blog/cbtc-vs-ptc-us-commuter-rail-vs-metro).
 
 ## Sources
 

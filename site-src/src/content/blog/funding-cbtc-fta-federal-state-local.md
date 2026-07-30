@@ -9,7 +9,7 @@ tags: [CBTC, funding, FTA, CIG, TIFIA, BIL, US transit, capital plan]
 primary_keyword: "CBTC funding"
 secondary_keywords: ["FTA CBTC funding", "Capital Investment Grant CBTC", "TIFIA CBTC", "CBTC federal funding", "BIL transit funding"]
 related_chapters: [2, 14]
-internal_links: ["/blog/cbtc-procurement-cost-drivers", "/blog/cbtc-lifecycle-cost-30-year-model"]
+internal_links: ["/blog/cbtc-procurement-cost-drivers", "/blog/cbtc-lifecycle-cost-30-year-model", "/blog/cbtc-roi-calculation"]
 og_image: "/blog/img/funding-cbtc-fta-federal-state-local.png"
 read_time: "11 min"
 ---
