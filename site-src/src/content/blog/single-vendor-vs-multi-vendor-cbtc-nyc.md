@@ -9,7 +9,7 @@ tags: [multi-vendor CBTC, single-vendor CBTC, NYC MTA, L Line, 7 Line, Queens Bo
 primary_keyword: "single-vendor vs multi-vendor CBTC"
 secondary_keywords: ["NYC MTA CBTC strategy", "multi-vendor CBTC", "CBTC vendor lock-in", "interoperability", "Interface Control Documents"]
 related_chapters: [10, 12, 15]
-internal_links: ["/blog/open-vs-proprietary-cbtc-cost", "/blog/seltrac-vs-hitachi-procurement"]
+internal_links: ["/blog/open-vs-proprietary-cbtc-cost", "/blog/seltrac-vs-hitachi-procurement", "/blog/l-line-110-second-headway"]
 og_image: "/blog/img/single-vendor-vs-multi-vendor-cbtc-nyc.png"
 read_time: "11 min"
 ---
@@ -28,7 +28,7 @@ Industry references put the lock-in premium of single-vendor procurement at 10 t
 
 The MTA's three CBTC procurements, taken in sequence, illustrate a deliberate strategy:
 
-The **L Line** was the original contract: Siemens Transportation Systems was awarded the design and deployment of the Trainguard MT CBTC system in 1999 with a contract value of approximately $340 million. The line achieved partial revenue service in April 2006 and full CBTC revenue service in April 2009, with continued tuning into the late 2010s. The L Line proved the architecture worked on a heavily used legacy US metro line. (For the headline capacity outcome, see How CBTC Lets the L Line Run a Train Every 110 Seconds.)
+The **L Line** was the original contract: Siemens Transportation Systems was awarded the design and deployment of the Trainguard MT CBTC system in 1999 with a contract value of approximately $340 million. The line achieved partial revenue service in April 2006 and full CBTC revenue service in April 2009, with continued tuning into the late 2010s. The L Line proved the architecture worked on a heavily used legacy US metro line. (For the headline capacity outcome, see [How CBTC Lets the L Line Run a Train Every 110 Seconds](/blog/l-line-110-second-headway).)
 
 The **7 Line (Flushing)** was the second major CBTC procurement. The award went to Thales Ground Transportation Systems for the SelTrac platform; the line entered full revenue service under CBTC in 2018. The 7 Line was deliberately a different vendor than the L Line, and the deployment represents the MTA's first concrete commitment to multi-vendor architecture. The Hitachi Rail acquisition of Thales GTS in April 2024 means the 7 Line's vendor is now part of the same global company that supplies BART; the platform itself remains SelTrac.
 

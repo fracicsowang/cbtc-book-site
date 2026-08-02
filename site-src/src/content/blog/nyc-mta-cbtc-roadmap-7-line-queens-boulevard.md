@@ -9,7 +9,7 @@ tags: [CBTC, NYC MTA, 7 Line, Queens Boulevard, Culver Line, Thales SelTrac, Sie
 primary_keyword: "MTA CBTC roadmap"
 secondary_keywords: ["NYC 7 Line CBTC", "Queens Boulevard CBTC", "Culver Line CBTC", "MTA capital program signaling", "NYC subway modernization"]
 related_chapters: [10, 12, 15]
-internal_links: ["/blog/nyc-mta-l-line-cbtc-25-years", "/blog/cbtc-rfp-vendor-lockin"]
+internal_links: ["/blog/nyc-mta-l-line-cbtc-25-years", "/blog/l-line-110-second-headway", "/blog/cbtc-rfp-vendor-lockin"]
 og_image: "/blog/img/nyc-mta-cbtc-roadmap-7-line-queens-boulevard.png"
 read_time: "12 min"
 ---

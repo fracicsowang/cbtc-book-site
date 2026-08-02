@@ -9,7 +9,7 @@ tags: [overlay CBTC, greenfield CBTC, brownfield retrofit, CBTC migration, US tr
 primary_keyword: "overlay vs greenfield CBTC"
 secondary_keywords: ["overlay CBTC", "greenfield CBTC", "CBTC retrofit", "brownfield CBTC", "CBTC cutover"]
 related_chapters: [3, 10]
-internal_links: ["/blog/cbtc-vs-traditional-signaling-8-differences", "/blog/cbtc-glossary-50-terms"]
+internal_links: ["/blog/l-line-110-second-headway", "/blog/cbtc-vs-traditional-signaling-8-differences", "/blog/cbtc-glossary-50-terms"]
 og_image: "/blog/img/overlay-vs-greenfield-cbtc.png"
 read_time: "10 min"
 ---
@@ -67,7 +67,7 @@ The first is the segmental cutover, exemplified by the L Line and the 7 Line. Th
 
 The second is the parallel-running cutover, used in some BART TCMP segments. The CBTC system runs in shadow mode (computing Movement Authorities and recording what it would have done) while the legacy system retains operational control. Comparison of CBTC outputs against legacy outputs is used to validate the new system before granting it operational authority. This pattern has the lowest residual risk but is the most expensive because both systems run concurrently for an extended period.
 
-The third is the single-event cutover, used when the legacy system is too far gone to maintain dual operation. This is rare in US transit because of the operational risk; it requires the agency to accept that legacy operation cannot continue past a defined date and that CBTC must be ready by that date with no fallback. Single-event cutovers have been used in some greenfield-adjacent contexts (when an existing line is fully reconstructed) but rarely in pure overlay deployments. (For a deeper look at how the L Line specifically handled its transition, see How CBTC Lets the L Line Run a Train Every 110 Seconds.)
+The third is the single-event cutover, used when the legacy system is too far gone to maintain dual operation. This is rare in US transit because of the operational risk; it requires the agency to accept that legacy operation cannot continue past a defined date and that CBTC must be ready by that date with no fallback. Single-event cutovers have been used in some greenfield-adjacent contexts (when an existing line is fully reconstructed) but rarely in pure overlay deployments. (For a deeper look at how the L Line specifically handled its transition, see [How CBTC Lets the L Line Run a Train Every 110 Seconds](/blog/l-line-110-second-headway).)
 
 ![Three migration patterns dominate US overlay CBTC, each trading cost against residual risk.](/figures/fig_03_05_overlay_vs_standalone.png)
 *<small>Three migration patterns dominate US overlay CBTC, each trading cost against residual risk.</small>*
