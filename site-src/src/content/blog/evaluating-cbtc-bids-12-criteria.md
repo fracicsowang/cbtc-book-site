@@ -9,7 +9,7 @@ tags: [CBTC, bid evaluation, RFP, procurement, US transit, FTA, best-value]
 primary_keyword: "evaluating CBTC bids"
 secondary_keywords: ["CBTC bid evaluation criteria", "CBTC RFP scoring", "CBTC vendor evaluation", "best-value CBTC procurement", "CBTC proposal evaluation"]
 related_chapters: [12, 15]
-internal_links: ["/blog/cbtc-rfp-vendor-lockin", "/blog/cbtc-scope-of-work-template"]
+internal_links: ["/blog/cbtc-rfp-vendor-lockin", "/blog/cbtc-scope-of-work-template", "/blog/rfp-red-flags-vendor-responses"]
 og_image: "/blog/img/evaluating-cbtc-bids-12-criteria.png"
 read_time: "11 min"
 ---
@@ -128,7 +128,7 @@ Two categories that bidders sometimes try to use for differentiation deserve no 
 
 This piece is the rubric structure. The full procurement and evaluation treatment lives in Chapter 12 (Project Lifecycle) and Chapter 15 (Vendor Landscape) of *Communications-Based Train Control*, Volume 2 ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 12 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch12.pdf).
 
-For the vendor-neutral RFP structure that this evaluation supports, see [How to Write a CBTC RFP That Doesn't Lock You Into One Vendor](/blog/cbtc-rfp-vendor-lockin). For the warning signs in vendor responses, see RFP Red Flags: 8 Vendor Responses That Should Worry You.
+For the vendor-neutral RFP structure that this evaluation supports, see [How to Write a CBTC RFP That Doesn't Lock You Into One Vendor](/blog/cbtc-rfp-vendor-lockin). For the warning signs in vendor responses, see [RFP Red Flags: 8 Vendor Responses That Should Worry You](/blog/rfp-red-flags-vendor-responses).
 
 ## Sources
 
