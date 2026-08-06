@@ -1,7 +1,7 @@
 ---
-title: "What Is Communications-Based Train Control (CBTC)? A 2026 Plain-English Guide"
+title: "What Is CBTC? Communications-Based Train Control Explained"
 slug: what-is-cbtc-2026-guide
-description: "Communications-Based Train Control (CBTC) explained for US transit professionals: what it is, how it works, why agencies adopt it, and where it stands in 2026."
+description: "What is CBTC? A plain-English guide to Communications-Based Train Control for US transit: how it works, why agencies adopt it, and where it stands in 2026."
 date: 2026-05-09
 author: "Chunjun (Francisco) Wang"
 category: definitional
@@ -15,6 +15,8 @@ read_time: "10 min"
 ---
 
 In April 2009, after a decade of contract disputes, integration delays, and long weekend cutovers, the New York City Metropolitan Transportation Authority (MTA) declared its 14th Street–Canarsie Line — the L Line — fully operational under a new signaling system from Siemens Transportation Systems. The fixed-block relay logic that had governed L trains since the Truman administration was retired. In its place: a moving-block control system whose authority was carried not by colored signal heads but by digital messages exchanged hundreds of times a minute between trains and trackside computers. That system was Communications-Based Train Control. Seventeen years later, every US transit agency with serious modernization plans is studying the same architecture.
+
+**In plain terms: Communications-Based Train Control (CBTC) is a railway signaling architecture in which each train continuously determines its own position independent of track circuits and exchanges data with trackside computers many times a minute, allowing trains to run safely at shorter, moving-block headways than fixed-block signaling permits.** The rest of this article unpacks what that means and why it matters.
 
 ## Why this article exists
 
