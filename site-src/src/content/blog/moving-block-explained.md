@@ -1,7 +1,7 @@
 ---
 title: "Moving Block Explained: Why It Replaced Fixed Block"
 slug: moving-block-explained
-description: "Moving block signaling explained for transit engineers: how it works, why it replaced fixed block, the math behind the headway gain, and where it fails gracefully."
+description: "Moving block signaling explained: how it works, why it replaced fixed block, the headway math behind the capacity gain, and where it fails safely."
 date: 2026-05-24
 author: "Chunjun (Francisco) Wang"
 category: definitional
