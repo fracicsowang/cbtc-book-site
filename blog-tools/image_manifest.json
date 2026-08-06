@@ -763,5 +763,61 @@
     "source_hint": "generated matplotlib chart",
     "caption": "Sydney Metro opened at a four-minute peak headway but the Alstom Urbalis 400 CBTC was built for a two-minute headway — 30 trains per hour, roughly 46,000 passengers per hour per direction.",
     "bucket": "chart"
+  },
+  {
+    "slug": "barcelona-metro-l9-l10-driverless",
+    "figure": 1,
+    "description": "Four disconnected GoA 4 segments opened across a dozen years; the central trunk ",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Four disconnected GoA 4 segments opened across a dozen years; the central trunk that would join L9 and L10 through the city core is still unbuilt.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "kuala-lumpur-kelana-jaya-driverless",
+    "figure": 1,
+    "description": "About 151 route-kilometers of GoA 4 driverless operation across three lines and ",
+    "source_hint": "generated matplotlib chart",
+    "caption": "About 151 route-kilometers of GoA 4 driverless operation across three lines and two CBTC lineages, built greenfield over 25 years.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "delhi-metro-cbtc",
+    "figure": 1,
+    "description": "Two Bombardier CITYFLO 650 lines make up close to 97 route-km of unattended oper",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Two Bombardier CITYFLO 650 lines make up close to 97 route-km of unattended operation — the Magenta Line's 38 km and the Pink Line's 59 km.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "val-lille-driverless-origin",
+    "figure": 1,
+    "description": "Driverless urban rail arrived in the early 1980s; the first fully automated US u",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Driverless urban rail arrived in the early 1980s; the first fully automated US urban metro, Honolulu's Skyline, did not open until 2023 — roughly four decades after Lille.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "riyadh-doha-gulf-driverless-metro",
+    "figure": 1,
+    "description": "Riyadh's 176 route-kilometers split across three CBTC platforms — Siemens (Lines",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Riyadh's 176 route-kilometers split across three CBTC platforms — Siemens (Lines 1-2), Ansaldo STS/Hitachi Rail (Line 3), and Alstom (Lines 4-6) — each line a self-contained automated island.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "cbtc-training-how-engineers-build-competency",
+    "figure": 1,
+    "description": "Indicative only — the university share of working competency declines as supervi",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Indicative only — the university share of working competency declines as supervised field experience compounds, and on-the-job apprenticeship becomes the dominant source by roughly year four.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "cbtc-market-size-vendors-2026",
+    "figure": 1,
+    "description": "Indicative regional growth-rate midpoints synthesized across several 2025-2026 m",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Indicative regional growth-rate midpoints synthesized across several 2025-2026 market forecasts; directional, not precise shares. Asia-Pacific and the Gulf lead; US demand is real but funding-paced.",
+    "bucket": "chart"
   }
 ]
