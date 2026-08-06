@@ -731,5 +731,37 @@
     "source_hint": "new figure to be generated",
     "caption": "Strategic procurement choices facing WMATA CBTC modernization.",
     "bucket": "diagram"
+  },
+  {
+    "slug": "dubai-metro-cbtc-driverless-network",
+    "figure": 1,
+    "description": "Dubai extended one homogeneous GoA 4 network — roughly 104 route-km on a single ",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Dubai extended one homogeneous GoA 4 network — roughly 104 route-km on a single Thales SelTrac CBTC platform — without a legacy cutover.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "seoul-metro-cbtc-line-9",
+    "figure": 1,
+    "description": "Korea's longest automation-forward line, Line 9, is also the only one on this li",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Korea's longest automation-forward line, Line 9, is also the only one on this list that still carries a driver; the driverless network is built from shorter, newer lines.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "copenhagen-metro-driverless",
+    "figure": 1,
+    "description": "Copenhagen Metro ridership in millions: 126 million in 2024, 135 million in 2025",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Copenhagen Metro ridership in millions: 126 million in 2024, 135 million in 2025, with the 2002-era M1/M2 carrying 71.2 million and the 2019-era M3/M4 64 million.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "sydney-metro-cbtc",
+    "figure": 1,
+    "description": "Sydney Metro opened at a four-minute peak headway but the Alstom Urbalis 400 CBT",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Sydney Metro opened at a four-minute peak headway but the Alstom Urbalis 400 CBTC was built for a two-minute headway — 30 trains per hour, roughly 46,000 passengers per hour per direction.",
+    "bucket": "chart"
   }
 ]
