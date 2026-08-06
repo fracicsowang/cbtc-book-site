@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://cbtcbook.com/sitemap.xml
+Sitemap: https://cbtcbook.com/blog/sitemap.xml

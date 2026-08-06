@@ -1,7 +1,7 @@
 ---
 title: "NYC MTA L Line CBTC: 25 Years of Lessons (2001–2026)"
 slug: nyc-mta-l-line-cbtc-25-years
-description: "A practitioner's read of the L Line CBTC project from the 1997 RFP through 2026 operations: Siemens Trainguard MT, the 2006 partial revenue, the 2009 full transition, Hurricane Sandy, and what the rest of US transit owes to it."
+description: "How the L Line became NYC's first CBTC subway: the Siemens Trainguard MT rollout, the 2006–2009 cutover, Hurricane Sandy, and the lessons for US transit."
 date: 2026-05-09
 author: "Chunjun (Francisco) Wang"
 category: agency-case-studies
