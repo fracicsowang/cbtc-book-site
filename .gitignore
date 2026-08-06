@@ -59,6 +59,10 @@ orcid-import.bib
 BLOG_SEO_PLAYBOOK.md
 # GA4 access notes + SEO status (internal; references service-account setup).
 GA4_SEO_NOTES.md
+# Internal SEO reporting tooling + generated reports (local launchd job; analytics internals).
+blog-tools/seo_report.py
+blog-tools/seo-reports/
+blog-tools/com.cbtcbook.seoreport.plist
 
 # ── Large directories not used by the cloud build ──
 pptx/
