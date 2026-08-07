@@ -1,0 +1,12 @@
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#F4EFE6','primaryTextColor':'#0A1628','primaryBorderColor':'#D4A84B','secondaryColor':'#0A1628','secondaryTextColor':'#F4EFE6','tertiaryColor':'#EAE2D2','lineColor':'#1A1A1A','fontFamily':'IBM Plex Sans, system-ui, sans-serif','fontSize':'14px'}}}%%
+flowchart LR
+    OP(["Moscow Metro
+16 lines · domestic 1520 Signal / NIIAS"])
+    NET["Network (~535 km)<br/>~90 s headways"] -->|GoA 2 · driver| OP
+    BKL["Big Circle Line (BKL)<br/>~70 km ring, 2023<br/>staged toward GoA 4 by 2030"] -->|GoA 2| OP
+    classDef g4 fill:#D4A84B,stroke:#0A1628,color:#0A1628,font-size:13px
+    classDef g2 fill:#0A1628,stroke:#D4A84B,color:#F4EFE6,font-size:13px
+    classDef op fill:#F4EFE6,stroke:#0A1628,color:#0A1628,font-weight:bold
+    class NET g2
+    class BKL g2
+    class OP op

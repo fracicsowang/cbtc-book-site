@@ -59,6 +59,8 @@ What does transfer is the analytical separation Milan makes visible. The M5 and 
 
 [FIGURE: Grouped bar chart comparing Milan's two driverless lines on route length and station count. DATA: M5 Lilla (complete 2015) route-km = 12.8, stations = 19; M4 Blue (complete 2024) route-km = 15.2, stations = 21. Caption: "Milan's two GoA 4 lines, built a decade apart on one Ansaldo STS to Hitachi Rail CBTC lineage: about 28 route-km and 40 stations of driverless metro under a single operator."]
 
+[FIGURE: Schematic of the milan metro m4 m5 driverless network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "Milan's two GoA 4 lines on one Ansaldo STS to Hitachi Rail lineage."]
+
 ## What this means in practice
 
 - **Separate the three variables.** Milan lets an engineer read technology maturity, integration difficulty, and operator competence as independent factors. US business cases that treat GoA 4 as one bundled decision lose that clarity.

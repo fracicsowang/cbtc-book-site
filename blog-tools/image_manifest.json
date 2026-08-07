@@ -859,5 +859,117 @@
     "source_hint": "generated matplotlib chart",
     "caption": "A domestic system, not an imported CBTC line, cut the Koltsevaya Line interval from 113 seconds to 90 — the headway gain that resignaling is supposed to buy.",
     "bucket": "chart"
+  },
+  {
+    "slug": "dubai-metro-cbtc-driverless-network",
+    "figure": 2,
+    "description": "Dubai's two-line network on one Thales SelTrac platform, driverless from day one",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Dubai's two-line network on one Thales SelTrac platform, driverless from day one.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "seoul-metro-cbtc-line-9",
+    "figure": 2,
+    "description": "Seoul pairs a driver-operated Line 9 with several driverless GoA 4 lines from di",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Seoul pairs a driver-operated Line 9 with several driverless GoA 4 lines from different suppliers.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "copenhagen-metro-driverless",
+    "figure": 2,
+    "description": "Copenhagen's whole metro is GoA 4 on one Hitachi Rail (Ansaldo STS) lineage.",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Copenhagen's whole metro is GoA 4 on one Hitachi Rail (Ansaldo STS) lineage.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "sydney-metro-cbtc",
+    "figure": 2,
+    "description": "Sydney Metro: greenfield and converted corridors, all GoA 4 on Alstom Urbalis 40",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Sydney Metro: greenfield and converted corridors, all GoA 4 on Alstom Urbalis 400.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "barcelona-metro-l9-l10-driverless",
+    "figure": 2,
+    "description": "Barcelona L9/L10: disconnected GoA 4 segments on Siemens Trainguard MT.",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Barcelona L9/L10: disconnected GoA 4 segments on Siemens Trainguard MT.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "kuala-lumpur-kelana-jaya-driverless",
+    "figure": 2,
+    "description": "Kuala Lumpur's three driverless lines span two CBTC lineages.",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Kuala Lumpur's three driverless lines span two CBTC lineages.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "delhi-metro-cbtc",
+    "figure": 2,
+    "description": "Delhi's two driverless lines run different CBTC products — Nippon Signal and CIT",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Delhi's two driverless lines run different CBTC products — Nippon Signal and CITYFLO 650.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "val-lille-driverless-origin",
+    "figure": 2,
+    "description": "The VAL family: pre-CBTC driverless metros, from Lille (1983) outward.",
+    "source_hint": "Mermaid line schematic",
+    "caption": "The VAL family: pre-CBTC driverless metros, from Lille (1983) outward.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "riyadh-doha-gulf-driverless-metro",
+    "figure": 2,
+    "description": "The Gulf's driverless metros split across four CBTC platforms and two cities.",
+    "source_hint": "Mermaid line schematic",
+    "caption": "The Gulf's driverless metros split across four CBTC platforms and two cities.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "hong-kong-mtr-cbtc",
+    "figure": 2,
+    "description": "Hong Kong: driver-operated urban lines being resignalled, plus two GoA 4 lines.",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Hong Kong: driver-operated urban lines being resignalled, plus two GoA 4 lines.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "taipei-metro-cbtc",
+    "figure": 2,
+    "description": "Taipei runs two driverless GoA 4 lines beside a driver-operated high-capacity ba",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Taipei runs two driverless GoA 4 lines beside a driver-operated high-capacity backbone.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "milan-metro-m4-m5-driverless",
+    "figure": 2,
+    "description": "Milan's two GoA 4 lines on one Ansaldo STS to Hitachi Rail lineage.",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Milan's two GoA 4 lines on one Ansaldo STS to Hitachi Rail lineage.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "montreal-rem-driverless-metro",
+    "figure": 2,
+    "description": "The REM's four automated branches on a single Alstom Urbalis 400 platform.",
+    "source_hint": "Mermaid line schematic",
+    "caption": "The REM's four automated branches on a single Alstom Urbalis 400 platform.",
+    "bucket": "diagram"
+  },
+  {
+    "slug": "moscow-metro-cbtc",
+    "figure": 2,
+    "description": "Moscow's driver-operated network and its Big Circle Line, on domestic control.",
+    "source_hint": "Mermaid line schematic",
+    "caption": "Moscow's driver-operated network and its Big Circle Line, on domestic control.",
+    "bucket": "diagram"
   }
 ]

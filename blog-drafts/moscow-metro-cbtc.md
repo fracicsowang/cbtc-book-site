@@ -37,6 +37,8 @@ The functional architecture is not exotic to a US engineer — continuous locali
 
 [FIGURE: Bar chart comparing the minimum peak interval on the Moscow Metro Koltsevaya Line (Line 5) before and after its 2023 domestic train control upgrade. DATA: Legacy 1950s-era signalling (32 trains/hour) = 113 seconds; 2023 domestic computer-based train control = 90 seconds. Caption: "A domestic system, not an imported CBTC line, cut the Koltsevaya Line interval from 113 seconds to 90 — the headway gain that resignaling is supposed to buy."]
 
+[FIGURE: Schematic of the moscow metro cbtc network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "Moscow's driver-operated network and its Big Circle Line, on domestic control."]
+
 ## The Big Circle Line and the road to GoA 4
 
 The Big Circle Line (Line 11) is the showpiece. Built in stages from the late 2010s, with its first section opening in 2018, it closed into a full loop on 1 March 2023 at roughly 70 kilometers and 31 stations, taking the record for the longest metro ring line in the world ([International Railway Journal](https://www.railjournal.com/passenger/metros/big-circle-line-completed-in-moscow/); [The Moscow Times](https://www.themoscowtimes.com/2023/03/02/in-photos-moscow-metro-inaugurates-worlds-longest-circle-line-a80376)). Today it runs with drivers, like the rest of the network.

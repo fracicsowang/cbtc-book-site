@@ -57,6 +57,8 @@ Set Hong Kong beside a greenfield reference such as [Dubai Metro: How CBTC Runs 
 
 [FIGURE: Timeline chart of Hong Kong CBTC and automation milestones, plotted by year. DATA: Disneyland Resort Line driverless GoA 4 SelTrac = 2005; South Island Line driverless GoA 4 Urbalis = 2016; Tsuen Wan Line GoA 2 SelTrac retrofit enters service = 2026; four-line urban resignalling program scheduled complete = 2029. Caption: "Hong Kong took 21 years to move from its first driverless shuttle to a four-line urban CBTC retrofit — and kept drivers on the heavy-rail lines throughout."]
 
+[FIGURE: Schematic of the hong kong mtr cbtc network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "Hong Kong: driver-operated urban lines being resignalled, plus two GoA 4 lines."]
+
 The lesson is not that Hong Kong is slow or that Dubai is fast; it is that the two are solving different problems, and only one of them resembles the American one. When a US agency cites a foreign schedule or unit cost in a business case, the first question should be whether that number came from a greenfield build or a live-service retrofit. Hong Kong's eleven-year, HK$3.3 billion program — the figure local media attached to the wider signalling replacement — is the retrofit benchmark, and it comes with a documented commissioning failure any US program plan should assume it could repeat.
 
 ## What this means in practice

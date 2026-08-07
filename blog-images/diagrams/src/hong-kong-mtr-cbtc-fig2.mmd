@@ -1,0 +1,13 @@
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#F4EFE6','primaryTextColor':'#0A1628','primaryBorderColor':'#D4A84B','secondaryColor':'#0A1628','secondaryTextColor':'#F4EFE6','tertiaryColor':'#EAE2D2','lineColor':'#1A1A1A','fontFamily':'IBM Plex Sans, system-ui, sans-serif','fontSize':'14px'}}}%%
+flowchart LR
+    OP(["Hong Kong MTR signalling"])
+    UR["Urban lines (7)<br/>resignalling to 2029<br/>Thales SelTrac"] -->|GoA 2 · driver| OP
+    DL["Disneyland Line<br/>2005 · SelTrac"] -->|GoA 4| OP
+    SI["South Island Line<br/>2016 · Alstom Urbalis 400"] -->|GoA 4| OP
+    classDef g4 fill:#D4A84B,stroke:#0A1628,color:#0A1628,font-size:13px
+    classDef g2 fill:#0A1628,stroke:#D4A84B,color:#F4EFE6,font-size:13px
+    classDef op fill:#F4EFE6,stroke:#0A1628,color:#0A1628,font-weight:bold
+    class UR g2
+    class DL g4
+    class SI g4
+    class OP op

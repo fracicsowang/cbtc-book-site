@@ -51,6 +51,8 @@ Governance sits underneath the cost story. The infrastructure is owned by the Ca
 
 [FIGURE: Bar chart of the four in-service automated segments of Barcelona's L9/L10 by route length in kilometers, illustrating that the network runs as disconnected stubs rather than one continuous line. DATA: L9 Nord (2009-2010)=11.1, L10 Nord (2010)=5.6, L9 Sud (2016)=19.6, L10 Sud (2018-2021)=8.5. Caption: "Four disconnected GoA 4 segments opened across a dozen years; the central trunk that would join L9 and L10 through the city core is still unbuilt."]
 
+[FIGURE: Schematic of the barcelona metro l9 l10 driverless network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "Barcelona L9/L10: disconnected GoA 4 segments on Siemens Trainguard MT."]
+
 ## What actually transfers to a US agency
 
 The value of Barcelona to an American engineer is in separating what generalizes from what does not. Three threads are worth pulling apart.

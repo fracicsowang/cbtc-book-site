@@ -34,6 +34,8 @@ The 2021 milestone matters more than a record certificate. Ahead of the World Ex
 
 [FIGURE: Bar chart of the Dubai Metro network by segment and opening year, showing route length in kilometers. DATA: Red Line (2009)=52, Green Line (2011)=22.5, Route 2020 ext. (2021)=15. Caption: "Dubai grew one homogeneous GoA 4 network to roughly 90 route-km on a single Thales SelTrac CBTC platform, without a legacy cutover."]
 
+[FIGURE: Schematic of the dubai metro cbtc driverless network network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "Dubai's two-line network on one Thales SelTrac platform, driverless from day one."]
+
 ## Why greenfield changed the economics
 
 The reason Dubai reached unattended operation years before New York or San Francisco is not that its engineers were better; it is that its problem was easier, and its decision structure was faster. Three conditions did most of the work.

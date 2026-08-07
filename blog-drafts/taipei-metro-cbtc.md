@@ -49,6 +49,8 @@ Phase one entered service on 31 January 2020: about 15.4 km from Dapinglin to Ne
 
 [FIGURE: Grouped bar chart of Taipei-area metro lines by route length in kilometers, colored by automation grade. DATA: Wenhu (GoA 4, medium-capacity)=25.1; Circular Line (GoA 4)=15.4; Tamsui-Xinyi (GoA 2, high-capacity)=29.3; Bannan (GoA 2, high-capacity)=26.6. Caption: "Two of Taipei's lines run fully driverless (GoA 4, about 40 route-km combined) alongside a larger driver-operated high-capacity backbone (GoA 2) — automation grade assigned by line, not applied uniformly."]
 
+[FIGURE: Schematic of the taipei metro cbtc network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "Taipei runs two driverless GoA 4 lines beside a driver-operated high-capacity backbone."]
+
 ## What the Taipei Metro CBTC record teaches US brownfield resignaling
 
 The single most transferable lesson is the Wenhu conversion, because it is the closest international analogue to what a US agency faces when it changes train-control vendors on an operating line. New York City Transit, San Francisco's BART, and the Washington Metropolitan Area Transit Authority are all resignaling routes that must keep carrying passengers throughout, often with mixed fleets during multi-year transitions. Taipei ran that experiment in 2009 and paid the tuition: swapping a proprietary fixed-block automated system for a modern moving-block CBTC, while forcing two incompatible vehicle generations to interoperate under it, produced months of instability and a fleet retrofit that stretched beyond a year.

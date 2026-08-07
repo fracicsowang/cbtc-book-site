@@ -45,6 +45,8 @@ Set side by side, the three lines tell a consistent story told with different co
 
 [FIGURE: Bar chart of the three Kuala Lumpur driverless lines by route length in kilometers, labeled by opening year. DATA: Kelana Jaya Line (1998) = 46.4; MRT Kajang Line (2017) = 47; MRT Putrajaya Line (2023) = 57.7. Caption: "About 151 route-kilometers of GoA 4 driverless operation across three lines and two CBTC lineages, built greenfield over 25 years."]
 
+[FIGURE: Schematic of the kuala lumpur kelana jaya driverless network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "Kuala Lumpur's three driverless lines span two CBTC lineages."]
+
 The scale is not trivial. The Kelana Jaya Line carried roughly 89.6 million passengers in 2025, the Kajang Line about 92.7 million, and the Putrajaya Line about 55.7 million, for combined weekday ridership comfortably above 750,000 boardings — figures that place Kuala Lumpur's automated network among the busier driverless systems anywhere, and well ahead of any US metro operating at GoA 4 today.
 
 ## What driverless does and does not remove

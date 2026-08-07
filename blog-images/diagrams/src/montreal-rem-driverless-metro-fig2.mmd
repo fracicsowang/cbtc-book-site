@@ -1,0 +1,16 @@
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#F4EFE6','primaryTextColor':'#0A1628','primaryBorderColor':'#D4A84B','secondaryColor':'#0A1628','secondaryTextColor':'#F4EFE6','tertiaryColor':'#EAE2D2','lineColor':'#1A1A1A','fontFamily':'IBM Plex Sans, system-ui, sans-serif','fontSize':'14px'}}}%%
+flowchart LR
+    OP(["Montreal REM
+Alstom Urbalis 400 · GoA 4 · ~67 km"])
+    SS["South Shore<br/>Jul 2023"] -->|GoA 4| OP
+    NS["North Shore / Deux-Montagnes<br/>2025"] -->|GoA 4| OP
+    WI["West Island<br/>2026"] -->|GoA 4| OP
+    AP["Airport / YUL<br/>planned 2027"] -->|GoA 4| OP
+    classDef g4 fill:#D4A84B,stroke:#0A1628,color:#0A1628,font-size:13px
+    classDef g2 fill:#0A1628,stroke:#D4A84B,color:#F4EFE6,font-size:13px
+    classDef op fill:#F4EFE6,stroke:#0A1628,color:#0A1628,font-weight:bold
+    class SS g4
+    class NS g4
+    class WI g4
+    class AP g4
+    class OP op

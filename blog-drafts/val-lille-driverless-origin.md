@@ -55,6 +55,8 @@ The delay was not technological. The hardware to run a metro without a driver ex
 
 [FIGURE: Horizontal timeline of early fully automated or driverless urban rail systems by first-opening year, highlighting the roughly 40-year gap before the first US urban GoA 4 metro. DATA: Kobe Port Liner (AGT, Japan)=1981, Lille VAL (France)=1983, Vancouver SkyTrain (Canada)=1985, Toulouse VAL (France)=1993, Paris Métro Line 14 (France)=1998, Honolulu Skyline (US)=2023. Caption: "Driverless urban rail arrived in the early 1980s and spread through the 1990s; the first fully automated US urban metro, Honolulu's Skyline, did not open until 2023 — roughly four decades after Lille."]
 
+[FIGURE: Schematic of the val lille driverless origin network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "The VAL family: pre-CBTC driverless metros, from Lille (1983) outward."]
+
 ## What this means in practice
 
 - **Driverless predates radio CBTC by a generation.** Lille ran unattended in 1983 on fixed-block wayside control, not moving-block radio CBTC. When evaluating any "driverless" claim, separate the automation grade (GoA 4) from the train-control technology (fixed block versus radio moving block); the two are independent variables.

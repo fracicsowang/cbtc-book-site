@@ -45,6 +45,8 @@ Those figures are the empirical answer to the question US boards actually ask, w
 
 [FIGURE: Bar chart of Copenhagen Metro annual ridership and its 2025 split by line group. DATA: Ridership_2024_total=126, Ridership_2025_total=135, Ridership_2025_M1_M2=71.2, Ridership_2025_M3_M4=64. Caption: "Copenhagen Metro ridership in millions of passengers: the network grew from 126 million in 2024 to 135 million in 2025, with the 2002-era M1 and M2 lines carrying 71.2 million and the 2019-era M3 and M4 lines 64 million."]
 
+[FIGURE: Schematic of the copenhagen metro driverless network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "Copenhagen's whole metro is GoA 4 on one Hitachi Rail (Ansaldo STS) lineage."]
+
 ## The US bridge: the same platform now runs in Honolulu
 
 For a US agency the most concrete link is no longer hypothetical. On 30 June 2023 Honolulu opened the first segment of Skyline, the first mass-transit line in the United States certified for unattended GoA 4 operation, built by Hitachi Rail on the same driverless-metro platform whose lineage runs directly back to the trains Copenhagen has operated since 2002. The technology that American program managers spent two decades treating as a foreign experiment is now revenue-operating on Oahu, procured through a federally funded capital program subject to the same Federal Transit Administration (FTA) oversight that any domestic project must satisfy.

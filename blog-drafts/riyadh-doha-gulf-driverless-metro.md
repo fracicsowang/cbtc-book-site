@@ -37,6 +37,8 @@ For a US reader weighing a multi-line resignaling, Riyadh is a live demonstratio
 
 [FIGURE: Bar chart of Riyadh Metro route length in kilometers by line, colored by CBTC vendor to show the three-consortium split. DATA: Line 1 Blue (Siemens)=38, Line 2 Red (Siemens)=25.3, Line 3 Orange (Ansaldo STS/Hitachi Rail)=40.7, Line 4 Yellow (Alstom)=29.6, Line 5 Green (Alstom)=12.9, Line 6 Purple (Alstom)=29.9. Caption: "Riyadh's 176 route-kilometers were split across three CBTC platforms — Siemens on Lines 1 and 2, Ansaldo STS (now Hitachi Rail) on Line 3, and Alstom on Lines 4, 5, and 6 — with each line a self-contained automated island."]
 
+[FIGURE: Schematic of the riyadh doha gulf driverless metro network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "The Gulf's driverless metros split across four CBTC platforms and two cities."]
+
 ## Doha Metro CBTC: one Thales platform, opened for a World Cup
 
 Doha took the opposite approach to Riyadh's fragmentation. Qatar Rail built its three lines — Red, Gold, and Green — on a single supplier's train control, the Thales SelTrac CBTC platform, the same product family that runs Vancouver, Dubai, and dozens of other automated networks. The Red Line entered preview service on 8 May 2019, the Gold Line followed on 21 November 2019, and the Green Line on 10 December 2019, giving Qatar a complete 76-kilometer, 37-station driverless network roughly three years before it hosted the 2022 World Cup.

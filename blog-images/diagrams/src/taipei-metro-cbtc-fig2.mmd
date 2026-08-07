@@ -1,0 +1,13 @@
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#F4EFE6','primaryTextColor':'#0A1628','primaryBorderColor':'#D4A84B','secondaryColor':'#0A1628','secondaryTextColor':'#F4EFE6','tertiaryColor':'#EAE2D2','lineColor':'#1A1A1A','fontFamily':'IBM Plex Sans, system-ui, sans-serif','fontSize':'14px'}}}%%
+flowchart LR
+    OP(["Taipei Metro"])
+    WH["Wenhu Line<br/>25.1 km<br/>Bombardier CITYFLO 650"] -->|GoA 4| OP
+    CL["Circular Line<br/>15.4 km, 2020<br/>Hitachi (Ansaldo STS)"] -->|GoA 4| OP
+    HC["High-capacity trunk<br/>Tamsui-Xinyi, Bannan"] -->|GoA 2 · driver| OP
+    classDef g4 fill:#D4A84B,stroke:#0A1628,color:#0A1628,font-size:13px
+    classDef g2 fill:#0A1628,stroke:#D4A84B,color:#F4EFE6,font-size:13px
+    classDef op fill:#F4EFE6,stroke:#0A1628,color:#0A1628,font-weight:bold
+    class WH g4
+    class CL g4
+    class HC g2
+    class OP op

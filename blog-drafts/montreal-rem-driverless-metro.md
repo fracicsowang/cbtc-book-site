@@ -39,6 +39,8 @@ Completed, the REM is planned at about 67 km with 26 stations, with three connec
 
 [FIGURE: Line chart of cumulative REM route-kilometers in revenue service by milestone. DATA: "South Shore / Brossard (Jul 2023)"=16.6, "+ Deux-Montagnes / North Shore (Nov 2025)"=50, "+ Anse-à-l'Orme / West Island (May 2026)"=64, "+ Airport / YUL (planned 2027)"=67. Caption: "The REM grew from a 16.6 km shuttle to a roughly 67 km network in under four years by adding track to one automated platform, not by resignaling across boundaries."]
 
+[FIGURE: Schematic of the montreal rem driverless metro network — automated lines with grade of automation and CBTC supplier. Source: Mermaid diagram. Caption: "The REM's four automated branches on a single Alstom Urbalis 400 platform."]
+
 ## The CDPQ Infra model: a pension fund as owner and operator
 
 The technology is familiar; the financing is what makes Montreal worth a US program manager's afternoon. The REM was conceived, financed, built, and is operated by CDPQ Infra, a subsidiary of the Caisse de dépôt et placement du Québec — the pension-fund manager that invests on behalf of Quebec depositors, known locally as La Caisse. Rather than an agency issuing a design-build contract and holding the asset, the pension fund acts as project owner, majority equity investor, and, through its operating arm, the network's long-term operator. Construction was delivered by the Groupe PMM consortium (Alstom, SNC-Lavalin — now AtkinsRéalis — Dragados, Aecon, and Pomerleau-EBC), and long-term operations and maintenance sit with Pulsar, a joint venture of AtkinsRéalis and Alstom, under a 30-year term. The total capital cost has been reported at roughly C$6.9 billion, a figure that has risen over the project's life.
