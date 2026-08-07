@@ -819,5 +819,45 @@
     "source_hint": "generated matplotlib chart",
     "caption": "Indicative regional growth-rate midpoints synthesized across several 2025-2026 market forecasts; directional, not precise shares. Asia-Pacific and the Gulf lead; US demand is real but funding-paced.",
     "bucket": "chart"
+  },
+  {
+    "slug": "hong-kong-mtr-cbtc",
+    "figure": 1,
+    "description": "Hong Kong took 21 years to move from its first driverless shuttle (Disneyland Li",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Hong Kong took 21 years to move from its first driverless shuttle (Disneyland Line, 2005) to a full urban CBTC resignalling program, with the driver-operated core lines converting one at a time to a 2029 completion.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "taipei-metro-cbtc",
+    "figure": 1,
+    "description": "Two of Taipei's lines run fully driverless (GoA 4, about 40 route-km combined) a",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Two of Taipei's lines run fully driverless (GoA 4, about 40 route-km combined) alongside a larger driver-operated high-capacity backbone (GoA 2).",
+    "bucket": "chart"
+  },
+  {
+    "slug": "milan-metro-m4-m5-driverless",
+    "figure": 1,
+    "description": "Milan's two GoA 4 lines, built a decade apart on one Ansaldo STS to Hitachi Rail",
+    "source_hint": "generated matplotlib chart",
+    "caption": "Milan's two GoA 4 lines, built a decade apart on one Ansaldo STS to Hitachi Rail CBTC lineage: about 28 route-km and 40 stations of driverless metro under a single operator.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "montreal-rem-driverless-metro",
+    "figure": 1,
+    "description": "The REM grew from a 16.6 km shuttle to a roughly 67 km network in under four yea",
+    "source_hint": "generated matplotlib chart",
+    "caption": "The REM grew from a 16.6 km shuttle to a roughly 67 km network in under four years by adding track to one automated Alstom platform.",
+    "bucket": "chart"
+  },
+  {
+    "slug": "moscow-metro-cbtc",
+    "figure": 1,
+    "description": "A domestic system, not an imported CBTC line, cut the Koltsevaya Line interval f",
+    "source_hint": "generated matplotlib chart",
+    "caption": "A domestic system, not an imported CBTC line, cut the Koltsevaya Line interval from 113 seconds to 90 — the headway gain that resignaling is supposed to buy.",
+    "bucket": "chart"
   }
 ]

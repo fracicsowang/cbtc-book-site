@@ -1,0 +1,84 @@
+---
+title: "Montreal REM Driverless Metro: A North American Model for US Transit"
+slug: montreal-rem-driverless-metro
+description: "How the Montreal REM driverless metro — a GoA 4 Alstom Urbalis 400 network financed by the pension fund CDPQ Infra — became North America's newest fully automated system, and what US transit agencies can and cannot copy from it."
+date: 2026-08-26
+author: "Chunjun (Francisco) Wang"
+category: international-benchmarks
+tags: [CBTC, Montreal REM, driverless, GoA 4, Alstom Urbalis, CDPQ Infra, international]
+primary_keyword: "Montreal REM driverless"
+secondary_keywords: ["Réseau express métropolitain", "Alstom Urbalis 400 CBTC", "CDPQ Infra P3", "GoA 4 automated metro", "North America driverless metro"]
+related_chapters: [8, 11, 14]
+internal_links: ["/blog/vancouver-skytrain-lessons-for-us", "/blog/goa-0-4-explained-grades-of-automation", "/blog/driverless-operations-worldwide-goa-4", "/blog/dubai-metro-cbtc-driverless-network"]
+og_image: "/blog/img/montreal-rem-driverless-metro.png"
+read_time: "11 min"
+---
+
+On 31 July 2023, a two-car train pulled out of Brossard station on Montreal's South Shore, crossed the Samuel De Champlain Bridge on its own dedicated deck, and reached downtown's Gare Centrale in about 18 minutes with no driver aboard and no cab in the leading car. That first revenue run opened the Réseau express métropolitain — the Montreal REM — and with it one of the newest fully automated heavy transit networks in North America. For a US transit engineer, the Montreal REM driverless network deserves study not as a curiosity but as a working model of automation, financing, and delivery assembled next door, under a labor and regulatory climate far closer to the United States than Dubai or Singapore will ever be.
+
+## Why a US transit engineer should study the Montreal REM
+
+The United States benchmarks its rail programs against London, Paris, and its own agencies, and it treats Gulf and Asian driverless metros as interesting but foreign — built under conditions no American agency can reproduce. Montreal is different. It sits in a North American legal, labor, and procurement environment, it opened the same summer that the first fully driverless US metro entered service in Honolulu, and it reached Grade of Automation 4 (GoA 4) — unattended train operation — across a large greenfield network using an off-the-shelf Communications-Based Train Control (CBTC) product. The REM is therefore the most transferable large driverless case an American program manager has: close enough to compare honestly, different enough to be instructive. This piece walks through what Montreal actually built, how it paid for it, and which parts a US agency can realistically borrow.
+
+## The system: how the Montreal REM driverless network runs
+
+The Montreal REM driverless network is an Alstom system end to end. The rolling stock is the Alstom Metropolis, in the Saint-Laurent variant built for this project — 212 cars configured as 106 two-car trainsets. The train control is Alstom Urbalis 400, a moving-block CBTC that continuously determines each train's position independent of track circuits, exchanges data with wayside equipment, and computes the braking authority that lets trains follow one another at close headways. Urbalis 400 runs the REM at GoA 4, meaning unattended train operation: no driver, no attendant in the leading car, and no cab at all.
+
+Everything that substitutes for the driver's eyes is designed in rather than added later. Stations have platform screen doors that stay closed until a train has berthed and aligned, so the platform edge is never open to an empty trackway. The trains reach a top speed near 100 km/h, run at high frequency on the shared trunk, and hold to roughly a train every 15 minutes on the outer branches through the day. Control is centralized: every movement and every switch is commanded and supervised from a single operations control center, the same architecture any genuine GoA 4 network requires and the one described in [Driverless Operations Worldwide: Who Is GoA 4, Who Is Faking It](/blog/driverless-operations-worldwide-goa-4).
+
+None of this stack is exotic. Urbalis 400 is the same product family that governs automated and semi-automated lines on several continents. What is notable is that Montreal specified the whole system — vital onboard processor, radio, platform doors, central supervision, and rolling stock — as one integrated package for a network that had no legacy signaling, no existing fleet, and no inherited operating rules to stay compatible with. The integration risk that dominates American brownfield resignaling was largely absent.
+
+
+## The build-out: four branches on one automated platform
+
+The REM opened in stages, and the sequence is the most useful part of the story for a US reader because each stage added track to a single homogeneous automated system rather than stitching new signaling onto old.
+
+The first segment, the South Shore branch from Brossard to Gare Centrale, entered revenue service on 31 July 2023 — roughly 16.6 km with five stations. It ran as an isolated shuttle for more than two years while the rest of the network was completed and tested. On 17 November 2025, the Deux-Montagnes branch to the North Shore opened, adding about 33 km and 14 new stations, including deep interchanges with the Montreal Métro, and tripling the network's coverage in a single step. That segment reused the alignment and the century-old Mount Royal Tunnel of the former Deux-Montagnes commuter line, rebuilt to automated-metro standard. On 18 May 2026, the Anse-à-l'Orme branch opened through the West Island — four more stations and roughly 14 km — extending high-frequency automated service to Pointe-Claire, Kirkland, and Sainte-Anne-de-Bellevue. The remaining piece, the branch and station serving Montreal-Trudeau International Airport (YUL), is under construction and expected in 2027; its civil works have run behind the rest of the network, and until it opens, air travelers still transfer to the 747 bus.
+
+Completed, the REM is planned at about 67 km with 26 stations, with three connections to the Montreal Métro and one to the airport. The point for a US agency is structural: Montreal extended a homogeneous GoA 4 line into more homogeneous GoA 4 line each time, without negotiating a cutover window on a line full of passengers and without re-certifying a safety case across a boundary between new CBTC and a legacy interlocking. That is an engineering problem of a fundamentally lower order than a brownfield extension, and it explains why the staged openings landed as cleanly as they did.
+
+[FIGURE: Line chart of cumulative REM route-kilometers in revenue service by milestone. DATA: "South Shore / Brossard (Jul 2023)"=16.6, "+ Deux-Montagnes / North Shore (Nov 2025)"=50, "+ Anse-à-l'Orme / West Island (May 2026)"=64, "+ Airport / YUL (planned 2027)"=67. Caption: "The REM grew from a 16.6 km shuttle to a roughly 67 km network in under four years by adding track to one automated platform, not by resignaling across boundaries."]
+
+## The CDPQ Infra model: a pension fund as owner and operator
+
+The technology is familiar; the financing is what makes Montreal worth a US program manager's afternoon. The REM was conceived, financed, built, and is operated by CDPQ Infra, a subsidiary of the Caisse de dépôt et placement du Québec — the pension-fund manager that invests on behalf of Quebec depositors, known locally as La Caisse. Rather than an agency issuing a design-build contract and holding the asset, the pension fund acts as project owner, majority equity investor, and, through its operating arm, the network's long-term operator. Construction was delivered by the Groupe PMM consortium (Alstom, SNC-Lavalin — now AtkinsRéalis — Dragados, Aecon, and Pomerleau-EBC), and long-term operations and maintenance sit with Pulsar, a joint venture of AtkinsRéalis and Alstom, under a 30-year term. The total capital cost has been reported at roughly C$6.9 billion, a figure that has risen over the project's life.
+
+This structure — sometimes called the Caisse model — concentrates in one owner the incentives that US projects usually split across an agency, a federal funder, separate civil and systems and vehicle contractors, and a future operator. Because the same entity that builds the line also carries ridership and revenue risk over 30 years, the design decisions that a conventional agency might defer to a later operator were made up front and made to favor lifecycle cost. Bloomberg's reporting on the REM emphasized exactly that: a per-mile cost well below comparable North American rail builds, attributed in part to the integrated single-owner delivery. A US agency cannot import a Quebec pension fund, and the model raises real questions about public accountability and fare-setting when an investor owns the network. But the underlying idea — one accountable owner holding construction and 30-year operating risk together, choosing GoA 4 partly because unattended operation lowers the operating cost it must itself carry — is directly relevant to US agencies weighing public-private delivery against the Federal Transit Administration (FTA) Capital Investment Grants pathway.
+
+## Toronto contrast: same Urbalis 400, a different grade of automation
+
+The user who suggested this article called it the "Toronto REM," and the slip is worth correcting because the contrast is the lesson. The REM is in Montreal. Toronto's comparable CBTC story is the Toronto Transit Commission (TTC) Line 1 Yonge-University, which was resignaled with the same Alstom Urbalis 400 platform, installed in phases from 2017 and declared fully operational in 2022. Same vendor, same core CBTC product family as the REM — and a completely different operating outcome.
+
+Line 1 is a brownfield retrofit of a subway that opened in 1954. It runs at GoA 2: automatic train operation with a driver in the cab who closes the doors and supervises, not unattended operation. The CBTC bought Toronto tighter headways and more capacity on an existing line without platform screen doors or a driverless operating model, because retrofitting those into a seventy-year-old subway with an existing workforce and existing stations is a different proposition than building them into a greenfield network. In July 2026 the TTC awarded the Line 2 Bloor-Danforth resignaling to Hitachi Rail, extending CBTC to a second Toronto line on similar brownfield terms.
+
+The comparison isolates the real variable. The signaling technology under the REM and under TTC Line 1 is essentially the same; the difference between a driverless GoA 4 network and a driver-attended GoA 2 upgrade is a decision about platform protection, staffing, operating rules, and institutional appetite, not about the CBTC. That distinction — that the grade of automation is an operations-and-safety choice layered on top of the same train control — is the whole subject of [GoA 0 to 4 Explained: The Five Grades of Train Automation](/blog/goa-0-4-explained-grades-of-automation). A US agency retrofitting an existing line should expect the Toronto Line 1 outcome, not the Montreal REM outcome, from the same product.
+
+## The North American precedent: Vancouver SkyTrain, four decades on
+
+Montreal is new, but driverless metro in North America is not. Vancouver's SkyTrain opened its Expo Line in December 1985 as one of the first commercial fully driverless moving-block metros anywhere, running on Thales SelTrac CBTC. Four decades later it operates every line unattended across roughly 80 km, the longest driverless network in the Americas, and it has done so through Canadian winters, labor relations, and public-transit politics that look far more like the US operating environment than the Gulf does. The lessons a US agency can draw from that long record — staffing models, snow and ice operation, public acceptance of trains with no driver — are collected in [Vancouver SkyTrain: Lessons for US Transit](/blog/vancouver-skytrain-lessons-for-us).
+
+Set the REM against that backdrop and the pattern is clear. Vancouver proved four decades ago that unattended metro operation is reliable and durable in a North American setting. Honolulu's Skyline opened the first fully driverless US line in June 2023, weeks before the REM's first run. Montreal then showed that a large, multi-branch GoA 4 network can be delivered and extended on schedule using a pension-fund ownership model. For the American reflex that treats driverless operation as unproven or foreign, three North American systems now say otherwise. The technology has never been the obstacle; the obstacles are brownfield integration, split contracts, platform-door and detection cost, and the institutional cadence of US capital programs — the same constraints examined for the Gulf's greenfield benchmark in [Dubai Metro: How CBTC Runs the World's Longest Driverless Network](/blog/dubai-metro-cbtc-driverless-network).
+
+## What this means in practice
+
+- **Montreal is the most transferable driverless case for a US agency.** It is North American, it is recent, and it reached GoA 4 with an off-the-shelf CBTC — a cleaner comparison than any Gulf or Asian metro when building a domestic business case.
+- **Greenfield homogeneity is the enabler, not the vendor.** Alstom Urbalis 400 runs both the REM (driverless GoA 4) and TTC Line 1 (driver-attended GoA 2). The same product yields very different outcomes; a US brownfield retrofit should plan for the Toronto result, not the Montreal one.
+- **Platform screen doors and central supervision are part of the GoA 4 price.** The REM built full platform-door and unattended-operation infrastructure in from the start. Any US driverless aspiration inherits that capital and operating cost; it is not an optional add-on.
+- **The financing is the exportable idea.** A US agency cannot copy a Quebec pension fund, but it can study the single-owner model that holds construction and 30-year operating risk together and, in part for that reason, chose the automation grade that lowers long-run operating cost.
+- **Correct the record on ownership.** The REM is owned and operated by CDPQ Infra, an investor, not a conventional transit authority. Any comparison to a US agency must account for who sets fares, who carries ridership risk, and who answers to the public.
+
+## Where to go next
+
+This post is an 11-minute case study. The full treatment of international CBTC benchmarks and their relevance to US deployment decisions lives in Chapter 11 ("International Benchmarks with US Relevance") of *Communications-Based Train Control*, Volume 2: Operations, Deployment & Economics ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 11 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch11.pdf) for the comparative benchmark tables and the GoA-versus-delivery-model matrix.
+
+## Sources
+
+- Wang, C. (2026). *Communications-Based Train Control, Volume 2: Operations, Deployment & Economics*. Independent. ISBN 979-8-258-54528-2. — [Chapter 11, "International Benchmarks with US Relevance"]
+- Alstom. (2025). *Alstom welcomes the commissioning of an additional 33 kilometers of the Réseau express métropolitain in Montreal, Canada*. [alstom.com](https://www.alstom.com/press-releases-news/2025/11/alstom-welcomes-commissioning-additional-33-kilometers-reseau-express-metropolitain-montreal-canada)
+- Alstom. (2023). *Alstom and its partners inaugurate the first REM segment in Montreal*. [alstom.com](https://www.alstom.com/press-releases-news/2023/7/alstom-and-its-partners-inaugurate-first-rem-segment-montreal)
+- CDPQ Infra. *REM — Réseau express métropolitain (project fact sheet)*. [cdpqinfra.com](https://cdpqinfra.com/en/projects/rem)
+- Réseau express métropolitain. *Official opening of 14 new REM stations between downtown Montréal and Deux-Montagnes* and *May 18, 2026: Scheduled opening date for the Anse-à-l'Orme branch*. [rem.info](https://rem.info/en/news/official-opening-14-new-rem-stations)
+- Railway News. *Montreal REM: 2026 Construction Update and Route Map*. [railwaynews.net](https://railwaynews.net/montreal-rem-project-automated-light-rail-transit-system-quebec.html)
+- Railway Gazette International. (2026). *"CBTC is coming home": Toronto Line 2 resignalling contract let*. [railwaygazette.com](https://www.railwaygazette.com/hitachi/2026/07/20/cbtc-is-coming-home-toronto-line-2-resignalling-contract-let/)
+- Hitachi Rail. (2023). *US' first fully autonomous urban railway system opens in Honolulu (Skyline)*. [hitachi.com](https://www.hitachi.com/en-us/press/us-first-fully-autonomous-urban-railway-system-built-by-hitachi-rail-opens-in-honolulu/)
+- IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
