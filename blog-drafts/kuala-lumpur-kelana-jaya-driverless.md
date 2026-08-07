@@ -14,7 +14,7 @@ og_image: "/blog/img/kuala-lumpur-kelana-jaya-driverless.png"
 read_time: "11 min"
 ---
 
-On 1 September 1998, a two-car train slid out of a station on the newly opened PUTRA Light Rail Transit line in Kuala Lumpur with no driver in the leading car and no cab for one to sit in — the opening move in what would grow into the largest Kuala Lumpur driverless metro network in Southeast Asia. It was five years before Singapore opened its first driverless heavy-metro line and a full 18 years before an American transit agency placed a single revenue train under Communications-Based Train Control on a brownfield subway. What began that day as one line has become, nearly three decades later, three fully automated lines, two distinct CBTC lineages, and more than 150 route-kilometers of unattended operation carrying well over a million and a half riders on a normal weekday.
+On 1 September 1998, a two-car train slid out of a station on the newly opened PUTRA Light Rail Transit line in Kuala Lumpur with no driver in the leading car and no cab for one to sit in — the opening move in what would grow into the largest Kuala Lumpur driverless metro network in Southeast Asia. It was five years before Singapore opened its first driverless heavy-metro line and a full 18 years before an American transit agency placed a single revenue train under Communications-Based Train Control on a brownfield subway. What began that day as one line has become, nearly three decades later, three fully automated lines, two distinct CBTC lineages, and more than 150 route-kilometers of unattended operation carrying well over three-quarters of a million riders on a normal weekday.
 
 ## Why Kuala Lumpur's driverless metro belongs in a US engineer's benchmark set
 

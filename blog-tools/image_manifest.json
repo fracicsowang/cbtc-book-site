@@ -735,9 +735,9 @@
   {
     "slug": "dubai-metro-cbtc-driverless-network",
     "figure": 1,
-    "description": "Dubai extended one homogeneous GoA 4 network — roughly 104 route-km on a single ",
+    "description": "Dubai grew one homogeneous GoA 4 network to roughly 90 route-km on a single Thal",
     "source_hint": "generated matplotlib chart",
-    "caption": "Dubai extended one homogeneous GoA 4 network — roughly 104 route-km on a single Thales SelTrac CBTC platform — without a legacy cutover.",
+    "caption": "Dubai grew one homogeneous GoA 4 network to roughly 90 route-km on a single Thales SelTrac CBTC platform, without a legacy cutover.",
     "bucket": "chart"
   },
   {
@@ -783,9 +783,9 @@
   {
     "slug": "delhi-metro-cbtc",
     "figure": 1,
-    "description": "Two Bombardier CITYFLO 650 lines make up close to 97 route-km of unattended oper",
+    "description": "Close to 97 route-km of unattended operation on two CBTC platforms — the Magenta",
     "source_hint": "generated matplotlib chart",
-    "caption": "Two Bombardier CITYFLO 650 lines make up close to 97 route-km of unattended operation — the Magenta Line's 38 km and the Pink Line's 59 km.",
+    "caption": "Close to 97 route-km of unattended operation on two CBTC platforms — the Magenta Line's 38 km (Nippon Signal SPARCS) and the Pink Line's 59 km (Bombardier/Alstom CITYFLO 650).",
     "bucket": "chart"
   },
   {
