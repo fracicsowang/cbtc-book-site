@@ -9,7 +9,7 @@ tags: [CBTC, wayside, antennas, equipment rooms, fiber, cable, US transit, field
 primary_keyword: "CBTC wayside layout"
 secondary_keywords: ["CBTC access point spacing", "wayside equipment room", "fiber ring CBTC", "CBTC cable tray", "trackside antenna placement"]
 related_chapters: [5, 6]
-internal_links: ["/blog/what-is-a-zone-controller"]
+internal_links: ["/blog/what-is-a-zone-controller", "/blog/cbtc-storage-yards"]
 og_image: "/blog/img/wayside-equipment-layout-antennas-cabinets-cables.png"
 read_time: "10 min"
 ---
@@ -88,7 +88,7 @@ Maintenance access is easy to omit at design time and impossible to retrofit che
 
 This post is a 10-minute summary. The full treatment of wayside equipment, equipment-room infrastructure, and communication-network layout lives in Chapter 5 and Chapter 6 of *Communications-Based Train Control* ([Volume 1 on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 5 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch05.pdf) and [Chapter 6 slides](https://cbtcbook.com/slides/cbtc_ch06.pdf).
 
-For how the Zone Controller in the equipment room generates Movement Authorities, see [What Is a Zone Controller? CBTC's Wayside Brain Explained](/blog/what-is-a-zone-controller). For why storage yards present a different layout problem, see CBTC in Storage Yards: Why It's a Different Engineering Problem.
+For how the Zone Controller in the equipment room generates Movement Authorities, see [What Is a Zone Controller? CBTC's Wayside Brain Explained](/blog/what-is-a-zone-controller). For why storage yards present a different layout problem, see [CBTC in Storage Yards: Why It's a Different Engineering Problem](/blog/cbtc-storage-yards).
 
 ## Sources
 
