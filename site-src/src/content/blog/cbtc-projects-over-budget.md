@@ -9,7 +9,7 @@ tags: [CBTC, cost overrun, project management, US transit, FTA, BART, MTA]
 primary_keyword: "CBTC project overrun"
 secondary_keywords: ["CBTC over budget", "CBTC cost overrun", "transit signaling project delay", "CBTC schedule slippage", "BART TCMP cost"]
 related_chapters: [12, 14]
-internal_links: ["/blog/cbtc-procurement-cost-drivers", "/blog/cbtc-lifecycle-cost-30-year-model"]
+internal_links: ["/blog/cbtc-procurement-cost-drivers", "/blog/cbtc-lifecycle-cost-30-year-model", "/blog/change-orders-cbtc-projects"]
 og_image: "/blog/img/cbtc-projects-over-budget.png"
 read_time: "10 min"
 ---

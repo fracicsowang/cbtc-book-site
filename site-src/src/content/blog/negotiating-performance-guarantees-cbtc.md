@@ -9,7 +9,7 @@ tags: [CBTC, performance guarantees, contract, RAMS, availability, headway, US t
 primary_keyword: "CBTC performance guarantees"
 secondary_keywords: ["CBTC contract negotiation", "CBTC liquidated damages", "CBTC availability target", "CBTC retention", "CBTC RSR demonstration"]
 related_chapters: [12, 13, 14]
-internal_links: ["/blog/evaluating-cbtc-bids-12-criteria"]
+internal_links: ["/blog/evaluating-cbtc-bids-12-criteria", "/blog/change-orders-cbtc-projects"]
 og_image: "/blog/img/negotiating-performance-guarantees-cbtc.png"
 read_time: "10 min"
 ---
@@ -97,7 +97,7 @@ Best practice is to require RAMS deliverables at preliminary design, critical de
 
 This post is a 10-minute negotiation primer. The full performance criteria framework lives in Chapter 13 (Performance Criteria) of *Communications-Based Train Control*, Volume 1: Foundations & Technical Architecture, and the procurement structure that supports it lives in Chapter 12 (Project Lifecycle) of Volume 2 ([Buy on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 12 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch12.pdf) for the procurement and contract framework.
 
-For the companion piece on the change-order mechanics that performance guarantees should bound, see Change Orders on CBTC Projects: Why They Happen, How to Bound Them. For the bid-evaluation framework that surfaces guarantee structures during procurement, see [Evaluating CBTC Bids: The 12 Criteria That Matter](/blog/evaluating-cbtc-bids-12-criteria).
+For the companion piece on the change-order mechanics that performance guarantees should bound, see [Change Orders on CBTC Projects: Why They Happen, How to Bound Them](/blog/change-orders-cbtc-projects). For the bid-evaluation framework that surfaces guarantee structures during procurement, see [Evaluating CBTC Bids: The 12 Criteria That Matter](/blog/evaluating-cbtc-bids-12-criteria).
 
 ## Sources
 

@@ -87,7 +87,7 @@ Train position is meaningful only against track geometry. The onboard track data
 
 Map matching is the algorithm that projects the Kalman-filtered position estimate onto the track centerline. The constraint that trains operate on fixed tracks reduces the localization problem from two-dimensional (or three) to one-dimensional (along-track distance from a reference point). If the filter reports an estimate 0.5 meters off the track centerline, map matching corrects the estimate onto the centerline and updates the lateral uncertainty. In tunnels and underground sections where GNSS is unavailable, map matching is often the dominant source of large-scale verification.
 
-Database management is a configuration management problem (covered in Change Orders on CBTC Projects: Why They Happen, How to Bound Them). The VOBC operates dual-database capability: the active database while a new version is loaded into secondary memory, validated for geometric consistency, and only then marked active. A corrupted or misconfigured database is one of the most common late-project surprises in US CBTC retrofits.
+Database management is a configuration management problem (covered in [Change Orders on CBTC Projects: Why They Happen, How to Bound Them](/blog/change-orders-cbtc-projects)). The VOBC operates dual-database capability: the active database while a new version is loaded into secondary memory, validated for geometric consistency, and only then marked active. A corrupted or misconfigured database is one of the most common late-project surprises in US CBTC retrofits.
 
 ## Why the math compounds into capacity
 
