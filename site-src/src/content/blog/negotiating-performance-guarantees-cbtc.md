@@ -9,7 +9,7 @@ tags: [CBTC, performance guarantees, contract, RAMS, availability, headway, US t
 primary_keyword: "CBTC performance guarantees"
 secondary_keywords: ["CBTC contract negotiation", "CBTC liquidated damages", "CBTC availability target", "CBTC retention", "CBTC RSR demonstration"]
 related_chapters: [12, 13, 14]
-internal_links: ["/blog/evaluating-cbtc-bids-12-criteria", "/blog/change-orders-cbtc-projects"]
+internal_links: ["/blog/evaluating-cbtc-bids-12-criteria", "/blog/cbtc-rams-requirements", "/blog/change-orders-cbtc-projects"]
 og_image: "/blog/img/negotiating-performance-guarantees-cbtc.png"
 read_time: "10 min"
 ---
@@ -77,7 +77,7 @@ The negotiation outcome on cure periods reveals the agency's leverage and the ve
 
 ## Tying performance guarantees to RAMS deliverables
 
-Performance guarantees connect to a contractually delivered Reliability, Availability, Maintainability, and Safety (RAMS) program. (For the depth on what the agency should specify, see CBTC RAMS Requirements: What to Specify, What to Leave to the Supplier.) A contract that specifies a 99.5 percent availability target without specifying RAMS deliverables — Reliability Block Diagram, Failure Mode and Effects Analysis (FMEA), MTBF and MTTR predictions, sparing strategy — has specified an outcome without specifying the engineering work that would credibly support it.
+Performance guarantees connect to a contractually delivered Reliability, Availability, Maintainability, and Safety (RAMS) program. (For the depth on what the agency should specify, see [CBTC RAMS Requirements: What to Specify, What to Leave to the Supplier](/blog/cbtc-rams-requirements).) A contract that specifies a 99.5 percent availability target without specifying RAMS deliverables — Reliability Block Diagram, Failure Mode and Effects Analysis (FMEA), MTBF and MTTR predictions, sparing strategy — has specified an outcome without specifying the engineering work that would credibly support it.
 
 Best practice is to require RAMS deliverables at preliminary design, critical design, and pre-RSR milestones, with RAMS values tied to the availability and headway guarantees. If the predicted MTBF for the VOBC is 50,000 hours at preliminary design, the field-measured MTBF over the performance guarantee period must be within a defined tolerance (typically 70 to 80 percent of predicted) or the vendor must demonstrate corrective action. RAMS deliverables that are not tied to performance guarantees are documents; RAMS deliverables that are tied to guarantees are engineering commitments.
 

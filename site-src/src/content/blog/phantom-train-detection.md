@@ -79,7 +79,7 @@ The Independent Safety Assessor (ISA) reviews the FMEA and FTA, validates the SI
 
 ## What gets specified, what gets engineered
 
-Manuscript Chapter 13 and the procurement piece on CBTC RAMS Requirements: What to Specify, What to Leave to the Supplier frame the procurement decision. Three things should be specified explicitly in any modern CBTC RFP regarding phantom train defense.
+Manuscript Chapter 13 and the procurement piece on [CBTC RAMS Requirements: What to Specify, What to Leave to the Supplier](/blog/cbtc-rams-requirements) frame the procurement decision. Three things should be specified explicitly in any modern CBTC RFP regarding phantom train defense.
 
 **First**, the protocol integrity requirements: CRC, sequence numbering, and authentication on every position report and every MA. The cryptographic strength should match the deployment context (NIST-approved primitives, key lengths consistent with current standards).
 
