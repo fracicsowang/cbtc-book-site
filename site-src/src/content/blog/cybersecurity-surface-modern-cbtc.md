@@ -9,7 +9,7 @@ tags: [CBTC, cybersecurity, IEC 62443, NIST CSF, IT/OT, US transit, signaling]
 primary_keyword: "CBTC cybersecurity"
 secondary_keywords: ["CBTC attack surface", "rail cybersecurity", "IEC 62443 rail", "TSA rail security directive", "OT security transit"]
 related_chapters: [6]
-internal_links: ["/blog/atp-ato-ats-triad", "/blog/communication-loss-fallback"]
+internal_links: ["/blog/atp-ato-ats-triad", "/blog/end-to-end-latency-cbtc", "/blog/communication-loss-fallback"]
 og_image: "/blog/img/cybersecurity-surface-modern-cbtc.png"
 read_time: "11 min"
 ---

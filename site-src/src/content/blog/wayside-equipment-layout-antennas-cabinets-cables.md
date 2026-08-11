@@ -9,7 +9,7 @@ tags: [CBTC, wayside, antennas, equipment rooms, fiber, cable, US transit, field
 primary_keyword: "CBTC wayside layout"
 secondary_keywords: ["CBTC access point spacing", "wayside equipment room", "fiber ring CBTC", "CBTC cable tray", "trackside antenna placement"]
 related_chapters: [5, 6]
-internal_links: ["/blog/what-is-a-zone-controller", "/blog/cbtc-storage-yards"]
+internal_links: ["/blog/what-is-a-zone-controller", "/blog/end-to-end-latency-cbtc", "/blog/cbtc-storage-yards"]
 og_image: "/blog/img/wayside-equipment-layout-antennas-cabinets-cables.png"
 read_time: "10 min"
 ---
@@ -28,7 +28,7 @@ The radio access points (APs) are the most visible piece of CBTC wayside infrast
 
 Spacing follows propagation calculations specific to the guideway type. Tunnels are the most demanding: concrete and steel attenuate the signal, multipath dominates, and the antenna pattern is constrained by the tunnel cross-section. Tunnel APs are typically spaced 150 to 350 meters apart, with denser spacing in larger tunnel volumes and at curves where line-of-sight is interrupted. Elevated structures permit 300 to 500 meter spacing because propagation is essentially free-space. At-grade sections sit between, at 250 to 400 meters, with spacing constrained more by foliage, weather, and ambient interference than by attenuation.
 
-The spacing choice is not just about coverage — it is about overlap. Adjacent APs must overlap by 10 to 20 percent of the cell radius so that a moving train always has a connection candidate as it transitions between cells. The fast-roaming budget (covered in End-to-End Latency in CBTC: Where the Milliseconds Go) requires the train to handover within 100 to 150 milliseconds, well below the 250-millisecond comms-loss timeout; without the overlap zone, the handover budget collapses and the system dwells too close to the loss threshold during normal operation.
+The spacing choice is not just about coverage — it is about overlap. Adjacent APs must overlap by 10 to 20 percent of the cell radius so that a moving train always has a connection candidate as it transitions between cells. The fast-roaming budget (covered in [End-to-End Latency in CBTC: Where the Milliseconds Go](/blog/end-to-end-latency-cbtc)) requires the train to handover within 100 to 150 milliseconds, well below the 250-millisecond comms-loss timeout; without the overlap zone, the handover budget collapses and the system dwells too close to the loss threshold during normal operation.
 
 Antenna elevation matters. An antenna mounted too low is shadowed by passing trains; mounted too high, it loses signal at the platform-floor area where doors and DMI displays need diagnostic data. The standard target is 0.5 to 1.0 meter above the train roof for omnidirectional antennas, oriented along the track for directional antennas. Survey-grade installation matters: a 5-degree pointing error on a directional antenna can move the cell edge by 30 meters, which can put a low-margin platform area into a coverage hole.
 
@@ -46,7 +46,7 @@ Each ZC equipment room consumes 30 to 50 amperes at 480V AC, plus reserve for it
 
 ## The fiber ring: the topology that defines the rest of the layout
 
-The backbone fiber follows a self-healing ring around the line. The standard configuration is a primary ring routed in the duct bank along one side of the right-of-way, plus a secondary path either as a second physical route or as a Parallel Redundancy Protocol (PRP) instance over the same fiber pair using independent transceivers. (For why ring topology with PRP/HSR matters for safety availability, see End-to-End Latency in CBTC: Where the Milliseconds Go.)
+The backbone fiber follows a self-healing ring around the line. The standard configuration is a primary ring routed in the duct bank along one side of the right-of-way, plus a secondary path either as a second physical route or as a Parallel Redundancy Protocol (PRP) instance over the same fiber pair using independent transceivers. (For why ring topology with PRP/HSR matters for safety availability, see [End-to-End Latency in CBTC: Where the Milliseconds Go](/blog/end-to-end-latency-cbtc).)
 
 The ring enters the equipment room at each ZC site, drops a connection to the ZC's network switch, and continues to the next site. Total installed fiber for a 30-kilometer line typically runs 60 to 80 kilometers when accounting for slack, riser drops, and future-growth conduit. Installed cost varies enormously with civil conditions but tends to fall in the range of $50,000 to $120,000 per route-mile in US deployments, with tunnel sections at the high end and surface right-of-way at the low end.
 

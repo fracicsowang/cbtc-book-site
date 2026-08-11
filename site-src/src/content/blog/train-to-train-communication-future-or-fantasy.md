@@ -9,7 +9,7 @@ tags: [CBTC, train-to-train, V2V, ETCS Level 3, moving block, future signaling, 
 primary_keyword: "train-to-train communication"
 secondary_keywords: ["V2V rail", "direct train communication", "next-generation CBTC", "ETCS Level 3 hybrid", "rail T2T"]
 related_chapters: [3, 6]
-internal_links: ["/blog/movement-authority-concept", "/blog/cbtc-vs-etcs-side-by-side"]
+internal_links: ["/blog/movement-authority-concept", "/blog/end-to-end-latency-cbtc", "/blog/cbtc-vs-etcs-side-by-side"]
 og_image: "/blog/img/train-to-train-communication-future-or-fantasy.png"
 related_internal: 
 read_time: "10 min"
@@ -27,7 +27,7 @@ The European Train Control System (ETCS) has explored a version of this concept 
 
 ## The case for T2T: latency and architectural simplicity
 
-The latency argument is the most often cited. A conventional CBTC Movement Authority loop is, in round numbers, 1.5 to 3 seconds end to end (covered in End-to-End Latency in CBTC: Where the Milliseconds Go). Train A reports its position at time t; the wayside ZC receives the report, computes the implications for Train B's safe distance, and transmits an updated Movement Authority to Train B; Train B receives the MA and acts on it. The two-hop round-trip plus ZC compute is the dominant latency contribution.
+The latency argument is the most often cited. A conventional CBTC Movement Authority loop is, in round numbers, 1.5 to 3 seconds end to end (covered in [End-to-End Latency in CBTC: Where the Milliseconds Go](/blog/end-to-end-latency-cbtc)). Train A reports its position at time t; the wayside ZC receives the report, computes the implications for Train B's safe distance, and transmits an updated Movement Authority to Train B; Train B receives the MA and acts on it. The two-hop round-trip plus ZC compute is the dominant latency contribution.
 
 T2T cuts this in half. Train A broadcasts its position; Train B receives it directly and computes the safe distance on its own VOBC. The single-hop latency is roughly 250 to 500 milliseconds end to end, depending on the radio and the message-rate budget. Reducing the latency from 1.5 to 3 seconds to 250 to 500 milliseconds removes the largest single contributor to safety headway. The theoretical headway floor on a busy urban metro could shift from about 90 seconds toward 70 seconds.
 
@@ -102,7 +102,7 @@ The applications T2T is least likely to win are exactly the applications convent
 
 This post is a 10-minute engineer's evaluation. The full treatment of CBTC architecture, communication systems, and where T2T fits in the technology roadmap lives in *Communications-Based Train Control* ([Volume 1 on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download the Chapter 6 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch06.pdf).
 
-For the conventional wayside-mediated MA loop T2T proposes to replace, see [The Movement Authority Concept: How a CBTC Train Decides How Far to Go](/blog/movement-authority-concept). For the latency budget that quantifies the T2T advantage, see End-to-End Latency in CBTC: Where the Milliseconds Go. For the European hybrid analog, see [CBTC vs ETCS: A Side-by-Side for US Engineers](/blog/cbtc-vs-etcs-side-by-side).
+For the conventional wayside-mediated MA loop T2T proposes to replace, see [The Movement Authority Concept: How a CBTC Train Decides How Far to Go](/blog/movement-authority-concept). For the latency budget that quantifies the T2T advantage, see [End-to-End Latency in CBTC: Where the Milliseconds Go](/blog/end-to-end-latency-cbtc). For the European hybrid analog, see [CBTC vs ETCS: A Side-by-Side for US Engineers](/blog/cbtc-vs-etcs-side-by-side).
 
 ## Sources
 

@@ -9,7 +9,7 @@ tags: [CBTC, time synchronization, IEEE 1588, PTP, GPS, holdover, signaling]
 primary_keyword: "CBTC time synchronization"
 secondary_keywords: ["IEEE 1588 PTP rail", "GPS holdover transit", "CBTC clock", "time alignment signaling", "PTP grandmaster"]
 related_chapters: [3, 6, 7]
-internal_links: ["/blog/cbtc-heartbeat-cycle", "/blog/cybersecurity-surface-modern-cbtc"]
+internal_links: ["/blog/end-to-end-latency-cbtc", "/blog/cbtc-heartbeat-cycle", "/blog/cybersecurity-surface-modern-cbtc"]
 og_image: "/blog/img/time-synchronization-cbtc-gps-not-enough.png"
 read_time: "9 min"
 ---
@@ -89,7 +89,7 @@ The TSA Security Directives for surface transportation now explicitly include ti
 
 This post is a 9-minute summary. The full treatment of CBTC network architecture, time and synchronization, and communication-system safety lives in Chapter 6 of *Communications-Based Train Control* ([Volume 1 on Amazon](https://www.amazon.com/dp/B0GYHLYQZZ)). [Download Chapter 6 slides (free PDF)](https://cbtcbook.com/slides/cbtc_ch06.pdf).
 
-For how time alignment fits into the system-wide latency budget, see End-to-End Latency in CBTC: Where the Milliseconds Go. For why the wireless link cannot support hardware-timestamped PTP and how the onboard side compensates, see [The Cybersecurity Surface of a Modern CBTC System](/blog/cybersecurity-surface-modern-cbtc).
+For how time alignment fits into the system-wide latency budget, see [End-to-End Latency in CBTC: Where the Milliseconds Go](/blog/end-to-end-latency-cbtc). For why the wireless link cannot support hardware-timestamped PTP and how the onboard side compensates, see [The Cybersecurity Surface of a Modern CBTC System](/blog/cybersecurity-surface-modern-cbtc).
 
 ## Sources
 
