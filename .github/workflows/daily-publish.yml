@@ -125,3 +125,23 @@ jobs:
         id: deployment_retry
         if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5
+
+  # After the site is live, tell IndexNow (Bing/Yandex/etc.) which article
+  # URLs changed today so they recrawl in minutes. Runs post-deploy so the
+  # submitted URLs are already reachable. No-op on days with no new article.
+  # Non-fatal: a flaky IndexNow endpoint must never fail a good deploy.
+  notify-indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Ping IndexNow with today's URLs
+        env:
+          FORCE_DATE: ${{ inputs.force_date }}
+        run: python3 blog-tools/indexnow_ping.py --today
