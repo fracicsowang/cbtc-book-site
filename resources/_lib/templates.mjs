@@ -128,6 +128,10 @@ export function printPage(asset) {
   // viewport is a hair off the page box, and one stray pixel produces a blank
   // second page on every sheet.
   const [PW, PH] = land ? [1056, 816] : [816, 1056];
+  // Multi-page sheets (checklists, the glossary, the projects database) flow
+  // instead of being scaled down. Shrinking a 30-item checklist to 80% to save
+  // a page makes it unreadable in print, which defeats the object.
+  const flow = !!asset.multipage;
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <title>${esc(asset.title)}</title>
@@ -135,7 +139,7 @@ ${FONT_LINK}
 <style>
   @page { size: ${asset.page?.format || "Letter"} ${asset.page?.landscape ? "landscape" : "portrait"}; margin: 0; }
   * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; width: ${PW}px; height: ${PH}px; overflow: hidden; }
+  html, body { margin: 0; padding: 0; width: ${PW}px; ${flow ? "" : `height: ${PH}px; overflow: hidden;`} }
   body {
     font-family: ${B.sans};
     background: ${B.paper};
@@ -149,7 +153,7 @@ ${FONT_LINK}
     flex-direction: column;
     /* Exactly one page: the builder fits the body to whatever is left. */
     width: ${PW}px;
-    height: ${PH}px;
+    ${flow ? `min-height: ${PH}px; padding-bottom: 18px;` : `height: ${PH}px;`}
   }
   .doc-head {
     display: flex; align-items: flex-start; justify-content: space-between;
@@ -178,6 +182,19 @@ ${FONT_LINK}
   }
   .doc-stamp b { color: ${B.char}; font-weight: 500; }
   .doc-body { flex: 1; min-height: 0; }
+  ${flow ? `
+  /* Normal flow, not flex: a flex column does not paginate — the body keeps
+     its single-page box and the footer ends up painted over the overflow. */
+  .sheet { display: block; }
+  .doc-body { flex: none; }
+  .doc-inner { height: auto; }
+  /* Multicol fills column 1 of a page before column 2, so an unplanned spill
+     leaves half the next page blank. Sheets that run long place their own
+     .pagebreak and give each page a self-contained, balanced .cols2 block. */
+  .pagebreak { break-before: page; }
+  ul.check li { font-size: 10.5px; padding-top: 6px; padding-bottom: 6px; }
+  h3.phase, table.rt, .note, ul.check li { break-inside: avoid; }
+  h2.sec { break-after: avoid; }` : ""}
   /* Definite height so a drawing's max-height:100% has something to resolve against. */
   .doc-inner { width: 100%; height: 100%; }
   /* A drawing sizes itself to the space left over, keeping its aspect ratio. */
@@ -232,6 +249,32 @@ ${FONT_LINK}
     text-transform: uppercase; color: ${B.charDim};
   }
   .legend b { color: ${B.char}; font-weight: 500; }
+  /* Checklist sheets: printed and ticked by hand, so real boxes and a
+     two-column flow that keeps a long list on one page. */
+  ul.check { list-style: none; padding: 0; margin: 0; }
+  ul.check li {
+    position: relative; padding: ${land ? "4px" : "5px"} 0 ${land ? "4px" : "5px"} 20px;
+    font-size: 10px; line-height: 1.4;
+    border-bottom: 1px solid ${B.charRule};
+    break-inside: avoid;
+  }
+  ul.check li::before {
+    content: ""; position: absolute; left: 0; top: 7px;
+    width: 9px; height: 9px; border: 1.2px solid ${B.navy}; background: #FFF;
+  }
+  ul.check li b { font-weight: 600; }
+  ul.check li .why { color: ${B.charDim}; }
+  .cols2 { column-count: 2; column-gap: 26px; }
+  .cols2 > * { break-inside: avoid; }
+  h3.phase {
+    font-family: ${B.mono}; font-size: 9px; letter-spacing: 1.8px;
+    text-transform: uppercase; color: ${B.char};
+    margin: 12px 0 5px; padding-bottom: 4px;
+    border-bottom: 2px solid ${B.navy};
+    break-after: avoid;
+  }
+  h3.phase:first-child { margin-top: 0; }
+  h3.phase span { float: right; color: ${B.charDim}; letter-spacing: 1.2px; font-weight: 400; }
   h2.sec {
     font-family: ${B.serif}; font-size: 15px; font-weight: 600;
     margin: ${land ? "15px 0 8px" : "22px 0 10px"}; letter-spacing: -0.2px;

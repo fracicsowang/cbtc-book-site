@@ -45,11 +45,7 @@ const noPdf = argv.includes("--no-pdf");
 // Sheets that are written but not yet published; they seed the "in progress"
 // list on the hub so the section does not look abandoned between batches.
 const PLANNED = [
-  "CBTC vs Conventional Signaling — side-by-side comparison",
-  "CBTC Vendor Landscape 2026",
   "Global CBTC Projects Database",
-  "CBTC Migration Checklist",
-  "CBTC Testing & Commissioning Checklist",
   "CBTC Acronyms & Glossary — 200 terms",
   "CBTC Engineer Learning Roadmap",
 ];
@@ -104,8 +100,9 @@ async function renderAsset(browser, asset) {
   // ignores it on a flex child (measured: identical layout at 100% and 40%) —
   // so drawings are capped by max-height in CSS and prose/tables are scaled
   // with a transform, which keeps text as selectable vector text in the PDF.
+  const flow = !!asset.multipage;
   const MIN_SCALE = 0.8; // below this the sheet stops being readable in print
-  const fitted = await page.evaluate((minScale) => {
+  const fitted = flow ? { scale: 1, clipped: 0 } : await page.evaluate((minScale) => {
     const body = document.querySelector(".doc-body");
     const inner = document.querySelector(".doc-inner");
     const avail = body.clientHeight;
@@ -114,11 +111,22 @@ async function renderAsset(browser, asset) {
     // Scaling widens the box to 100/s%, which rewraps the text shorter — so the
     // height has to be measured after each trial, not predicted from the
     // unscaled layout. Binary-search the largest scale that still fits.
+    // scrollHeight lies on a multi-column container (column-count fragments
+    // sideways, so vertical overflow is not reported). Measure the lowest
+    // child edge instead — that is what actually collides with the footer.
+    const contentHeight = () => {
+      const top = inner.getBoundingClientRect().top;
+      let bottom = top;
+      for (const el of inner.querySelectorAll(":scope > *")) {
+        bottom = Math.max(bottom, el.getBoundingClientRect().bottom);
+      }
+      return Math.max(inner.scrollHeight, bottom - top);
+    };
     const heightAt = (s) => {
       inner.style.transformOrigin = "top left";
       inner.style.transform = s === 1 ? "none" : `scale(${s})`;
       inner.style.width = s === 1 ? "100%" : `${100 / s}%`;
-      return inner.scrollHeight * s;
+      return contentHeight() * s;
     };
     if (heightAt(1) <= avail) return { scale: 1, clipped: 0 };
 
@@ -147,7 +155,20 @@ async function renderAsset(browser, asset) {
       format: asset.page?.format || "Letter",
       landscape,
       printBackground: true,
-      preferCSSPageSize: true,
+      // Single-page sheets are pinned by CSS; flowing ones reserve a strip for
+      // the running footer that Chrome repeats on every page.
+      preferCSSPageSize: !flow,
+      ...(flow
+        ? {
+            displayHeaderFooter: true,
+            headerTemplate: "<div></div>",
+            footerTemplate: `<div style="width:100%;padding:0 52px;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:7.5px;letter-spacing:1.2px;text-transform:uppercase;color:#6b6b6b;display:flex;justify-content:space-between;">
+                 <span>${asset.title.replace(/&[a-z]+;/g, " ")} &middot; cbtcbook.com</span>
+                 <span>Page <span class="pageNumber"></span> of <span class="totalPages"></span></span>
+               </div>`,
+            margin: { top: "0", bottom: "0.42in", left: "0", right: "0" },
+          }
+        : {}),
     });
   }
 
