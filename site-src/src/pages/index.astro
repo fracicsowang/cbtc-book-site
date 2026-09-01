@@ -18,7 +18,11 @@ const posts = (await getCollection("blog", ({ data }) => data.draft !== true))
 const __dir = dirname(fileURLToPath(import.meta.url));
 const publicImg = resolve(__dir, "../../public/img");
 const hasHero = (slug: string) =>
-  existsSync(`${publicImg}/${slug}-hero.png`);
+  existsSync(`${publicImg}/${slug}-hero.webp`);
+
+// Cards above the fold must not be lazy — the first one is the LCP element,
+// and `loading="lazy"` on it delays the download until after layout.
+const EAGER_CARDS = 3;
 
 const url = "https://cbtcbook.com/blog/";
 ---
@@ -76,18 +80,22 @@ const url = "https://cbtcbook.com/blog/";
       </p>
     ) : (
       <div class="blog-cards">
-        {posts.map((p) => (
+        {posts.map((p, i) => (
           <a class="blog-card" href={`/blog/${p.slug}/`}>
             {hasHero(p.slug) && (
-              <img class="blog-card__hero" src={`/blog/img/${p.slug}-hero.png`}
-                   alt="" loading="lazy" />
+              <img class="blog-card__hero" src={`/blog/img/${p.slug}-hero.webp`}
+                   width="1200" height="800"
+                   loading={i < EAGER_CARDS ? "eager" : "lazy"}
+                   fetchpriority={i === 0 ? "high" : "auto"}
+                   decoding="async"
+                   alt={`Illustration for “${p.data.title}”`} />
             )}
             <div class="blog-card__body">
               <span class="blog-card__cat">{p.data.category}</span>
               <h2 class="blog-card__title">{p.data.title}</h2>
               <p class="blog-card__desc">{p.data.description}</p>
               <div class="blog-card__meta">
-                <span>{p.data.date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
+                <span>{p.data.date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })}</span>
                 {p.data.read_time && <span>{p.data.read_time}</span>}
               </div>
             </div>

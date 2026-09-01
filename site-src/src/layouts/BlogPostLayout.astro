@@ -36,16 +36,20 @@ interface Props {
 const { frontmatter, slug = "" } = Astro.props;
 const author = frontmatter.author ?? "Chunjun (Francisco) Wang";
 const dateISO = frontmatter.date.toISOString();
+// timeZone is pinned to UTC on purpose: frontmatter dates are midnight UTC,
+// and without it the rendered date follows the BUILD machine's zone — a
+// GitHub Actions (UTC) build and a local EDT build disagree by a day on
+// every article.
 const dateNice = frontmatter.date.toLocaleDateString("en-US", {
-  year: "numeric", month: "long", day: "numeric",
+  year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
 });
 const url = new URL(Astro.url.pathname, "https://cbtcbook.com").toString();
 
 // Prefer the per-article hero card if it exists; fall back to the
 // site-level OG image. The frontmatter `og_image` field is ignored
 // (those URLs were drafted before hero generation existed and 404).
-const heroExists = !!slug && existsSync(`${publicImg}/${slug}-hero.png`);
-const heroPath = heroExists ? `/blog/img/${slug}-hero.png` : null;
+const heroExists = !!slug && existsSync(`${publicImg}/${slug}-hero.webp`);
+const heroPath = heroExists ? `/blog/img/${slug}-hero.webp` : null;
 const ogImage = heroPath
   ? new URL(heroPath, "https://cbtcbook.com").toString()
   : "https://cbtcbook.com/assets/og-image.png";
@@ -139,8 +143,12 @@ const jsonLD = {
         <span>{author}</span>
       </p>
 
+      {/* The banner is this page's LCP element: decode it eagerly and at high
+          priority rather than letting it queue behind the fonts and GA4. */}
       {heroPath && (
-        <img class="blog-hero" src={heroPath} alt="" />
+        <img class="blog-hero" src={heroPath} width="1200" height="800"
+             loading="eager" fetchpriority="high" decoding="async"
+             alt={`Illustration for “${frontmatter.title}”`} />
       )}
 
       <div class="blog-prose">

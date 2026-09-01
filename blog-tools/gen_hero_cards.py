@@ -14,8 +14,11 @@ inside articles.
 
 Output: PNG at 1536x1024 (closest gpt-image-1 size to OG 1200x630).
 Saved to:
-  /blog-images/hero/<slug>.png       (working copy)
-  /site-src/public/img/<slug>-hero.png  (Astro picks up at build time)
+  /blog-images/hero/<slug>.png            (master, kept full size)
+  /site-src/public/img/<slug>-hero.webp   (1200px q85, what actually ships)
+
+The public copy is derived by blog-tools/optimize_hero_images.mjs, never a
+straight copy of the master — see optimize_to_webp() below.
 
 Usage:
   python3 gen_hero_cards.py --slug what-is-cbtc-2026-guide   # one
@@ -29,6 +32,7 @@ import base64
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -141,6 +145,23 @@ def build_prompt(title: str, category: str) -> str:
 
 # ─── Generation ─────────────────────────────────────────────────────
 
+def optimize_to_webp(slug: str) -> None:
+    """Run blog-tools/optimize_hero_images.mjs for one slug.
+
+    Kept out of Python because the toolchain here has no Pillow, while
+    site-src already carries `sharp` as a devDependency.
+    """
+    script = THIS.parent / "optimize_hero_images.mjs"
+    res = subprocess.run(
+        ["node", str(script), "--slug", slug, "--force"],
+        cwd=str(ROOT), capture_output=True, text=True,
+    )
+    if res.returncode != 0:
+        print(f"  ! webp optimize failed for {slug}: "
+              f"{(res.stderr or res.stdout).strip()[:200]}")
+
+
+
 def generate_one(slug: str, model: str, size: str, quality: str,
                  dry: bool, force: bool) -> str:
     fm = read_frontmatter(slug)
@@ -151,17 +172,16 @@ def generate_one(slug: str, model: str, size: str, quality: str,
     prompt = build_prompt(title, category)
 
     out_path = OUT_HERO / f"{slug}.png"
-    public_path = OUT_PUBLIC / f"{slug}-hero.png"
+    public_path = OUT_PUBLIC / f"{slug}-hero.webp"
 
     if dry:
         return f"DRY {slug}: {prompt[:120]}…"
 
     if out_path.exists() and not force:
-        # still copy to public/ in case it wasn't there
+        # still derive the public webp in case it wasn't there
         if not public_path.exists():
-            import shutil
             public_path.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(out_path, public_path)
+            optimize_to_webp(slug)
         return f"skip exists {slug}.png"
 
     if not ensure_canonical_key():
@@ -210,9 +230,10 @@ def generate_one(slug: str, model: str, size: str, quality: str,
     else:
         return f"✗ unexpected response shape for {slug}"
 
-    # Copy into Astro public/ for the build
-    import shutil
-    shutil.copy2(out_path, public_path)
+    # Derive the web-sized WebP that Astro actually ships. Never copy the
+    # raw 1536x1024 PNG into public/ — that is how 116 articles ended up
+    # shipping 106 MB of hero art with a ~900 KB LCP image apiece.
+    optimize_to_webp(slug)
     return f"✓ {slug}.png"
 
 
