@@ -65,6 +65,12 @@ jobs:
         id: publish
         env:
           FORCE_DATE: ${{ inputs.force_date }}
+          # Astro inlines PUBLIC_* at build time. Without this the newsletter
+          # form on every article falls back to the REPLACE_ME placeholder and
+          # silently discards signups (it did, on all 117 live pages, until
+          # 2026-09-01). Repo secret, not .env: .env is gitignored and the
+          # cloud runner never sees it.
+          PUBLIC_FORMSPREE_ENDPOINT: ${{ secrets.PUBLIC_FORMSPREE_ENDPOINT }}
         run: python3 blog-tools/ci_publish.py
 
       - name: Commit publish state if changed

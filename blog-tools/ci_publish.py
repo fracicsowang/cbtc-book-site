@@ -143,6 +143,26 @@ def main():
         print(f"FATAL: build produced no {DIST}", file=sys.stderr)
         sys.exit(1)
 
+    # Guard: the newsletter endpoint is inlined by Astro at build time from
+    # PUBLIC_FORMSPREE_ENDPOINT. When it is unset (the cloud runner cannot see
+    # site-src/.env, which is gitignored) every article ships a form posting to
+    # the REPLACE_ME placeholder and every signup is silently discarded. That
+    # shipped unnoticed on all 117 live pages until 2026-09-01, so check the
+    # built output rather than trusting the environment.
+    broken_forms = [p for p in DIST.rglob("*.html")
+                    if "formspree.io/f/REPLACE_ME" in p.read_text(errors="ignore")]
+    if broken_forms:
+        msg = (f"newsletter endpoint is the REPLACE_ME placeholder on "
+               f"{len(broken_forms)} built page(s) — signups will be discarded. "
+               f"Set the PUBLIC_FORMSPREE_ENDPOINT repo secret (Settings > "
+               f"Secrets and variables > Actions).")
+        if os.environ.get("STRICT_NEWSLETTER") == "1":
+            print(f"FATAL: {msg}", file=sys.stderr)
+            sys.exit(1)
+        print("!" * 60, file=sys.stderr)
+        print(f"WARNING: {msg}", file=sys.stderr)
+        print("!" * 60, file=sys.stderr)
+
     (SITE / "blog").mkdir(parents=True, exist_ok=True)
     run(["rsync", "-a", "--delete",
          "--exclude=figures/", "--exclude=slides/",
