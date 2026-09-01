@@ -9,6 +9,9 @@
   --navy-mid: #1B2D4A;
   --cyan: #4A9EBF;
   --amber: #D4A84B;
+  /* Amber is unreadable as text on light surfaces (2.2:1 on white). Amber
+     TEXT on cream/white uses --amber-ink; amber stays as-is on navy. */
+  --amber-ink: #7F601E;
   --amber-soft: rgba(212, 168, 75, 0.18);
   --ink: #EAF2F7;
   --ink-dim: rgba(234, 242, 247, 0.62);
@@ -199,7 +202,7 @@ a { color: inherit; }
   display: flex; flex-wrap: wrap; gap: 20px;
 }
 .blog-meta span + span::before {
-  content: "·"; margin-right: 20px; color: var(--amber);
+  content: "·"; margin-right: 20px; color: var(--amber-ink);
 }
 
 /* Article hero banner (above prose) */
@@ -237,7 +240,7 @@ a { color: inherit; }
 .blog-prose a {
   color: var(--char);
   text-decoration: underline;
-  text-decoration-color: var(--amber);
+  text-decoration-color: var(--amber-ink);
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
 }
@@ -478,7 +481,7 @@ a { color: inherit; }
 .blog-card__cat {
   font-family: var(--mono); font-size: 10px;
   letter-spacing: 1.6px; text-transform: uppercase;
-  color: var(--amber);
+  color: var(--amber-ink);
 }
 .blog-card__title {
   font-family: var(--serif); font-size: 22px;

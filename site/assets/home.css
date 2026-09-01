@@ -186,7 +186,7 @@
   color: var(--char);
 }
 .vol-toc li span {
-  color: var(--amber); font-weight: 500;
+  color: var(--amber-ink); font-weight: 500;
   font-variant-numeric: tabular-nums;
 }
 .vol-toc-more { color: var(--char-dim) !important; font-style: italic; }

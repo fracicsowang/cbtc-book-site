@@ -7,6 +7,11 @@
   --cyan:      #4A9EBF;
   --cyan-dim:  rgba(74, 158, 191, 0.35);
   --amber:     #D4A84B;
+  /* Amber only clears 1.9:1 on cream and 2.2:1 on white — fine as a rule,
+     border or dot, unreadable as text. Any amber TEXT on a light surface
+     uses --amber-ink instead (same hue + saturation, 55% lightness:
+     4.5:1 on white / cream / paper-2). Amber stays as-is on navy (8.2:1). */
+  --amber-ink: #7F601E;
   --amber-soft: rgba(212, 168, 75, 0.18);
   --ink:       #EAF2F7;
   --ink-dim:   rgba(234, 242, 247, 0.72);

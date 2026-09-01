@@ -14,7 +14,7 @@
 .vol-h2 { font-family: var(--serif); font-size: 36px; font-weight: 400; letter-spacing: -0.6px; margin: 16px 0 40px; }
 .vol-toc-list { display: flex; flex-direction: column; }
 .vol-toc-row { display: grid; grid-template-columns: 80px 1fr 100px; gap: 24px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--char-rule); }
-.vol-toc-num { font-family: var(--mono); font-size: 14px; color: var(--amber); font-weight: 500; }
+.vol-toc-num { font-family: var(--mono); font-size: 14px; color: var(--amber-ink); font-weight: 500; }
 .vol-toc-title { font-family: var(--serif); font-size: 20px; font-weight: 400; }
 .vol-toc-pp { font-family: var(--mono); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--char-dim); text-align: right; }
 
@@ -25,7 +25,7 @@
 .vol-excerpts { display: grid; grid-template-columns: 1fr 1fr; gap: 48px 48px; }
 .vol-excerpt { padding: 32px; background: var(--paper); border-top: 2px solid var(--navy); }
 .vol-excerpt-head { display: flex; gap: 16px; align-items: baseline; padding-bottom: 12px; border-bottom: 1px solid var(--char-rule); margin-bottom: 18px; }
-.vol-excerpt-num { font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--amber); font-weight: 500; }
+.vol-excerpt-num { font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--amber-ink); font-weight: 500; }
 .vol-excerpt-ch { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--char-dim); }
 .vol-excerpt-h { font-family: var(--serif); font-size: 22px; font-weight: 400; letter-spacing: -0.3px; line-height: 1.25; margin: 0 0 18px; color: var(--navy); text-wrap: balance; }
 .vol-excerpt-body p { font-family: var(--serif); font-size: 16px; line-height: 1.65; margin: 0 0 14px; color: var(--char); text-wrap: pretty; }
