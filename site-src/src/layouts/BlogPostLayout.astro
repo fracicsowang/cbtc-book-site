@@ -147,6 +147,15 @@ const jsonLD = {
         <slot />
       </div>
 
+      <p class="blog-editorial-note">
+        <strong>How this article was produced.</strong> Drafted with AI assistance, then reviewed
+        and fact-checked by Chunjun (Francisco) Wang against <em>Communications-Based Train
+        Control</em> (the author's two-volume reference) and primary sources — agency records,
+        vendor documentation, and IEEE/IEC standards. Every date, vendor, and figure is traceable
+        to a cited source. Spot a mistake? Corrections are welcome via the
+        <a href="/contact.html">contact page</a>.
+      </p>
+
       <ShareButtons url={url} title={frontmatter.title} />
       <CTABlock related_chapters={frontmatter.related_chapters ?? []} />
       <Newsletter slug={slug} />

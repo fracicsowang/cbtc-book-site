@@ -39,17 +39,13 @@ def main() -> None:
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
         # The /blog/ landing
         f"  <url>\n    <loc>{SITE}/blog/</loc>\n"
-        f"    <lastmod>{today}</lastmod>\n"
-        f"    <changefreq>weekly</changefreq>\n"
-        f"    <priority>0.9</priority>\n  </url>",
+        f"    <lastmod>{today}</lastmod>\n  </url>",
     ]
     for slug, date in entries:
         url = f"{SITE}/blog/{slug}/"
         parts.append(
             f"  <url>\n    <loc>{sax.escape(url)}</loc>\n"
-            f"    <lastmod>{date}</lastmod>\n"
-            f"    <changefreq>monthly</changefreq>\n"
-            f"    <priority>0.7</priority>\n  </url>"
+            f"    <lastmod>{date}</lastmod>\n  </url>"
         )
     parts.append("</urlset>\n")
 

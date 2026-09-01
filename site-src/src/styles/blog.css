@@ -411,6 +411,19 @@ a { color: inherit; }
 .blog-newsletter__status.is-success { color: var(--amber); }
 .blog-newsletter__status.is-error { color: #f3a9a9; }
 
+/* Editorial / production disclosure (how-this-was-made; scaled-content transparency) */
+.blog-editorial-note {
+  margin: 36px 0 0;
+  padding: 16px 18px;
+  border-left: 3px solid var(--amber);
+  background: rgba(212, 168, 75, 0.06);
+  font-family: var(--sans);
+  font-size: 13.5px; line-height: 1.6;
+  color: var(--char-dim);
+}
+.blog-editorial-note strong { color: var(--char); }
+.blog-editorial-note a { color: var(--char); text-decoration: underline; }
+
 /* Sources block */
 .blog-prose h2:has(+ ul):last-of-type {} /* no-op, target hint */
 .blog-prose .sources-list {
