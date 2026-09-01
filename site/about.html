@@ -86,93 +86,93 @@ document.addEventListener('click', function(e) {
 </head>
 <body>
 <div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 <script src="assets/data.js"></script>
-<script type="text/babel" src="assets/components.jsx"></script>
-<script type="text/babel" src="assets/cover-mini.jsx"></script>
-<script type="text/babel">
+<script src="assets/components.js"></script>
+<script src="assets/cover-mini.js"></script>
+<script>
 function AboutPage() {
-  return (<>
-    <SiteNav active="about"/>
-    <section className="about-hero">
-      <div className="container about-grid">
-        <div>
-          <img className="about-photo" src="assets/headshot.jpg" alt="Chunjun (Francisco) Wang"/>
-          <div className="about-meta">
-            <span>📍 {AUTHOR.location}</span>
-            <span>✉ {AUTHOR.email}</span>
-            <a href={AUTHOR.linkedin} target="_blank" rel="noopener">↗ LinkedIn</a>
-            <a href={AUTHOR.googleScholar} target="_blank" rel="noopener">↗ Google Scholar</a>
-            <a href={AUTHOR.orcid} target="_blank" rel="noopener">↗ ORCID 0009-0005-6344-9934</a>
-          </div>
-        </div>
-        <div>
-          <span className="kicker">About the author</span>
-          <h1 className="about-name">{AUTHOR.fullName}</h1>
-          <p className="about-tag">{AUTHOR.credentials.join(" · ")}</p>
-          <p className="about-lede">{AUTHOR.oneLiner}</p>
-          <p className="about-summary">{AUTHOR.summary}</p>
-        </div>
-      </div>
-    </section>
-
-    <section className="container">
-      <div className="timeline">
-        <span className="kicker">Career timeline</span>
-        <h2 style={{ fontFamily: "var(--serif)", fontSize: 36, fontWeight: 400, letterSpacing: "-0.6px", margin: "16px 0 32px" }}>
-          Twenty years across both ends of the global rail-signaling industry.
-        </h2>
-        {AUTHOR.timeline.map((t, i) => (
-          <div className="timeline-row" key={i}>
-            <div className="timeline-year">{t.year}</div>
-            <div>
-              <h3 className="timeline-role">{t.role}</h3>
-              <p className="timeline-org">{t.org}</p>
-              <ul className="timeline-bullets">{t.bullets.map((b, j) => <li key={j}>{b}</li>)}</ul>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-
-    <section className="creds-strip">
-      <div className="container creds-grid">
-        <div>
-          <h4 className="cred-h">Patents</h4>
-          <ul className="cred-list">
-            <li>7 granted CBTC patents</li>
-            <li>Onboard ATP/ATO logic</li>
-            <li>Wayside zone controller architecture</li>
-            <li>Train-to-wayside data link</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="cred-h">Publications</h4>
-          <ul className="cred-list">
-            <li>13 peer-reviewed papers</li>
-            <li>2 book volumes (1,127 pp.)</li>
-            <li>International standards working groups</li>
-            <li>Conference proceedings</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="cred-h">Operating record</h4>
-          <ul className="cred-list">
-            <li>Founded $80M US subsidiary</li>
-            <li>Directed $200M renewable-energy investment</li>
-            <li>Active vibe-coding / AI prototyping</li>
-            <li>Open to remote / flex US roles</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <SiteFooter/>
-  </>);
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(SiteNav, {
+    active: "about"
+  }), /*#__PURE__*/React.createElement("section", {
+    className: "about-hero"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container about-grid"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
+    className: "about-photo",
+    src: "assets/headshot.jpg",
+    alt: "Chunjun (Francisco) Wang"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "about-meta"
+  }, /*#__PURE__*/React.createElement("span", null, "\uD83D\uDCCD ", AUTHOR.location), /*#__PURE__*/React.createElement("span", null, "\u2709 ", AUTHOR.email), /*#__PURE__*/React.createElement("a", {
+    href: AUTHOR.linkedin,
+    target: "_blank",
+    rel: "noopener"
+  }, "\u2197 LinkedIn"), /*#__PURE__*/React.createElement("a", {
+    href: AUTHOR.googleScholar,
+    target: "_blank",
+    rel: "noopener"
+  }, "\u2197 Google Scholar"), /*#__PURE__*/React.createElement("a", {
+    href: AUTHOR.orcid,
+    target: "_blank",
+    rel: "noopener"
+  }, "\u2197 ORCID 0009-0005-6344-9934"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
+    className: "kicker"
+  }, "About the author"), /*#__PURE__*/React.createElement("h1", {
+    className: "about-name"
+  }, AUTHOR.fullName), /*#__PURE__*/React.createElement("p", {
+    className: "about-tag"
+  }, AUTHOR.credentials.join(" · ")), /*#__PURE__*/React.createElement("p", {
+    className: "about-lede"
+  }, AUTHOR.oneLiner), /*#__PURE__*/React.createElement("p", {
+    className: "about-summary"
+  }, AUTHOR.summary)))), /*#__PURE__*/React.createElement("section", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "timeline"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "kicker"
+  }, "Career timeline"), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      fontFamily: "var(--serif)",
+      fontSize: 36,
+      fontWeight: 400,
+      letterSpacing: "-0.6px",
+      margin: "16px 0 32px"
+    }
+  }, "Twenty years across both ends of the global rail-signaling industry."), AUTHOR.timeline.map((t, i) => /*#__PURE__*/React.createElement("div", {
+    className: "timeline-row",
+    key: i
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "timeline-year"
+  }, t.year), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", {
+    className: "timeline-role"
+  }, t.role), /*#__PURE__*/React.createElement("p", {
+    className: "timeline-org"
+  }, t.org), /*#__PURE__*/React.createElement("ul", {
+    className: "timeline-bullets"
+  }, t.bullets.map((b, j) => /*#__PURE__*/React.createElement("li", {
+    key: j
+  }, b)))))))), /*#__PURE__*/React.createElement("section", {
+    className: "creds-strip"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container creds-grid"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
+    className: "cred-h"
+  }, "Patents"), /*#__PURE__*/React.createElement("ul", {
+    className: "cred-list"
+  }, /*#__PURE__*/React.createElement("li", null, "7 granted CBTC patents"), /*#__PURE__*/React.createElement("li", null, "Onboard ATP/ATO logic"), /*#__PURE__*/React.createElement("li", null, "Wayside zone controller architecture"), /*#__PURE__*/React.createElement("li", null, "Train-to-wayside data link"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
+    className: "cred-h"
+  }, "Publications"), /*#__PURE__*/React.createElement("ul", {
+    className: "cred-list"
+  }, /*#__PURE__*/React.createElement("li", null, "13 peer-reviewed papers"), /*#__PURE__*/React.createElement("li", null, "2 book volumes (1,127 pp.)"), /*#__PURE__*/React.createElement("li", null, "International standards working groups"), /*#__PURE__*/React.createElement("li", null, "Conference proceedings"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
+    className: "cred-h"
+  }, "Operating record"), /*#__PURE__*/React.createElement("ul", {
+    className: "cred-list"
+  }, /*#__PURE__*/React.createElement("li", null, "Founded $80M US subsidiary"), /*#__PURE__*/React.createElement("li", null, "Directed $200M renewable-energy investment"), /*#__PURE__*/React.createElement("li", null, "Active vibe-coding / AI prototyping"), /*#__PURE__*/React.createElement("li", null, "Open to remote / flex US roles"))))), /*#__PURE__*/React.createElement(SiteFooter, null));
 }
-ReactDOM.createRoot(document.getElementById("root")).render(<AboutPage/>);
+ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(AboutPage, null));
 </script>
 </body>
 </html>

@@ -87,84 +87,98 @@ document.addEventListener('click', function(e) {
 </head>
 <body>
 <div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 <script src="assets/data.js"></script>
-<script type="text/babel" src="assets/components.jsx"></script>
-<script type="text/babel">
+<script src="assets/components.js"></script>
+<script>
 function ErrataPage() {
-  return (<>
-    <SiteNav active="errata"/>
-    <section className="err-hero">
-      <div className="container">
-        <span className="kicker">Errata · Supplements · Reader resources</span>
-        <h1 className="err-h">Corrections and downloadable supplements for both volumes.</h1>
-        <p className="err-lede">A book this size will have errata. This page is the canonical, dated record — checked weekly. Supplements include the full chapter outlines, figure source files, and bibliography.</p>
-      </div>
-    </section>
-
-    <section className="err-section">
-      <div className="container">
-        <h2>Volume 1 — Errata</h2>
-        <div className="err-empty">
-          No errata reported yet. Volume 1 published April 2026.<br/>
-          Spotted something? Use the report form below — every confirmed correction is credited here.
-        </div>
-      </div>
-    </section>
-
-    <section className="err-section">
-      <div className="container">
-        <h2>Volume 2 — Errata</h2>
-        <div className="err-empty">
-          No errata reported yet. Volume 2 published April 2026.
-        </div>
-      </div>
-    </section>
-
-    <section className="err-section">
-      <div className="container">
-        <h2>Downloadable supplements</h2>
-        <div className="supp-grid">
-          <div className="supp-card">
-            <div style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: 1.4, textTransform: "uppercase", color: "var(--char-dim)", marginBottom: 8 }}>PDF · 18 pp</div>
-            <h4>Full chapter outline</h4>
-            <p>Section-by-section breakdown of all sixteen chapters across both volumes. Useful for procurement reviewers deciding which volume to cite.</p>
-            <a href="#">Download PDF →</a>
-          </div>
-          <div className="supp-card">
-            <div style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: 1.4, textTransform: "uppercase", color: "var(--char-dim)", marginBottom: 8 }}>SVG bundle</div>
-            <h4>Figure source files</h4>
-            <p>All system schematics from the book in editable SVG, licensed for non-commercial classroom and proposal use.</p>
-            <a href="#">Download bundle →</a>
-          </div>
-          <div className="supp-card">
-            <div style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: 1.4, textTransform: "uppercase", color: "var(--char-dim)", marginBottom: 8 }}>BibTeX · CSV</div>
-            <h4>Bibliography</h4>
-            <p>Full reference list with DOIs, organized by chapter. Drop into Zotero / Mendeley / your proposal manager of choice.</p>
-            <a href="#">Download →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section className="err-section">
-      <div className="container">
-        <div className="report-box">
-          <h3>Report an erratum</h3>
-          <p>Email the volume, page number, and a one-line description. Confirmed corrections are credited on this page (with attribution if you'd like) and rolled into the next print run.</p>
-          <a className="btn btn-primary" style={{ background: "var(--amber)", borderColor: "var(--amber)", color: "var(--navy)" }} href="mailto:franciscowang2008@gmail.com?subject=CBTC%20Errata%20Report">
-            Email errata →
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <SiteFooter/>
-  </>);
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(SiteNav, {
+    active: "errata"
+  }), /*#__PURE__*/React.createElement("section", {
+    className: "err-hero"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "kicker"
+  }, "Errata \xB7 Supplements \xB7 Reader resources"), /*#__PURE__*/React.createElement("h1", {
+    className: "err-h"
+  }, "Corrections and downloadable supplements for both volumes."), /*#__PURE__*/React.createElement("p", {
+    className: "err-lede"
+  }, "A book this size will have errata. This page is the canonical, dated record \u2014 checked weekly. Supplements include the full chapter outlines, figure source files, and bibliography."))), /*#__PURE__*/React.createElement("section", {
+    className: "err-section"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("h2", null, "Volume 1 \u2014 Errata"), /*#__PURE__*/React.createElement("div", {
+    className: "err-empty"
+  }, "No errata reported yet. Volume 1 published April 2026.", /*#__PURE__*/React.createElement("br", null), "Spotted something? Use the report form below \u2014 every confirmed correction is credited here."))), /*#__PURE__*/React.createElement("section", {
+    className: "err-section"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("h2", null, "Volume 2 \u2014 Errata"), /*#__PURE__*/React.createElement("div", {
+    className: "err-empty"
+  }, "No errata reported yet. Volume 2 published April 2026."))), /*#__PURE__*/React.createElement("section", {
+    className: "err-section"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("h2", null, "Downloadable supplements"), /*#__PURE__*/React.createElement("div", {
+    className: "supp-grid"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "supp-card"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: "var(--mono)",
+      fontSize: 10,
+      letterSpacing: 1.4,
+      textTransform: "uppercase",
+      color: "var(--char-dim)",
+      marginBottom: 8
+    }
+  }, "PDF \xB7 18 pp"), /*#__PURE__*/React.createElement("h4", null, "Full chapter outline"), /*#__PURE__*/React.createElement("p", null, "Section-by-section breakdown of all sixteen chapters across both volumes. Useful for procurement reviewers deciding which volume to cite."), /*#__PURE__*/React.createElement("a", {
+    href: "#"
+  }, "Download PDF \u2192")), /*#__PURE__*/React.createElement("div", {
+    className: "supp-card"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: "var(--mono)",
+      fontSize: 10,
+      letterSpacing: 1.4,
+      textTransform: "uppercase",
+      color: "var(--char-dim)",
+      marginBottom: 8
+    }
+  }, "SVG bundle"), /*#__PURE__*/React.createElement("h4", null, "Figure source files"), /*#__PURE__*/React.createElement("p", null, "All system schematics from the book in editable SVG, licensed for non-commercial classroom and proposal use."), /*#__PURE__*/React.createElement("a", {
+    href: "#"
+  }, "Download bundle \u2192")), /*#__PURE__*/React.createElement("div", {
+    className: "supp-card"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: "var(--mono)",
+      fontSize: 10,
+      letterSpacing: 1.4,
+      textTransform: "uppercase",
+      color: "var(--char-dim)",
+      marginBottom: 8
+    }
+  }, "BibTeX \xB7 CSV"), /*#__PURE__*/React.createElement("h4", null, "Bibliography"), /*#__PURE__*/React.createElement("p", null, "Full reference list with DOIs, organized by chapter. Drop into Zotero / Mendeley / your proposal manager of choice."), /*#__PURE__*/React.createElement("a", {
+    href: "#"
+  }, "Download \u2192"))))), /*#__PURE__*/React.createElement("section", {
+    className: "err-section"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "report-box"
+  }, /*#__PURE__*/React.createElement("h3", null, "Report an erratum"), /*#__PURE__*/React.createElement("p", null, "Email the volume, page number, and a one-line description. Confirmed corrections are credited on this page (with attribution if you'd like) and rolled into the next print run."), /*#__PURE__*/React.createElement("a", {
+    className: "btn btn-primary",
+    style: {
+      background: "var(--amber)",
+      borderColor: "var(--amber)",
+      color: "var(--navy)"
+    },
+    href: "mailto:franciscowang2008@gmail.com?subject=CBTC%20Errata%20Report"
+  }, "Email errata \u2192")))), /*#__PURE__*/React.createElement(SiteFooter, null));
 }
-ReactDOM.createRoot(document.getElementById("root")).render(<ErrataPage/>);
+ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(ErrataPage, null));
 </script>
 </body>
 </html>

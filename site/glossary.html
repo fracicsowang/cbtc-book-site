@@ -89,124 +89,281 @@ document.addEventListener('click', function(e) {
 </head>
 <body>
 <div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 <script src="assets/data.js"></script>
-<script type="text/babel" src="assets/components.jsx"></script>
-<script type="text/babel">
-const TERMS = [
-  { acro: "ATP",  name: "Automatic Train Protection",  x: 24, y: 64, ref: "Vol 1 · Ch. 04",
-    desc: "Onboard subsystem that supervises train movement and intervenes when speed or position would otherwise exceed the safe envelope. The safety-critical core of any CBTC system." },
-  { acro: "ATO",  name: "Automatic Train Operation",   x: 28, y: 56, ref: "Vol 1 · Ch. 04",
-    desc: "Driving automation layer that commands traction and braking under ATP supervision. Typically responsible for station-stopping accuracy, energy-optimized cruising, and door enable signals." },
-  { acro: "ATS",  name: "Automatic Train Supervision", x: 84, y: 16, ref: "Vol 1 · Ch. 07",
-    desc: "Central control-room system that supervises the entire CBTC railway: timetable execution, dispatching, regulation, and the operator HMI. Sits above ATP/ATO and the wayside zone controllers." },
-  { acro: "ZC",   name: "Zone Controller",             x: 50, y: 30, ref: "Vol 1 · Ch. 05",
-    desc: "Wayside computer that owns one geographic 'zone' of the railway. Tracks every train inside its zone, generates Movement Authorities, and hands off to neighbor ZCs at zone boundaries." },
-  { acro: "DCS",  name: "Data Communication System",   x: 50, y: 42, ref: "Vol 1 · Ch. 06",
-    desc: "The wireless network that carries train↔wayside data. Most US deployments use 2.4 GHz or 5 GHz licensed/unlicensed spread-spectrum radio with redundant access points along the right-of-way." },
-  { acro: "MA",   name: "Movement Authority",          x: 64, y: 78, ref: "Vol 1 · Ch. 03",
-    desc: "The signed promise from the wayside to a single train: 'you may proceed up to point X at speed Y.' CBTC's moving-block paradigm gives every train a continuously updated MA." },
-  { acro: "GoA",  name: "Grades of Automation",        x: 14, y: 28, ref: "Vol 2 · Ch. 08",
-    desc: "UITP/IEC framework defining who is responsible for which train function across five levels: GoA 0 (line-of-sight) to GoA 4 (unattended train operation). Most US transit deployments target GoA 2." },
-  { acro: "OBCU", name: "Onboard Controller Unit",     x: 36, y: 76, ref: "Vol 1 · Ch. 04",
-    desc: "Train-resident vital computer running the CBTC onboard logic: ATP supervision, ATO commands, balise reading, odometry fusion, and DCS communication with the wayside." },
-];
-
+<script src="assets/components.js"></script>
+<script>
+const TERMS = [{
+  acro: "ATP",
+  name: "Automatic Train Protection",
+  x: 24,
+  y: 64,
+  ref: "Vol 1 · Ch. 04",
+  desc: "Onboard subsystem that supervises train movement and intervenes when speed or position would otherwise exceed the safe envelope. The safety-critical core of any CBTC system."
+}, {
+  acro: "ATO",
+  name: "Automatic Train Operation",
+  x: 28,
+  y: 56,
+  ref: "Vol 1 · Ch. 04",
+  desc: "Driving automation layer that commands traction and braking under ATP supervision. Typically responsible for station-stopping accuracy, energy-optimized cruising, and door enable signals."
+}, {
+  acro: "ATS",
+  name: "Automatic Train Supervision",
+  x: 84,
+  y: 16,
+  ref: "Vol 1 · Ch. 07",
+  desc: "Central control-room system that supervises the entire CBTC railway: timetable execution, dispatching, regulation, and the operator HMI. Sits above ATP/ATO and the wayside zone controllers."
+}, {
+  acro: "ZC",
+  name: "Zone Controller",
+  x: 50,
+  y: 30,
+  ref: "Vol 1 · Ch. 05",
+  desc: "Wayside computer that owns one geographic 'zone' of the railway. Tracks every train inside its zone, generates Movement Authorities, and hands off to neighbor ZCs at zone boundaries."
+}, {
+  acro: "DCS",
+  name: "Data Communication System",
+  x: 50,
+  y: 42,
+  ref: "Vol 1 · Ch. 06",
+  desc: "The wireless network that carries train↔wayside data. Most US deployments use 2.4 GHz or 5 GHz licensed/unlicensed spread-spectrum radio with redundant access points along the right-of-way."
+}, {
+  acro: "MA",
+  name: "Movement Authority",
+  x: 64,
+  y: 78,
+  ref: "Vol 1 · Ch. 03",
+  desc: "The signed promise from the wayside to a single train: 'you may proceed up to point X at speed Y.' CBTC's moving-block paradigm gives every train a continuously updated MA."
+}, {
+  acro: "GoA",
+  name: "Grades of Automation",
+  x: 14,
+  y: 28,
+  ref: "Vol 2 · Ch. 08",
+  desc: "UITP/IEC framework defining who is responsible for which train function across five levels: GoA 0 (line-of-sight) to GoA 4 (unattended train operation). Most US transit deployments target GoA 2."
+}, {
+  acro: "OBCU",
+  name: "Onboard Controller Unit",
+  x: 36,
+  y: 76,
+  ref: "Vol 1 · Ch. 04",
+  desc: "Train-resident vital computer running the CBTC onboard logic: ATP supervision, ATO commands, balise reading, odometry fusion, and DCS communication with the wayside."
+}];
 function GlossaryPage() {
   const [active, setActive] = React.useState(0);
   const t = TERMS[active];
-  return (<>
-    <SiteNav active="glossary"/>
-    <section className="gloss-hero">
-      <div className="container">
-        <span className="kicker">Interactive diagram</span>
-        <h1 className="gloss-h">A CBTC system is eight letters apart from a fixed-block railway.</h1>
-        <p className="gloss-lede">Click any node on the schematic below to see what each acronym means and where the book covers it. The full alphabetical glossary follows.</p>
-      </div>
-    </section>
-
-    <section className="gloss-stage">
-      <div className="container">
-        <div className="gloss-diagram">
-          <svg width="100%" height="100%" viewBox="0 0 1600 800" preserveAspectRatio="none">
-            <defs>
-              <pattern id="gridG" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#4A9EBF" strokeWidth="0.5" opacity="0.18"/>
-              </pattern>
-            </defs>
-            <rect width="1600" height="800" fill="url(#gridG)"/>
-            {/* tracks */}
-            <line x1="0" y1="600" x2="1600" y2="600" stroke="#EAF2F7" strokeWidth="2"/>
-            <line x1="0" y1="640" x2="1600" y2="640" stroke="#EAF2F7" strokeWidth="2"/>
-            {/* ties */}
-            {Array.from({length: 60}).map((_,i) => <line key={i} x1={i*28} y1="600" x2={i*28} y2="640" stroke="#EAF2F7" strokeWidth="0.4" opacity="0.4"/>)}
-            {/* radio arcs from ZC */}
-            <g stroke="#4A9EBF" fill="none" opacity="0.4">
-              <circle cx="800" cy="240" r="200"/>
-              <circle cx="800" cy="240" r="280"/>
-              <circle cx="800" cy="240" r="360"/>
-            </g>
-            {/* ZC tower */}
-            <rect x="790" y="180" width="20" height="60" fill="#D4A84B"/>
-            <line x1="800" y1="240" x2="800" y2="600" stroke="#D4A84B" strokeWidth="1" opacity="0.5"/>
-            {/* ATS console */}
-            <rect x="1300" y="80" width="200" height="100" fill="#1B2D4A" stroke="#4A9EBF"/>
-            <text x="1400" y="140" fontFamily="IBM Plex Mono, monospace" fontSize="14" fill="#EAF2F7" textAnchor="middle">ATS · CONTROL CENTER</text>
-            <line x1="1300" y1="180" x2="810" y2="240" stroke="#4A9EBF" strokeDasharray="4 4" strokeWidth="1"/>
-            {/* train */}
-            <rect x="500" y="595" width="180" height="50" fill="#D4A84B" stroke="#0A1628" strokeWidth="2"/>
-            <text x="590" y="624" fontFamily="IBM Plex Mono, monospace" fontSize="14" fill="#0A1628" textAnchor="middle" fontWeight="700">TRAIN · 0274</text>
-            {/* MA cone */}
-            <path d="M 680 590 L 1050 590 L 1050 650 L 680 650 Z" fill="#D4A84B" opacity="0.18"/>
-            <text x="900" y="700" fontFamily="IBM Plex Mono, monospace" fontSize="13" fill="#D4A84B" textAnchor="middle">MOVEMENT AUTHORITY</text>
-            {/* labels */}
-            <text x="800" y="170" fontFamily="IBM Plex Mono, monospace" fontSize="14" fill="#D4A84B" textAnchor="middle">ZC · WAYSIDE</text>
-          </svg>
-
-          {TERMS.map((term, i) => (
-            <div className="gloss-hot" key={i} style={{ left: `${term.x}%`, top: `${term.y}%` }} onClick={() => setActive(i)}>
-              <span className={`gloss-hot-dot ${active === i ? "active" : ""}`}/>
-              {active !== i && <span className="gloss-hot-pulse"/>}
-              <span style={{ position: "absolute", left: 22, top: -8, fontFamily: "var(--mono)", fontSize: 11, letterSpacing: 1.4, color: active === i ? "var(--ink)" : "var(--ink-dim)", whiteSpace: "nowrap" }}>{term.acro}</span>
-            </div>
-          ))}
-        </div>
-
-        <div className="gloss-info">
-          <div className="gloss-info-grid">
-            <div className="gloss-info-acro">{t.acro}</div>
-            <div>
-              <h3 className="gloss-info-name">{t.name}</h3>
-              <p className="gloss-info-desc">{t.desc}</p>
-              <span className="gloss-info-ref">↳ Covered in {t.ref}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section className="container gloss-list">
-      <span className="kicker">Alphabetical glossary</span>
-      <h2 style={{ fontFamily: "var(--serif)", fontSize: 36, fontWeight: 400, letterSpacing: "-0.6px", margin: "16px 0 32px" }}>
-        The eight terms above plus everything else CBTC procurement documents take for granted.
-      </h2>
-      <div className="gloss-table">
-        {[...TERMS].sort((a, b) => a.acro.localeCompare(b.acro)).map((t, i) => (
-          <div className="gloss-row" key={i}>
-            <div className="acro">{t.acro}</div>
-            <div className="name">{t.name}</div>
-            <div className="desc">{t.desc}</div>
-          </div>
-        ))}
-      </div>
-    </section>
-
-    <SiteFooter/>
-  </>);
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(SiteNav, {
+    active: "glossary"
+  }), /*#__PURE__*/React.createElement("section", {
+    className: "gloss-hero"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "kicker"
+  }, "Interactive diagram"), /*#__PURE__*/React.createElement("h1", {
+    className: "gloss-h"
+  }, "A CBTC system is eight letters apart from a fixed-block railway."), /*#__PURE__*/React.createElement("p", {
+    className: "gloss-lede"
+  }, "Click any node on the schematic below to see what each acronym means and where the book covers it. The full alphabetical glossary follows."))), /*#__PURE__*/React.createElement("section", {
+    className: "gloss-stage"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "gloss-diagram"
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: "100%",
+    height: "100%",
+    viewBox: "0 0 1600 800",
+    preserveAspectRatio: "none"
+  }, /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("pattern", {
+    id: "gridG",
+    width: "40",
+    height: "40",
+    patternUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 40 0 L 0 0 0 40",
+    fill: "none",
+    stroke: "#4A9EBF",
+    strokeWidth: "0.5",
+    opacity: "0.18"
+  }))), /*#__PURE__*/React.createElement("rect", {
+    width: "1600",
+    height: "800",
+    fill: "url(#gridG)"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "0",
+    y1: "600",
+    x2: "1600",
+    y2: "600",
+    stroke: "#EAF2F7",
+    strokeWidth: "2"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "0",
+    y1: "640",
+    x2: "1600",
+    y2: "640",
+    stroke: "#EAF2F7",
+    strokeWidth: "2"
+  }), Array.from({
+    length: 60
+  }).map((_, i) => /*#__PURE__*/React.createElement("line", {
+    key: i,
+    x1: i * 28,
+    y1: "600",
+    x2: i * 28,
+    y2: "640",
+    stroke: "#EAF2F7",
+    strokeWidth: "0.4",
+    opacity: "0.4"
+  })), /*#__PURE__*/React.createElement("g", {
+    stroke: "#4A9EBF",
+    fill: "none",
+    opacity: "0.4"
+  }, /*#__PURE__*/React.createElement("circle", {
+    cx: "800",
+    cy: "240",
+    r: "200"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "800",
+    cy: "240",
+    r: "280"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "800",
+    cy: "240",
+    r: "360"
+  })), /*#__PURE__*/React.createElement("rect", {
+    x: "790",
+    y: "180",
+    width: "20",
+    height: "60",
+    fill: "#D4A84B"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: "800",
+    y1: "240",
+    x2: "800",
+    y2: "600",
+    stroke: "#D4A84B",
+    strokeWidth: "1",
+    opacity: "0.5"
+  }), /*#__PURE__*/React.createElement("rect", {
+    x: "1300",
+    y: "80",
+    width: "200",
+    height: "100",
+    fill: "#1B2D4A",
+    stroke: "#4A9EBF"
+  }), /*#__PURE__*/React.createElement("text", {
+    x: "1400",
+    y: "140",
+    fontFamily: "IBM Plex Mono, monospace",
+    fontSize: "14",
+    fill: "#EAF2F7",
+    textAnchor: "middle"
+  }, "ATS \xB7 CONTROL CENTER"), /*#__PURE__*/React.createElement("line", {
+    x1: "1300",
+    y1: "180",
+    x2: "810",
+    y2: "240",
+    stroke: "#4A9EBF",
+    strokeDasharray: "4 4",
+    strokeWidth: "1"
+  }), /*#__PURE__*/React.createElement("rect", {
+    x: "500",
+    y: "595",
+    width: "180",
+    height: "50",
+    fill: "#D4A84B",
+    stroke: "#0A1628",
+    strokeWidth: "2"
+  }), /*#__PURE__*/React.createElement("text", {
+    x: "590",
+    y: "624",
+    fontFamily: "IBM Plex Mono, monospace",
+    fontSize: "14",
+    fill: "#0A1628",
+    textAnchor: "middle",
+    fontWeight: "700"
+  }, "TRAIN \xB7 0274"), /*#__PURE__*/React.createElement("path", {
+    d: "M 680 590 L 1050 590 L 1050 650 L 680 650 Z",
+    fill: "#D4A84B",
+    opacity: "0.18"
+  }), /*#__PURE__*/React.createElement("text", {
+    x: "900",
+    y: "700",
+    fontFamily: "IBM Plex Mono, monospace",
+    fontSize: "13",
+    fill: "#D4A84B",
+    textAnchor: "middle"
+  }, "MOVEMENT AUTHORITY"), /*#__PURE__*/React.createElement("text", {
+    x: "800",
+    y: "170",
+    fontFamily: "IBM Plex Mono, monospace",
+    fontSize: "14",
+    fill: "#D4A84B",
+    textAnchor: "middle"
+  }, "ZC \xB7 WAYSIDE")), TERMS.map((term, i) => /*#__PURE__*/React.createElement("div", {
+    className: "gloss-hot",
+    key: i,
+    style: {
+      left: `${term.x}%`,
+      top: `${term.y}%`
+    },
+    onClick: () => setActive(i)
+  }, /*#__PURE__*/React.createElement("span", {
+    className: `gloss-hot-dot ${active === i ? "active" : ""}`
+  }), active !== i && /*#__PURE__*/React.createElement("span", {
+    className: "gloss-hot-pulse"
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "absolute",
+      left: 22,
+      top: -8,
+      fontFamily: "var(--mono)",
+      fontSize: 11,
+      letterSpacing: 1.4,
+      color: active === i ? "var(--ink)" : "var(--ink-dim)",
+      whiteSpace: "nowrap"
+    }
+  }, term.acro)))), /*#__PURE__*/React.createElement("div", {
+    className: "gloss-info"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "gloss-info-grid"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "gloss-info-acro"
+  }, t.acro), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", {
+    className: "gloss-info-name"
+  }, t.name), /*#__PURE__*/React.createElement("p", {
+    className: "gloss-info-desc"
+  }, t.desc), /*#__PURE__*/React.createElement("span", {
+    className: "gloss-info-ref"
+  }, "\u21B3 Covered in ", t.ref)))))), /*#__PURE__*/React.createElement("section", {
+    className: "container gloss-list"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "kicker"
+  }, "Alphabetical glossary"), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      fontFamily: "var(--serif)",
+      fontSize: 36,
+      fontWeight: 400,
+      letterSpacing: "-0.6px",
+      margin: "16px 0 32px"
+    }
+  }, "The eight terms above plus everything else CBTC procurement documents take for granted."), /*#__PURE__*/React.createElement("div", {
+    className: "gloss-table"
+  }, [...TERMS].sort((a, b) => a.acro.localeCompare(b.acro)).map((t, i) => /*#__PURE__*/React.createElement("div", {
+    className: "gloss-row",
+    key: i
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "acro"
+  }, t.acro), /*#__PURE__*/React.createElement("div", {
+    className: "name"
+  }, t.name), /*#__PURE__*/React.createElement("div", {
+    className: "desc"
+  }, t.desc))))), /*#__PURE__*/React.createElement(SiteFooter, null));
 }
-ReactDOM.createRoot(document.getElementById("root")).render(<GlossaryPage/>);
+ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(GlossaryPage, null));
 </script>
 </body>
 </html>

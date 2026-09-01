@@ -74,121 +74,135 @@
 </head>
 <body>
 <div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 <script src="assets/data.js"></script>
-<script type="text/babel" src="assets/components.jsx"></script>
-<script type="text/babel">
+<script src="assets/components.js"></script>
+<script>
 const SLIDE_DECKS = [
-  // [ch, title, slides, sizeMB, vol]
-  ["01", "The Evolution of Train Control",          26, 1.20, 1],
-  ["02", "Standards & Regulations: US Framework",   25, 1.13, 1],
-  ["03", "CBTC System Architecture Overview",       23, 0.98, 1],
-  ["04", "Onboard Equipment",                       23, 0.74, 1],
-  ["05", "Wayside Equipment",                       23, 0.47, 1],
-  ["06", "Communication Systems",                   24, 0.78, 1],
-  ["07", "Central System / ATS",                    23, 1.11, 1],
-  ["08", "Grades of Automation",                    24, 1.13, 1],
-  ["09", "Operating Modes",                         26, 1.08, 2],
-  ["10", "CBTC in the United States",               24, 1.01, 2],
-  ["11", "International Benchmarks",                25, 1.11, 2],
-  ["12", "Project Lifecycle",                       25, 0.89, 2],
-  ["13", "Performance Criteria",                    27, 1.15, 2],
-  ["14", "Lifecycle Costs",                         26, 0.87, 2],
-  ["15", "Vendor Landscape",                        24, 1.27, 2],
-  ["16", "US–China Comparative Perspectives",       25, 1.08, 2],
-];
-
+// [ch, title, slides, sizeMB, vol]
+["01", "The Evolution of Train Control", 26, 1.20, 1], ["02", "Standards & Regulations: US Framework", 25, 1.13, 1], ["03", "CBTC System Architecture Overview", 23, 0.98, 1], ["04", "Onboard Equipment", 23, 0.74, 1], ["05", "Wayside Equipment", 23, 0.47, 1], ["06", "Communication Systems", 24, 0.78, 1], ["07", "Central System / ATS", 23, 1.11, 1], ["08", "Grades of Automation", 24, 1.13, 1], ["09", "Operating Modes", 26, 1.08, 2], ["10", "CBTC in the United States", 24, 1.01, 2], ["11", "International Benchmarks", 25, 1.11, 2], ["12", "Project Lifecycle", 25, 0.89, 2], ["13", "Performance Criteria", 27, 1.15, 2], ["14", "Lifecycle Costs", 26, 0.87, 2], ["15", "Vendor Landscape", 24, 1.27, 2], ["16", "US–China Comparative Perspectives", 25, 1.08, 2]];
 const TOTAL_SLIDES = SLIDE_DECKS.reduce((a, [,, n]) => a + n, 0);
-const TOTAL_MB = SLIDE_DECKS.reduce((a, [,,,s]) => a + s, 0).toFixed(0);
-
-function Card({ ch, title, slides, sizeMB }) {
+const TOTAL_MB = SLIDE_DECKS.reduce((a, [,,, s]) => a + s, 0).toFixed(0);
+function Card({
+  ch,
+  title,
+  slides,
+  sizeMB
+}) {
   const pdf = `slides/cbtc_ch${ch}.pdf`;
   const thumb = `slides/thumbs/cbtc_ch${ch}.jpg`;
-  return (
-    <div className="sl-card">
-      <a className="sl-card-thumb" href={pdf} target="_blank" rel="noopener">
-        <img src={thumb} alt={`Cover slide of Chapter ${ch}: ${title}`} loading="lazy"/>
-      </a>
-      <div className="sl-card-body">
-        <div className="sl-card-num">Chapter {ch}</div>
-        <h3 className="sl-card-title">{title}</h3>
-        <div className="sl-card-meta">
-          <span>{slides} slides</span>  ·  <span>{sizeMB} MB</span>  ·  PDF
-        </div>
-        <div className="sl-card-actions">
-          <a className="sl-btn sl-btn-primary" href={pdf} target="_blank" rel="noopener">View online</a>
-          <a className="sl-btn sl-btn-ghost" href={pdf} download>Download</a>
-        </div>
-      </div>
-    </div>
-  );
+  return /*#__PURE__*/React.createElement("div", {
+    className: "sl-card"
+  }, /*#__PURE__*/React.createElement("a", {
+    className: "sl-card-thumb",
+    href: pdf,
+    target: "_blank",
+    rel: "noopener"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: thumb,
+    alt: `Cover slide of Chapter ${ch}: ${title}`,
+    loading: "lazy"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "sl-card-body"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sl-card-num"
+  }, "Chapter ", ch), /*#__PURE__*/React.createElement("h3", {
+    className: "sl-card-title"
+  }, title), /*#__PURE__*/React.createElement("div", {
+    className: "sl-card-meta"
+  }, /*#__PURE__*/React.createElement("span", null, slides, " slides"), "  \xB7  ", /*#__PURE__*/React.createElement("span", null, sizeMB, " MB"), "  \xB7  PDF"), /*#__PURE__*/React.createElement("div", {
+    className: "sl-card-actions"
+  }, /*#__PURE__*/React.createElement("a", {
+    className: "sl-btn sl-btn-primary",
+    href: pdf,
+    target: "_blank",
+    rel: "noopener"
+  }, "View online"), /*#__PURE__*/React.createElement("a", {
+    className: "sl-btn sl-btn-ghost",
+    href: pdf,
+    download: true
+  }, "Download"))));
 }
-
 function SlidesPage() {
   const v1 = SLIDE_DECKS.filter(d => d[4] === 1);
   const v2 = SLIDE_DECKS.filter(d => d[4] === 2);
-  return (<>
-    <SiteNav active="slides"/>
-
-    <section className="sl-hero">
-      <div className="container">
-        <span className="kicker">Companion slide decks · all 16 chapters</span>
-        <h1 className="sl-h">A free slide deck for every chapter — built for engineers, trainers, and instructors.</h1>
-        <p className="sl-lede">
-          Chapter-by-chapter PDF presentations covering the structure, key arguments, and core figures of
-          Communications-Based Train Control. Use them as lecture material, internal training, conference handouts,
-          or your own self-study aid.
-        </p>
-        <div className="sl-stats">
-          <div className="sl-stat"><span className="num">{SLIDE_DECKS.length}</span><span className="lab">chapter decks</span></div>
-          <div className="sl-stat"><span className="num">{TOTAL_SLIDES}</span><span className="lab">slides total</span></div>
-          <div className="sl-stat"><span className="num">{TOTAL_MB}</span><span className="lab">MB · all PDFs</span></div>
-          <div className="sl-stat"><span className="num">$0</span><span className="lab">free · no signup</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section className="container">
-      <div className="sl-license">
-        <h3>Use & attribution</h3>
-        <p>You're welcome to use these decks for teaching, internal training, or self-study. Attribution
-        appreciated: <em>"Companion to Communications-Based Train Control by Chunjun Wang · cbtcbook.com"</em>.</p>
-        <p>The decks cover structure and headline arguments. The full chapter — case studies, citations,
-        regulatory language, vendor specifications — lives in the book.</p>
-      </div>
-    </section>
-
-    <section className="container sl-section">
-      <div className="sl-section-h">
-        <span className="vol">Volume 1 · Foundations & Architecture</span>
-        <h2>Chapters 01 – 08</h2>
-      </div>
-      <div className="sl-grid">
-        {v1.map(([ch, title, slides, sizeMB]) =>
-          <Card key={ch} ch={ch} title={title} slides={slides} sizeMB={sizeMB}/>
-        )}
-      </div>
-    </section>
-
-    <section className="container sl-section" style={{paddingBottom: 80}}>
-      <div className="sl-section-h">
-        <span className="vol">Volume 2 · Operations & Economics</span>
-        <h2>Chapters 09 – 16</h2>
-      </div>
-      <div className="sl-grid">
-        {v2.map(([ch, title, slides, sizeMB]) =>
-          <Card key={ch} ch={ch} title={title} slides={slides} sizeMB={sizeMB}/>
-        )}
-      </div>
-    </section>
-
-    <SiteFooter/>
-  </>);
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(SiteNav, {
+    active: "slides"
+  }), /*#__PURE__*/React.createElement("section", {
+    className: "sl-hero"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "kicker"
+  }, "Companion slide decks \xB7 all 16 chapters"), /*#__PURE__*/React.createElement("h1", {
+    className: "sl-h"
+  }, "A free slide deck for every chapter \u2014 built for engineers, trainers, and instructors."), /*#__PURE__*/React.createElement("p", {
+    className: "sl-lede"
+  }, "Chapter-by-chapter PDF presentations covering the structure, key arguments, and core figures of Communications-Based Train Control. Use them as lecture material, internal training, conference handouts, or your own self-study aid."), /*#__PURE__*/React.createElement("div", {
+    className: "sl-stats"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sl-stat"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "num"
+  }, SLIDE_DECKS.length), /*#__PURE__*/React.createElement("span", {
+    className: "lab"
+  }, "chapter decks")), /*#__PURE__*/React.createElement("div", {
+    className: "sl-stat"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "num"
+  }, TOTAL_SLIDES), /*#__PURE__*/React.createElement("span", {
+    className: "lab"
+  }, "slides total")), /*#__PURE__*/React.createElement("div", {
+    className: "sl-stat"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "num"
+  }, TOTAL_MB), /*#__PURE__*/React.createElement("span", {
+    className: "lab"
+  }, "MB \xB7 all PDFs")), /*#__PURE__*/React.createElement("div", {
+    className: "sl-stat"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "num"
+  }, "$0"), /*#__PURE__*/React.createElement("span", {
+    className: "lab"
+  }, "free \xB7 no signup"))))), /*#__PURE__*/React.createElement("section", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sl-license"
+  }, /*#__PURE__*/React.createElement("h3", null, "Use & attribution"), /*#__PURE__*/React.createElement("p", null, "You're welcome to use these decks for teaching, internal training, or self-study. Attribution appreciated: ", /*#__PURE__*/React.createElement("em", null, "\"Companion to Communications-Based Train Control by Chunjun Wang \xB7 cbtcbook.com\""), "."), /*#__PURE__*/React.createElement("p", null, "The decks cover structure and headline arguments. The full chapter \u2014 case studies, citations, regulatory language, vendor specifications \u2014 lives in the book."))), /*#__PURE__*/React.createElement("section", {
+    className: "container sl-section"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sl-section-h"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "vol"
+  }, "Volume 1 \xB7 Foundations & Architecture"), /*#__PURE__*/React.createElement("h2", null, "Chapters 01 \u2013 08")), /*#__PURE__*/React.createElement("div", {
+    className: "sl-grid"
+  }, v1.map(([ch, title, slides, sizeMB]) => /*#__PURE__*/React.createElement(Card, {
+    key: ch,
+    ch: ch,
+    title: title,
+    slides: slides,
+    sizeMB: sizeMB
+  })))), /*#__PURE__*/React.createElement("section", {
+    className: "container sl-section",
+    style: {
+      paddingBottom: 80
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sl-section-h"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "vol"
+  }, "Volume 2 \xB7 Operations & Economics"), /*#__PURE__*/React.createElement("h2", null, "Chapters 09 \u2013 16")), /*#__PURE__*/React.createElement("div", {
+    className: "sl-grid"
+  }, v2.map(([ch, title, slides, sizeMB]) => /*#__PURE__*/React.createElement(Card, {
+    key: ch,
+    ch: ch,
+    title: title,
+    slides: slides,
+    sizeMB: sizeMB
+  })))), /*#__PURE__*/React.createElement(SiteFooter, null));
 }
-
-ReactDOM.createRoot(document.getElementById("root")).render(<SlidesPage/>);
+ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(SlidesPage, null));
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script>

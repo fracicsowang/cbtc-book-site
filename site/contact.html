@@ -82,81 +82,67 @@ document.addEventListener('click', function(e) {
 </head>
 <body>
 <div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 <script src="assets/data.js"></script>
-<script type="text/babel" src="assets/components.jsx"></script>
-<script type="text/babel">
+<script src="assets/components.js"></script>
+<script>
 function ContactPage() {
-  return (<>
-    <SiteNav active="contact"/>
-    <section className="contact-hero">
-      <div className="container contact-grid">
-        <div>
-          <span className="kicker">Contact · Speaking · Consulting</span>
-          <h1 className="contact-h">Open to remote and flex US-based work — and to talking about CBTC.</h1>
-          <p className="contact-lede">If you're a transit agency, vendor, or program team with a CBTC question — or a recruiter / hiring manager looking at my background — the fastest channel is email. Speaking and guest-lecture inquiries also welcome.</p>
-
-          <div className="contact-modes">
-            <div className="contact-mode">
-              <div className="contact-mode-icon">✉</div>
-              <div>
-                <h3>Email</h3>
-                <p>Best for project inquiries, errata, and most everything else.</p>
-              </div>
-              <a href="mailto:franciscowang2008@gmail.com">franciscowang2008@gmail.com</a>
-            </div>
-
-            <div className="contact-mode">
-              <div className="contact-mode-icon">↗</div>
-              <div>
-                <h3>LinkedIn</h3>
-                <p>Full work history, recommendations, and the most recent updates.</p>
-              </div>
-              <a href="https://www.linkedin.com/in/chunjun-wang/" target="_blank" rel="noopener">linkedin.com/in/chunjun-wang</a>
-            </div>
-
-            <div className="contact-mode">
-              <div className="contact-mode-icon">◆</div>
-              <div>
-                <h3>Speaking & lectures</h3>
-                <p>Available for guest lectures, conference panels, and agency tech-talks on CBTC and US deployment practice.</p>
-              </div>
-              <a href="mailto:franciscowang2008@gmail.com?subject=Speaking%20inquiry">Email about speaking →</a>
-            </div>
-
-            <div className="contact-mode">
-              <div className="contact-mode-icon">▦</div>
-              <div>
-                <h3>Bulk / institutional orders</h3>
-                <p>Library, classroom, or agency-wide copies — both volumes available with discount on quantity.</p>
-              </div>
-              <a href="mailto:franciscowang2008@gmail.com?subject=Bulk%20order">Email about bulk →</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div className="contact-card">
-            <img className="contact-card-photo" src="assets/headshot.jpg" alt="Chunjun (Francisco) Wang"/>
-            <h4>The author</h4>
-            <h2 className="contact-card-name">Chunjun (Francisco) Wang</h2>
-            <p className="contact-card-tag">Booth MBA · CFA · CBTC Rail-Tech Expert</p>
-            <p>Twenty years in rail signaling — engineering design, system integration, and operating responsibility for an international rail-signaling group's US subsidiary. Currently Senior Research Engineer at Rutgers University CAIT, researching applied AI for rail and energy infrastructure.</p>
-            <p>Open to remote or flexible US roles. Comfortable in English and Mandarin.</p>
-            <div className="contact-card-meta">
-              <div>📍 Princeton, NJ</div>
-              <div>⊙ Open to remote / flex US</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <SiteFooter/>
-  </>);
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(SiteNav, {
+    active: "contact"
+  }), /*#__PURE__*/React.createElement("section", {
+    className: "contact-hero"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container contact-grid"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
+    className: "kicker"
+  }, "Contact \xB7 Speaking \xB7 Consulting"), /*#__PURE__*/React.createElement("h1", {
+    className: "contact-h"
+  }, "Open to remote and flex US-based work \u2014 and to talking about CBTC."), /*#__PURE__*/React.createElement("p", {
+    className: "contact-lede"
+  }, "If you're a transit agency, vendor, or program team with a CBTC question \u2014 or a recruiter / hiring manager looking at my background \u2014 the fastest channel is email. Speaking and guest-lecture inquiries also welcome."), /*#__PURE__*/React.createElement("div", {
+    className: "contact-modes"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "contact-mode"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "contact-mode-icon"
+  }, "\u2709"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "Email"), /*#__PURE__*/React.createElement("p", null, "Best for project inquiries, errata, and most everything else.")), /*#__PURE__*/React.createElement("a", {
+    href: "mailto:franciscowang2008@gmail.com"
+  }, "franciscowang2008@gmail.com")), /*#__PURE__*/React.createElement("div", {
+    className: "contact-mode"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "contact-mode-icon"
+  }, "\u2197"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "LinkedIn"), /*#__PURE__*/React.createElement("p", null, "Full work history, recommendations, and the most recent updates.")), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.linkedin.com/in/chunjun-wang/",
+    target: "_blank",
+    rel: "noopener"
+  }, "linkedin.com/in/chunjun-wang")), /*#__PURE__*/React.createElement("div", {
+    className: "contact-mode"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "contact-mode-icon"
+  }, "\u25C6"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "Speaking & lectures"), /*#__PURE__*/React.createElement("p", null, "Available for guest lectures, conference panels, and agency tech-talks on CBTC and US deployment practice.")), /*#__PURE__*/React.createElement("a", {
+    href: "mailto:franciscowang2008@gmail.com?subject=Speaking%20inquiry"
+  }, "Email about speaking \u2192")), /*#__PURE__*/React.createElement("div", {
+    className: "contact-mode"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "contact-mode-icon"
+  }, "\u25A6"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "Bulk / institutional orders"), /*#__PURE__*/React.createElement("p", null, "Library, classroom, or agency-wide copies \u2014 both volumes available with discount on quantity.")), /*#__PURE__*/React.createElement("a", {
+    href: "mailto:franciscowang2008@gmail.com?subject=Bulk%20order"
+  }, "Email about bulk \u2192")))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    className: "contact-card"
+  }, /*#__PURE__*/React.createElement("img", {
+    className: "contact-card-photo",
+    src: "assets/headshot.jpg",
+    alt: "Chunjun (Francisco) Wang"
+  }), /*#__PURE__*/React.createElement("h4", null, "The author"), /*#__PURE__*/React.createElement("h2", {
+    className: "contact-card-name"
+  }, "Chunjun (Francisco) Wang"), /*#__PURE__*/React.createElement("p", {
+    className: "contact-card-tag"
+  }, "Booth MBA \xB7 CFA \xB7 CBTC Rail-Tech Expert"), /*#__PURE__*/React.createElement("p", null, "Twenty years in rail signaling \u2014 engineering design, system integration, and operating responsibility for an international rail-signaling group's US subsidiary. Currently Senior Research Engineer at Rutgers University CAIT, researching applied AI for rail and energy infrastructure."), /*#__PURE__*/React.createElement("p", null, "Open to remote or flexible US roles. Comfortable in English and Mandarin."), /*#__PURE__*/React.createElement("div", {
+    className: "contact-card-meta"
+  }, /*#__PURE__*/React.createElement("div", null, "\uD83D\uDCCD Princeton, NJ"), /*#__PURE__*/React.createElement("div", null, "\u2299 Open to remote / flex US")))))), /*#__PURE__*/React.createElement(SiteFooter, null));
 }
-ReactDOM.createRoot(document.getElementById("root")).render(<ContactPage/>);
+ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(ContactPage, null));
 </script>
 </body>
 </html>
