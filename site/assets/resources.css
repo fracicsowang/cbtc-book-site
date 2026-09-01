@@ -48,6 +48,11 @@
 .rcard-img {
   display: block;
   width: 100%;
+  /* height:auto is load-bearing. Without it the intrinsic height="800"
+     attribute wins over aspect-ratio, the box becomes 403x800, and cover
+     crops the sheet LEFT AND RIGHT — which is what "the images are cut off"
+     looked like. With it the box is 3:2 and the crop is off the bottom. */
+  height: auto;
   /* Sheets are a mix of portrait and landscape; a fixed card ratio keeps the
      grid rows aligned. Anchored to the top so the title stays visible. */
   aspect-ratio: 3 / 2;
@@ -55,6 +60,15 @@
   object-position: top center;
   border-bottom: 1px solid var(--char-rule);
   background: var(--paper-2);
+}
+/* Fade the cut edge so a document thumbnail reads as "continues below"
+   rather than as a broken image. */
+.rcard-thumb { position: relative; display: block; }
+.rcard-thumb::after {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 0; height: 56px;
+  background: linear-gradient(to bottom, rgba(244,239,230,0), var(--paper));
+  pointer-events: none;
 }
 .rcard-body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .rcard-fmt {
@@ -201,4 +215,41 @@
   .res-hero { padding: 48px 0 44px; }
   .res-list-sec { padding: 48px 0 24px; }
   .res-actions .btn { width: 100%; justify-content: center; }
+}
+
+/* ── Share row ──────────────────────────────────────────────────────────────
+   Mirrors .blog-share so both halves of the site behave the same. Plain intent
+   links, no third-party widgets and no trackers beyond the site's own GA4
+   event. */
+.res-share {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 10px;
+  margin: 26px 0 0; padding: 16px 0 0;
+  border-top: 1px solid var(--char-rule);
+}
+.res-hero .res-share { border-top-color: rgba(26, 26, 26, 0.18); margin-top: 32px; }
+.res-share__label {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 1.4px; text-transform: uppercase;
+  color: var(--char-dim); margin-right: 4px; white-space: nowrap;
+}
+.res-share__btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 14px;
+  border: 1px solid var(--char-rule);
+  background: transparent; color: var(--char);
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 1.4px; text-transform: uppercase;
+  text-decoration: none; cursor: pointer; white-space: nowrap;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.res-share__btn:hover { background: var(--navy); color: var(--ink); border-color: var(--navy); }
+.res-share__btn:focus-visible {
+  outline: 2px solid var(--navy); outline-offset: 2px;
+}
+.res-share__btn svg { width: 14px; height: 14px; fill: currentColor; flex: none; }
+
+@media (max-width: 600px) {
+  .res-share { gap: 8px; }
+  .res-share__label { width: 100%; margin-bottom: 2px; }
+  .res-share__btn { padding: 8px 12px; }
 }

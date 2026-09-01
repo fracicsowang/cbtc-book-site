@@ -19,7 +19,7 @@
  *   node blog-tools/build_resources.mjs --slug goa-0-4-comparison-chart
  *   node blog-tools/build_resources.mjs --no-pdf    # pages only, fast
  */
-import { readdir, readFile, writeFile, mkdir, stat } from "node:fs/promises";
+import { readdir, readFile, writeFile, mkdir, stat, rm } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -34,7 +34,7 @@ const require = createRequire(path.join(ROOT, "site-src", "package.json"));
 const puppeteer = require("puppeteer");
 const sharp = require("sharp");
 
-const { landingPage, hubPage, printPage } = await import(
+const { landingPage, hubPage, printPage, ogCard } = await import(
   pathToFileURL(path.join(SRC, "_lib", "templates.mjs")).href
 );
 
@@ -204,6 +204,20 @@ async function renderAsset(browser, asset) {
     }
   }
 
+  // Social card, composed at 1.91:1 so LinkedIn and X do not crop the sheet
+  // preview into an unreadable strip. Rendered from a file:// URL so the card
+  // can reference the preview PNG that was just written next to it.
+  {
+    const p3 = await browser.newPage();
+    await p3.setViewport({ width: 1200, height: 630, deviceScaleFactor: 1 });
+    await p3.goto(pathToFileURL(path.join(FILES, "_og.html")).href, { waitUntil: "load" }).catch(() => {});
+    await writeFile(path.join(FILES, "_og.html"), ogCard(asset));
+    await p3.goto(pathToFileURL(path.join(FILES, "_og.html")).href, { waitUntil: "networkidle0" });
+    await p3.evaluate(() => document.fonts.ready);
+    await p3.screenshot({ path: path.join(FILES, `${asset.slug}-og.png`), type: "png" });
+    await p3.close();
+  }
+
   // Assets that ship data (CSV, JSON) emit it themselves.
   if (typeof asset.emitFiles === "function") {
     for (const f of asset.emitFiles()) {
@@ -263,6 +277,29 @@ async function main() {
   // The hub always lists every published asset, even on a --slug run.
   const all = only ? await loadAssetsAll() : assets;
   await writeFile(path.join(OUT, "index.html"), hubPage(all, links, PLANNED));
+
+  // The hub gets a card too, since it now carries its own share row.
+  {
+    const browser2 = await puppeteer.launch();
+    const p4 = await browser2.newPage();
+    await p4.setViewport({ width: 1200, height: 630 });
+    await writeFile(
+      path.join(FILES, "_og.html"),
+      ogCard({
+        slug: all[0].slug, // any published sheet, shown as the stack's cover
+        kicker: `${all.length} free sheets`,
+        title: "Free CBTC Reference Sheets",
+        subtitle:
+          "Architecture, standards comparisons, checklists and a 202-term glossary — cut from a 1,127-page manuscript",
+      }),
+    );
+    await p4.goto(pathToFileURL(path.join(FILES, "_og.html")).href, { waitUntil: "networkidle0" });
+    await p4.evaluate(() => document.fonts.ready);
+    await p4.screenshot({ path: path.join(FILES, "resources-og.png"), type: "png" });
+    await p4.close();
+    await browser2.close();
+  }
+  await rm(path.join(FILES, "_og.html"), { force: true });
 
   const added = await updateSitemap(all);
   console.log(`\nresources: ${assets.length} rendered, hub lists ${all.length}, sitemap +${added}`);
