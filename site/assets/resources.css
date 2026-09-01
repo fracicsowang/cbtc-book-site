@@ -1,0 +1,204 @@
+/* ─── Free resources — hub + landing pages ──────────────────────────────────
+   Loaded after site.css, which supplies the tokens, nav, footer and buttons.
+   These pages are plain HTML on purpose: they exist to rank and to serve a
+   download, so no framework sits in front of the download button. */
+
+/* ── Hub ── */
+.res-hero {
+  background: var(--paper-2);
+  padding: 72px 0 64px;
+  border-bottom: 1px solid var(--char-rule);
+}
+.res-hero-h {
+  font-family: var(--serif);
+  font-size: clamp(30px, 3.4vw, 46px);
+  line-height: 1.12;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  margin: 18px 0 0;
+  max-width: 26ch;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.res-hero-l {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--char-dim);
+  max-width: 62ch;
+  margin: 22px 0 0;
+  text-wrap: pretty;
+}
+
+.res-list-sec { padding: 72px 0 32px; }
+.rcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
+  gap: 32px;
+}
+.rcard {
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border: 1px solid var(--char-rule);
+  text-decoration: none;
+  color: var(--char);
+  transition: border-color .15s, transform .15s;
+}
+.rcard:hover { border-color: var(--navy); transform: translateY(-2px); }
+.rcard-img {
+  display: block;
+  width: 100%;
+  /* Sheets are a mix of portrait and landscape; a fixed card ratio keeps the
+     grid rows aligned. Anchored to the top so the title stays visible. */
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: top center;
+  border-bottom: 1px solid var(--char-rule);
+  background: var(--paper-2);
+}
+.rcard-body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.rcard-fmt {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 1.6px; text-transform: uppercase;
+  color: var(--amber-ink);
+}
+.rcard-t {
+  font-family: var(--serif); font-size: 23px; font-weight: 400;
+  line-height: 1.2; letter-spacing: -0.4px; margin: 0;
+}
+.rcard-d { font-size: 14px; line-height: 1.55; color: var(--char-dim); margin: 0; }
+.rcard-cta {
+  margin-top: auto; padding-top: 14px;
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 1.6px; text-transform: uppercase;
+  color: var(--navy); white-space: nowrap;
+}
+
+.res-soon {
+  padding: 24px 0 96px;
+  max-width: var(--container);
+}
+.res-soon-h {
+  font-family: var(--serif); font-size: 26px; font-weight: 400;
+  letter-spacing: -0.4px; margin: 14px 0 22px; max-width: 32ch;
+  text-wrap: balance;
+}
+.res-soon-list {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 0 40px;
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.3px;
+}
+.res-soon-list li {
+  padding: 12px 0; border-bottom: 1px solid var(--char-rule);
+  color: var(--char-dim);
+}
+
+/* ── Landing page ── */
+.res { padding: 56px 0 96px; }
+.res-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 64px;
+  align-items: start;
+}
+.res-title {
+  font-family: var(--serif);
+  font-size: clamp(30px, 3.4vw, 46px);
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  margin: 16px 0 0;
+  max-width: 18ch;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.res-lede {
+  font-size: 19px; line-height: 1.6; color: var(--char-dim);
+  max-width: 60ch; margin: 22px 0 0; text-wrap: pretty;
+}
+.res-actions {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  margin: 34px 0 0;
+}
+.res-actions .btn { white-space: nowrap; }
+.res-license {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 1.2px; text-transform: uppercase;
+  color: var(--char-dim); margin: 14px 0 0;
+}
+.res-h2 {
+  font-family: var(--serif); font-size: 26px; font-weight: 400;
+  letter-spacing: -0.4px; margin: 48px 0 16px;
+  padding-top: 22px; border-top: 1px solid var(--char-rule);
+}
+.res-list { padding-left: 0; margin: 0; list-style: none; }
+.res-list li {
+  position: relative; padding: 10px 0 10px 26px;
+  font-size: 16px; line-height: 1.6;
+  border-bottom: 1px solid var(--char-rule);
+}
+.res-list li::before {
+  content: ""; position: absolute; left: 0; top: 19px;
+  width: 10px; height: 2px; background: var(--amber);
+}
+.res p, .res-src { font-size: 16px; line-height: 1.65; max-width: 66ch; text-wrap: pretty; }
+.res-src { color: var(--char-dim); font-size: 14px; }
+.res-quote {
+  margin: 22px 0; padding: 18px 22px;
+  background: var(--paper-2);
+  border-top: 2px solid var(--amber);
+  font-family: var(--serif); font-size: 18px; line-height: 1.55;
+  max-width: 62ch;
+}
+.res-quote em { color: var(--navy); }
+
+/* ── Landing sidebar ── */
+.res-side { position: sticky; top: 96px; }
+.res-preview {
+  display: block; border: 1px solid var(--char-rule);
+  background: var(--paper-2);
+  transition: border-color .15s;
+}
+.res-preview:hover { border-color: var(--navy); }
+.res-preview img { display: block; width: 100%; height: auto; }
+.res-meta {
+  display: grid; grid-template-columns: auto 1fr; gap: 0 18px;
+  margin: 24px 0 0; font-size: 13px;
+}
+.res-meta dt {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 1.4px; text-transform: uppercase;
+  color: var(--char-dim); padding: 9px 0;
+  border-bottom: 1px solid var(--char-rule);
+}
+.res-meta dd {
+  margin: 0; padding: 9px 0; text-align: right;
+  border-bottom: 1px solid var(--char-rule);
+}
+.res-meta dd a { color: var(--char); text-decoration: underline; text-decoration-color: var(--amber); }
+.res-book {
+  margin-top: 32px; padding: 24px;
+  background: var(--navy); color: var(--ink);
+}
+.res-book-k {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--amber); margin: 0 0 10px;
+}
+.res-book-t {
+  font-family: var(--serif); font-size: 18px; line-height: 1.4;
+  margin: 0 0 20px; color: var(--ink);
+}
+.res-book .btn-ghost { color: var(--ink); border-color: var(--ink); }
+.res-book .btn-ghost:hover { background: var(--ink); color: var(--navy); }
+
+@media (max-width: 1024px) {
+  .res-grid { grid-template-columns: 1fr; gap: 40px; }
+  .res-side { position: static; max-width: 460px; }
+}
+@media (max-width: 600px) {
+  .res-hero { padding: 48px 0 44px; }
+  .res-list-sec { padding: 48px 0 24px; }
+  .res-actions .btn { width: 100%; justify-content: center; }
+}

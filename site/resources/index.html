@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free CBTC Resources — Diagrams, Comparisons &amp; Checklists | cbtcbook.com</title>
+<meta name="description" content="Free CBTC reference downloads for transit engineers and procurement teams — architecture diagrams, IEEE 1474 vs IEC 62290, GoA comparison charts. No email required.">
+<link rel="canonical" href="https://cbtcbook.com/resources/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free CBTC Resources — cbtcbook.com">
+<meta property="og:description" content="Architecture diagrams, standards comparisons and checklists for CBTC engineers. Free, no email required.">
+<meta property="og:url" content="https://cbtcbook.com/resources/">
+<meta property="og:image" content="https://cbtcbook.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/resources.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Free CBTC Resources","description":"Free, no-email CBTC reference downloads for transit engineers and procurement teams: architecture diagrams, standards comparisons, checklists, and databases.","url":"https://cbtcbook.com/resources/","isAccessibleForFree":true,"author":{"@type":"Person","name":"Chunjun (Francisco) Wang","url":"https://cbtcbook.com/about.html"},"hasPart":[{"@type":"CreativeWork","name":"CBTC Architecture Diagram","url":"https://cbtcbook.com/resources/cbtc-architecture-diagram/","description":"Free CBTC architecture diagram (PDF, SVG, PNG): central ATS, wayside zone controllers and interlocking, onboard VOBC with ATP and ATO, and the external systems outside the IEC 62290 boundary.","inLanguage":"en","isAccessibleForFree":true},{"@type":"CreativeWork","name":"GoA 0–4 Comparison Chart","url":"https://cbtcbook.com/resources/goa-0-4-comparison-chart/","description":"Free GoA 0-4 comparison chart: the IEC 62290-1 responsibility matrix for driver, attendant, automation and control center, with definitions and real deployment examples.","inLanguage":"en","isAccessibleForFree":true},{"@type":"CreativeWork","name":"IEEE 1474 vs IEC 62290","url":"https://cbtcbook.com/resources/ieee-1474-vs-iec-62290/","description":"One-page comparison of IEEE 1474 and IEC 62290 for CBTC procurement: scope, GoA treatment, SIL allocation, and which standard to cite in a US RFP.","inLanguage":"en","isAccessibleForFree":true}]}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-0NF9Z0T953');
+document.addEventListener('click', function(e){
+  var a = e.target.closest('a[data-download]');
+  if (!a) return;
+  gtag('event', 'resource_download', {
+    resource_slug: a.getAttribute('data-download'),
+    file_type: a.getAttribute('data-filetype') || 'pdf',
+    page_path: location.pathname
+  });
+});
+document.addEventListener('click', function(e){
+  var a = e.target.closest('a[href*="amazon.com"]');
+  if (!a) return;
+  gtag('event', 'click_amazon', { page_path: location.pathname, link_url: a.href });
+});
+</script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a href="/index.html" class="site-nav-brand"><span class="dot"></span><span>CBTC&nbsp;·&nbsp;Wang</span></a>
+    <div class="site-nav-links">
+          <a href="/volume-1.html">Volume 1</a>
+          <a href="/volume-2.html">Volume 2</a>
+          <a href="/blog/">Articles</a>
+          <a href="/resources/" class="active">Resources</a>
+          <a href="/about.html">About</a>
+          <a href="/figures.html">Figures</a>
+          <a href="/slides.html">Slides</a>
+          <a href="/glossary.html">Glossary</a>
+          <a href="/errata.html">Errata</a>
+          <a href="/contact.html">Contact</a>
+    </div>
+    <a class="site-nav-cta" href="/index.html#buy">Buy on Amazon &rarr;</a>
+    <button class="site-nav-burger" type="button" aria-label="Open menu"
+            aria-expanded="false" aria-controls="site-nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="site-nav-mobile" class="site-nav-mobile" hidden>
+    <a href="/volume-1.html">Volume 1</a>
+    <a href="/volume-2.html">Volume 2</a>
+    <a href="/blog/">Articles</a>
+    <a href="/resources/" class="active">Resources</a>
+    <a href="/about.html">About</a>
+    <a href="/figures.html">Figures</a>
+    <a href="/slides.html">Slides</a>
+    <a href="/glossary.html">Glossary</a>
+    <a href="/errata.html">Errata</a>
+    <a href="/contact.html">Contact</a>
+    <a class="site-nav-mobile__cta" href="/index.html#buy">Buy on Amazon &rarr;</a>
+  </div>
+</nav>
+<script>
+(function () {
+  var b = document.querySelector('.site-nav-burger');
+  var d = document.getElementById('site-nav-mobile');
+  if (!b || !d) return;
+  var set = function (open) {
+    b.setAttribute('aria-expanded', String(open));
+    b.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    d.hidden = !open;
+  };
+  b.addEventListener('click', function () {
+    set(b.getAttribute('aria-expanded') !== 'true');
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') set(false);
+  });
+})();
+</script>
+<main>
+  <section class="res-hero">
+    <div class="container">
+      <p class="kicker">Free resources</p>
+      <h1 class="res-hero-h">Reference sheets, cut from a 1,127-page manuscript.</h1>
+      <p class="res-hero-l">
+        The tables and diagrams US transit engineers keep re-drawing for themselves &mdash;
+        standards comparisons, architecture, automation grades &mdash; as clean, printable
+        sheets. Free, no email, no signup. Use them in your own decks and specifications;
+        attribution is the only ask.
+      </p>
+    </div>
+  </section>
+  <section class="container res-list-sec">
+    <div class="rcards">
+      <a class="rcard" href="/resources/cbtc-architecture-diagram/">
+        <img class="rcard-img" src="/resources/files/cbtc-architecture-diagram-preview.png"
+             width="1200" height="800" loading="lazy" decoding="async"
+             alt="Preview of CBTC Architecture Diagram">
+        <div class="rcard-body">
+          <span class="rcard-fmt">PDF · SVG · PNG</span>
+          <h2 class="rcard-t">CBTC Architecture Diagram</h2>
+          <p class="rcard-d">Free CBTC architecture diagram (PDF, SVG, PNG): central ATS, wayside zone controllers and interlocking, onboard VOBC with ATP and ATO, and the external systems outside the IEC 62290 boundary.</p>
+          <span class="rcard-cta">Download free &rarr;</span>
+        </div>
+      </a>
+      <a class="rcard" href="/resources/goa-0-4-comparison-chart/">
+        <img class="rcard-img" src="/resources/files/goa-0-4-comparison-chart-preview.png"
+             width="1200" height="800" loading="lazy" decoding="async"
+             alt="Preview of GoA 0–4 Comparison Chart">
+        <div class="rcard-body">
+          <span class="rcard-fmt">PDF</span>
+          <h2 class="rcard-t">GoA 0–4 Comparison Chart</h2>
+          <p class="rcard-d">Free GoA 0-4 comparison chart: the IEC 62290-1 responsibility matrix for driver, attendant, automation and control center, with definitions and real deployment examples.</p>
+          <span class="rcard-cta">Download free &rarr;</span>
+        </div>
+      </a>
+      <a class="rcard" href="/resources/ieee-1474-vs-iec-62290/">
+        <img class="rcard-img" src="/resources/files/ieee-1474-vs-iec-62290-preview.png"
+             width="1200" height="800" loading="lazy" decoding="async"
+             alt="Preview of IEEE 1474 vs IEC 62290">
+        <div class="rcard-body">
+          <span class="rcard-fmt">PDF</span>
+          <h2 class="rcard-t">IEEE 1474 vs IEC 62290</h2>
+          <p class="rcard-d">One-page comparison of IEEE 1474 and IEC 62290 for CBTC procurement: scope, GoA treatment, SIL allocation, and which standard to cite in a US RFP.</p>
+          <span class="rcard-cta">Download free &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section class="container res-soon">
+      <p class="kicker">In progress</p>
+      <h2 class="res-soon-h">More sheets are being cut from the manuscript.</h2>
+      <ul class="res-soon-list">
+        <li>CBTC vs Conventional Signaling — side-by-side comparison</li>
+        <li>CBTC Vendor Landscape 2026</li>
+        <li>Global CBTC Projects Database</li>
+        <li>CBTC Migration Checklist</li>
+        <li>CBTC Testing &amp; Commissioning Checklist</li>
+        <li>CBTC Acronyms &amp; Glossary — 200 terms</li>
+        <li>CBTC Engineer Learning Roadmap</li>
+      </ul>
+    </section>
+</main>
+<footer class="site-foot">
+  <div class="site-foot-inner">
+    <div>
+      <div class="site-foot-mark">Communications-Based<br><em>Train Control</em></div>
+      <p style="color:rgba(234,242,247,0.72);font-size:14px;max-width:34ch;margin:0">
+        A two-volume technical reference for US transit professionals, by Chunjun (Francisco) Wang.
+      </p>
+    </div>
+    <div>
+      <h3>The book</h3>
+      <a href="/volume-1.html">Volume 1 &mdash; Foundations</a>
+      <a href="/volume-2.html">Volume 2 &mdash; Operations</a>
+      <a href="/figures.html">Figures</a>
+    </div>
+    <div>
+      <h3>Free resources</h3>
+      <a href="/resources/">All downloads</a>
+      <a href="/blog/">Articles</a>
+      <a href="/glossary.html">Glossary</a>
+    </div>
+  </div>
+  <div class="site-foot-bottom">
+    <span>&copy; 2026 Chunjun (Francisco) Wang</span>
+    <span>cbtcbook.com</span>
+  </div>
+</footer>
+</body>
+</html>
