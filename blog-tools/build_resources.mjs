@@ -44,11 +44,8 @@ const noPdf = argv.includes("--no-pdf");
 
 // Sheets that are written but not yet published; they seed the "in progress"
 // list on the hub so the section does not look abandoned between batches.
-const PLANNED = [
-  "Global CBTC Projects Database",
-  "CBTC Acronyms & Glossary — 200 terms",
-  "CBTC Engineer Learning Roadmap",
-];
+// Empty: the full set is out.
+const PLANNED = [];
 
 // US Letter at 96 CSS px per inch.
 const PAGE_PX = { portrait: [816, 1056], landscape: [1056, 816] };
@@ -204,6 +201,13 @@ async function renderAsset(browser, asset) {
       await p2.evaluate(() => document.fonts.ready);
       await p2.screenshot({ path: path.join(FILES, pngFile.name), type: "png" });
       await p2.close();
+    }
+  }
+
+  // Assets that ship data (CSV, JSON) emit it themselves.
+  if (typeof asset.emitFiles === "function") {
+    for (const f of asset.emitFiles()) {
+      await writeFile(path.join(FILES, f.name), f.content);
     }
   }
 

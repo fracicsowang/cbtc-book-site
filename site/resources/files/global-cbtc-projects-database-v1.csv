@@ -1,0 +1,24 @@
+# Global CBTC Projects Database v1.0 - cbtcbook.com - free to use with attribution
+# Empty cells are unverified, not zero. Source: Communications-Based Train Control, Vol. 1 Ch. 10-11.
+System / line,Country,CBTC supplier,Platform,GoA,Opened / converted,Length,Stations,Peak headway / throughput,Note
+NYCT L Line (Canarsie),US,Siemens,Trainguard MT,2,2006 partial · 2009 full,~15 km,,24–29 tph,"The US flagship retrofit. Design 1999–2001, install 2001–2006, three segment cutovers, ~8 months shadow running. Roughly $48M per km. No civil works; throughput up from ~20 tph."
+NYCT 7 Line (Flushing),US,Siemens,Trainguard MT,2,,40 km,,,Validated through thousands of scenarios on a full-system simulator running production software before any test train moved in Manhattan.
+BART — TCMP,US,Hitachi Rail,SelTrac,2,Awarded 2018,131 route-km,,30 tph target,The most substantial current US CBTC implementation. Fleet- and function-phased.
+Honolulu Skyline,US,Hitachi Rail,Hitachi CBTC,4,2023 (service 2023–2026),15.5 mi,14,,"Single-prime contract, ~$398M, 78 railcars, vehicles co-designed for the CBTC. First US mass-transit line certified for unattended operation."
+JFK AirTrain,US,Bombardier (now Alstom),CITYFLO / Innovia,4,2003,8.1 mi,,,"An airport system rather than a metro, and one of only two long-standing US GoA 4 operations."
+SFMTA Muni Metro,US,Alstom,CITYFLO,2,1998,150 km,,,An early automated train control system predating modern CBTC standards; 25+ years of tenure informs current procurement practice.
+PATH,US,,,1,,13.8 mi,,,Frequently overlooked in US benchmark sets.
+Denver International Airport A-Line,US,,,4 (part),,,,,Some sections mixed-mode.
+Las Vegas Monorail,US,,,4 (part),,,,,Partial GoA 4 operation in certain sections.
+MBTA Green Line,US,Alstom,,,In design,,,,"Hornell, NY manufacturing is a stated competitive advantage."
+WMATA — Red / Green / Blue,US,Alstom · Siemens,,,In design,,,,Emphasis on open interfaces and Buy America compliance.
+Paris Métro Line 14,France,Siemens Mobility,,4,July 1998,17.5 km (final),13 (final),85 s (~42 tph),"The greenfield showcase: the first modern metro to open at GoA 4. 100% platform screen doors from day one. ~650,000 daily riders. €650–750M for the full line."
+Paris Métro Line 1,France,Siemens,Trainguard MT,4,2007–2012 conversion,16.5 km,29,90 s (~40 tph),"The brownfield paradigm shift: converted under traffic over a five-year phased cutover, PSDs retrofitted to 86% of platforms over five years. ~1.5M daily riders. €700M+. Throughput rose from ~20 to 27 tph."
+Copenhagen Metro M1 / M2,Denmark,Ansaldo STS (now Hitachi Rail),,4,19 Oct 2002,,,,"The longest uninterrupted GoA 4 record in continental Europe. 34 three-car driverless sets; unattended operation was a founding requirement, not a retrofit."
+Copenhagen Metro M3 Cityringen,Denmark,Ansaldo STS (now Hitachi Rail),,4,29 Sep 2019,15.5 km,17,~100 s (36 tph design),"Turnkey contract ~€700M covering signaling, power, comms, SCADA, PSDs, control centre, depot and rolling stock. M4 Nordhavn opened 28 Mar 2020; a 4.5 km Sydhavn extension 22 Jun 2024."
+Vancouver SkyTrain,Canada,Bombardier / Hitachi Rail,SelTrac,4,1985,,,,Forty years of driverless operation — the deepest GoA 4 operating record behind any Western supplier's claims.
+Hong Kong MTR — Tsuen Wan,Hong Kong,,,,,,,24 tph,Throughput rose from 18 to 24 tph on unchanged civil infrastructure.
+London Underground — Jubilee,UK,Thales (now Hitachi Rail),SelTrac,2,,,,,"Delivered under the Metronet PPP model, whose contractual structure is as instructive as its engineering."
+Elizabeth Line (Crossrail),UK,,,,,,,,"Multi-signaling architecture at scale: CBTC in the core, conventional signaling on the outer branches, with transitions in service."
+Singapore MRT,Singapore,,,4,,,,,The LTA model for fully automated network expansion; fleet-phased retrofit on existing lines.
+Dubai Metro,UAE,,,4,,,,,Operated by Keolis-MHI. A reference case for public acceptance of unattended operation at scale.

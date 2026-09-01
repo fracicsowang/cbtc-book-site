@@ -137,7 +137,11 @@ export function printPage(asset) {
 <title>${esc(asset.title)}</title>
 ${FONT_LINK}
 <style>
-  @page { size: ${asset.page?.format || "Letter"} ${asset.page?.landscape ? "landscape" : "portrait"}; margin: 0; }
+  /* Single-page sheets pin their own box. Flowing ones leave the margins to
+     puppeteer, which reserves the strip the running footer is painted into —
+     declaring margin:0 here overrides that and the last line lands on top of
+     the page number. */
+  @page { size: ${asset.page?.format || "Letter"} ${asset.page?.landscape ? "landscape" : "portrait"}; ${flow ? "" : "margin: 0;"} }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; width: ${PW}px; ${flow ? "" : `height: ${PH}px; overflow: hidden;`} }
   body {
@@ -153,7 +157,7 @@ ${FONT_LINK}
     flex-direction: column;
     /* Exactly one page: the builder fits the body to whatever is left. */
     width: ${PW}px;
-    ${flow ? `min-height: ${PH}px; padding-bottom: 18px;` : `height: ${PH}px;`}
+    ${flow ? "min-height: 0; padding-bottom: 18px;" : `height: ${PH}px;`}
   }
   .doc-head {
     display: flex; align-items: flex-start; justify-content: space-between;
@@ -187,11 +191,25 @@ ${FONT_LINK}
      its single-page box and the footer ends up painted over the overflow. */
   .sheet { display: block; }
   .doc-body { flex: none; }
+  .doc-foot { margin-top: 16px; }
   .doc-inner { height: auto; }
   /* Multicol fills column 1 of a page before column 2, so an unplanned spill
      leaves half the next page blank. Sheets that run long place their own
      .pagebreak and give each page a self-contained, balanced .cols2 block. */
   .pagebreak { break-before: page; }
+  /* Glossary: term and definition run together as one paragraph so 200 entries
+     stay dense enough to be a reference card rather than a booklet. */
+  dl.gloss { margin: 0 0 10px; }
+  dl.gloss dt {
+    display: inline; font-weight: 600; font-size: 9.5px;
+  }
+  dl.gloss dt::after { content: " · "; color: ${B.amberInk}; font-weight: 400; }
+  dl.gloss dd {
+    display: inline; margin: 0; font-size: 9.5px; line-height: 1.45;
+    color: ${B.charDim};
+  }
+  dl.gloss dd::after { content: ""; display: block; margin-bottom: 4px; }
+  .gloss-wrap h3.phase { margin-top: 14px; }
   ul.check li { font-size: 10.5px; padding-top: 6px; padding-bottom: 6px; }
   h3.phase, table.rt, .note, ul.check li { break-inside: avoid; }
   h2.sec { break-after: avoid; }` : ""}
@@ -233,6 +251,12 @@ ${FONT_LINK}
   table.rt thead th.c { text-align: center; font-family: ${B.mono}; }
   /* Matrix layout: one label column, then equal columns, so the headers sit
      directly over the values instead of drifting with content width. */
+  /* The projects database runs seven columns wide; the shared 11px body is too
+     loose for it and the row note needs the space. */
+  table.rt.db { font-size: 9px; line-height: 1.35; }
+  table.rt.db th[scope="row"] { width: 15%; }
+  table.rt.db td, table.rt.db th { padding: 5px 7px; }
+  table.rt.db thead th { font-size: 8px; letter-spacing: 1.1px; }
   table.rt.matrix { table-layout: fixed; }
   table.rt.matrix tbody th { width: 26%; }
   table.rt.matrix td, table.rt.matrix thead th.c { width: 14.8%; }
@@ -265,6 +289,10 @@ ${FONT_LINK}
   ul.check li b { font-weight: 600; }
   ul.check li .why { color: ${B.charDim}; }
   .cols2 { column-count: 2; column-gap: 26px; }
+  /* Fill column 1 of a page, then column 2, then the next page. The default
+     (balance) spreads one long flow across all pages first, which puts section
+     1 in the left column and section 6 in the right — unreadable in order. */
+  .cols2 { column-fill: auto; }
   .cols2 > * { break-inside: avoid; }
   h3.phase {
     font-family: ${B.mono}; font-size: 9px; letter-spacing: 1.8px;
