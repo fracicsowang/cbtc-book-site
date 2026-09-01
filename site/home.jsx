@@ -159,27 +159,27 @@ function HomePage() {
           </p>
           <div className="figs-grid">
             <a className="figs-card" href="volume-1.html">
-              <img src="figures/fig_01_05_fixed_vs_moving_block.png" alt="Fixed-block vs moving-block principle"/>
+              <img src="figures/fig_01_05_fixed_vs_moving_block.webp" alt="Fixed-block vs moving-block principle"/>
               <div className="figs-cap"><span>Fig 1.5</span>Fixed-Block vs. Moving-Block Principle</div>
             </a>
             <a className="figs-card" href="volume-1.html">
-              <img src="figures/fig_01_07_atp_ato_ats_triad.png" alt="ATC = ATP + ATO + ATS"/>
+              <img src="figures/fig_01_07_atp_ato_ats_triad.webp" alt="ATC = ATP + ATO + ATS"/>
               <div className="figs-cap"><span>Fig 1.7</span>ATC = ATP + ATO + ATS</div>
             </a>
             <a className="figs-card" href="volume-1.html">
-              <img src="figures/fig_02_01_standards_framework.png" alt="Standards framework for CBTC in the US"/>
+              <img src="figures/fig_02_01_standards_framework.webp" alt="Standards framework for CBTC in the US"/>
               <div className="figs-cap"><span>Fig 2.1</span>Standards Framework — US Context</div>
             </a>
             <a className="figs-card" href="volume-1.html">
-              <img src="figures/fig_06_01_radio_architecture.png" alt="CBTC radio communication architecture"/>
+              <img src="figures/fig_06_01_radio_architecture.webp" alt="CBTC radio communication architecture"/>
               <div className="figs-cap"><span>Fig 6.1</span>CBTC Radio Communication Architecture</div>
             </a>
             <a className="figs-card" href="volume-1.html">
-              <img src="figures/fig_04_01_vobc_architecture.png" alt="VOBC functional architecture"/>
+              <img src="figures/fig_04_01_vobc_architecture.webp" alt="VOBC functional architecture"/>
               <div className="figs-cap"><span>Fig 4.1</span>VOBC Functional Architecture</div>
             </a>
             <a className="figs-card" href="volume-2.html">
-              <img src="figures/fig_07_06_dispatcher_workstation.png" alt="Dispatcher workstation 4-monitor layout"/>
+              <img src="figures/fig_07_06_dispatcher_workstation.webp" alt="Dispatcher workstation 4-monitor layout"/>
               <div className="figs-cap"><span>Fig 7.6</span>Dispatcher Workstation — 4-Monitor Layout</div>
             </a>
           </div>
@@ -217,7 +217,7 @@ function HomePage() {
       {/* AUTHOR PEEK ──────────────────────────────────────────────────── */}
       <section className="section author-peek">
         <div className="container author-grid">
-          <img className="author-photo" src="assets/headshot.png" alt="Chunjun (Francisco) Wang"/>
+          <img className="author-photo" src="assets/headshot.jpg" alt="Chunjun (Francisco) Wang"/>
           <div className="author-body">
             <span className="kicker">About the author</span>
             <h2 className="author-name">Chunjun (Francisco) Wang</h2>
