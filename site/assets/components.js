@@ -2,10 +2,6 @@
 // Shared site components: nav, footer, 3D book
 
 const NAV_LINKS = [{
-  href: "index.html",
-  label: "Home",
-  key: "home"
-}, {
   href: "volume-1.html",
   label: "Volume 1",
   key: "v1"
@@ -17,6 +13,10 @@ const NAV_LINKS = [{
   href: "/blog/",
   label: "Articles",
   key: "articles"
+}, {
+  href: "/resources/",
+  label: "Resources",
+  key: "resources"
 }, {
   href: "about.html",
   label: "About",

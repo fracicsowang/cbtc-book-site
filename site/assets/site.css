@@ -74,7 +74,10 @@ button { font: inherit; cursor: pointer; }
   width: 8px; height: 8px; background: var(--amber); display: inline-block;
 }
 .site-nav-links {
-  display: flex; gap: 28px;
+  display: flex; gap: 24px;
+  /* Never wrap: a label breaking across two lines reads as a styling bug, and
+     it is how adding one nav item quietly broke every page. */
+  white-space: nowrap;
   font-family: var(--mono);
   font-size: 12px;
   letter-spacing: 1.4px;
@@ -89,6 +92,7 @@ button { font: inherit; cursor: pointer; }
 .site-nav-links a:hover { color: var(--char); border-bottom-color: var(--amber); }
 .site-nav-links a.active { color: var(--char); border-bottom-color: var(--amber); }
 .site-nav-cta {
+  white-space: nowrap;
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 1.6px;
@@ -310,13 +314,19 @@ button { font: inherit; cursor: pointer; }
 .section-tight { padding: 64px 0; }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .site-nav-links { display: none; }
   .site-nav-cta { display: none; }
   .site-nav-burger { display: flex; }
   .site-foot-inner { grid-template-columns: 1fr 1fr; }
   .section { padding: 64px 0; }
 }
-@media (min-width: 901px) {
+@media (max-width: 600px) {
+  /* Two footer columns leave ~127px per column at 375px, which every link
+     overflows — the source of the horizontal scrollbar on phones. */
+  .site-foot-inner { grid-template-columns: 1fr; gap: 32px; }
+  .site-foot-bottom { flex-direction: column; gap: 8px; }
+}
+@media (min-width: 1101px) {
   .site-nav-mobile { display: none !important; }
 }

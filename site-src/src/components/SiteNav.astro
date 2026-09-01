@@ -1,15 +1,15 @@
 ---
 // Site nav — clones the structure used in /site/assets/components.jsx.
-// Mobile (≤900px): the desktop link row collapses; a hamburger button
+// Mobile (≤1100px): the desktop link row collapses; a hamburger button
 // reveals the same links stacked. Toggle is pure HTML+inline JS,
 // no framework.
 const { active = "articles" } = Astro.props;
 
 const links = [
-  { href: "/index.html",     label: "Home",      key: "home" },
   { href: "/volume-1.html",  label: "Volume 1",  key: "v1" },
   { href: "/volume-2.html",  label: "Volume 2",  key: "v2" },
   { href: "/blog/",          label: "Articles",  key: "articles" },
+  { href: "/resources/",     label: "Resources", key: "resources" },
   { href: "/about.html",     label: "About",     key: "about" },
   { href: "/figures.html",   label: "Figures",   key: "figures" },
   { href: "/slides.html",    label: "Slides",    key: "slides" },

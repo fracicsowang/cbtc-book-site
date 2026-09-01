@@ -65,7 +65,8 @@ a { color: inherit; }
 }
 .site-nav-brand .dot { width: 8px; height: 8px; background: var(--amber); }
 .site-nav-links {
-  display: flex; gap: 28px;
+  display: flex; gap: 24px;
+  white-space: nowrap;
   font-family: var(--mono);
   font-size: 12px;
   letter-spacing: 1.4px;
@@ -81,6 +82,7 @@ a { color: inherit; }
   color: var(--char); border-bottom-color: var(--amber);
 }
 .site-nav-cta {
+  white-space: nowrap;
   font-family: var(--mono); font-size: 11px;
   letter-spacing: 1.6px; text-transform: uppercase;
   background: var(--navy); color: var(--ink);
@@ -343,6 +345,9 @@ a { color: inherit; }
 /* Share row */
 .blog-share {
   display: flex; align-items: center; gap: 14px;
+  /* Without this the button row forces a horizontal scrollbar on every
+     article at phone widths. */
+  flex-wrap: wrap;
   margin: 40px 0 20px;
   padding: 16px 0;
   border-top: 1px solid var(--char-rule);
@@ -547,7 +552,7 @@ a { color: inherit; }
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .site-nav-links { display: none; }
   .site-nav-cta { display: none; }
   .site-nav-burger { display: flex; }
@@ -555,7 +560,13 @@ a { color: inherit; }
   .blog-title { font-size: 32px; }
   .blog-prose { font-size: 17px; }
 }
-@media (min-width: 901px) {
+@media (max-width: 600px) {
+  /* Two footer columns leave ~127px per column at 375px, which every link
+     overflows — the source of the horizontal scrollbar on phones. */
+  .site-foot-inner { grid-template-columns: 1fr; gap: 32px; }
+  .site-foot-bottom { flex-direction: column; gap: 8px; }
+}
+@media (min-width: 1101px) {
   /* Desktop: drawer is irrelevant; force-hide even if JS toggled */
   .site-nav-mobile { display: none !important; }
 }
