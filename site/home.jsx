@@ -4,6 +4,7 @@ function HomePage() {
   return (
     <>
       <SiteNav active="home"/>
+      <main>
 
       {/* HERO ─────────────────────────────────────────────────────────── */}
       <section className="hero">
@@ -195,19 +196,19 @@ function HomePage() {
           <span className="kicker on-dark">Who it's for</span>
           <div className="aud-grid">
             <div className="aud-cell">
-              <h4>Transit engineers</h4>
+              <h3>Transit engineers</h3>
               <p>Signaling design, integration, and commissioning teams at MTA, BART, WMATA, CTA, MBTA, SEPTA, and peer agencies.</p>
             </div>
             <div className="aud-cell">
-              <h4>Project managers & owners</h4>
+              <h3>Project managers & owners</h3>
               <p>Reviewing CBTC procurements, FTA grant submissions, and vendor proposals against IEEE 1474 and FRA requirements.</p>
             </div>
             <div className="aud-cell">
-              <h4>Vendor & integrator teams</h4>
+              <h3>Vendor & integrator teams</h3>
               <p>Engineering and proposal teams at Siemens, Thales, Alstom, Hitachi-Rail and others working in the US market.</p>
             </div>
             <div className="aud-cell">
-              <h4>Educators & students</h4>
+              <h3>Educators & students</h3>
               <p>Graduate programs in transportation engineering seeking a US-context CBTC reference with current regulatory and vendor coverage.</p>
             </div>
           </div>
@@ -229,6 +230,7 @@ function HomePage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter/>
     </>
   );

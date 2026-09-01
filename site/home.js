@@ -4,7 +4,7 @@
 function HomePage() {
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(SiteNav, {
     active: "home"
-  }), /*#__PURE__*/React.createElement("section", {
+  }), /*#__PURE__*/React.createElement("main", null, /*#__PURE__*/React.createElement("section", {
     className: "hero"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container hero-grid"
@@ -226,13 +226,13 @@ function HomePage() {
     className: "aud-grid"
   }, /*#__PURE__*/React.createElement("div", {
     className: "aud-cell"
-  }, /*#__PURE__*/React.createElement("h4", null, "Transit engineers"), /*#__PURE__*/React.createElement("p", null, "Signaling design, integration, and commissioning teams at MTA, BART, WMATA, CTA, MBTA, SEPTA, and peer agencies.")), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("h3", null, "Transit engineers"), /*#__PURE__*/React.createElement("p", null, "Signaling design, integration, and commissioning teams at MTA, BART, WMATA, CTA, MBTA, SEPTA, and peer agencies.")), /*#__PURE__*/React.createElement("div", {
     className: "aud-cell"
-  }, /*#__PURE__*/React.createElement("h4", null, "Project managers & owners"), /*#__PURE__*/React.createElement("p", null, "Reviewing CBTC procurements, FTA grant submissions, and vendor proposals against IEEE 1474 and FRA requirements.")), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("h3", null, "Project managers & owners"), /*#__PURE__*/React.createElement("p", null, "Reviewing CBTC procurements, FTA grant submissions, and vendor proposals against IEEE 1474 and FRA requirements.")), /*#__PURE__*/React.createElement("div", {
     className: "aud-cell"
-  }, /*#__PURE__*/React.createElement("h4", null, "Vendor & integrator teams"), /*#__PURE__*/React.createElement("p", null, "Engineering and proposal teams at Siemens, Thales, Alstom, Hitachi-Rail and others working in the US market.")), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("h3", null, "Vendor & integrator teams"), /*#__PURE__*/React.createElement("p", null, "Engineering and proposal teams at Siemens, Thales, Alstom, Hitachi-Rail and others working in the US market.")), /*#__PURE__*/React.createElement("div", {
     className: "aud-cell"
-  }, /*#__PURE__*/React.createElement("h4", null, "Educators & students"), /*#__PURE__*/React.createElement("p", null, "Graduate programs in transportation engineering seeking a US-context CBTC reference with current regulatory and vendor coverage."))))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("h3", null, "Educators & students"), /*#__PURE__*/React.createElement("p", null, "Graduate programs in transportation engineering seeking a US-context CBTC reference with current regulatory and vendor coverage."))))), /*#__PURE__*/React.createElement("section", {
     className: "section author-peek"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container author-grid"
@@ -255,6 +255,6 @@ function HomePage() {
   }, AUTHOR.summary), /*#__PURE__*/React.createElement("a", {
     className: "btn btn-ghost",
     href: "about.html"
-  }, "Full background \u2192")))), /*#__PURE__*/React.createElement(SiteFooter, null));
+  }, "Full background \u2192"))))), /*#__PURE__*/React.createElement(SiteFooter, null));
 }
 ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(HomePage, null));

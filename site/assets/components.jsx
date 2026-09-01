@@ -95,7 +95,7 @@ function SiteFooter() {
           </div>
         </div>
         <div>
-          <h4>The Books</h4>
+          <h3>The Books</h3>
           <a href="volume-1.html">Volume 1 — Foundations</a>
           <a href="volume-2.html">Volume 2 — Operations</a>
           <a href="figures.html">Figures gallery</a>
@@ -104,13 +104,13 @@ function SiteFooter() {
           <a href="glossary.html">CBTC glossary</a>
         </div>
         <div>
-          <h4>Author</h4>
+          <h3>Author</h3>
           <a href="about.html">About Francisco Wang</a>
           <a href="contact.html">Speaking & consulting</a>
           <a href="https://www.linkedin.com/in/chunjun-wang/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
         <div>
-          <h4>Buy</h4>
+          <h3>Buy</h3>
           <a href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ" target="_blank" rel="noopener">Volume 1 · Amazon</a>
           <a href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHHNL2H" target="_blank" rel="noopener">Volume 2 · Amazon</a>
           <a href="contact.html">Bulk / institutional</a>

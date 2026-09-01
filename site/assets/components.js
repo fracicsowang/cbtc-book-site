@@ -118,7 +118,7 @@ function SiteFooter() {
       lineHeight: 1.6,
       maxWidth: 360
     }
-  }, "Two volumes. 1,127 pages. The first US-focused technical reference on CBTC, written for engineers, project managers, and procurement teams.")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", null, "The Books"), /*#__PURE__*/React.createElement("a", {
+  }, "Two volumes. 1,127 pages. The first US-focused technical reference on CBTC, written for engineers, project managers, and procurement teams.")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "The Books"), /*#__PURE__*/React.createElement("a", {
     href: "volume-1.html"
   }, "Volume 1 \u2014 Foundations"), /*#__PURE__*/React.createElement("a", {
     href: "volume-2.html"
@@ -130,7 +130,7 @@ function SiteFooter() {
     href: "errata.html"
   }, "Errata & supplements"), /*#__PURE__*/React.createElement("a", {
     href: "glossary.html"
-  }, "CBTC glossary")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", null, "Author"), /*#__PURE__*/React.createElement("a", {
+  }, "CBTC glossary")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "Author"), /*#__PURE__*/React.createElement("a", {
     href: "about.html"
   }, "About Francisco Wang"), /*#__PURE__*/React.createElement("a", {
     href: "contact.html"
@@ -138,7 +138,7 @@ function SiteFooter() {
     href: "https://www.linkedin.com/in/chunjun-wang/",
     target: "_blank",
     rel: "noopener"
-  }, "LinkedIn")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", null, "Buy"), /*#__PURE__*/React.createElement("a", {
+  }, "LinkedIn")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "Buy"), /*#__PURE__*/React.createElement("a", {
     href: "https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ",
     target: "_blank",
     rel: "noopener"

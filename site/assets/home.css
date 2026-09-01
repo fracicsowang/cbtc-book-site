@@ -232,7 +232,7 @@
   padding: 24px 20px 0 0;
   border-top: 2px solid var(--amber);
 }
-.aud-cell h4 {
+.aud-cell h3 {
   font-family: var(--serif);
   font-size: 22px; font-weight: 500; letter-spacing: -0.3px;
   margin: 0 0 12px; color: var(--ink);

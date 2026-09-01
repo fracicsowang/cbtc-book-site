@@ -9,13 +9,13 @@
   --amber:     #D4A84B;
   --amber-soft: rgba(212, 168, 75, 0.18);
   --ink:       #EAF2F7;
-  --ink-dim:   rgba(234, 242, 247, 0.62);
+  --ink-dim:   rgba(234, 242, 247, 0.72);
   --rule:      rgba(234, 242, 247, 0.16);
 
   --paper:     #F4EFE6;
   --paper-2:   #EAE2D2;
   --char:      #1A1A1A;
-  --char-dim:  rgba(26, 26, 26, 0.62);
+  --char-dim:  rgba(26, 26, 26, 0.72);
   --char-rule: rgba(26, 26, 26, 0.14);
 
   --serif: "Source Serif 4", "Crimson Pro", Georgia, serif;
@@ -180,7 +180,7 @@ button { font: inherit; cursor: pointer; }
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 56px;
 }
-.site-foot h4 {
+.site-foot h3 {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 2px;
