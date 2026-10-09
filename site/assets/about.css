@@ -1,0 +1,29 @@
+/* Page styles for about.html — extracted from the former inline <style> block during the Astro migration. */
+.about-hero { padding: 88px 0 56px; }
+.about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; }
+.about-mark { font-family: var(--serif); font-size: 220px; font-weight: 400; line-height: 0.85; color: var(--navy); letter-spacing: -10px; }
+.about-photo { width: 100%; max-width: 320px; aspect-ratio: 4/5; object-fit: cover; display: block; filter: grayscale(0.15) contrast(1.02); }
+.about-meta { font-family: var(--mono); font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--char-dim); display: flex; flex-direction: column; gap: 8px; margin-top: 24px; }
+.about-name { font-family: var(--serif); font-size: clamp(40px, 5vw, 64px); font-weight: 400; letter-spacing: -1.5px; line-height: 1.05; margin: 16px 0 12px; }
+.about-tag { font-family: var(--mono); font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--char-dim); margin: 0 0 32px; }
+.about-lede { font-family: var(--serif); font-size: 28px; line-height: 1.35; font-style: italic; color: var(--navy); margin: 0 0 32px; max-width: 720px; }
+.about-summary { font-size: 18px; line-height: 1.6; max-width: 720px; }
+.timeline { margin-top: 80px; }
+.timeline-row { display: grid; grid-template-columns: 200px 1fr; gap: 48px; padding: 32px 0; border-top: 1px solid var(--char-rule); }
+.timeline-row:last-child { border-bottom: 1px solid var(--char-rule); }
+.timeline-year { font-family: var(--mono); font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--amber); padding-top: 8px; }
+.timeline-role { font-family: var(--serif); font-size: 26px; font-weight: 500; letter-spacing: -0.4px; margin: 0 0 4px; }
+.timeline-org { font-family: var(--mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--char-dim); margin: 0 0 16px; }
+.timeline-bullets { padding-left: 20px; margin: 0; }
+.timeline-bullets li { font-size: 16px; line-height: 1.55; color: var(--char); margin-bottom: 8px; }
+.creds-strip { background: var(--navy); color: var(--ink); padding: 64px 0; margin-top: 96px; }
+.creds-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; }
+.cred-h { font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--amber); margin: 0 0 16px; }
+.cred-list { font-family: var(--serif); font-size: 22px; line-height: 1.4; color: var(--ink); margin: 0; padding: 0; list-style: none; }
+.cred-list li { padding: 10px 0; border-top: 1px solid var(--rule); }
+@media (max-width: 1024px) {
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-mark { font-size: 140px; }
+  .timeline-row { grid-template-columns: 1fr; gap: 16px; }
+  .creds-grid { grid-template-columns: 1fr; gap: 32px; }
+}

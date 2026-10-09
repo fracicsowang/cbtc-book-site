@@ -1,0 +1,25 @@
+---
+// 3D book — static port of the former Book3D (site/assets/components.jsx).
+// Front/back faces hold the cover art; a tiny inline script flips on click
+// (the .book3d CSS lives in site/assets/site.css).
+import Cover from "./Cover.astro";
+
+export interface Props {
+  vol: 1 | 2;
+  width?: number;
+  height?: number;
+  spine?: number;
+  class?: string;
+}
+const { vol, width = 220, height = 290, spine = 26, class: klass = "" } = Astro.props;
+---
+<div class={`book3d ${klass}`} style={`width:${width}px;height:${height}px;--spine:${spine}px`} data-book3d>
+  <div class="book3d-inner" style={`width:${width}px;height:${height}px`}>
+    <div class="book3d-face book3d-front"><Cover vol={vol} side="front" w={width} h={height} /></div>
+    <div class="book3d-face book3d-back"><Cover vol={vol} side="back" w={width} h={height} /></div>
+    <div class="book3d-face book3d-spine-l"></div>
+    <div class="book3d-face book3d-spine-r"></div>
+    <div class="book3d-face book3d-top"></div>
+    <div class="book3d-face book3d-bottom"></div>
+  </div>
+</div>

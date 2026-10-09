@@ -1,0 +1,14 @@
+{
+  "name": "cbtcbook-marketing",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Astro SSG for the cbtcbook.com root marketing pages (home, volumes, about, etc.). Built locally; output committed to /site/*.html. The blog is a SEPARATE Astro project in ../site-src.",
+  "scripts": {
+    "build": "astro build",
+    "dev": "astro dev"
+  },
+  "devDependencies": {
+    "astro": "^4.16.0"
+  }
+}

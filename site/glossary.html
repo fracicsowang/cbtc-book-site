@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Interactive Communications-Based Train Control glossary. Definitions for ATP, ATO, ATS, zone controller, GoA levels, IEEE 1474, IEC 62290, and more.">
-<link rel="canonical" href="https://cbtcbook.com/glossary.html">
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-<link rel="manifest" href="site.webmanifest">
-<meta name="apple-mobile-web-app-title" content="CBTC Book">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="shortcut icon" href="favicon.ico">
-<meta name="theme-color" content="#0A1628">
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Communications-Based Train Control">
-<meta property="og:title" content="CBTC Glossary — Terms, Acronyms, Standards">
-<meta property="og:description" content="Interactive Communications-Based Train Control glossary. Definitions for ATP, ATO, ATS, zone controller, GoA levels, IEEE 1474, IEC 62290, and more.">
-<meta property="og:url" content="https://cbtcbook.com/glossary.html">
-<meta property="og:image" content="https://cbtcbook.com/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Communications-Based Train Control — a two-volume reference by Chunjun (Francisco) Wang.">
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CBTC Glossary — Terms, Acronyms, Standards">
-<meta name="twitter:description" content="Interactive Communications-Based Train Control glossary. Definitions for ATP, ATO, ATS, zone controller, GoA levels, IEEE 1474, IEC 62290, and more.">
-<meta name="twitter:image" content="https://cbtcbook.com/assets/og-image.png">
-
-<title>CBTC Glossary — Terms, Acronyms, Standards</title>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
-<style>
-.gloss-hero { padding: 64px 0 32px; }
-.gloss-h { font-family: var(--serif); font-size: clamp(36px, 4.5vw, 56px); font-weight: 400; letter-spacing: -1px; margin: 16px 0 16px; line-height: 1.05; max-width: 900px; text-wrap: balance; }
-.gloss-lede { font-size: 18px; line-height: 1.55; color: var(--char-dim); max-width: 720px; }
-.gloss-stage { background: var(--navy); color: var(--ink); padding: 64px 0; }
-.gloss-diagram { width: 100%; aspect-ratio: 16/8; background: var(--navy-deep); position: relative; overflow: hidden; }
-.gloss-hot { position: absolute; cursor: pointer; transition: transform .15s; }
-.gloss-hot:hover { transform: scale(1.08); }
-.gloss-hot-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 6px var(--amber-soft); position: absolute; top: -7px; left: -7px; }
-.gloss-hot-dot.active { background: var(--ink); box-shadow: 0 0 0 6px rgba(74,158,191,0.4); }
-.gloss-hot-pulse { position: absolute; top: -7px; left: -7px; width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--amber); animation: pulse 2s infinite; opacity: 0.6; }
-@keyframes pulse { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(2.5); opacity: 0; } }
-.gloss-info { background: var(--navy-deep); border-top: 1px solid var(--rule); padding: 32px 0; min-height: 220px; }
-.gloss-info-grid { display: grid; grid-template-columns: 200px 1fr; gap: 48px; align-items: start; }
-.gloss-info-acro { font-family: var(--serif); font-size: 64px; font-weight: 400; letter-spacing: -2px; color: var(--amber); line-height: 0.9; }
-.gloss-info-name { font-family: var(--serif); font-size: 28px; font-weight: 500; color: var(--ink); margin: 0 0 12px; }
-.gloss-info-desc { font-size: 16px; line-height: 1.6; color: var(--ink-dim); margin: 0 0 16px; max-width: 720px; }
-.gloss-info-ref { font-family: var(--mono); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--amber); }
-.gloss-list { padding: 80px 0; }
-.gloss-table { display: grid; grid-template-columns: 120px 1fr 2fr; gap: 24px; }
-.gloss-row { display: contents; }
-.gloss-row > * { padding: 16px 0; border-top: 1px solid var(--char-rule); }
-.gloss-row .acro { font-family: var(--mono); font-size: 14px; font-weight: 500; color: var(--navy); letter-spacing: 1px; }
-.gloss-row .name { font-family: var(--serif); font-size: 18px; font-weight: 500; }
-.gloss-row .desc { font-size: 15px; line-height: 1.5; color: var(--char-dim); }
-@media (max-width: 1024px) {
-  .gloss-info-grid { grid-template-columns: 1fr; gap: 16px; }
-  .gloss-info-acro { font-size: 48px; }
-  .gloss-table { grid-template-columns: 1fr; }
-  .gloss-row > * { padding: 8px 0; border-top: none; }
-  .gloss-row { display: block; padding: 16px 0; border-top: 1px solid var(--char-rule); }
-}
-</style><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script>
-<script>
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Interactive Communications-Based Train Control glossary. Definitions for ATP, ATO, ATS, zone controller, GoA levels, IEEE 1474, IEC 62290, and more."><link rel="canonical" href="https://cbtcbook.com/glossary.html"><!-- Favicon --><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="manifest" href="/site.webmanifest"><meta name="apple-mobile-web-app-title" content="CBTC Book"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="shortcut icon" href="/favicon.ico"><meta name="theme-color" content="#0A1628"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="Communications-Based Train Control"><meta property="og:title" content="CBTC Glossary — Terms, Acronyms, Standards"><meta property="og:description" content="Interactive Communications-Based Train Control glossary. Definitions for ATP, ATO, ATS, zone controller, GoA levels, IEEE 1474, IEC 62290, and more."><meta property="og:url" content="https://cbtcbook.com/glossary.html"><meta property="og:image" content="https://cbtcbook.com/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Communications-Based Train Control — a two-volume reference by Chunjun (Francisco) Wang."><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="CBTC Glossary — Terms, Acronyms, Standards"><meta name="twitter:description" content="Interactive Communications-Based Train Control glossary. Definitions for ATP, ATO, ATS, zone controller, GoA levels, IEEE 1474, IEC 62290, and more."><meta name="twitter:image" content="https://cbtcbook.com/assets/og-image.png"><title>CBTC Glossary — Terms, Acronyms, Standards</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/glossary.css"><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script><script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
@@ -84,286 +14,56 @@ document.addEventListener('click', function(e) {
     'link_text': (a.textContent || '').trim().slice(0, 60)
   });
 });
-</script>
+</script></head> <body class=""> <nav class="site-nav"> <div class="site-nav-inner"> <a href="index.html" class="site-nav-brand"> <span class="dot"></span> <span>CBTC&nbsp;·&nbsp;Wang</span> </a> <div class="site-nav-links"> <a href="volume-1.html" class="">Volume 1</a><a href="volume-2.html" class="">Volume 2</a><a href="/blog/" class="">Articles</a><a href="/resources/" class="">Resources</a><a href="about.html" class="">About</a><a href="figures.html" class="">Figures</a><a href="slides.html" class="">Slides</a><a href="glossary.html" class="active">Glossary</a><a href="errata.html" class="">Errata</a><a href="contact.html" class="">Contact</a> </div> <a class="site-nav-cta" href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ" target="_blank" rel="noopener">Buy on Amazon →</a> <button class="site-nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav-mobile" data-nav-burger> <span></span><span></span><span></span> </button> </div> <div id="site-nav-mobile" class="site-nav-mobile" style="display:none"> <a href="volume-1.html" class="">Volume 1</a><a href="volume-2.html" class="">Volume 2</a><a href="/blog/" class="">Articles</a><a href="/resources/" class="">Resources</a><a href="about.html" class="">About</a><a href="figures.html" class="">Figures</a><a href="slides.html" class="">Slides</a><a href="glossary.html" class="active">Glossary</a><a href="errata.html" class="">Errata</a><a href="contact.html" class="">Contact</a> <a class="site-nav-mobile__cta" href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ" target="_blank" rel="noopener">Buy on Amazon →</a> </div> </nav> <script>
+  (function () {
+    var burger = document.querySelector("[data-nav-burger]");
+    var drawer = document.getElementById("site-nav-mobile");
+    if (!burger || !drawer) return;
+    function setOpen(open) {
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      drawer.style.display = open ? "" : "none";
+    }
+    burger.addEventListener("click", function () {
+      setOpen(burger.getAttribute("aria-expanded") !== "true");
+    });
+    drawer.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") setOpen(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") setOpen(false);
+    });
+  })();
+</script>  <section class="gloss-hero"> <div class="container"> <span class="kicker">Interactive diagram</span> <h1 class="gloss-h">A CBTC system is eight letters apart from a fixed-block railway.</h1> <p class="gloss-lede">Click any node on the schematic below to see what each acronym means and where the book covers it. The full alphabetical glossary follows.</p> </div> </section> <section class="gloss-stage"> <div class="container"> <div class="gloss-diagram"> <svg width="100%" height="100%" viewBox="0 0 1600 800" preserveAspectRatio="none"> <defs> <pattern id="gridG" width="40" height="40" patternUnits="userSpaceOnUse"> <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#4A9EBF" stroke-width="0.5" opacity="0.18"></path> </pattern> </defs> <rect width="1600" height="800" fill="url(#gridG)"></rect> <line x1="0" y1="600" x2="1600" y2="600" stroke="#EAF2F7" stroke-width="2"></line> <line x1="0" y1="640" x2="1600" y2="640" stroke="#EAF2F7" stroke-width="2"></line> <line x1="0" y1="600" x2="0" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="28" y1="600" x2="28" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="56" y1="600" x2="56" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="84" y1="600" x2="84" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="112" y1="600" x2="112" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="140" y1="600" x2="140" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="168" y1="600" x2="168" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="196" y1="600" x2="196" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="224" y1="600" x2="224" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="252" y1="600" x2="252" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="280" y1="600" x2="280" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="308" y1="600" x2="308" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="336" y1="600" x2="336" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="364" y1="600" x2="364" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="392" y1="600" x2="392" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="420" y1="600" x2="420" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="448" y1="600" x2="448" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="476" y1="600" x2="476" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="504" y1="600" x2="504" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="532" y1="600" x2="532" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="560" y1="600" x2="560" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="588" y1="600" x2="588" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="616" y1="600" x2="616" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="644" y1="600" x2="644" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="672" y1="600" x2="672" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="700" y1="600" x2="700" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="728" y1="600" x2="728" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="756" y1="600" x2="756" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="784" y1="600" x2="784" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="812" y1="600" x2="812" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="840" y1="600" x2="840" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="868" y1="600" x2="868" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="896" y1="600" x2="896" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="924" y1="600" x2="924" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="952" y1="600" x2="952" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="980" y1="600" x2="980" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1008" y1="600" x2="1008" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1036" y1="600" x2="1036" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1064" y1="600" x2="1064" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1092" y1="600" x2="1092" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1120" y1="600" x2="1120" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1148" y1="600" x2="1148" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1176" y1="600" x2="1176" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1204" y1="600" x2="1204" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1232" y1="600" x2="1232" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1260" y1="600" x2="1260" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1288" y1="600" x2="1288" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1316" y1="600" x2="1316" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1344" y1="600" x2="1344" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1372" y1="600" x2="1372" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1400" y1="600" x2="1400" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1428" y1="600" x2="1428" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1456" y1="600" x2="1456" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1484" y1="600" x2="1484" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1512" y1="600" x2="1512" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1540" y1="600" x2="1540" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1568" y1="600" x2="1568" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1596" y1="600" x2="1596" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1624" y1="600" x2="1624" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line><line x1="1652" y1="600" x2="1652" y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"></line> <g stroke="#4A9EBF" fill="none" opacity="0.4"> <circle cx="800" cy="240" r="200"></circle> <circle cx="800" cy="240" r="280"></circle> <circle cx="800" cy="240" r="360"></circle> </g> <rect x="790" y="180" width="20" height="60" fill="#D4A84B"></rect> <line x1="800" y1="240" x2="800" y2="600" stroke="#D4A84B" stroke-width="1" opacity="0.5"></line> <rect x="1300" y="80" width="200" height="100" fill="#1B2D4A" stroke="#4A9EBF"></rect> <text x="1400" y="140" font-family="IBM Plex Mono, monospace" font-size="14" fill="#EAF2F7" text-anchor="middle">ATS · CONTROL CENTER</text> <line x1="1300" y1="180" x2="810" y2="240" stroke="#4A9EBF" stroke-dasharray="4 4" stroke-width="1"></line> <rect x="500" y="595" width="180" height="50" fill="#D4A84B" stroke="#0A1628" stroke-width="2"></rect> <text x="590" y="624" font-family="IBM Plex Mono, monospace" font-size="14" fill="#0A1628" text-anchor="middle" font-weight="700">TRAIN · 0274</text> <path d="M 680 590 L 1050 590 L 1050 650 L 680 650 Z" fill="#D4A84B" opacity="0.18"></path> <text x="900" y="700" font-family="IBM Plex Mono, monospace" font-size="13" fill="#D4A84B" text-anchor="middle">MOVEMENT AUTHORITY</text> <text x="800" y="170" font-family="IBM Plex Mono, monospace" font-size="14" fill="#D4A84B" text-anchor="middle">ZC · WAYSIDE</text> </svg> <div class="gloss-hot" style="left:24%;top:64%" data-idx="0"> <span class="gloss-hot-dot active"></span> <span class="gloss-hot-pulse" style="display:none"></span> <span data-acro-label style="position:absolute;left:22px;top:-8px;font-family:var(--mono);font-size:11px;letter-spacing:1.4px;color:var(--ink);white-space:nowrap">ATP</span> </div><div class="gloss-hot" style="left:28%;top:56%" data-idx="1"> <span class="gloss-hot-dot "></span> <span class="gloss-hot-pulse" style=""></span> <span data-acro-label style="position:absolute;left:22px;top:-8px;font-family:var(--mono);font-size:11px;letter-spacing:1.4px;color:var(--ink-dim);white-space:nowrap">ATO</span> </div><div class="gloss-hot" style="left:84%;top:16%" data-idx="2"> <span class="gloss-hot-dot "></span> <span class="gloss-hot-pulse" style=""></span> <span data-acro-label style="position:absolute;left:22px;top:-8px;font-family:var(--mono);font-size:11px;letter-spacing:1.4px;color:var(--ink-dim);white-space:nowrap">ATS</span> </div><div class="gloss-hot" style="left:50%;top:30%" data-idx="3"> <span class="gloss-hot-dot "></span> <span class="gloss-hot-pulse" style=""></span> <span data-acro-label style="position:absolute;left:22px;top:-8px;font-family:var(--mono);font-size:11px;letter-spacing:1.4px;color:var(--ink-dim);white-space:nowrap">ZC</span> </div><div class="gloss-hot" style="left:50%;top:42%" data-idx="4"> <span class="gloss-hot-dot "></span> <span class="gloss-hot-pulse" style=""></span> <span data-acro-label style="position:absolute;left:22px;top:-8px;font-family:var(--mono);font-size:11px;letter-spacing:1.4px;color:var(--ink-dim);white-space:nowrap">DCS</span> </div><div class="gloss-hot" style="left:64%;top:78%" data-idx="5"> <span class="gloss-hot-dot "></span> <span class="gloss-hot-pulse" style=""></span> <span data-acro-label style="position:absolute;left:22px;top:-8px;font-family:var(--mono);font-size:11px;letter-spacing:1.4px;color:var(--ink-dim);white-space:nowrap">MA</span> </div><div class="gloss-hot" style="left:14%;top:28%" data-idx="6"> <span class="gloss-hot-dot "></span> <span class="gloss-hot-pulse" style=""></span> <span data-acro-label style="position:absolute;left:22px;top:-8px;font-family:var(--mono);font-size:11px;letter-spacing:1.4px;color:var(--ink-dim);white-space:nowrap">GoA</span> </div><div class="gloss-hot" style="left:36%;top:76%" data-idx="7"> <span class="gloss-hot-dot "></span> <span class="gloss-hot-pulse" style=""></span> <span data-acro-label style="position:absolute;left:22px;top:-8px;font-family:var(--mono);font-size:11px;letter-spacing:1.4px;color:var(--ink-dim);white-space:nowrap">OBCU</span> </div> </div> <div class="gloss-info"> <div class="gloss-info-grid"> <div class="gloss-info-acro" id="gi-acro">ATP</div> <div> <h3 class="gloss-info-name" id="gi-name">Automatic Train Protection</h3> <p class="gloss-info-desc" id="gi-desc">Onboard subsystem that supervises train movement and intervenes when speed or position would otherwise exceed the safe envelope. The safety-critical core of any CBTC system.</p> <span class="gloss-info-ref" id="gi-ref">↳ Covered in Vol 1 · Ch. 04</span> </div> </div> </div> </div> </section> <section class="container gloss-list"> <span class="kicker">Alphabetical glossary</span> <h2 style="font-family:var(--serif);font-size:36px;font-weight:400;letter-spacing:-0.6px;margin:16px 0 32px">
+The eight terms above plus everything else CBTC procurement documents take for granted.
+</h2> <div class="gloss-table"> <div class="gloss-row"> <div class="acro">ATO</div> <div class="name">Automatic Train Operation</div> <div class="desc">Driving automation layer that commands traction and braking under ATP supervision. Typically responsible for station-stopping accuracy, energy-optimized cruising, and door enable signals.</div> </div><div class="gloss-row"> <div class="acro">ATP</div> <div class="name">Automatic Train Protection</div> <div class="desc">Onboard subsystem that supervises train movement and intervenes when speed or position would otherwise exceed the safe envelope. The safety-critical core of any CBTC system.</div> </div><div class="gloss-row"> <div class="acro">ATS</div> <div class="name">Automatic Train Supervision</div> <div class="desc">Central control-room system that supervises the entire CBTC railway: timetable execution, dispatching, regulation, and the operator HMI. Sits above ATP/ATO and the wayside zone controllers.</div> </div><div class="gloss-row"> <div class="acro">DCS</div> <div class="name">Data Communication System</div> <div class="desc">The wireless network that carries train↔wayside data. Most US deployments use 2.4 GHz or 5 GHz licensed/unlicensed spread-spectrum radio with redundant access points along the right-of-way.</div> </div><div class="gloss-row"> <div class="acro">GoA</div> <div class="name">Grades of Automation</div> <div class="desc">UITP/IEC framework defining who is responsible for which train function across five levels: GoA 0 (line-of-sight) to GoA 4 (unattended train operation). Most US transit deployments target GoA 2.</div> </div><div class="gloss-row"> <div class="acro">MA</div> <div class="name">Movement Authority</div> <div class="desc">The signed promise from the wayside to a single train: &#39;you may proceed up to point X at speed Y.&#39; CBTC&#39;s moving-block paradigm gives every train a continuously updated MA.</div> </div><div class="gloss-row"> <div class="acro">OBCU</div> <div class="name">Onboard Controller Unit</div> <div class="desc">Train-resident vital computer running the CBTC onboard logic: ATP supervision, ATO commands, balise reading, odometry fusion, and DCS communication with the wayside.</div> </div><div class="gloss-row"> <div class="acro">ZC</div> <div class="name">Zone Controller</div> <div class="desc">Wayside computer that owns one geographic &#39;zone&#39; of the railway. Tracks every train inside its zone, generates Movement Authorities, and hands off to neighbor ZCs at zone boundaries.</div> </div> </div> </section> <script>(function(){const TERMS = [{"acro":"ATP","name":"Automatic Train Protection","x":24,"y":64,"ref":"Vol 1 · Ch. 04","desc":"Onboard subsystem that supervises train movement and intervenes when speed or position would otherwise exceed the safe envelope. The safety-critical core of any CBTC system."},{"acro":"ATO","name":"Automatic Train Operation","x":28,"y":56,"ref":"Vol 1 · Ch. 04","desc":"Driving automation layer that commands traction and braking under ATP supervision. Typically responsible for station-stopping accuracy, energy-optimized cruising, and door enable signals."},{"acro":"ATS","name":"Automatic Train Supervision","x":84,"y":16,"ref":"Vol 1 · Ch. 07","desc":"Central control-room system that supervises the entire CBTC railway: timetable execution, dispatching, regulation, and the operator HMI. Sits above ATP/ATO and the wayside zone controllers."},{"acro":"ZC","name":"Zone Controller","x":50,"y":30,"ref":"Vol 1 · Ch. 05","desc":"Wayside computer that owns one geographic 'zone' of the railway. Tracks every train inside its zone, generates Movement Authorities, and hands off to neighbor ZCs at zone boundaries."},{"acro":"DCS","name":"Data Communication System","x":50,"y":42,"ref":"Vol 1 · Ch. 06","desc":"The wireless network that carries train↔wayside data. Most US deployments use 2.4 GHz or 5 GHz licensed/unlicensed spread-spectrum radio with redundant access points along the right-of-way."},{"acro":"MA","name":"Movement Authority","x":64,"y":78,"ref":"Vol 1 · Ch. 03","desc":"The signed promise from the wayside to a single train: 'you may proceed up to point X at speed Y.' CBTC's moving-block paradigm gives every train a continuously updated MA."},{"acro":"GoA","name":"Grades of Automation","x":14,"y":28,"ref":"Vol 2 · Ch. 08","desc":"UITP/IEC framework defining who is responsible for which train function across five levels: GoA 0 (line-of-sight) to GoA 4 (unattended train operation). Most US transit deployments target GoA 2."},{"acro":"OBCU","name":"Onboard Controller Unit","x":36,"y":76,"ref":"Vol 1 · Ch. 04","desc":"Train-resident vital computer running the CBTC onboard logic: ATP supervision, ATO commands, balise reading, odometry fusion, and DCS communication with the wayside."}];
 
-</head>
-<body>
-<div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
-<script src="assets/data.js"></script>
-<script src="assets/components.js"></script>
-<script>
-const TERMS = [{
-  acro: "ATP",
-  name: "Automatic Train Protection",
-  x: 24,
-  y: 64,
-  ref: "Vol 1 · Ch. 04",
-  desc: "Onboard subsystem that supervises train movement and intervenes when speed or position would otherwise exceed the safe envelope. The safety-critical core of any CBTC system."
-}, {
-  acro: "ATO",
-  name: "Automatic Train Operation",
-  x: 28,
-  y: 56,
-  ref: "Vol 1 · Ch. 04",
-  desc: "Driving automation layer that commands traction and braking under ATP supervision. Typically responsible for station-stopping accuracy, energy-optimized cruising, and door enable signals."
-}, {
-  acro: "ATS",
-  name: "Automatic Train Supervision",
-  x: 84,
-  y: 16,
-  ref: "Vol 1 · Ch. 07",
-  desc: "Central control-room system that supervises the entire CBTC railway: timetable execution, dispatching, regulation, and the operator HMI. Sits above ATP/ATO and the wayside zone controllers."
-}, {
-  acro: "ZC",
-  name: "Zone Controller",
-  x: 50,
-  y: 30,
-  ref: "Vol 1 · Ch. 05",
-  desc: "Wayside computer that owns one geographic 'zone' of the railway. Tracks every train inside its zone, generates Movement Authorities, and hands off to neighbor ZCs at zone boundaries."
-}, {
-  acro: "DCS",
-  name: "Data Communication System",
-  x: 50,
-  y: 42,
-  ref: "Vol 1 · Ch. 06",
-  desc: "The wireless network that carries train↔wayside data. Most US deployments use 2.4 GHz or 5 GHz licensed/unlicensed spread-spectrum radio with redundant access points along the right-of-way."
-}, {
-  acro: "MA",
-  name: "Movement Authority",
-  x: 64,
-  y: 78,
-  ref: "Vol 1 · Ch. 03",
-  desc: "The signed promise from the wayside to a single train: 'you may proceed up to point X at speed Y.' CBTC's moving-block paradigm gives every train a continuously updated MA."
-}, {
-  acro: "GoA",
-  name: "Grades of Automation",
-  x: 14,
-  y: 28,
-  ref: "Vol 2 · Ch. 08",
-  desc: "UITP/IEC framework defining who is responsible for which train function across five levels: GoA 0 (line-of-sight) to GoA 4 (unattended train operation). Most US transit deployments target GoA 2."
-}, {
-  acro: "OBCU",
-  name: "Onboard Controller Unit",
-  x: 36,
-  y: 76,
-  ref: "Vol 1 · Ch. 04",
-  desc: "Train-resident vital computer running the CBTC onboard logic: ATP supervision, ATO commands, balise reading, odometry fusion, and DCS communication with the wayside."
-}];
-function GlossaryPage() {
-  const [active, setActive] = React.useState(0);
-  const t = TERMS[active];
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(SiteNav, {
-    active: "glossary"
-  }), /*#__PURE__*/React.createElement("section", {
-    className: "gloss-hero"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "kicker"
-  }, "Interactive diagram"), /*#__PURE__*/React.createElement("h1", {
-    className: "gloss-h"
-  }, "A CBTC system is eight letters apart from a fixed-block railway."), /*#__PURE__*/React.createElement("p", {
-    className: "gloss-lede"
-  }, "Click any node on the schematic below to see what each acronym means and where the book covers it. The full alphabetical glossary follows."))), /*#__PURE__*/React.createElement("section", {
-    className: "gloss-stage"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "gloss-diagram"
-  }, /*#__PURE__*/React.createElement("svg", {
-    width: "100%",
-    height: "100%",
-    viewBox: "0 0 1600 800",
-    preserveAspectRatio: "none"
-  }, /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("pattern", {
-    id: "gridG",
-    width: "40",
-    height: "40",
-    patternUnits: "userSpaceOnUse"
-  }, /*#__PURE__*/React.createElement("path", {
-    d: "M 40 0 L 0 0 0 40",
-    fill: "none",
-    stroke: "#4A9EBF",
-    strokeWidth: "0.5",
-    opacity: "0.18"
-  }))), /*#__PURE__*/React.createElement("rect", {
-    width: "1600",
-    height: "800",
-    fill: "url(#gridG)"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "0",
-    y1: "600",
-    x2: "1600",
-    y2: "600",
-    stroke: "#EAF2F7",
-    strokeWidth: "2"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "0",
-    y1: "640",
-    x2: "1600",
-    y2: "640",
-    stroke: "#EAF2F7",
-    strokeWidth: "2"
-  }), Array.from({
-    length: 60
-  }).map((_, i) => /*#__PURE__*/React.createElement("line", {
-    key: i,
-    x1: i * 28,
-    y1: "600",
-    x2: i * 28,
-    y2: "640",
-    stroke: "#EAF2F7",
-    strokeWidth: "0.4",
-    opacity: "0.4"
-  })), /*#__PURE__*/React.createElement("g", {
-    stroke: "#4A9EBF",
-    fill: "none",
-    opacity: "0.4"
-  }, /*#__PURE__*/React.createElement("circle", {
-    cx: "800",
-    cy: "240",
-    r: "200"
-  }), /*#__PURE__*/React.createElement("circle", {
-    cx: "800",
-    cy: "240",
-    r: "280"
-  }), /*#__PURE__*/React.createElement("circle", {
-    cx: "800",
-    cy: "240",
-    r: "360"
-  })), /*#__PURE__*/React.createElement("rect", {
-    x: "790",
-    y: "180",
-    width: "20",
-    height: "60",
-    fill: "#D4A84B"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "800",
-    y1: "240",
-    x2: "800",
-    y2: "600",
-    stroke: "#D4A84B",
-    strokeWidth: "1",
-    opacity: "0.5"
-  }), /*#__PURE__*/React.createElement("rect", {
-    x: "1300",
-    y: "80",
-    width: "200",
-    height: "100",
-    fill: "#1B2D4A",
-    stroke: "#4A9EBF"
-  }), /*#__PURE__*/React.createElement("text", {
-    x: "1400",
-    y: "140",
-    fontFamily: "IBM Plex Mono, monospace",
-    fontSize: "14",
-    fill: "#EAF2F7",
-    textAnchor: "middle"
-  }, "ATS \xB7 CONTROL CENTER"), /*#__PURE__*/React.createElement("line", {
-    x1: "1300",
-    y1: "180",
-    x2: "810",
-    y2: "240",
-    stroke: "#4A9EBF",
-    strokeDasharray: "4 4",
-    strokeWidth: "1"
-  }), /*#__PURE__*/React.createElement("rect", {
-    x: "500",
-    y: "595",
-    width: "180",
-    height: "50",
-    fill: "#D4A84B",
-    stroke: "#0A1628",
-    strokeWidth: "2"
-  }), /*#__PURE__*/React.createElement("text", {
-    x: "590",
-    y: "624",
-    fontFamily: "IBM Plex Mono, monospace",
-    fontSize: "14",
-    fill: "#0A1628",
-    textAnchor: "middle",
-    fontWeight: "700"
-  }, "TRAIN \xB7 0274"), /*#__PURE__*/React.createElement("path", {
-    d: "M 680 590 L 1050 590 L 1050 650 L 680 650 Z",
-    fill: "#D4A84B",
-    opacity: "0.18"
-  }), /*#__PURE__*/React.createElement("text", {
-    x: "900",
-    y: "700",
-    fontFamily: "IBM Plex Mono, monospace",
-    fontSize: "13",
-    fill: "#D4A84B",
-    textAnchor: "middle"
-  }, "MOVEMENT AUTHORITY"), /*#__PURE__*/React.createElement("text", {
-    x: "800",
-    y: "170",
-    fontFamily: "IBM Plex Mono, monospace",
-    fontSize: "14",
-    fill: "#D4A84B",
-    textAnchor: "middle"
-  }, "ZC \xB7 WAYSIDE")), TERMS.map((term, i) => /*#__PURE__*/React.createElement("div", {
-    className: "gloss-hot",
-    key: i,
-    style: {
-      left: `${term.x}%`,
-      top: `${term.y}%`
-    },
-    onClick: () => setActive(i)
-  }, /*#__PURE__*/React.createElement("span", {
-    className: `gloss-hot-dot ${active === i ? "active" : ""}`
-  }), active !== i && /*#__PURE__*/React.createElement("span", {
-    className: "gloss-hot-pulse"
-  }), /*#__PURE__*/React.createElement("span", {
-    style: {
-      position: "absolute",
-      left: 22,
-      top: -8,
-      fontFamily: "var(--mono)",
-      fontSize: 11,
-      letterSpacing: 1.4,
-      color: active === i ? "var(--ink)" : "var(--ink-dim)",
-      whiteSpace: "nowrap"
-    }
-  }, term.acro)))), /*#__PURE__*/React.createElement("div", {
-    className: "gloss-info"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "gloss-info-grid"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "gloss-info-acro"
-  }, t.acro), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", {
-    className: "gloss-info-name"
-  }, t.name), /*#__PURE__*/React.createElement("p", {
-    className: "gloss-info-desc"
-  }, t.desc), /*#__PURE__*/React.createElement("span", {
-    className: "gloss-info-ref"
-  }, "\u21B3 Covered in ", t.ref)))))), /*#__PURE__*/React.createElement("section", {
-    className: "container gloss-list"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "kicker"
-  }, "Alphabetical glossary"), /*#__PURE__*/React.createElement("h2", {
-    style: {
-      fontFamily: "var(--serif)",
-      fontSize: 36,
-      fontWeight: 400,
-      letterSpacing: "-0.6px",
-      margin: "16px 0 32px"
-    }
-  }, "The eight terms above plus everything else CBTC procurement documents take for granted."), /*#__PURE__*/React.createElement("div", {
-    className: "gloss-table"
-  }, [...TERMS].sort((a, b) => a.acro.localeCompare(b.acro)).map((t, i) => /*#__PURE__*/React.createElement("div", {
-    className: "gloss-row",
-    key: i
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "acro"
-  }, t.acro), /*#__PURE__*/React.createElement("div", {
-    className: "name"
-  }, t.name), /*#__PURE__*/React.createElement("div", {
-    className: "desc"
-  }, t.desc))))), /*#__PURE__*/React.createElement(SiteFooter, null));
-}
-ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(GlossaryPage, null));
-</script>
-</body>
-</html>
+    (function () {
+      var hots = Array.prototype.slice.call(document.querySelectorAll(".gloss-hot"));
+      function select(i) {
+        var t = TERMS[i];
+        document.getElementById("gi-acro").textContent = t.acro;
+        document.getElementById("gi-name").textContent = t.name;
+        document.getElementById("gi-desc").textContent = t.desc;
+        document.getElementById("gi-ref").textContent = "↳ Covered in " + t.ref;
+        hots.forEach(function (h, j) {
+          var dot = h.querySelector(".gloss-hot-dot");
+          var pulse = h.querySelector(".gloss-hot-pulse");
+          var label = h.querySelector("[data-acro-label]");
+          if (j === i) { dot.classList.add("active"); if (pulse) pulse.style.display = "none"; label.style.color = "var(--ink)"; }
+          else { dot.classList.remove("active"); if (pulse) pulse.style.display = ""; label.style.color = "var(--ink-dim)"; }
+        });
+      }
+      hots.forEach(function (h) { h.addEventListener("click", function () { select(+h.dataset.idx); }); });
+    })();
+  })();</script>  <footer class="site-foot"> <div class="site-foot-inner"> <div> <div class="site-foot-mark">
+Communications-Based<br>
+Train Control — <em>a comprehensive guide</em> </div> <div style="color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:360px">
+Two volumes. 1,127 pages. The first US-focused technical reference on CBTC,
+        written for engineers, project managers, and procurement teams.
+</div> </div> <div> <h3>The Books</h3> <a href="volume-1.html">Volume 1 — Foundations</a> <a href="volume-2.html">Volume 2 — Operations</a> <a href="figures.html">Figures gallery</a> <a href="slides.html">Chapter slides</a> <a href="errata.html">Errata &amp; supplements</a> <a href="glossary.html">CBTC glossary</a> </div> <div> <h3>Author</h3> <a href="about.html">About Francisco Wang</a> <a href="contact.html">Speaking &amp; consulting</a> <a href="https://www.linkedin.com/in/chunjun-wang/" target="_blank" rel="noopener">LinkedIn</a> </div> <div> <h3>Buy</h3> <a href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ" target="_blank" rel="noopener">Volume 1 · Amazon</a> <a href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHHNL2H" target="_blank" rel="noopener">Volume 2 · Amazon</a> <a href="contact.html">Bulk / institutional</a> </div> </div> <div class="site-foot-bottom"> <span>© 2026 Chunjun Wang</span> <span>Princeton, NJ · open to remote</span> </div> </footer> <script>
+  // Click-to-flip for the 3D book covers (static port of Book3D's React state).
+  document.querySelectorAll("[data-book3d]").forEach(function (el) {
+    el.addEventListener("click", function () { el.classList.toggle("flipping"); });
+  });
+</script> </body> </html>

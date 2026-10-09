@@ -1,72 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Errata, corrections, and supplementary downloads for Communications-Based Train Control by Chunjun (Francisco) Wang.">
-<link rel="canonical" href="https://cbtcbook.com/errata.html">
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-<link rel="manifest" href="site.webmanifest">
-<meta name="apple-mobile-web-app-title" content="CBTC Book">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="shortcut icon" href="favicon.ico">
-<meta name="theme-color" content="#0A1628">
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Communications-Based Train Control">
-<meta property="og:title" content="Errata & Supplements — CBTC (Vol 1 & 2)">
-<meta property="og:description" content="Errata, corrections, and supplementary downloads for Communications-Based Train Control by Chunjun (Francisco) Wang.">
-<meta property="og:url" content="https://cbtcbook.com/errata.html">
-<meta property="og:image" content="https://cbtcbook.com/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Communications-Based Train Control — a two-volume reference by Chunjun (Francisco) Wang.">
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Errata & Supplements — CBTC (Vol 1 & 2)">
-<meta name="twitter:description" content="Errata, corrections, and supplementary downloads for Communications-Based Train Control by Chunjun (Francisco) Wang.">
-<meta name="twitter:image" content="https://cbtcbook.com/assets/og-image.png">
-
-<title>Errata & Supplements — CBTC (Vol 1 & 2)</title>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
-<style>
-.err-hero { padding: 80px 0 32px; }
-.err-h { font-family: var(--serif); font-size: clamp(36px, 4.5vw, 56px); font-weight: 400; letter-spacing: -1px; margin: 16px 0 16px; line-height: 1.05; max-width: 900px; text-wrap: balance; }
-.err-lede { font-size: 18px; line-height: 1.55; color: var(--char-dim); max-width: 720px; margin: 0 0 32px; }
-.err-section { padding: 32px 0 64px; }
-.err-section h2 { font-family: var(--serif); font-size: 28px; font-weight: 400; letter-spacing: -0.4px; margin: 0 0 24px; }
-.err-list { display: grid; grid-template-columns: 1fr; gap: 0; }
-.err-row { display: grid; grid-template-columns: 140px 100px 1fr 100px; gap: 24px; padding: 18px 0; border-top: 1px solid var(--char-rule); align-items: baseline; }
-.err-row:last-child { border-bottom: 1px solid var(--char-rule); }
-.err-where { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--amber); }
-.err-page { font-family: var(--mono); font-size: 13px; color: var(--navy); font-weight: 500; }
-.err-text { font-size: 15px; line-height: 1.55; }
-.err-text del { color: var(--char-dim); text-decoration-color: rgba(180, 30, 30, 0.5); }
-.err-text ins { background: var(--amber-soft); text-decoration: none; padding: 1px 3px; }
-.err-date { font-family: var(--mono); font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--char-dim); text-align: right; }
-.err-empty { padding: 24px; background: var(--paper-2); font-family: var(--serif); font-size: 18px; font-style: italic; color: var(--char-dim); text-align: center; }
-.supp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.supp-card { background: var(--paper-2); padding: 24px; border-top: 2px solid var(--navy); }
-.supp-card h4 { font-family: var(--serif); font-size: 22px; font-weight: 500; margin: 0 0 8px; letter-spacing: -0.3px; }
-.supp-card p { font-size: 14px; line-height: 1.5; color: var(--char-dim); margin: 0 0 16px; }
-.supp-card a { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--navy); border-bottom: 1px solid var(--amber); padding-bottom: 2px; }
-.report-box { background: var(--navy); color: var(--ink); padding: 48px; }
-.report-box h3 { font-family: var(--serif); font-size: 28px; font-weight: 400; margin: 0 0 16px; letter-spacing: -0.4px; color: var(--ink); }
-.report-box p { color: var(--ink-dim); margin: 0 0 24px; max-width: 640px; line-height: 1.55; }
-@media (max-width: 1024px) {
-  .err-row { grid-template-columns: 100px 1fr; gap: 8px; }
-  .err-row > .err-text { grid-column: 1 / -1; }
-  .err-row > .err-date { grid-column: 1 / -1; text-align: left; }
-  .supp-grid { grid-template-columns: 1fr; }
-}
-</style><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script>
-<script>
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Errata, corrections, and supplementary downloads for Communications-Based Train Control by Chunjun (Francisco) Wang."><link rel="canonical" href="https://cbtcbook.com/errata.html"><!-- Favicon --><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="manifest" href="/site.webmanifest"><meta name="apple-mobile-web-app-title" content="CBTC Book"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="shortcut icon" href="/favicon.ico"><meta name="theme-color" content="#0A1628"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="Communications-Based Train Control"><meta property="og:title" content="Errata &#38; Supplements — CBTC (Vol 1 &#38; 2)"><meta property="og:description" content="Errata, corrections, and supplementary downloads for Communications-Based Train Control by Chunjun (Francisco) Wang."><meta property="og:url" content="https://cbtcbook.com/errata.html"><meta property="og:image" content="https://cbtcbook.com/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Communications-Based Train Control — a two-volume reference by Chunjun (Francisco) Wang."><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Errata &#38; Supplements — CBTC (Vol 1 &#38; 2)"><meta name="twitter:description" content="Errata, corrections, and supplementary downloads for Communications-Based Train Control by Chunjun (Francisco) Wang."><meta name="twitter:image" content="https://cbtcbook.com/assets/og-image.png"><title>Errata &amp; Supplements — CBTC (Vol 1 &amp; 2)</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/errata.css"><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script><script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
@@ -82,103 +14,34 @@ document.addEventListener('click', function(e) {
     'link_text': (a.textContent || '').trim().slice(0, 60)
   });
 });
-</script>
-
-</head>
-<body>
-<div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
-<script src="assets/data.js"></script>
-<script src="assets/components.js"></script>
-<script>
-function ErrataPage() {
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(SiteNav, {
-    active: "errata"
-  }), /*#__PURE__*/React.createElement("section", {
-    className: "err-hero"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "kicker"
-  }, "Errata \xB7 Supplements \xB7 Reader resources"), /*#__PURE__*/React.createElement("h1", {
-    className: "err-h"
-  }, "Corrections and downloadable supplements for both volumes."), /*#__PURE__*/React.createElement("p", {
-    className: "err-lede"
-  }, "A book this size will have errata. This page is the canonical, dated record \u2014 checked weekly. Supplements include the full chapter outlines, figure source files, and bibliography."))), /*#__PURE__*/React.createElement("section", {
-    className: "err-section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("h2", null, "Volume 1 \u2014 Errata"), /*#__PURE__*/React.createElement("div", {
-    className: "err-empty"
-  }, "No errata reported yet. Volume 1 published April 2026.", /*#__PURE__*/React.createElement("br", null), "Spotted something? Use the report form below \u2014 every confirmed correction is credited here."))), /*#__PURE__*/React.createElement("section", {
-    className: "err-section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("h2", null, "Volume 2 \u2014 Errata"), /*#__PURE__*/React.createElement("div", {
-    className: "err-empty"
-  }, "No errata reported yet. Volume 2 published April 2026."))), /*#__PURE__*/React.createElement("section", {
-    className: "err-section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("h2", null, "Downloadable supplements"), /*#__PURE__*/React.createElement("div", {
-    className: "supp-grid"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "supp-card"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontFamily: "var(--mono)",
-      fontSize: 10,
-      letterSpacing: 1.4,
-      textTransform: "uppercase",
-      color: "var(--char-dim)",
-      marginBottom: 8
+</script></head> <body class=""> <nav class="site-nav"> <div class="site-nav-inner"> <a href="index.html" class="site-nav-brand"> <span class="dot"></span> <span>CBTC&nbsp;·&nbsp;Wang</span> </a> <div class="site-nav-links"> <a href="volume-1.html" class="">Volume 1</a><a href="volume-2.html" class="">Volume 2</a><a href="/blog/" class="">Articles</a><a href="/resources/" class="">Resources</a><a href="about.html" class="">About</a><a href="figures.html" class="">Figures</a><a href="slides.html" class="">Slides</a><a href="glossary.html" class="">Glossary</a><a href="errata.html" class="active">Errata</a><a href="contact.html" class="">Contact</a> </div> <a class="site-nav-cta" href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ" target="_blank" rel="noopener">Buy on Amazon →</a> <button class="site-nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav-mobile" data-nav-burger> <span></span><span></span><span></span> </button> </div> <div id="site-nav-mobile" class="site-nav-mobile" style="display:none"> <a href="volume-1.html" class="">Volume 1</a><a href="volume-2.html" class="">Volume 2</a><a href="/blog/" class="">Articles</a><a href="/resources/" class="">Resources</a><a href="about.html" class="">About</a><a href="figures.html" class="">Figures</a><a href="slides.html" class="">Slides</a><a href="glossary.html" class="">Glossary</a><a href="errata.html" class="active">Errata</a><a href="contact.html" class="">Contact</a> <a class="site-nav-mobile__cta" href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ" target="_blank" rel="noopener">Buy on Amazon →</a> </div> </nav> <script>
+  (function () {
+    var burger = document.querySelector("[data-nav-burger]");
+    var drawer = document.getElementById("site-nav-mobile");
+    if (!burger || !drawer) return;
+    function setOpen(open) {
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      drawer.style.display = open ? "" : "none";
     }
-  }, "PDF \xB7 18 pp"), /*#__PURE__*/React.createElement("h4", null, "Full chapter outline"), /*#__PURE__*/React.createElement("p", null, "Section-by-section breakdown of all sixteen chapters across both volumes. Useful for procurement reviewers deciding which volume to cite."), /*#__PURE__*/React.createElement("a", {
-    href: "#"
-  }, "Download PDF \u2192")), /*#__PURE__*/React.createElement("div", {
-    className: "supp-card"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontFamily: "var(--mono)",
-      fontSize: 10,
-      letterSpacing: 1.4,
-      textTransform: "uppercase",
-      color: "var(--char-dim)",
-      marginBottom: 8
-    }
-  }, "SVG bundle"), /*#__PURE__*/React.createElement("h4", null, "Figure source files"), /*#__PURE__*/React.createElement("p", null, "All system schematics from the book in editable SVG, licensed for non-commercial classroom and proposal use."), /*#__PURE__*/React.createElement("a", {
-    href: "#"
-  }, "Download bundle \u2192")), /*#__PURE__*/React.createElement("div", {
-    className: "supp-card"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontFamily: "var(--mono)",
-      fontSize: 10,
-      letterSpacing: 1.4,
-      textTransform: "uppercase",
-      color: "var(--char-dim)",
-      marginBottom: 8
-    }
-  }, "BibTeX \xB7 CSV"), /*#__PURE__*/React.createElement("h4", null, "Bibliography"), /*#__PURE__*/React.createElement("p", null, "Full reference list with DOIs, organized by chapter. Drop into Zotero / Mendeley / your proposal manager of choice."), /*#__PURE__*/React.createElement("a", {
-    href: "#"
-  }, "Download \u2192"))))), /*#__PURE__*/React.createElement("section", {
-    className: "err-section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "report-box"
-  }, /*#__PURE__*/React.createElement("h3", null, "Report an erratum"), /*#__PURE__*/React.createElement("p", null, "Email the volume, page number, and a one-line description. Confirmed corrections are credited on this page (with attribution if you'd like) and rolled into the next print run."), /*#__PURE__*/React.createElement("a", {
-    className: "btn btn-primary",
-    style: {
-      background: "var(--amber)",
-      borderColor: "var(--amber)",
-      color: "var(--navy)"
-    },
-    href: "mailto:franciscowang2008@gmail.com?subject=CBTC%20Errata%20Report"
-  }, "Email errata \u2192")))), /*#__PURE__*/React.createElement(SiteFooter, null));
-}
-ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(ErrataPage, null));
-</script>
-</body>
-</html>
+    burger.addEventListener("click", function () {
+      setOpen(burger.getAttribute("aria-expanded") !== "true");
+    });
+    drawer.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") setOpen(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") setOpen(false);
+    });
+  })();
+</script>  <section class="err-hero"> <div class="container"> <span class="kicker">Errata · Supplements · Reader resources</span> <h1 class="err-h">Corrections and downloadable supplements for both volumes.</h1> <p class="err-lede">A book this size will have errata. This page is the canonical, dated record — checked weekly. Supplements include the full chapter outlines, figure source files, and bibliography.</p> </div> </section> <section class="err-section"> <div class="container"> <h2>Volume 1 — Errata</h2> <div class="err-empty">No errata reported yet. Volume 1 published April 2026.<br>Spotted something? Use the report form below — every confirmed correction is credited here.</div> </div> </section> <section class="err-section"> <div class="container"> <h2>Volume 2 — Errata</h2> <div class="err-empty">No errata reported yet. Volume 2 published April 2026.</div> </div> </section> <section class="err-section"> <div class="container"> <h2>Downloadable supplements</h2> <div class="supp-grid"> <div class="supp-card"> <div style="font-family:var(--mono);font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--char-dim);margin-bottom:8px">PDF · 18 pp</div> <h4>Full chapter outline</h4> <p>Section-by-section breakdown of all sixteen chapters across both volumes. Useful for procurement reviewers deciding which volume to cite.</p> <a href="#">Download PDF →</a> </div> <div class="supp-card"> <div style="font-family:var(--mono);font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--char-dim);margin-bottom:8px">SVG bundle</div> <h4>Figure source files</h4> <p>All system schematics from the book in editable SVG, licensed for non-commercial classroom and proposal use.</p> <a href="#">Download bundle →</a> </div> <div class="supp-card"> <div style="font-family:var(--mono);font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--char-dim);margin-bottom:8px">BibTeX · CSV</div> <h4>Bibliography</h4> <p>Full reference list with DOIs, organized by chapter. Drop into Zotero / Mendeley / your proposal manager of choice.</p> <a href="#">Download →</a> </div> </div> </div> </section> <section class="err-section"> <div class="container"> <div class="report-box"> <h3>Report an erratum</h3> <p>Email the volume, page number, and a one-line description. Confirmed corrections are credited on this page (with attribution if you'd like) and rolled into the next print run.</p> <a class="btn btn-primary" style="background:var(--amber);border-color:var(--amber);color:var(--navy)" href="mailto:franciscowang2008@gmail.com?subject=CBTC%20Errata%20Report">Email errata →</a> </div> </div> </section>  <footer class="site-foot"> <div class="site-foot-inner"> <div> <div class="site-foot-mark">
+Communications-Based<br>
+Train Control — <em>a comprehensive guide</em> </div> <div style="color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:360px">
+Two volumes. 1,127 pages. The first US-focused technical reference on CBTC,
+        written for engineers, project managers, and procurement teams.
+</div> </div> <div> <h3>The Books</h3> <a href="volume-1.html">Volume 1 — Foundations</a> <a href="volume-2.html">Volume 2 — Operations</a> <a href="figures.html">Figures gallery</a> <a href="slides.html">Chapter slides</a> <a href="errata.html">Errata &amp; supplements</a> <a href="glossary.html">CBTC glossary</a> </div> <div> <h3>Author</h3> <a href="about.html">About Francisco Wang</a> <a href="contact.html">Speaking &amp; consulting</a> <a href="https://www.linkedin.com/in/chunjun-wang/" target="_blank" rel="noopener">LinkedIn</a> </div> <div> <h3>Buy</h3> <a href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ" target="_blank" rel="noopener">Volume 1 · Amazon</a> <a href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHHNL2H" target="_blank" rel="noopener">Volume 2 · Amazon</a> <a href="contact.html">Bulk / institutional</a> </div> </div> <div class="site-foot-bottom"> <span>© 2026 Chunjun Wang</span> <span>Princeton, NJ · open to remote</span> </div> </footer> <script>
+  // Click-to-flip for the 3D book covers (static port of Book3D's React state).
+  document.querySelectorAll("[data-book3d]").forEach(function (el) {
+    el.addEventListener("click", function () { el.classList.toggle("flipping"); });
+  });
+</script> </body> </html>

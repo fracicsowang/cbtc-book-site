@@ -1,0 +1,104 @@
+---
+import Page from "../layouts/Page.astro";
+
+// [ch, title, slides, sizeMB, vol]
+const SLIDE_DECKS = [
+  ["01", "The Evolution of Train Control", 26, 1.20, 1], ["02", "Standards & Regulations: US Framework", 25, 1.13, 1], ["03", "CBTC System Architecture Overview", 23, 0.98, 1], ["04", "Onboard Equipment", 23, 0.74, 1], ["05", "Wayside Equipment", 23, 0.47, 1], ["06", "Communication Systems", 24, 0.78, 1], ["07", "Central System / ATS", 23, 1.11, 1], ["08", "Grades of Automation", 24, 1.13, 1], ["09", "Operating Modes", 26, 1.08, 2], ["10", "CBTC in the United States", 24, 1.01, 2], ["11", "International Benchmarks", 25, 1.11, 2], ["12", "Project Lifecycle", 25, 0.89, 2], ["13", "Performance Criteria", 27, 1.15, 2], ["14", "Lifecycle Costs", 26, 0.87, 2], ["15", "Vendor Landscape", 24, 1.27, 2], ["16", "US–China Comparative Perspectives", 25, 1.08, 2],
+];
+const TOTAL_SLIDES = SLIDE_DECKS.reduce((a, [, , n]) => a + n, 0);
+const TOTAL_MB = SLIDE_DECKS.reduce((a, [, , , s]) => a + s, 0).toFixed(0);
+const v1 = SLIDE_DECKS.filter((d) => d[4] === 1);
+const v2 = SLIDE_DECKS.filter((d) => d[4] === 2);
+---
+<Page
+  title="Chapter Slide Decks — Communications-Based Train Control"
+  description="Free chapter-by-chapter slide decks (PDF) accompanying Communications-Based Train Control by Chunjun Wang. 16 chapters, ~400 slides total. Free to download for engineers, students, and trainers."
+  path="slides.html"
+  extraCss={["slides.css"]}
+  active="slides"
+>
+  <section class="sl-hero">
+    <div class="container">
+      <span class="kicker">Companion slide decks · all 16 chapters</span>
+      <h1 class="sl-h">A free slide deck for every chapter — built for engineers, trainers, and instructors.</h1>
+      <p class="sl-lede">Chapter-by-chapter PDF presentations covering the structure, key arguments, and core figures of Communications-Based Train Control. Use them as lecture material, internal training, conference handouts, or your own self-study aid.</p>
+      <div class="sl-stats">
+        <div class="sl-stat"><span class="num">{SLIDE_DECKS.length}</span><span class="lab">chapter decks</span></div>
+        <div class="sl-stat"><span class="num">{TOTAL_SLIDES}</span><span class="lab">slides total</span></div>
+        <div class="sl-stat"><span class="num">{TOTAL_MB}</span><span class="lab">MB · all PDFs</span></div>
+        <div class="sl-stat"><span class="num">$0</span><span class="lab">free · no signup</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="sl-license">
+      <h3>Use &amp; attribution</h3>
+      <p>You're welcome to use these decks for teaching, internal training, or self-study. Attribution appreciated: <em>"Companion to Communications-Based Train Control by Chunjun Wang · cbtcbook.com"</em>.</p>
+      <p>The decks cover structure and headline arguments. The full chapter — case studies, citations, regulatory language, vendor specifications — lives in the book.</p>
+    </div>
+  </section>
+
+  <section class="container sl-section">
+    <div class="sl-section-h">
+      <span class="vol">Volume 1 · Foundations &amp; Architecture</span>
+      <h2>Chapters 01 – 08</h2>
+    </div>
+    <div class="sl-grid">
+      {v1.map(([ch, title, slides, sizeMB]) => (
+        <div class="sl-card">
+          <a class="sl-card-thumb" href={`slides/cbtc_ch${ch}.pdf`} target="_blank" rel="noopener">
+            <img src={`slides/thumbs/cbtc_ch${ch}.jpg`} alt={`Cover slide of Chapter ${ch}: ${title}`} loading="lazy"/>
+          </a>
+          <div class="sl-card-body">
+            <div class="sl-card-num">Chapter {ch}</div>
+            <h3 class="sl-card-title">{title}</h3>
+            <div class="sl-card-meta"><span>{slides} slides</span>  ·  <span>{sizeMB} MB</span>  ·  PDF</div>
+            <div class="sl-card-actions">
+              <a class="sl-btn sl-btn-primary" href={`slides/cbtc_ch${ch}.pdf`} target="_blank" rel="noopener">View online</a>
+              <a class="sl-btn sl-btn-ghost" href={`slides/cbtc_ch${ch}.pdf`} download>Download</a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="container sl-section" style="padding-bottom:80px">
+    <div class="sl-section-h">
+      <span class="vol">Volume 2 · Operations &amp; Economics</span>
+      <h2>Chapters 09 – 16</h2>
+    </div>
+    <div class="sl-grid">
+      {v2.map(([ch, title, slides, sizeMB]) => (
+        <div class="sl-card">
+          <a class="sl-card-thumb" href={`slides/cbtc_ch${ch}.pdf`} target="_blank" rel="noopener">
+            <img src={`slides/thumbs/cbtc_ch${ch}.jpg`} alt={`Cover slide of Chapter ${ch}: ${title}`} loading="lazy"/>
+          </a>
+          <div class="sl-card-body">
+            <div class="sl-card-num">Chapter {ch}</div>
+            <h3 class="sl-card-title">{title}</h3>
+            <div class="sl-card-meta"><span>{slides} slides</span>  ·  <span>{sizeMB} MB</span>  ·  PDF</div>
+            <div class="sl-card-actions">
+              <a class="sl-btn sl-btn-primary" href={`slides/cbtc_ch${ch}.pdf`} target="_blank" rel="noopener">View online</a>
+              <a class="sl-btn sl-btn-ghost" href={`slides/cbtc_ch${ch}.pdf`} download>Download</a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <script is:inline>
+    // Track slide deck downloads / views (ported from the former slides.html).
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href*="slides/cbtc_ch"]');
+      if (!a) return;
+      var ch = (a.href.match(/cbtc_ch(\d+)\.pdf/) || [])[1] || '';
+      var isDownload = a.hasAttribute('download');
+      if (typeof gtag === 'function') gtag('event', isDownload ? 'slides_download' : 'slides_view', {
+        'page_path': window.location.pathname, 'chapter': ch, 'link_url': a.href
+      });
+    });
+  </script>
+</Page>

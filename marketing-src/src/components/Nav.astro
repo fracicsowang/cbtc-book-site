@@ -1,0 +1,68 @@
+---
+// Site nav — static port of SiteNav (site/assets/components.jsx).
+// The "Buy on Amazon" CTA now links straight to the Amazon listing (Vol 1)
+// instead of the on-site #buy anchor. Hamburger toggles the mobile drawer
+// via the inline script below (CSS in site/assets/site.css).
+export interface Props { active?: string; }
+const { active = "" } = Astro.props;
+
+const AMAZON_V1 = "https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ";
+const links = [
+  { href: "volume-1.html", label: "Volume 1", key: "v1" },
+  { href: "volume-2.html", label: "Volume 2", key: "v2" },
+  { href: "/blog/", label: "Articles", key: "articles" },
+  { href: "/resources/", label: "Resources", key: "resources" },
+  { href: "about.html", label: "About", key: "about" },
+  { href: "figures.html", label: "Figures", key: "figures" },
+  { href: "slides.html", label: "Slides", key: "slides" },
+  { href: "glossary.html", label: "Glossary", key: "glossary" },
+  { href: "errata.html", label: "Errata", key: "errata" },
+  { href: "contact.html", label: "Contact", key: "contact" },
+];
+---
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a href="index.html" class="site-nav-brand">
+      <span class="dot"></span>
+      <span>CBTC&nbsp;·&nbsp;Wang</span>
+    </a>
+    <div class="site-nav-links">
+      {links.map((l) => (
+        <a href={l.href} class={active === l.key ? "active" : ""}>{l.label}</a>
+      ))}
+    </div>
+    <a class="site-nav-cta" href={AMAZON_V1} target="_blank" rel="noopener">Buy on Amazon →</a>
+    <button class="site-nav-burger" type="button" aria-label="Open menu"
+            aria-expanded="false" aria-controls="site-nav-mobile" data-nav-burger>
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="site-nav-mobile" class="site-nav-mobile" style="display:none">
+    {links.map((l) => (
+      <a href={l.href} class={active === l.key ? "active" : ""}>{l.label}</a>
+    ))}
+    <a class="site-nav-mobile__cta" href={AMAZON_V1} target="_blank" rel="noopener">Buy on Amazon →</a>
+  </div>
+</nav>
+
+<script is:inline>
+  (function () {
+    var burger = document.querySelector("[data-nav-burger]");
+    var drawer = document.getElementById("site-nav-mobile");
+    if (!burger || !drawer) return;
+    function setOpen(open) {
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      drawer.style.display = open ? "" : "none";
+    }
+    burger.addEventListener("click", function () {
+      setOpen(burger.getAttribute("aria-expanded") !== "true");
+    });
+    drawer.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") setOpen(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") setOpen(false);
+    });
+  })();
+</script>

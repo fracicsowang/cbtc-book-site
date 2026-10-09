@@ -1,0 +1,229 @@
+---
+import Page from "../layouts/Page.astro";
+import Book3D from "../components/Book3D.astro";
+import { BOOK, AUTHOR } from "../data.js";
+
+const AMAZON_V1 = BOOK.v1.amazonKindle;
+const desc = "A two-volume technical reference on Communications-Based Train Control by Chunjun (Francisco) Wang. 1,127 pages, 78 figures, US regulatory framework — for engineers, project managers, and transit agencies.";
+const org = {
+  "@context": "https://schema.org", "@type": "Organization",
+  name: "cbtcbook.com", url: "https://cbtcbook.com/",
+  logo: "https://cbtcbook.com/icon-512.png",
+  description: "Editorial reference on Communications-Based Train Control (CBTC) for US transit professionals, and companion site to the two-volume book by Chunjun (Francisco) Wang.",
+  founder: { "@type": "Person", name: "Chunjun (Francisco) Wang", url: "https://cbtcbook.com/about.html" },
+  sameAs: ["https://www.linkedin.com/in/chunjun-wang/", "https://scholar.google.com/citations?user=JsYYeDUAAAAJ", "https://orcid.org/0009-0005-6344-9934"],
+};
+const figs = [
+  ["volume-1.html", "fig_01_05_fixed_vs_moving_block.webp", "Fixed-block vs moving-block principle", "Fig 1.5", "Fixed-Block vs. Moving-Block Principle"],
+  ["volume-1.html", "fig_01_07_atp_ato_ats_triad.webp", "ATC = ATP + ATO + ATS", "Fig 1.7", "ATC = ATP + ATO + ATS"],
+  ["volume-1.html", "fig_02_01_standards_framework.webp", "Standards framework for CBTC in the US", "Fig 2.1", "Standards Framework — US Context"],
+  ["volume-1.html", "fig_06_01_radio_architecture.webp", "CBTC radio communication architecture", "Fig 6.1", "CBTC Radio Communication Architecture"],
+  ["volume-1.html", "fig_04_01_vobc_architecture.webp", "VOBC functional architecture", "Fig 4.1", "VOBC Functional Architecture"],
+  ["volume-2.html", "fig_07_06_dispatcher_workstation.webp", "Dispatcher workstation 4-monitor layout", "Fig 7.6", "Dispatcher Workstation — 4-Monitor Layout"],
+];
+---
+<Page
+  title="Communications-Based Train Control — Chunjun (Francisco) Wang"
+  description={desc}
+  path=""
+  ogTitle="Communications-Based Train Control — Chunjun (Francisco) Wang"
+  extraCss={["home.css"]}
+  jsonld={org}
+  active="home"
+>
+  <main>
+    {/* HERO */}
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="kicker">Two volumes · 1,127 pages · April 2026</span>
+          <h1 class="hero-title">
+            The first US-focused<br/>
+            technical reference on<br/>
+            <em>Communications-Based<br/>Train Control.</em>
+          </h1>
+          <p class="hero-lede">
+            Twenty years of CBTC engineering experience, US deployment practice, and
+            international benchmarking — organized as a two-volume reference for
+            engineers, project managers, and transit agencies.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href={AMAZON_V1} target="_blank" rel="noopener">Buy on Amazon →</a>
+            <a class="btn btn-ghost" href="volume-1.html">Sample chapter</a>
+          </div>
+          <div class="hero-meta">
+            <div><span>Published</span> April 2026</div>
+            <div><span>Format</span> Paperback · Kindle</div>
+            <div><span>Author</span> Chunjun (Francisco) Wang</div>
+          </div>
+        </div>
+        <div class="hero-books">
+          <div class="hero-book hero-book-1">
+            <Book3D vol={1} width={260} height={355} spine={28} />
+            <div class="hero-book-cap">Vol. 01 — Foundations</div>
+          </div>
+          <div class="hero-book hero-book-2">
+            <Book3D vol={2} width={260} height={355} spine={32} />
+            <div class="hero-book-cap">Vol. 02 — Operations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule"/>
+
+    {/* WHY THIS BOOK */}
+    <section class="section">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-lede">
+            <span class="kicker">Why this book</span>
+            <h2>
+              Most CBTC references were written for European or Asian markets.
+              These two volumes address the US context directly.
+            </h2>
+          </div>
+          <div class="why-body">
+            <p>
+              CBTC has replaced fixed-block circuits across modern transit, but the
+              English-language literature still reflects European and Asian deployment
+              experience. US engineers routinely translate IEEE 1474 against IEC 62290,
+              interpret vendor white papers, and assemble BART or NYCT case material
+              from fragmented public sources.
+            </p>
+            <p>
+              These two volumes consolidate that work — comprehensively, with the US
+              regulatory framework and procurement practice as the organizing logic.
+              Volume 1 covers the architecture. Volume 2 covers the deployment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* PROOF STRIP */}
+    <section class="proof">
+      <div class="container">
+        <div class="proof-grid">
+          {AUTHOR.highlights.map((h) => (
+            <div class="proof-cell">
+              <div class="proof-num">{h.num}</div>
+              <div class="proof-lab">{h.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* VOLUMES */}
+    <section class="section" id="buy">
+      <div class="container">
+        <span class="kicker">The two volumes</span>
+        <h2 class="vol-h">
+          Read sequentially or pick the volume your project needs today.
+        </h2>
+        <div class="vol-grid">
+          {[1, 2].map((n) => {
+            const v = BOOK[`v${n}`];
+            return (
+              <article class="vol-card">
+                <div class="vol-card-cover">
+                  <Book3D vol={n} width={220} height={310} spine={n === 1 ? 26 : 30} />
+                </div>
+                <div class="vol-card-body">
+                  <div class="vol-card-head">
+                    <span class="vol-num">VOL · {v.num}</span>
+                    <span class="vol-pages">{v.pages} pp · {v.words} words</span>
+                  </div>
+                  <h3 class="vol-name">{v.name}</h3>
+                  <p class="vol-blurb">{v.blurb}</p>
+                  <ul class="vol-toc">
+                    {v.chapters.slice(0, 5).map(([num, title]) => (
+                      <li><span>{num}</span>{title}</li>
+                    ))}
+                    {v.chapters.length > 5 && (
+                      <li class="vol-toc-more">+ {v.chapters.length - 5} more chapters →</li>
+                    )}
+                  </ul>
+                  <div class="vol-buy">
+                    <a class="btn btn-primary" href={v.amazonPrint} target="_blank" rel="noopener">
+                      Paperback · {v.pricePrint}
+                    </a>
+                    <a class="btn btn-ghost" href={v.amazonKindle} target="_blank" rel="noopener">
+                      Kindle · {v.priceKindle}
+                    </a>
+                    <a class="vol-detail" href={`volume-${n}.html`}>Full table of contents →</a>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    {/* FIGURES SHOWCASE */}
+    <section class="figs">
+      <div class="container">
+        <span class="kicker">Inside the books</span>
+        <h2 class="figs-h">
+          Every system, schematic, and standards relationship — drawn for engineers.
+        </h2>
+        <p class="figs-lede">
+          More than 120 original technical figures across the two volumes. A few representative ones:
+        </p>
+        <div class="figs-grid">
+          {figs.map(([href, img, alt, tag, cap]) => (
+            <a class="figs-card" href={href}>
+              <img src={`figures/${img}`} alt={alt}/>
+              <div class="figs-cap"><span>{tag}</span>{cap}</div>
+            </a>
+          ))}
+        </div>
+        <div class="figs-foot">
+          <a class="btn btn-ghost" href="figures.html">See all 120+ figures →</a>
+        </div>
+      </div>
+    </section>
+
+    {/* AUDIENCE */}
+    <section class="section audience">
+      <div class="container">
+        <span class="kicker on-dark">Who it's for</span>
+        <div class="aud-grid">
+          <div class="aud-cell">
+            <h3>Transit engineers</h3>
+            <p>Signaling design, integration, and commissioning teams at MTA, BART, WMATA, CTA, MBTA, SEPTA, and peer agencies.</p>
+          </div>
+          <div class="aud-cell">
+            <h3>Project managers &amp; owners</h3>
+            <p>Reviewing CBTC procurements, FTA grant submissions, and vendor proposals against IEEE 1474 and FRA requirements.</p>
+          </div>
+          <div class="aud-cell">
+            <h3>Vendor &amp; integrator teams</h3>
+            <p>Engineering and proposal teams at Siemens, Thales, Alstom, Hitachi-Rail and others working in the US market.</p>
+          </div>
+          <div class="aud-cell">
+            <h3>Educators &amp; students</h3>
+            <p>Graduate programs in transportation engineering seeking a US-context CBTC reference with current regulatory and vendor coverage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* AUTHOR PEEK */}
+    <section class="section author-peek">
+      <div class="container author-grid">
+        <img class="author-photo" src="assets/headshot.jpg" alt="Chunjun (Francisco) Wang"/>
+        <div class="author-body">
+          <span class="kicker">About the author</span>
+          <h2 class="author-name">Chunjun (Francisco) Wang</h2>
+          <p class="author-tag">Booth MBA · CFA · CBTC Rail-Tech Expert · Princeton, NJ</p>
+          <p class="author-lede">{AUTHOR.oneLiner}</p>
+          <p class="author-body-text">{AUTHOR.summary}</p>
+          <a class="btn btn-ghost" href="about.html">Full background →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Page>

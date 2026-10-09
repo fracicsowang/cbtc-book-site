@@ -1,0 +1,120 @@
+---
+import Page from "../layouts/Page.astro";
+
+const TERMS = [
+  { acro: "ATP", name: "Automatic Train Protection", x: 24, y: 64, ref: "Vol 1 · Ch. 04", desc: "Onboard subsystem that supervises train movement and intervenes when speed or position would otherwise exceed the safe envelope. The safety-critical core of any CBTC system." },
+  { acro: "ATO", name: "Automatic Train Operation", x: 28, y: 56, ref: "Vol 1 · Ch. 04", desc: "Driving automation layer that commands traction and braking under ATP supervision. Typically responsible for station-stopping accuracy, energy-optimized cruising, and door enable signals." },
+  { acro: "ATS", name: "Automatic Train Supervision", x: 84, y: 16, ref: "Vol 1 · Ch. 07", desc: "Central control-room system that supervises the entire CBTC railway: timetable execution, dispatching, regulation, and the operator HMI. Sits above ATP/ATO and the wayside zone controllers." },
+  { acro: "ZC", name: "Zone Controller", x: 50, y: 30, ref: "Vol 1 · Ch. 05", desc: "Wayside computer that owns one geographic 'zone' of the railway. Tracks every train inside its zone, generates Movement Authorities, and hands off to neighbor ZCs at zone boundaries." },
+  { acro: "DCS", name: "Data Communication System", x: 50, y: 42, ref: "Vol 1 · Ch. 06", desc: "The wireless network that carries train↔wayside data. Most US deployments use 2.4 GHz or 5 GHz licensed/unlicensed spread-spectrum radio with redundant access points along the right-of-way." },
+  { acro: "MA", name: "Movement Authority", x: 64, y: 78, ref: "Vol 1 · Ch. 03", desc: "The signed promise from the wayside to a single train: 'you may proceed up to point X at speed Y.' CBTC's moving-block paradigm gives every train a continuously updated MA." },
+  { acro: "GoA", name: "Grades of Automation", x: 14, y: 28, ref: "Vol 2 · Ch. 08", desc: "UITP/IEC framework defining who is responsible for which train function across five levels: GoA 0 (line-of-sight) to GoA 4 (unattended train operation). Most US transit deployments target GoA 2." },
+  { acro: "OBCU", name: "Onboard Controller Unit", x: 36, y: 76, ref: "Vol 1 · Ch. 04", desc: "Train-resident vital computer running the CBTC onboard logic: ATP supervision, ATO commands, balise reading, odometry fusion, and DCS communication with the wayside." },
+];
+const sorted = [...TERMS].sort((a, b) => a.acro.localeCompare(b.acro));
+const t0 = TERMS[0];
+---
+<Page
+  title="CBTC Glossary — Terms, Acronyms, Standards"
+  description="Interactive Communications-Based Train Control glossary. Definitions for ATP, ATO, ATS, zone controller, GoA levels, IEEE 1474, IEC 62290, and more."
+  path="glossary.html"
+  extraCss={["glossary.css"]}
+  active="glossary"
+>
+  <section class="gloss-hero">
+    <div class="container">
+      <span class="kicker">Interactive diagram</span>
+      <h1 class="gloss-h">A CBTC system is eight letters apart from a fixed-block railway.</h1>
+      <p class="gloss-lede">Click any node on the schematic below to see what each acronym means and where the book covers it. The full alphabetical glossary follows.</p>
+    </div>
+  </section>
+
+  <section class="gloss-stage">
+    <div class="container">
+      <div class="gloss-diagram">
+        <svg width="100%" height="100%" viewBox="0 0 1600 800" preserveAspectRatio="none">
+          <defs>
+            <pattern id="gridG" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#4A9EBF" stroke-width="0.5" opacity="0.18"/>
+            </pattern>
+          </defs>
+          <rect width="1600" height="800" fill="url(#gridG)"/>
+          <line x1="0" y1="600" x2="1600" y2="600" stroke="#EAF2F7" stroke-width="2"/>
+          <line x1="0" y1="640" x2="1600" y2="640" stroke="#EAF2F7" stroke-width="2"/>
+          {Array.from({ length: 60 }).map((_, i) => (
+            <line x1={i * 28} y1="600" x2={i * 28} y2="640" stroke="#EAF2F7" stroke-width="0.4" opacity="0.4"/>
+          ))}
+          <g stroke="#4A9EBF" fill="none" opacity="0.4">
+            <circle cx="800" cy="240" r="200"/>
+            <circle cx="800" cy="240" r="280"/>
+            <circle cx="800" cy="240" r="360"/>
+          </g>
+          <rect x="790" y="180" width="20" height="60" fill="#D4A84B"/>
+          <line x1="800" y1="240" x2="800" y2="600" stroke="#D4A84B" stroke-width="1" opacity="0.5"/>
+          <rect x="1300" y="80" width="200" height="100" fill="#1B2D4A" stroke="#4A9EBF"/>
+          <text x="1400" y="140" font-family="IBM Plex Mono, monospace" font-size="14" fill="#EAF2F7" text-anchor="middle">ATS · CONTROL CENTER</text>
+          <line x1="1300" y1="180" x2="810" y2="240" stroke="#4A9EBF" stroke-dasharray="4 4" stroke-width="1"/>
+          <rect x="500" y="595" width="180" height="50" fill="#D4A84B" stroke="#0A1628" stroke-width="2"/>
+          <text x="590" y="624" font-family="IBM Plex Mono, monospace" font-size="14" fill="#0A1628" text-anchor="middle" font-weight="700">TRAIN · 0274</text>
+          <path d="M 680 590 L 1050 590 L 1050 650 L 680 650 Z" fill="#D4A84B" opacity="0.18"/>
+          <text x="900" y="700" font-family="IBM Plex Mono, monospace" font-size="13" fill="#D4A84B" text-anchor="middle">MOVEMENT AUTHORITY</text>
+          <text x="800" y="170" font-family="IBM Plex Mono, monospace" font-size="14" fill="#D4A84B" text-anchor="middle">ZC · WAYSIDE</text>
+        </svg>
+        {TERMS.map((term, i) => (
+          <div class="gloss-hot" style={`left:${term.x}%;top:${term.y}%`} data-idx={i}>
+            <span class={`gloss-hot-dot ${i === 0 ? "active" : ""}`}></span>
+            <span class="gloss-hot-pulse" style={i === 0 ? "display:none" : ""}></span>
+            <span data-acro-label style={`position:absolute;left:22px;top:-8px;font-family:var(--mono);font-size:11px;letter-spacing:1.4px;color:${i === 0 ? "var(--ink)" : "var(--ink-dim)"};white-space:nowrap`}>{term.acro}</span>
+          </div>
+        ))}
+      </div>
+      <div class="gloss-info">
+        <div class="gloss-info-grid">
+          <div class="gloss-info-acro" id="gi-acro">{t0.acro}</div>
+          <div>
+            <h3 class="gloss-info-name" id="gi-name">{t0.name}</h3>
+            <p class="gloss-info-desc" id="gi-desc">{t0.desc}</p>
+            <span class="gloss-info-ref" id="gi-ref">↳ Covered in {t0.ref}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container gloss-list">
+    <span class="kicker">Alphabetical glossary</span>
+    <h2 style="font-family:var(--serif);font-size:36px;font-weight:400;letter-spacing:-0.6px;margin:16px 0 32px">
+      The eight terms above plus everything else CBTC procurement documents take for granted.
+    </h2>
+    <div class="gloss-table">
+      {sorted.map((t) => (
+        <div class="gloss-row">
+          <div class="acro">{t.acro}</div>
+          <div class="name">{t.name}</div>
+          <div class="desc">{t.desc}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <script is:inline define:vars={{ TERMS }}>
+    (function () {
+      var hots = Array.prototype.slice.call(document.querySelectorAll(".gloss-hot"));
+      function select(i) {
+        var t = TERMS[i];
+        document.getElementById("gi-acro").textContent = t.acro;
+        document.getElementById("gi-name").textContent = t.name;
+        document.getElementById("gi-desc").textContent = t.desc;
+        document.getElementById("gi-ref").textContent = "↳ Covered in " + t.ref;
+        hots.forEach(function (h, j) {
+          var dot = h.querySelector(".gloss-hot-dot");
+          var pulse = h.querySelector(".gloss-hot-pulse");
+          var label = h.querySelector("[data-acro-label]");
+          if (j === i) { dot.classList.add("active"); if (pulse) pulse.style.display = "none"; label.style.color = "var(--ink)"; }
+          else { dot.classList.remove("active"); if (pulse) pulse.style.display = ""; label.style.color = "var(--ink-dim)"; }
+        });
+      }
+      hots.forEach(function (h) { h.addEventListener("click", function () { select(+h.dataset.idx); }); });
+    })();
+  </script>
+</Page>

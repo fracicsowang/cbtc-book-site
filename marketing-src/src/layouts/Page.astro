@@ -1,0 +1,100 @@
+---
+// Shared <head> + chrome for every marketing page. Reproduces the exact head
+// the former hand-written HTML shells carried (title / meta / canonical / OG /
+// Twitter / favicons / fonts / GA / JSON-LD), then renders the server-side
+// Nav, the page body (slot), and the Footer. CSS stays in /site/assets.
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
+export interface Props {
+  title: string;
+  description: string;
+  path?: string;            // path after the domain, e.g. "about.html" ("" = home)
+  ogTitle?: string;
+  ogDescription?: string;
+  extraCss?: string[];      // additional stylesheet basenames in /assets
+  jsonld?: Record<string, unknown> | null;
+  active?: string;          // nav active key
+  bodyClass?: string;
+}
+const {
+  title, description, path = "",
+  ogTitle = title, ogDescription = description,
+  extraCss = [], jsonld = null, active = "", bodyClass = "",
+} = Astro.props;
+
+const canonical = "https://cbtcbook.com/" + path;
+const ogImage = "https://cbtcbook.com/assets/og-image.png";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="apple-mobile-web-app-title" content="CBTC Book" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#0A1628" />
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Communications-Based Train Control" />
+<meta property="og:title" content={ogTitle} />
+<meta property="og:description" content={ogDescription} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Communications-Based Train Control — a two-volume reference by Chunjun (Francisco) Wang." />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={ogTitle} />
+<meta name="twitter:description" content={ogDescription} />
+<meta name="twitter:image" content={ogImage} />
+
+<title>{title}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/site.css" />
+{extraCss.map((css) => <link rel="stylesheet" href={`/assets/${css}`} />)}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script>
+<script is:inline>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-0NF9Z0T953');
+
+// Track outbound Amazon clicks
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a[href*="amazon.com"]');
+  if (!a) return;
+  gtag('event', 'click_amazon', {
+    'page_path': window.location.pathname,
+    'link_url': a.href,
+    'link_text': (a.textContent || '').trim().slice(0, 60)
+  });
+});
+</script>
+{jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+</head>
+<body class={bodyClass}>
+<Nav active={active} />
+<slot />
+<Footer />
+<script is:inline>
+  // Click-to-flip for the 3D book covers (static port of Book3D's React state).
+  document.querySelectorAll("[data-book3d]").forEach(function (el) {
+    el.addEventListener("click", function () { el.classList.toggle("flipping"); });
+  });
+</script>
+</body>
+</html>

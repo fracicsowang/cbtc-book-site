@@ -1,212 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Free chapter-by-chapter slide decks (PDF) accompanying Communications-Based Train Control by Chunjun Wang. 16 chapters, ~400 slides total. Free to download for engineers, students, and trainers.">
-<link rel="canonical" href="https://cbtcbook.com/slides.html">
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-<link rel="manifest" href="site.webmanifest">
-<meta name="apple-mobile-web-app-title" content="CBTC Book">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="shortcut icon" href="favicon.ico">
-<meta name="theme-color" content="#0A1628">
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Communications-Based Train Control">
-<meta property="og:title" content="Chapter Slide Decks — CBTC Reference">
-<meta property="og:description" content="Free chapter-by-chapter slide decks (PDF) accompanying Communications-Based Train Control. 16 chapters, ~400 slides — free to download.">
-<meta property="og:url" content="https://cbtcbook.com/slides.html">
-<meta property="og:image" content="https://cbtcbook.com/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Communications-Based Train Control — a two-volume reference by Chunjun (Francisco) Wang.">
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Chapter Slide Decks — CBTC Reference">
-<meta name="twitter:description" content="Free chapter-by-chapter slide decks (PDF) accompanying Communications-Based Train Control. 16 chapters, ~400 slides — free to download.">
-<meta name="twitter:image" content="https://cbtcbook.com/assets/og-image.png">
-
-<title>Chapter Slide Decks — Communications-Based Train Control</title>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
-<style>
-.sl-hero { padding: 80px 0 32px; }
-.sl-h { font-family: var(--serif); font-size: clamp(36px, 4.5vw, 56px); font-weight: 400; letter-spacing: -1px; margin: 16px 0 16px; line-height: 1.05; max-width: 900px; text-wrap: balance; }
-.sl-lede { font-size: 18px; line-height: 1.55; color: var(--char-dim); max-width: 720px; margin: 0 0 32px; }
-.sl-stats { display: flex; gap: 48px; padding: 24px 0; border-top: 1px solid var(--char-rule); border-bottom: 1px solid var(--char-rule); margin-top: 24px; flex-wrap: wrap; }
-.sl-stat { display: flex; flex-direction: column; gap: 4px; }
-.sl-stat .num { font-family: var(--serif); font-size: 36px; font-weight: 400; letter-spacing: -0.5px; }
-.sl-stat .lab { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--char-dim); }
-
-.sl-license { background: var(--paper-2); padding: 24px 28px; margin: 32px 0 16px; border-left: 3px solid var(--amber); }
-.sl-license h3 { font-family: var(--mono); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--amber); margin: 0 0 8px; }
-.sl-license p { margin: 0 0 8px; font-size: 15px; line-height: 1.55; }
-.sl-license p:last-child { margin-bottom: 0; color: var(--char-dim); font-size: 14px; }
-
-.sl-section { padding: 48px 0 16px; }
-.sl-section-h { display: flex; align-items: baseline; gap: 16px; padding-top: 16px; border-top: 2px solid var(--navy); margin-bottom: 32px; }
-.sl-section-h h2 { font-family: var(--serif); font-size: 28px; font-weight: 400; letter-spacing: -0.4px; margin: 0; }
-.sl-section-h .vol { font-family: var(--mono); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--amber); }
-
-.sl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
-@media (max-width: 800px) { .sl-grid { grid-template-columns: 1fr; } }
-
-.sl-card { background: var(--paper-2); padding: 0; display: flex; flex-direction: column; }
-.sl-card-thumb { background: var(--navy); display: block; aspect-ratio: 16/9; overflow: hidden; }
-.sl-card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.sl-card-body { padding: 20px 22px 22px; }
-.sl-card-num { font-family: var(--mono); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--amber); margin-bottom: 6px; }
-.sl-card-title { font-family: var(--serif); font-size: 22px; font-weight: 500; letter-spacing: -0.3px; margin: 0 0 12px; line-height: 1.2; }
-.sl-card-meta { font-family: var(--mono); font-size: 11px; letter-spacing: 1px; color: var(--char-dim); margin-bottom: 16px; text-transform: uppercase; }
-.sl-card-meta span { color: var(--char); font-weight: 500; }
-.sl-card-actions { display: flex; gap: 10px; flex-wrap: wrap; }
-.sl-btn { font-family: var(--mono); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; padding: 10px 16px; text-decoration: none; transition: all 0.15s; flex: 1; text-align: center; min-width: 120px; }
-.sl-btn-primary { background: var(--navy); color: var(--ink); }
-.sl-btn-primary:hover { background: var(--amber); color: var(--navy); }
-.sl-btn-ghost { background: transparent; color: var(--navy); border: 1px solid var(--char-rule); }
-.sl-btn-ghost:hover { border-color: var(--navy); }
-</style>
-</head>
-<body>
-<div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
-<script src="assets/data.js"></script>
-<script src="assets/components.js"></script>
-<script>
-const SLIDE_DECKS = [
-// [ch, title, slides, sizeMB, vol]
-["01", "The Evolution of Train Control", 26, 1.20, 1], ["02", "Standards & Regulations: US Framework", 25, 1.13, 1], ["03", "CBTC System Architecture Overview", 23, 0.98, 1], ["04", "Onboard Equipment", 23, 0.74, 1], ["05", "Wayside Equipment", 23, 0.47, 1], ["06", "Communication Systems", 24, 0.78, 1], ["07", "Central System / ATS", 23, 1.11, 1], ["08", "Grades of Automation", 24, 1.13, 1], ["09", "Operating Modes", 26, 1.08, 2], ["10", "CBTC in the United States", 24, 1.01, 2], ["11", "International Benchmarks", 25, 1.11, 2], ["12", "Project Lifecycle", 25, 0.89, 2], ["13", "Performance Criteria", 27, 1.15, 2], ["14", "Lifecycle Costs", 26, 0.87, 2], ["15", "Vendor Landscape", 24, 1.27, 2], ["16", "US–China Comparative Perspectives", 25, 1.08, 2]];
-const TOTAL_SLIDES = SLIDE_DECKS.reduce((a, [,, n]) => a + n, 0);
-const TOTAL_MB = SLIDE_DECKS.reduce((a, [,,, s]) => a + s, 0).toFixed(0);
-function Card({
-  ch,
-  title,
-  slides,
-  sizeMB
-}) {
-  const pdf = `slides/cbtc_ch${ch}.pdf`;
-  const thumb = `slides/thumbs/cbtc_ch${ch}.jpg`;
-  return /*#__PURE__*/React.createElement("div", {
-    className: "sl-card"
-  }, /*#__PURE__*/React.createElement("a", {
-    className: "sl-card-thumb",
-    href: pdf,
-    target: "_blank",
-    rel: "noopener"
-  }, /*#__PURE__*/React.createElement("img", {
-    src: thumb,
-    alt: `Cover slide of Chapter ${ch}: ${title}`,
-    loading: "lazy"
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "sl-card-body"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "sl-card-num"
-  }, "Chapter ", ch), /*#__PURE__*/React.createElement("h3", {
-    className: "sl-card-title"
-  }, title), /*#__PURE__*/React.createElement("div", {
-    className: "sl-card-meta"
-  }, /*#__PURE__*/React.createElement("span", null, slides, " slides"), "  \xB7  ", /*#__PURE__*/React.createElement("span", null, sizeMB, " MB"), "  \xB7  PDF"), /*#__PURE__*/React.createElement("div", {
-    className: "sl-card-actions"
-  }, /*#__PURE__*/React.createElement("a", {
-    className: "sl-btn sl-btn-primary",
-    href: pdf,
-    target: "_blank",
-    rel: "noopener"
-  }, "View online"), /*#__PURE__*/React.createElement("a", {
-    className: "sl-btn sl-btn-ghost",
-    href: pdf,
-    download: true
-  }, "Download"))));
-}
-function SlidesPage() {
-  const v1 = SLIDE_DECKS.filter(d => d[4] === 1);
-  const v2 = SLIDE_DECKS.filter(d => d[4] === 2);
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(SiteNav, {
-    active: "slides"
-  }), /*#__PURE__*/React.createElement("section", {
-    className: "sl-hero"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "kicker"
-  }, "Companion slide decks \xB7 all 16 chapters"), /*#__PURE__*/React.createElement("h1", {
-    className: "sl-h"
-  }, "A free slide deck for every chapter \u2014 built for engineers, trainers, and instructors."), /*#__PURE__*/React.createElement("p", {
-    className: "sl-lede"
-  }, "Chapter-by-chapter PDF presentations covering the structure, key arguments, and core figures of Communications-Based Train Control. Use them as lecture material, internal training, conference handouts, or your own self-study aid."), /*#__PURE__*/React.createElement("div", {
-    className: "sl-stats"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "sl-stat"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "num"
-  }, SLIDE_DECKS.length), /*#__PURE__*/React.createElement("span", {
-    className: "lab"
-  }, "chapter decks")), /*#__PURE__*/React.createElement("div", {
-    className: "sl-stat"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "num"
-  }, TOTAL_SLIDES), /*#__PURE__*/React.createElement("span", {
-    className: "lab"
-  }, "slides total")), /*#__PURE__*/React.createElement("div", {
-    className: "sl-stat"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "num"
-  }, TOTAL_MB), /*#__PURE__*/React.createElement("span", {
-    className: "lab"
-  }, "MB \xB7 all PDFs")), /*#__PURE__*/React.createElement("div", {
-    className: "sl-stat"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "num"
-  }, "$0"), /*#__PURE__*/React.createElement("span", {
-    className: "lab"
-  }, "free \xB7 no signup"))))), /*#__PURE__*/React.createElement("section", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "sl-license"
-  }, /*#__PURE__*/React.createElement("h3", null, "Use & attribution"), /*#__PURE__*/React.createElement("p", null, "You're welcome to use these decks for teaching, internal training, or self-study. Attribution appreciated: ", /*#__PURE__*/React.createElement("em", null, "\"Companion to Communications-Based Train Control by Chunjun Wang \xB7 cbtcbook.com\""), "."), /*#__PURE__*/React.createElement("p", null, "The decks cover structure and headline arguments. The full chapter \u2014 case studies, citations, regulatory language, vendor specifications \u2014 lives in the book."))), /*#__PURE__*/React.createElement("section", {
-    className: "container sl-section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "sl-section-h"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "vol"
-  }, "Volume 1 \xB7 Foundations & Architecture"), /*#__PURE__*/React.createElement("h2", null, "Chapters 01 \u2013 08")), /*#__PURE__*/React.createElement("div", {
-    className: "sl-grid"
-  }, v1.map(([ch, title, slides, sizeMB]) => /*#__PURE__*/React.createElement(Card, {
-    key: ch,
-    ch: ch,
-    title: title,
-    slides: slides,
-    sizeMB: sizeMB
-  })))), /*#__PURE__*/React.createElement("section", {
-    className: "container sl-section",
-    style: {
-      paddingBottom: 80
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "sl-section-h"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "vol"
-  }, "Volume 2 \xB7 Operations & Economics"), /*#__PURE__*/React.createElement("h2", null, "Chapters 09 \u2013 16")), /*#__PURE__*/React.createElement("div", {
-    className: "sl-grid"
-  }, v2.map(([ch, title, slides, sizeMB]) => /*#__PURE__*/React.createElement(Card, {
-    key: ch,
-    ch: ch,
-    title: title,
-    slides: slides,
-    sizeMB: sizeMB
-  })))), /*#__PURE__*/React.createElement(SiteFooter, null));
-}
-ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(SlidesPage, null));
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script>
-<script>
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Free chapter-by-chapter slide decks (PDF) accompanying Communications-Based Train Control by Chunjun Wang. 16 chapters, ~400 slides total. Free to download for engineers, students, and trainers."><link rel="canonical" href="https://cbtcbook.com/slides.html"><!-- Favicon --><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="manifest" href="/site.webmanifest"><meta name="apple-mobile-web-app-title" content="CBTC Book"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="shortcut icon" href="/favicon.ico"><meta name="theme-color" content="#0A1628"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="Communications-Based Train Control"><meta property="og:title" content="Chapter Slide Decks — Communications-Based Train Control"><meta property="og:description" content="Free chapter-by-chapter slide decks (PDF) accompanying Communications-Based Train Control by Chunjun Wang. 16 chapters, ~400 slides total. Free to download for engineers, students, and trainers."><meta property="og:url" content="https://cbtcbook.com/slides.html"><meta property="og:image" content="https://cbtcbook.com/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Communications-Based Train Control — a two-volume reference by Chunjun (Francisco) Wang."><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Chapter Slide Decks — Communications-Based Train Control"><meta name="twitter:description" content="Free chapter-by-chapter slide decks (PDF) accompanying Communications-Based Train Control by Chunjun Wang. 16 chapters, ~400 slides total. Free to download for engineers, students, and trainers."><meta name="twitter:image" content="https://cbtcbook.com/assets/og-image.png"><title>Chapter Slide Decks — Communications-Based Train Control</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/slides.css"><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-0NF9Z0T953"></script><script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
@@ -222,19 +14,45 @@ document.addEventListener('click', function(e) {
     'link_text': (a.textContent || '').trim().slice(0, 60)
   });
 });
-
-// Track slide deck downloads / views
-document.addEventListener('click', function(e) {
-  var a = e.target.closest('a[href*="slides/cbtc_ch"]');
-  if (!a) return;
-  var ch = (a.href.match(/cbtc_ch(\d+)\.pdf/) || [])[1] || '';
-  var isDownload = a.hasAttribute('download');
-  gtag('event', isDownload ? 'slides_download' : 'slides_view', {
-    'page_path': window.location.pathname,
-    'chapter': ch,
-    'link_url': a.href
+</script></head> <body class=""> <nav class="site-nav"> <div class="site-nav-inner"> <a href="index.html" class="site-nav-brand"> <span class="dot"></span> <span>CBTC&nbsp;·&nbsp;Wang</span> </a> <div class="site-nav-links"> <a href="volume-1.html" class="">Volume 1</a><a href="volume-2.html" class="">Volume 2</a><a href="/blog/" class="">Articles</a><a href="/resources/" class="">Resources</a><a href="about.html" class="">About</a><a href="figures.html" class="">Figures</a><a href="slides.html" class="active">Slides</a><a href="glossary.html" class="">Glossary</a><a href="errata.html" class="">Errata</a><a href="contact.html" class="">Contact</a> </div> <a class="site-nav-cta" href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ" target="_blank" rel="noopener">Buy on Amazon →</a> <button class="site-nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav-mobile" data-nav-burger> <span></span><span></span><span></span> </button> </div> <div id="site-nav-mobile" class="site-nav-mobile" style="display:none"> <a href="volume-1.html" class="">Volume 1</a><a href="volume-2.html" class="">Volume 2</a><a href="/blog/" class="">Articles</a><a href="/resources/" class="">Resources</a><a href="about.html" class="">About</a><a href="figures.html" class="">Figures</a><a href="slides.html" class="active">Slides</a><a href="glossary.html" class="">Glossary</a><a href="errata.html" class="">Errata</a><a href="contact.html" class="">Contact</a> <a class="site-nav-mobile__cta" href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ" target="_blank" rel="noopener">Buy on Amazon →</a> </div> </nav> <script>
+  (function () {
+    var burger = document.querySelector("[data-nav-burger]");
+    var drawer = document.getElementById("site-nav-mobile");
+    if (!burger || !drawer) return;
+    function setOpen(open) {
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      drawer.style.display = open ? "" : "none";
+    }
+    burger.addEventListener("click", function () {
+      setOpen(burger.getAttribute("aria-expanded") !== "true");
+    });
+    drawer.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") setOpen(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") setOpen(false);
+    });
+  })();
+</script>  <section class="sl-hero"> <div class="container"> <span class="kicker">Companion slide decks · all 16 chapters</span> <h1 class="sl-h">A free slide deck for every chapter — built for engineers, trainers, and instructors.</h1> <p class="sl-lede">Chapter-by-chapter PDF presentations covering the structure, key arguments, and core figures of Communications-Based Train Control. Use them as lecture material, internal training, conference handouts, or your own self-study aid.</p> <div class="sl-stats"> <div class="sl-stat"><span class="num">16</span><span class="lab">chapter decks</span></div> <div class="sl-stat"><span class="num">393</span><span class="lab">slides total</span></div> <div class="sl-stat"><span class="num">16</span><span class="lab">MB · all PDFs</span></div> <div class="sl-stat"><span class="num">$0</span><span class="lab">free · no signup</span></div> </div> </div> </section> <section class="container"> <div class="sl-license"> <h3>Use &amp; attribution</h3> <p>You're welcome to use these decks for teaching, internal training, or self-study. Attribution appreciated: <em>"Companion to Communications-Based Train Control by Chunjun Wang · cbtcbook.com"</em>.</p> <p>The decks cover structure and headline arguments. The full chapter — case studies, citations, regulatory language, vendor specifications — lives in the book.</p> </div> </section> <section class="container sl-section"> <div class="sl-section-h"> <span class="vol">Volume 1 · Foundations &amp; Architecture</span> <h2>Chapters 01 – 08</h2> </div> <div class="sl-grid"> <div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch01.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch01.jpg" alt="Cover slide of Chapter 01: The Evolution of Train Control" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 01</div> <h3 class="sl-card-title">The Evolution of Train Control</h3> <div class="sl-card-meta"><span>26 slides</span> · <span>1.2 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch01.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch01.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch02.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch02.jpg" alt="Cover slide of Chapter 02: Standards &#38; Regulations: US Framework" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 02</div> <h3 class="sl-card-title">Standards &amp; Regulations: US Framework</h3> <div class="sl-card-meta"><span>25 slides</span> · <span>1.13 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch02.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch02.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch03.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch03.jpg" alt="Cover slide of Chapter 03: CBTC System Architecture Overview" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 03</div> <h3 class="sl-card-title">CBTC System Architecture Overview</h3> <div class="sl-card-meta"><span>23 slides</span> · <span>0.98 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch03.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch03.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch04.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch04.jpg" alt="Cover slide of Chapter 04: Onboard Equipment" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 04</div> <h3 class="sl-card-title">Onboard Equipment</h3> <div class="sl-card-meta"><span>23 slides</span> · <span>0.74 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch04.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch04.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch05.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch05.jpg" alt="Cover slide of Chapter 05: Wayside Equipment" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 05</div> <h3 class="sl-card-title">Wayside Equipment</h3> <div class="sl-card-meta"><span>23 slides</span> · <span>0.47 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch05.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch05.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch06.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch06.jpg" alt="Cover slide of Chapter 06: Communication Systems" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 06</div> <h3 class="sl-card-title">Communication Systems</h3> <div class="sl-card-meta"><span>24 slides</span> · <span>0.78 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch06.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch06.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch07.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch07.jpg" alt="Cover slide of Chapter 07: Central System / ATS" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 07</div> <h3 class="sl-card-title">Central System / ATS</h3> <div class="sl-card-meta"><span>23 slides</span> · <span>1.11 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch07.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch07.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch08.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch08.jpg" alt="Cover slide of Chapter 08: Grades of Automation" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 08</div> <h3 class="sl-card-title">Grades of Automation</h3> <div class="sl-card-meta"><span>24 slides</span> · <span>1.13 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch08.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch08.pdf" download>Download</a> </div> </div> </div> </div> </section> <section class="container sl-section" style="padding-bottom:80px"> <div class="sl-section-h"> <span class="vol">Volume 2 · Operations &amp; Economics</span> <h2>Chapters 09 – 16</h2> </div> <div class="sl-grid"> <div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch09.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch09.jpg" alt="Cover slide of Chapter 09: Operating Modes" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 09</div> <h3 class="sl-card-title">Operating Modes</h3> <div class="sl-card-meta"><span>26 slides</span> · <span>1.08 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch09.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch09.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch10.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch10.jpg" alt="Cover slide of Chapter 10: CBTC in the United States" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 10</div> <h3 class="sl-card-title">CBTC in the United States</h3> <div class="sl-card-meta"><span>24 slides</span> · <span>1.01 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch10.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch10.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch11.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch11.jpg" alt="Cover slide of Chapter 11: International Benchmarks" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 11</div> <h3 class="sl-card-title">International Benchmarks</h3> <div class="sl-card-meta"><span>25 slides</span> · <span>1.11 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch11.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch11.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch12.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch12.jpg" alt="Cover slide of Chapter 12: Project Lifecycle" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 12</div> <h3 class="sl-card-title">Project Lifecycle</h3> <div class="sl-card-meta"><span>25 slides</span> · <span>0.89 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch12.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch12.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch13.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch13.jpg" alt="Cover slide of Chapter 13: Performance Criteria" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 13</div> <h3 class="sl-card-title">Performance Criteria</h3> <div class="sl-card-meta"><span>27 slides</span> · <span>1.15 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch13.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch13.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch14.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch14.jpg" alt="Cover slide of Chapter 14: Lifecycle Costs" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 14</div> <h3 class="sl-card-title">Lifecycle Costs</h3> <div class="sl-card-meta"><span>26 slides</span> · <span>0.87 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch14.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch14.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch15.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch15.jpg" alt="Cover slide of Chapter 15: Vendor Landscape" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 15</div> <h3 class="sl-card-title">Vendor Landscape</h3> <div class="sl-card-meta"><span>24 slides</span> · <span>1.27 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch15.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch15.pdf" download>Download</a> </div> </div> </div><div class="sl-card"> <a class="sl-card-thumb" href="slides/cbtc_ch16.pdf" target="_blank" rel="noopener"> <img src="slides/thumbs/cbtc_ch16.jpg" alt="Cover slide of Chapter 16: US–China Comparative Perspectives" loading="lazy"> </a> <div class="sl-card-body"> <div class="sl-card-num">Chapter 16</div> <h3 class="sl-card-title">US–China Comparative Perspectives</h3> <div class="sl-card-meta"><span>25 slides</span> · <span>1.08 MB</span> ·  PDF</div> <div class="sl-card-actions"> <a class="sl-btn sl-btn-primary" href="slides/cbtc_ch16.pdf" target="_blank" rel="noopener">View online</a> <a class="sl-btn sl-btn-ghost" href="slides/cbtc_ch16.pdf" download>Download</a> </div> </div> </div> </div> </section> <script>
+    // Track slide deck downloads / views (ported from the former slides.html).
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href*="slides/cbtc_ch"]');
+      if (!a) return;
+      var ch = (a.href.match(/cbtc_ch(\d+)\.pdf/) || [])[1] || '';
+      var isDownload = a.hasAttribute('download');
+      if (typeof gtag === 'function') gtag('event', isDownload ? 'slides_download' : 'slides_view', {
+        'page_path': window.location.pathname, 'chapter': ch, 'link_url': a.href
+      });
+    });
+  </script>  <footer class="site-foot"> <div class="site-foot-inner"> <div> <div class="site-foot-mark">
+Communications-Based<br>
+Train Control — <em>a comprehensive guide</em> </div> <div style="color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:360px">
+Two volumes. 1,127 pages. The first US-focused technical reference on CBTC,
+        written for engineers, project managers, and procurement teams.
+</div> </div> <div> <h3>The Books</h3> <a href="volume-1.html">Volume 1 — Foundations</a> <a href="volume-2.html">Volume 2 — Operations</a> <a href="figures.html">Figures gallery</a> <a href="slides.html">Chapter slides</a> <a href="errata.html">Errata &amp; supplements</a> <a href="glossary.html">CBTC glossary</a> </div> <div> <h3>Author</h3> <a href="about.html">About Francisco Wang</a> <a href="contact.html">Speaking &amp; consulting</a> <a href="https://www.linkedin.com/in/chunjun-wang/" target="_blank" rel="noopener">LinkedIn</a> </div> <div> <h3>Buy</h3> <a href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHLYQZZ" target="_blank" rel="noopener">Volume 1 · Amazon</a> <a href="https://www.amazon.com/Communications-Based-Train-Control-Comprehensive-Professionals-ebook/dp/B0GYHHNL2H" target="_blank" rel="noopener">Volume 2 · Amazon</a> <a href="contact.html">Bulk / institutional</a> </div> </div> <div class="site-foot-bottom"> <span>© 2026 Chunjun Wang</span> <span>Princeton, NJ · open to remote</span> </div> </footer> <script>
+  // Click-to-flip for the 3D book covers (static port of Book3D's React state).
+  document.querySelectorAll("[data-book3d]").forEach(function (el) {
+    el.addEventListener("click", function () { el.classList.toggle("flipping"); });
   });
-});
-</script>
-</body>
-</html>
+</script> </body> </html>

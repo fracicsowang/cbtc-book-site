@@ -1,0 +1,97 @@
+---
+import Page from "../layouts/Page.astro";
+import { AUTHOR } from "../data.js";
+
+const person = {
+  "@context": "https://schema.org", "@type": "Person",
+  name: "Chunjun (Francisco) Wang", url: "https://cbtcbook.com/about.html",
+  image: "https://cbtcbook.com/assets/headshot.jpg",
+  jobTitle: "Senior Research Engineer",
+  worksFor: { "@type": "Organization", name: "Rutgers University, Center for Advanced Infrastructure and Transportation (CAIT)" },
+  knowsAbout: ["Communications-Based Train Control", "Railway signaling", "Train control systems", "Automatic train operation", "Transit engineering"],
+  sameAs: ["https://www.linkedin.com/in/chunjun-wang/", "https://scholar.google.com/citations?user=JsYYeDUAAAAJ", "https://orcid.org/0009-0005-6344-9934"],
+};
+---
+<Page
+  title="About — Chunjun (Francisco) Wang"
+  description="Twenty years in rail signaling and CBTC. Career timeline: Senior Research Engineer at Rutgers CAIT, former CEO of CRSC USA, Booth MBA, 7 CBTC patents, 13 peer-reviewed papers."
+  path="about.html"
+  extraCss={["about.css"]}
+  jsonld={person}
+  active="about"
+>
+  <section class="about-hero">
+    <div class="container about-grid">
+      <div>
+        <img class="about-photo" src="assets/headshot.jpg" alt="Chunjun (Francisco) Wang"/>
+        <div class="about-meta">
+          <span>📍 {AUTHOR.location}</span>
+          <span>✉ {AUTHOR.email}</span>
+          <a href={AUTHOR.linkedin} target="_blank" rel="noopener">↗ LinkedIn</a>
+          <a href={AUTHOR.googleScholar} target="_blank" rel="noopener">↗ Google Scholar</a>
+          <a href={AUTHOR.orcid} target="_blank" rel="noopener">↗ ORCID 0009-0005-6344-9934</a>
+        </div>
+      </div>
+      <div>
+        <span class="kicker">About the author</span>
+        <h1 class="about-name">{AUTHOR.fullName}</h1>
+        <p class="about-tag">{AUTHOR.credentials.join(" · ")}</p>
+        <p class="about-lede">{AUTHOR.oneLiner}</p>
+        <p class="about-summary">{AUTHOR.summary}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="timeline">
+      <span class="kicker">Career timeline</span>
+      <h2 style="font-family:var(--serif);font-size:36px;font-weight:400;letter-spacing:-0.6px;margin:16px 0 32px">
+        Twenty years across both ends of the global rail-signaling industry.
+      </h2>
+      {AUTHOR.timeline.map((t) => (
+        <div class="timeline-row">
+          <div class="timeline-year">{t.year}</div>
+          <div>
+            <h3 class="timeline-role">{t.role}</h3>
+            <p class="timeline-org">{t.org}</p>
+            <ul class="timeline-bullets">
+              {t.bullets.map((b) => <li>{b}</li>)}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="creds-strip">
+    <div class="container creds-grid">
+      <div>
+        <h4 class="cred-h">Patents</h4>
+        <ul class="cred-list">
+          <li>7 granted CBTC patents</li>
+          <li>Onboard ATP/ATO logic</li>
+          <li>Wayside zone controller architecture</li>
+          <li>Train-to-wayside data link</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="cred-h">Publications</h4>
+        <ul class="cred-list">
+          <li>13 peer-reviewed papers</li>
+          <li>2 book volumes (1,127 pp.)</li>
+          <li>International standards working groups</li>
+          <li>Conference proceedings</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="cred-h">Operating record</h4>
+        <ul class="cred-list">
+          <li>Founded $80M US subsidiary</li>
+          <li>Directed $200M renewable-energy investment</li>
+          <li>Active vibe-coding / AI prototyping</li>
+          <li>Open to remote / flex US roles</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Page>

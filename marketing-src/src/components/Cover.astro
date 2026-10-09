@@ -1,0 +1,140 @@
+---
+// One book-cover face (front or back), ported verbatim from the former
+// site/assets/cover-mini.jsx. The cover is laid out in a 1000×1429 design
+// space and scaled to fit the book face. The original computed the scale in
+// the browser with a ResizeObserver; here the face size is known at build
+// time, so the scale is a static value and the output needs no JavaScript.
+import { BOOK } from "../data.js";
+
+export interface Props {
+  vol: 1 | 2;
+  side?: "front" | "back";
+  w: number;   // book-face width in px
+  h: number;   // book-face height in px
+}
+const { vol, side = "front", w, h } = Astro.props;
+const v = BOOK[`v${vol}`];
+
+const A = {
+  navy: "#0A1628", navyDeep: "#07101D",
+  cyan: "#4A9EBF", amber: "#D4A84B",
+  ink: "#EAF2F7", dim: "rgba(234,242,247,.6)", rule: "rgba(234,242,247,.18)",
+};
+const W = 1000, H = 1429;
+const s = Math.min(w / W, h / H);
+
+// ── MiniNetwork geometry (front only) ──
+const trackY1 = H * 0.55, trackY2 = H * 0.62;
+const stations = [0.12, 0.32, 0.55, 0.78].map(x => x * W);
+const zcs = [0.22, 0.45, 0.68].map(x => x * W);
+const ties = Math.floor(W / 22);
+
+const stage = `width:${W}px;height:${H}px;transform:scale(${s});transform-origin:top left;position:absolute;inset:0;color:${A.ink};font-family:var(--sans);`;
+---
+{side === "front" ? (
+  <div style={`width:100%;height:100%;position:relative;overflow:hidden;background:${A.navy}`}>
+    <div style={`${stage}background:${A.navy}`}>
+      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style="position:absolute;inset:0">
+        <defs>
+          <pattern id={`gM${vol}`} width="36" height="36" patternUnits="userSpaceOnUse">
+            <path d="M 36 0 L 0 0 0 36" fill="none" stroke={A.cyan} stroke-width="0.5" opacity=".15"/>
+          </pattern>
+        </defs>
+        <rect width={W} height={H} fill={`url(#gM${vol})`}/>
+        {zcs.map((x) => (
+          <g stroke={A.cyan} fill="none">
+            <circle cx={x} cy={trackY1 - 30} r="120" opacity=".18" stroke-width="1"/>
+            <circle cx={x} cy={trackY1 - 30} r="170" opacity=".12" stroke-width="1"/>
+            <circle cx={x} cy={trackY1 - 30} r="220" opacity=".07" stroke-width="1"/>
+          </g>
+        ))}
+        {zcs.slice(0, -1).map((x, i) => {
+          const nx = zcs[i + 1];
+          return (
+            <path d={`M ${x} ${trackY1 - 30} Q ${(x + nx) / 2} ${trackY1 - 120} ${nx} ${trackY1 - 30}`}
+              fill="none" stroke={A.cyan} stroke-width="1.2" stroke-dasharray="4 6" opacity=".55"/>
+          );
+        })}
+        <line x1="0" y1={trackY1} x2={W} y2={trackY1} stroke={A.ink} stroke-width="1.4" opacity=".9"/>
+        <line x1="0" y1={trackY2} x2={W} y2={trackY2} stroke={A.ink} stroke-width="1.4" opacity=".9"/>
+        {Array.from({ length: ties }).map((_, i) => (
+          <line x1={i * 22 + 6} y1={trackY1} x2={i * 22 + 6} y2={trackY2} stroke={A.ink} stroke-width="0.5" opacity=".25"/>
+        ))}
+        {stations.map((x) => (
+          <g>
+            <rect x={x - 22} y={trackY2 + 10} width="44" height="8" fill={A.ink} opacity=".85"/>
+            <line x1={x} y1={trackY2 + 18} x2={x} y2={trackY2 + 54} stroke={A.ink} stroke-width="0.6" opacity=".5"/>
+          </g>
+        ))}
+        {zcs.map((x) => (
+          <g>
+            <circle cx={x} cy={trackY1 - 30} r="4" fill={A.amber}/>
+            <circle cx={x} cy={trackY1 - 30} r="9" fill="none" stroke={A.amber} stroke-width="1" opacity=".7"/>
+            <line x1={x} y1={trackY1 - 26} x2={x} y2={trackY1} stroke={A.amber} stroke-width="0.8" opacity=".55"/>
+          </g>
+        ))}
+        <rect x={W * 0.42} y={trackY1 - 3} width={W * 0.12} height={trackY2 - trackY1 + 6} fill={A.amber} opacity=".85"/>
+        <line x1="0" y1={trackY1 - 130} x2={W} y2={trackY1 - 130} stroke={A.cyan} stroke-width="0.5" opacity=".3" stroke-dasharray="1 5"/>
+      </svg>
+
+      <div style="position:absolute;inset:68px 72px">
+        <div style={`display:flex;justify-content:space-between;font-family:var(--mono);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:${A.dim}`}>
+          <span>◉ Rail Signaling · Technical Reference</span>
+          <span>Ed. 2026</span>
+        </div>
+        <div style={`margin-top:14px;height:1px;background:${A.rule}`}></div>
+        <div style={`margin-top:40px;display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid ${A.amber};color:${A.amber};font-family:var(--mono);font-size:13px;letter-spacing:2.5px;text-transform:uppercase`}>
+          <span style={`width:6px;height:6px;background:${A.amber}`}></span>
+          Volume {v.num} — of Two
+        </div>
+        <div style={`margin-top:22px;font-family:var(--sans);font-weight:700;font-size:84px;line-height:0.95;letter-spacing:-2px;color:${A.ink}`}>
+          Communications-<br/>Based Train<br/>Control
+        </div>
+        <div style="margin-top:26px;font-size:22px;line-height:1.35;color:rgba(234,242,247,.82);max-width:600px;font-weight:300">
+          A Comprehensive Guide for US Transit Professionals
+        </div>
+        <div style={`margin-top:28px;font-family:var(--mono);font-size:14px;letter-spacing:2px;text-transform:uppercase;color:${A.amber}`}>
+          {v.name}
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:flex-end">
+          <div>
+            <div style={`font-family:var(--mono);font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:${A.dim};margin-bottom:6px`}>Author</div>
+            <div style={`font-size:28px;font-weight:500;color:${A.ink};letter-spacing:-0.3px`}>Chunjun (Francisco) Wang</div>
+          </div>
+          <div style={`font-family:var(--mono);font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:${A.dim};text-align:right`}>
+            {v.pages} pp · {v.words} words<br/>
+            <span style={`color:${A.cyan}`}>7 × 10 in</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+) : (
+  <div style={`width:100%;height:100%;position:relative;overflow:hidden;background:${A.navyDeep}`}>
+    <div style={`${stage}background:${A.navyDeep}`}>
+      <svg width="100%" height="100%" style="position:absolute;inset:0;opacity:.6">
+        <defs>
+          <pattern id={`bgB${vol}`} width="36" height="36" patternUnits="userSpaceOnUse">
+            <path d="M 36 0 L 0 0 0 36" fill="none" stroke={A.cyan} stroke-width="0.5" opacity=".13"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill={`url(#bgB${vol})`}/>
+      </svg>
+      <div style="position:absolute;inset:68px 72px">
+        <div style={`display:flex;justify-content:space-between;font-family:var(--mono);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:${A.dim}`}>
+          <span>About this Volume</span>
+          <span>VOL {v.num} / 02</span>
+        </div>
+        <div style={`margin-top:14px;height:1px;background:${A.rule}`}></div>
+        <div style="margin-top:32px;font-size:17px;line-height:1.55;color:rgba(234,242,247,.88);font-weight:300">
+          <p style="margin:0">{v.blurb}</p>
+        </div>
+        <div style={`position:absolute;left:0;right:0;bottom:0;font-family:var(--mono);font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:${A.dim}`}>
+          Chunjun (Francisco) Wang · CBTC Engineer<br/>
+          Booth MBA · CFA<br/>
+          Published via Amazon KDP
+        </div>
+      </div>
+    </div>
+  </div>
+)}
