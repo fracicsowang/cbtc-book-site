@@ -90,4 +90,4 @@ This post is a brief summary. The full treatment lives in [Chapter 1 — The Evo
 - Federal Transit Administration. *State Safety Oversight Program*. [transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight](https://www.transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight)
 - IEEE Standards Association. *IEEE Std 1474.1–1474.4: Communications-Based Train Control Standards*.
 - National Transportation Safety Board. *Chatsworth Collision Investigation Report (RAR-10/01)*. [ntsb.gov](https://www.ntsb.gov/)
-- MTA New York City Transit. *L Line CBTC Project Documentation*. [new.mta.info](https://new.mta.info/)
+- MTA New York City Transit. *L Line CBTC Project Documentation*. [www.mta.info](https://www.mta.info/)

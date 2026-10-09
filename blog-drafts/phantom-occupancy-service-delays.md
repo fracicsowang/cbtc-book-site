@@ -83,6 +83,6 @@ This post is a 10-minute summary. The full treatment of phantom occupancy and mi
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: Operations, Lifecycle, and US Deployment*. Independent. ISBN 979-8-258-54295-3. — Chapter 9, "Operating Modes and Mode Transitions"; Chapter 5, "Wayside Equipment."
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
 - American Public Transportation Association. *Standards for Communications-Based Train Control (CBTC) Systems*.
-- MTA New York City Transit. *L Line and 7 Line CBTC Operations Documentation*. [new.mta.info](https://new.mta.info/)
+- MTA New York City Transit. *L Line and 7 Line CBTC Operations Documentation*. [www.mta.info](https://www.mta.info/)
 - Federal Transit Administration. *State Safety Oversight Program Standard*. [transit.dot.gov](https://www.transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight)
 - Transit Cooperative Research Program. *TCRP Report 163: Transit Capacity and Quality of Service Manual*. Transportation Research Board.

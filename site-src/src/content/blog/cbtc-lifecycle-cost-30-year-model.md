@@ -119,5 +119,5 @@ For the procurement-side cost drivers, see [CBTC Procurement: Cost Drivers Beyon
 - US Department of Transportation. *Benefit-Cost Analysis Guidance for Discretionary Grant Programs (2024)*. [transportation.gov/policy/transportation-policy/benefit-cost-analysis-guidance](https://www.transportation.gov/)
 - Federal Transit Administration. *Capital Investment Grants Program*. [transit.dot.gov/CIG](https://www.transit.dot.gov/CIG)
 - Federal Transit Administration. (2016). *FTA Report No. 0045: Communications-Based Train Control (CBTC) Technology*. [transit.dot.gov](https://www.transit.dot.gov/)
-- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/cbtc](https://www.bart.gov/about/projects/cbtc)
+- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
 - Transportation Security Administration. *Security Directive 1580-23-01: Rail Cybersecurity*. [tsa.gov](https://www.tsa.gov/)

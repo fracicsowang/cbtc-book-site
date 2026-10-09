@@ -108,6 +108,6 @@ For the onboard cycle in detail, see [The Onboard Side of CBTC: Inside the VOBC]
 - IEEE Standards Association. *IEEE Std 1474.2: User Interface Requirements in Communications-Based Train Control (CBTC) Systems*.
 - IEEE Standards Association. *IEEE Std 802.11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications*.
 - Federal Transit Administration. (2016). *FTA Report No. 0045: Communications-Based Train Control (CBTC) Technology*. [transit.dot.gov](https://www.transit.dot.gov/)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
 - Washington Metropolitan Area Transit Authority. *Automatic Train Control Modernization*. [wmata.com](https://www.wmata.com/)
-- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/cbtc](https://www.bart.gov/about/projects/cbtc)
+- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)

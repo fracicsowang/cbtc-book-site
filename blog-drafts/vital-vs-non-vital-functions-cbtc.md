@@ -110,4 +110,4 @@ For the onboard side of the vital partition, see [The Onboard Side of CBTC: Insi
 - CENELEC. *EN 50129: Railway applications — Safety related electronic systems for signalling*.
 - CENELEC. *EN 50159: Railway applications — Communication, signalling and processing systems — Safety-related communication in transmission systems*.
 - Federal Transit Administration. *State Safety Oversight Program*. [transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight](https://www.transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)

@@ -77,10 +77,10 @@ CBTC training has no single front door, but it has a clear shape, and an enginee
 ## Sources
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: Operations, Deployment & Economics*. Independent. ISBN 979-8-258-54528-2. — [Chapter 12, "Project Lifecycle"; Chapter 15, "Vendor Landscape"]
-- American Railway Engineering and Maintenance-of-Way Association. *Education and Events*. [arema.org](https://www.arema.org/AREMA_MBRR/Events/Education.aspx)
-- American Public Transportation Association / Transportation Learning Center. *Rail Signals Maintenance Training Content and Standards (APTA RT-RMT-RP-002)*. [apta.com](https://www.apta.com/wp-content/uploads/Standards_Documents/APTA-RT-RMT-RP-002-10.pdf) · [transittraining.net](https://www.transittraining.net/courseware/rail/category/signals-maintenance)
+- American Railway Engineering and Maintenance-of-Way Association. *Education and Events*. [arema.org](https://arema.org/Web/Web/Education-and-Networking/Education.aspx)
+- American Public Transportation Association / Transportation Learning Center. *Rail Signals Maintenance Training Content and Standards (APTA RT-RMT-RP-002)*. [apta.com](https://www.apta.com/wp-content/uploads/Standards_Documents/APTA-RT-RMT-RP-002-10.pdf) · [ntionline.com](https://www.ntionline.com/)
 - Federal Transit Administration / Transportation Safety Institute. *Public Transportation Safety Certification Training Program*, 49 CFR Part 672. [transportation.gov](https://www.transportation.gov/tsi/public-transportation-safety-certification-program-ptsctp) · [ecfr.gov](https://www.ecfr.gov/current/title-49/subtitle-B/chapter-VI/part-672)
-- Siemens Mobility. *Mobility Development Program*. [jobs.siemens.com](https://jobs.siemens.com/en_US/externaljobs/JobDetail/471767)
+- Siemens Mobility. *Mobility Development Program*. [siemens.com](https://www.siemens.com/global/en/company/jobs.html)
 - Alstom. *Alstom University*. [alstom.com](https://www.alstom.com/careers/alstom-university)
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*. [standards.ieee.org](https://standards.ieee.org/ieee/1474.1/6959/)
 - International Electrotechnical Commission. *IEC 62290 series: Railway applications — Urban guided transport management and command/control systems*. [webstore.iec.ch](https://webstore.iec.ch/en/publication/83773)

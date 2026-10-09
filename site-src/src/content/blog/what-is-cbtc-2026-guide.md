@@ -96,6 +96,6 @@ This post is a brief overview. The full treatment lives in [Chapter 1 — The Ev
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
 - International Electrotechnical Commission. *IEC 62290-1: Railway applications — Urban guided transport management and command/control systems — Part 1: System principles and fundamental concepts*.
 - International Electrotechnical Commission. *IEC 61508: Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems*.
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
 - Federal Transit Administration. *State Safety Oversight Program*. [transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight](https://www.transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight)
 - Honolulu Authority for Rapid Transportation. *Skyline Project Overview*. [honolulutransit.org](https://www.honolulutransit.org/)

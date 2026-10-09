@@ -98,7 +98,7 @@ This post is an 11-minute summary. The full treatment lives in Chapter 13 of *Co
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: Operations, Lifecycle, and US Deployment*. Independent. ISBN 979-8-258-54295-3. — Chapter 13, "Performance Criteria and Capacity Analysis."
 - Transit Cooperative Research Program. *TCRP Report 163: Transit Capacity and Quality of Service Manual*. Transportation Research Board.
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
-- MTA New York City Transit. *L Line and 7 Line Capacity Reports*. [new.mta.info](https://new.mta.info/)
-- BART. *Train Control Modernization Program — Capacity Analysis*. [bart.gov/about/projects/tcmp](https://www.bart.gov/about/projects/tcmp)
+- MTA New York City Transit. *L Line and 7 Line Capacity Reports*. [www.mta.info](https://www.mta.info/)
+- BART. *Train Control Modernization Program — Capacity Analysis*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
 - WMATA. *Red Line Capacity Studies*. [wmata.com](https://www.wmata.com/)
 - American Public Transportation Association. *Standards for Communications-Based Train Control (CBTC) Systems*.

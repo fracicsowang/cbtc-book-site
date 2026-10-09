@@ -105,4 +105,4 @@ This post is a comparison overview. The full treatment of CBTC communication arc
 - IEEE Standards Association. *IEEE 802.11 Wireless LAN Standards*.
 - Federal Communications Commission. *Unlicensed National Information Infrastructure (U-NII) and Industrial, Scientific, and Medical (ISM) Band Rules*. [fcc.gov/general/wireless-services](https://www.fcc.gov/general/wireless-services)
 - Transportation Security Administration. *Surface Transportation Cybersecurity Directives 1580 and 1582*. [tsa.gov/foia/readingroom](https://www.tsa.gov/foia/readingroom)
-- TransLink. *SkyTrain System Information*. [translink.ca/about-us/about-translink/our-history](https://www.translink.ca/about-us/about-translink/our-history)
+- TransLink. *SkyTrain System Information*. [translink.ca/about-us/about-translink/operating-companies/british-columbia-rapid-transit-company](https://www.translink.ca/about-us/about-translink/operating-companies/british-columbia-rapid-transit-company)

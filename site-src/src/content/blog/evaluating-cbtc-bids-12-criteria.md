@@ -137,6 +137,6 @@ For the vendor-neutral RFP structure that this evaluation supports, see [How to 
 - International Electrotechnical Commission. *IEC 61508: Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems*.
 - Federal Transit Administration. (2016). *FTA Report No. 0045: Communications-Based Train Control (CBTC) Technology*. [transit.dot.gov](https://www.transit.dot.gov/)
 - Federal Transit Administration. *Build America, Buy America Act Implementation Guidance*. [transit.dot.gov/BuyAmerica](https://www.transit.dot.gov/buyamerica)
-- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/cbtc](https://www.bart.gov/about/projects/cbtc)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
+- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
 - Transportation Security Administration. *Security Directive 1580-23-01: Rail Cybersecurity*. [tsa.gov](https://www.tsa.gov/)

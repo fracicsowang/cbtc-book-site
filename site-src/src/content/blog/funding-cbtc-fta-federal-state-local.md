@@ -150,5 +150,5 @@ For the all-in CAPEX picture that the funding stack must cover, see [CBTC Procur
 - Federal Transit Administration. *Build America, Buy America Act Implementation Guidance*. [transit.dot.gov/BuyAmerica](https://www.transit.dot.gov/buyamerica)
 - Office of Management and Budget. *OMB Circular A-94: Guidelines and Discount Rates for Benefit-Cost Analysis of Federal Programs*. [whitehouse.gov/omb](https://www.whitehouse.gov/omb/)
 - US Department of Transportation. *Benefit-Cost Analysis Guidance for Discretionary Grant Programs (2024)*. [transportation.gov](https://www.transportation.gov/)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
-- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/cbtc](https://www.bart.gov/about/projects/cbtc)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
+- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)

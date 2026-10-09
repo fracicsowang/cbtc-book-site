@@ -89,7 +89,7 @@ This post is a deployment-strategy overview. The full treatment of CBTC migratio
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: Deployment, Economics, and the Future*. Independent. ISBN 979-8-258-54295-3. — Chapter 10, "CBTC in the United States"; Chapter 3, "CBTC System Architecture Overview"; Chapter 14, "CBTC Lifecycle Cost."
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
-- Bay Area Rapid Transit District. *Train Control Modernization Program*. [bart.gov/about/projects/cad](https://www.bart.gov/about/projects/cad)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
+- Bay Area Rapid Transit District. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
 - Honolulu Authority for Rapid Transportation. *Skyline Project Overview*. [honolulutransit.org](https://www.honolulutransit.org/)
 - Federal Transit Administration. *Capital Investment Grants Program*. [transit.dot.gov/CIG](https://www.transit.dot.gov/CIG)

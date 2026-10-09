@@ -91,8 +91,8 @@ This post is a 12-minute summary. The full treatment lives in Chapter 10 ("CBTC 
 ## Sources
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: US Deployment, Procurement & Future Directions*. Independent. ISBN 979-8-258-54295-3. — Chapter 10, "CBTC in the United States" (Section 10.1, NYC L Line).
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
-- MTA. *L Train Canarsie Tunnel Reconstruction Project Updates*. [new.mta.info](https://new.mta.info/)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
+- MTA. *L Train Canarsie Tunnel Reconstruction Project Updates*. [www.mta.info](https://www.mta.info/)
 - Federal Transit Administration. *State Safety Oversight Program*. [transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight](https://www.transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight)
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
 - Siemens Mobility. *Trainguard MT CBTC Overview*. [siemens.com/global/en/products/mobility/rail-solutions/rail-automation.html](https://www.siemens.com/global/en/products/mobility/rail-solutions/rail-automation.html)

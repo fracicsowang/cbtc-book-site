@@ -99,7 +99,7 @@ This post is an 11-minute summary. The full treatment lives in Chapter 10 ("CBTC
 ## Sources
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: US Deployment, Procurement & Future Directions*. Independent. ISBN 979-8-258-54295-3. — Chapter 10, "CBTC in the United States" (Section 10.4, SFMTA Muni TCUP); Chapter 15, "Vendor Landscape."
-- San Francisco Municipal Transportation Agency. *Train Control Upgrade Project (TCUP)*. [sfmta.com/projects/train-control-upgrade-project-tcup](https://www.sfmta.com/projects/train-control-upgrade-project-tcup)
+- San Francisco Municipal Transportation Agency. *Train Control Upgrade Project (TCUP)*. [sfmta.com/projects/train-control-upgrade-project](https://www.sfmta.com/projects/train-control-upgrade-project)
 - San Francisco Municipal Transportation Agency. *Central Subway Project*. [sfmta.com/projects/central-subway-project](https://www.sfmta.com/projects/central-subway-project)
 - Federal Transit Administration. *Capital Investment Grants Program*. [transit.dot.gov/CIG](https://www.transit.dot.gov/CIG)
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.

@@ -96,5 +96,5 @@ This post is an 11-minute summary. The full treatment lives in Chapter 9 of *Com
 - IEEE Standards Association. *IEEE Std 1474.4: Recommended Practice for Functional Testing of a CBTC System*.
 - CENELEC. *EN 50126: Railway Applications — RAMS*.
 - International Electrotechnical Commission. *IEC 61508: Functional Safety*.
-- MTA New York City Transit. *L Line CBTC Operational Reports*. [new.mta.info](https://new.mta.info/)
-- BART. *Train Control Modernization Program — System Requirements*. [bart.gov/about/projects/tcmp](https://www.bart.gov/about/projects/tcmp)
+- MTA New York City Transit. *L Line CBTC Operational Reports*. [www.mta.info](https://www.mta.info/)
+- BART. *Train Control Modernization Program — System Requirements*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)

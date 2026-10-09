@@ -87,7 +87,7 @@ This post is a 10-minute summary. The full treatment of dwell, door operation, a
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: Operations, Lifecycle, and US Deployment*. Independent. ISBN 979-8-258-54295-3. — Chapter 13, "Performance Criteria and Capacity Analysis"; Chapter 4, "Onboard Equipment."
 - Transit Cooperative Research Program. *TCRP Report 163: Transit Capacity and Quality of Service Manual*. Transportation Research Board.
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
-- MTA New York City Transit. *L Line and 7 Line CBTC Performance Reports*. [new.mta.info](https://new.mta.info/)
+- MTA New York City Transit. *L Line and 7 Line CBTC Performance Reports*. [www.mta.info](https://www.mta.info/)
 - RATP. *Métro Line 1 and Line 14 Operating Statistics*. [ratp.fr](https://www.ratp.fr/)
 - SMRT Corporation Singapore. *North-South Line Driverless Operation Implementation*. [smrt.com.sg](https://www.smrt.com.sg/)
 - American Public Transportation Association. *Standards for Communications-Based Train Control (CBTC) Systems*.

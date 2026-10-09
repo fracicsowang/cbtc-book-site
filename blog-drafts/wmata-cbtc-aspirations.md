@@ -94,7 +94,7 @@ This post is an 11-minute summary. The full treatment lives in Chapter 10 ("CBTC
 ## Sources
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: US Deployment, Procurement & Future Directions*. Independent. ISBN 979-8-258-54295-3. — Chapter 10, "CBTC in the United States" (Section 10.6, WMATA); Chapter 15, "Vendor Landscape."
-- Washington Metropolitan Area Transit Authority. *Capital Program and Major Projects*. [wmata.com/about/business/capital-improvement-program](https://www.wmata.com/about/business/capital-improvement-program)
+- Washington Metropolitan Area Transit Authority. *Capital Program and Major Projects*. [wmata.com/initiatives/plans/Capital-Improvement-Program.cfm](https://www.wmata.com/initiatives/plans/Capital-Improvement-Program.cfm)
 - National Transportation Safety Board. *Collision of Two Washington Metropolitan Area Transit Authority Metrorail Trains Near Fort Totten Station, June 22, 2009 (RAR-10/02)*. [ntsb.gov](https://www.ntsb.gov/)
 - Federal Transit Administration. *State Safety Oversight Program*. [transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight](https://www.transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight)
 - Federal Transit Administration. *Capital Investment Grants Program*. [transit.dot.gov/CIG](https://www.transit.dot.gov/CIG)

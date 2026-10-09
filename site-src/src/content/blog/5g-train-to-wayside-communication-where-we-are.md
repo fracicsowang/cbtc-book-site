@@ -119,5 +119,5 @@ This post is a 10-minute briefing. The full discussion of the radio architecture
 - Transportation Security Administration. *Security Directives 1580 and 1582 — Rail and Transit Cybersecurity*.
 - National Institute of Standards and Technology. *NIST Special Publication 800-82 Revision 3: Guide to Operational Technology (OT) Security*.
 - Washington Metropolitan Area Transit Authority. *CBRS and Operational Technology Reports*. [wmata.com](https://www.wmata.com/)
-- Metropolitan Transportation Authority (NY). *Capital Program documentation*. [new.mta.info](https://new.mta.info/)
+- Metropolitan Transportation Authority (NY). *Capital Program documentation*. [www.mta.info](https://www.mta.info/)
 - Bay Area Rapid Transit. *Train Control Modernization Program Status Reports*. [bart.gov](https://www.bart.gov/)

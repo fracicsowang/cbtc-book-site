@@ -109,5 +109,5 @@ This post is a brief overview. The full treatment lives in [Chapter 5 — Waysid
 - International Electrotechnical Commission. *IEC 62290-1: Railway applications — Urban guided transport management and command/control systems*.
 - International Electrotechnical Commission. *IEC 61508: Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems*.
 - CENELEC. *EN 50129: Railway applications — Safety related electronic systems for signalling*.
-- MTA New York City Transit. *L Line CBTC Project Overview*. [new.mta.info](https://new.mta.info/)
-- BART. *Train Control Modernization Program*. [bart.gov/about/projects/tcmp](https://www.bart.gov/about/projects/tcmp)
+- MTA New York City Transit. *L Line CBTC Project Overview*. [www.mta.info](https://www.mta.info/)
+- BART. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)

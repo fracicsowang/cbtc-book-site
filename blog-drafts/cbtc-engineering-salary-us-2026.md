@@ -92,7 +92,7 @@ This post is a 9-minute orientation. The career-path context is in the companion
 - US Bureau of Labor Statistics. *Occupational Employment and Wage Statistics — Transportation Industry*. [bls.gov/oes](https://www.bls.gov/oes/)
 - Glassdoor. *Salary aggregates for "CBTC engineer," "rail signaling engineer," and related titles*. [glassdoor.com](https://www.glassdoor.com/) (consulted 2025).
 - LinkedIn Salary. *Aggregated self-reported compensation data for transit signaling engineering roles*. [linkedin.com/salary](https://www.linkedin.com/salary/) (consulted 2025).
-- MTA New York City Transit. *Labor Agreements with TWU Local 100 and ATU* (publicly available portions). [new.mta.info](https://new.mta.info/)
+- MTA New York City Transit. *Labor Agreements with TWU Local 100 and ATU* (publicly available portions). [www.mta.info](https://www.mta.info/)
 - BART. *Labor Agreement with Operating Engineers Local 3 and SEIU Local 1021* (publicly available portions). [bart.gov](https://www.bart.gov/)
 - American Public Transportation Association. *Workforce Studies and Compensation Reports*. [apta.com](https://www.apta.com/)
 - Wang, C. (2026). *Communications-Based Train Control* (Volumes 1 and 2). Independent. ISBN 979-8-258-54295-3.

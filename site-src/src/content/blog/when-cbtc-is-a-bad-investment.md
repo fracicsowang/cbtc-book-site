@@ -123,5 +123,5 @@ For the ROI side of the analysis, see [CBTC ROI Calculation: Headway Gains vs Ca
 - Federal Transit Administration. *Capital Investment Grants Program*. [transit.dot.gov/CIG](https://www.transit.dot.gov/CIG)
 - Federal Transit Administration. (2016). *FTA Report No. 0045: Communications-Based Train Control (CBTC) Technology*. [transit.dot.gov](https://www.transit.dot.gov/)
 - Federal Railroad Administration. *Positive Train Control (PTC) Overview*. [railroads.dot.gov/program-areas/safety/ptc](https://railroads.dot.gov/program-areas/safety/ptc)
-- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/cbtc](https://www.bart.gov/about/projects/cbtc)
+- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
 - Regional Transportation District (Denver). *A Line Operations*. [rtd-denver.com](https://www.rtd-denver.com/)

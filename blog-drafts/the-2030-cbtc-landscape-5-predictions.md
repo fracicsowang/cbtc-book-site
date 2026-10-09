@@ -98,7 +98,7 @@ This post is a 10-minute briefing. The full discussion of the vendor roadmap, th
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: Operations, Lifecycle & US Deployment*. Independent. ISBN 979-8-258-54295-3. — Chapter 15, "Vendor Landscape and Technology Trends"; Chapter 16, "US-China Comparative Perspectives."
 - Federal Transit Administration. *Capital Investment Grants Program and project profiles*. [transit.dot.gov/CIG](https://www.transit.dot.gov/CIG)
-- MTA New York City Transit. *Capital Program Documentation and CBTC Status Updates*. [new.mta.info](https://new.mta.info/)
+- MTA New York City Transit. *Capital Program Documentation and CBTC Status Updates*. [www.mta.info](https://www.mta.info/)
 - Bay Area Rapid Transit. *Train Control Modernization Program Status Reports*. [bart.gov](https://www.bart.gov/)
 - San Francisco Municipal Transportation Agency. *Train Control Upgrade Project (TCUP) RFP and procurement documentation*. [sfmta.com](https://www.sfmta.com/)
 - Washington Metropolitan Area Transit Authority. *CBTC Feasibility Study and Capital Improvement Plan*. [wmata.com](https://www.wmata.com/)

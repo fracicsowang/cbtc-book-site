@@ -103,5 +103,5 @@ This post is a brief overview. The full treatment lives in [Chapter 4 — Onboar
 - International Electrotechnical Commission. *IEC 61373: Railway applications — Rolling stock equipment — Shock and vibration tests*.
 - CENELEC. *EN 50128: Railway applications — Communication, signalling and processing systems — Software for railway control and protection systems*.
 - CENELEC. *EN 50129: Railway applications — Safety related electronic systems for signalling*.
-- MTA New York City Transit. *L Line CBTC Project Documentation*. [new.mta.info](https://new.mta.info/)
-- BART. *Train Control Modernization Program*. [bart.gov/about/projects/tcmp](https://www.bart.gov/about/projects/tcmp)
+- MTA New York City Transit. *L Line CBTC Project Documentation*. [www.mta.info](https://www.mta.info/)
+- BART. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)

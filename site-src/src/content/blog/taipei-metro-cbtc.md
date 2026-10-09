@@ -82,7 +82,7 @@ This post is an 11-minute case study. The full treatment of international CBTC b
 - Department of Rapid Transit Systems, Taipei City Government. *Network — Completed MRT Routes*. [english.dorts.gov.taipei](https://english.dorts.gov.taipei/News_Content.aspx?n=F5C47899DE0D7088&s=761F1E2163C50391)
 - Railway Gazette International. *Taipei Circular Line driverless train unveiled*. [railwaygazette.com](https://www.railwaygazette.com/taipei-circular-line-driverless-train-unveiled/43073.article)
 - International Railway Journal. *Taipei launches fully-automated metro line*. [railjournal.com](https://www.railjournal.com/passenger/metros/taipei-launches-fully-automated-metro-line/)
-- Hitachi Rail STS (formerly Ansaldo STS). *Ansaldo STS receives EUR 220 million order for Taipei Metro*. [sts.hitachirail.com](http://sts.hitachirail.com/en/press-releases/ansaldo-sts-receives-eur-220-million-order-taipei-metro)
+- Hitachi Rail STS (formerly Ansaldo STS). *Ansaldo STS receives EUR 220 million order for Taipei Metro*. [mynewsdesk.com](https://www.mynewsdesk.com/uk/hitachi-rail-global/pressreleases/ansaldo-sts-and-hitachi-ltd-sign-turnkey-contract-with-dorts-of-new-taipei-city-3014912)
 - Hitachi Rail. *Taipei — driverless metro (Circular Line)*. [hitachirail.com](https://www.hitachirail.com/products-and-solutions/rolling-stock/driverless-trains/taipei/)
 - Railway Gazette International. *Taipei Circular Line kicks off*. [railwaygazette.com](https://www.railwaygazette.com/taipei-circular-line-kicks-off/33882.article)
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.

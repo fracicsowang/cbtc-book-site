@@ -96,6 +96,6 @@ This post is an architectural overview. The full treatment of vendor selection, 
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
 - International Electrotechnical Commission. *IEC 62290-1: Railway applications — Urban guided transport management and command/control systems*.
 - Siemens Mobility. *Trainguard MT CBTC Overview*. [siemens.com/global/en/products/mobility/rail-solutions/rail-automation.html](https://www.siemens.com/global/en/products/mobility/rail-solutions/rail-automation.html)
-- Alstom. *Urbalis CBTC Solution*. [alstom.com/our-solutions/signalling/urbalis-our-cbtc-solution-automated-train-control](https://www.alstom.com/our-solutions/signalling/urbalis-our-cbtc-solution-automated-train-control)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
+- Alstom. *Urbalis CBTC Solution*. [alstom.com/our-solutions/signalling](https://www.alstom.com/our-solutions/signalling)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
 - Federal Transit Administration. *Build America, Buy America Act Implementation Guidance*. [transit.dot.gov/buyamerica](https://www.transit.dot.gov/buyamerica)

@@ -95,8 +95,8 @@ This post is an 11-minute summary. The full treatment of US CBTC deployment patt
 ## Sources
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: US Deployment, Procurement & Future Directions*. Independent. ISBN 979-8-258-54295-3. — Chapter 10, "CBTC in the United States" (Sections 10.1–10.2 on NYC L Line and Queens Boulevard).
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
-- MTA. *2020–2024 Capital Program*. [new.mta.info/transparency/capital-program-dashboard](https://new.mta.info/transparency/capital-program-dashboard)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
+- MTA. *2020–2024 Capital Program*. [www.mta.info/capital](https://www.mta.info/capital)
 - Federal Transit Administration. *Capital Investment Grants Program*. [transit.dot.gov/CIG](https://www.transit.dot.gov/CIG)
 - Office of the New York State Comptroller. *MTA Capital Program Audit Reports*. [osc.state.ny.us](https://www.osc.state.ny.us)
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.

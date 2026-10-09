@@ -85,7 +85,7 @@ This post is an 11-minute summary. The full treatment lives in Chapter 8 ("Grade
 ## Sources
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: US Deployment, Procurement & Future Directions*. Independent. ISBN 979-8-258-54295-3. — Chapter 8, "Grades of Automation"; Chapter 10, "CBTC in the United States"; Chapter 15, "Vendor Landscape."
-- Port Authority of New York and New Jersey. *AirTrain JFK*. [panynj.gov/airports/en/jfk/airtrain.html](https://www.panynj.gov/airports/en/jfk/airtrain.html)
+- Port Authority of New York and New Jersey. *AirTrain JFK*. [jfkairport.com/to-from-airport/air-train](https://www.jfkairport.com/to-from-airport/air-train)
 - Alstom. *Innovia APM 300 Automated People Mover*. [alstom.com](https://www.alstom.com/)
 - Federal Transit Administration. *Capital Investment Grants Program*. [transit.dot.gov/CIG](https://www.transit.dot.gov/CIG)
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.

@@ -91,7 +91,7 @@ This post is a 12-minute summary. The full treatment lives in Chapter 10 ("CBTC 
 ## Sources
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: US Deployment, Procurement & Future Directions*. Independent. ISBN 979-8-258-54295-3. — Chapter 10, "CBTC in the United States" (Section 10.3, BART TCMP); Chapter 15, "Vendor Landscape."
-- Bay Area Rapid Transit. *Train Control Modernization Program (TCMP)*. [bart.gov/about/projects/tcmp](https://www.bart.gov/about/projects/tcmp)
+- Bay Area Rapid Transit. *Train Control Modernization Program (TCMP)*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
 - Bay Area Rapid Transit. *Fleet of the Future Program*. [bart.gov/about/projects/cars](https://www.bart.gov/about/projects/cars)
 - Federal Transit Administration. *Capital Investment Grants Program*. [transit.dot.gov/CIG](https://www.transit.dot.gov/CIG)
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.

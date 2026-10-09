@@ -95,5 +95,5 @@ This post is a 10-minute summary. The full treatment lives in [Chapter 4 — Onb
 - IEEE Standards Association. *IEEE Std 1474.3: Standard for Communications-Based Train Control (CBTC) System Design and Functional Allocations*.
 - International Electrotechnical Commission. *IEC 62290-2: Railway applications — Urban guided transport management and command/control systems — Part 2: Functional requirements specification*.
 - Federal Railroad Administration. *Positive Train Control Implementation Reports*. [railroads.dot.gov/program-areas/safety/ptc](https://railroads.dot.gov/program-areas/safety/ptc) (background context only)
-- MTA New York City Transit. *L Line CBTC Project Documentation*. [new.mta.info](https://new.mta.info/)
+- MTA New York City Transit. *L Line CBTC Project Documentation*. [www.mta.info](https://www.mta.info/)
 - HART (Honolulu Authority for Rapid Transportation). *Skyline System Description*. [honolulutransit.org](https://www.honolulutransit.org/)

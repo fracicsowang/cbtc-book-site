@@ -104,4 +104,4 @@ This post is a procurement-strategy overview. The full treatment of CBTC procure
 - EULYNX Consortium. *EULYNX Initiative — Standardised Interfaces for Signalling Subsystems*. [eulynx.eu](https://eulynx.eu/)
 - European Commission, Shift2Rail Joint Undertaking. *Reference CCS Architecture (RCA) Programme Deliverables*. [shift2rail.org](https://shift2rail.org/)
 - Federal Transit Administration. *Capital Investment Grants Program*. [transit.dot.gov/CIG](https://www.transit.dot.gov/CIG)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)

@@ -100,6 +100,6 @@ For the operating-mode framework that classifies non-CBTC mode, see [Operating M
 - International Electrotechnical Commission. *IEC 62290: Railway applications — Urban guided transport management and command/control systems*.
 - Federal Transit Administration. *State Safety Oversight Program*. [transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight](https://www.transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight)
 - American Public Transportation Association. *Standards for Rail Transit Operations*. [apta.com/research-technical-resources/standards](https://www.apta.com/research-technical-resources/standards)
-- MTA New York City Transit. *L Line CBTC Project Documentation*. [new.mta.info](https://new.mta.info/)
-- BART. *Train Control Modernization Program*. [bart.gov/about/projects/tcmp](https://www.bart.gov/about/projects/tcmp)
+- MTA New York City Transit. *L Line CBTC Project Documentation*. [www.mta.info](https://www.mta.info/)
+- BART. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
 - Honolulu Authority for Rapid Transportation. *Skyline Operations*. [honolulutransit.org](https://www.honolulutransit.org/)

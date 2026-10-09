@@ -129,5 +129,5 @@ For the broader functional context, see [ATP, ATO, ATS: The Three-Layer Triad of
 - Engineering Equipment and Materials Users Association. *EEMUA Publication 191: Alarm Systems — A Guide to Design, Management and Procurement*.
 - IEEE Standards Association. *IEEE Std 1474.1: Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
 - Federal Transit Administration. *State Safety Oversight Program*. [transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight](https://www.transit.dot.gov/regulations-and-guidance/safety/state-safety-oversight)
-- MTA New York City Transit. *Rail Control Center Modernization*. [new.mta.info](https://new.mta.info/)
-- BART. *Train Control Modernization Program*. [bart.gov/about/projects/tcmp](https://www.bart.gov/about/projects/tcmp)
+- MTA New York City Transit. *Rail Control Center Modernization*. [www.mta.info](https://www.mta.info/)
+- BART. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)

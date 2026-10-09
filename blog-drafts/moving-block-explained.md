@@ -88,5 +88,5 @@ This post is a 10-minute summary. The full treatment lives in [Chapter 1 — The
 - International Electrotechnical Commission. *IEC 62290-1: Railway applications — Urban guided transport management and command/control systems — Part 1: System principles and fundamental concepts*.
 - RATP. *Paris Métro Line 14 Project Overview*. [ratp.fr](https://www.ratp.fr/)
 - MTR Corporation. *Tsuen Wan Line Resignaling*. [mtr.com.hk](https://www.mtr.com.hk/)
-- MTA New York City Transit. *L Line CBTC Performance Reports*. [new.mta.info](https://new.mta.info/)
+- MTA New York City Transit. *L Line CBTC Performance Reports*. [www.mta.info](https://www.mta.info/)
 - Land Transport Authority of Singapore. *Circle Line Project Overview*. [lta.gov.sg](https://www.lta.gov.sg/)

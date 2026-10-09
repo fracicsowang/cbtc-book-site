@@ -108,7 +108,7 @@ This post is a brief summary. The full treatment lives in Chapter 8 of *Communic
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: Deployment, Operations & Strategy*. Independent. ISBN 979-8-258-54295-3. — Chapter 8, "Grades of Automation."
 - International Electrotechnical Commission. *IEC 62290-1: Railway applications — Urban guided transport management and command/control systems — Part 1: System principles and fundamental concepts*.
 - International Association of Public Transport (UITP). *World Report on Metro Automation*. [uitp.org](https://www.uitp.org/)
-- MTA New York City Transit. *L Line CBTC Project Documentation*. [new.mta.info](https://new.mta.info/)
+- MTA New York City Transit. *L Line CBTC Project Documentation*. [www.mta.info](https://www.mta.info/)
 - Honolulu Authority for Rapid Transportation (HART). *Skyline Project Information*. [honolulutransit.org](https://www.honolulutransit.org/)
 - RATP. *Métro Line 14 Operations*. [ratp.fr](https://www.ratp.fr/)
 - Singapore Land Transport Authority. *MRT North-South and East-West Line Renewal*. [lta.gov.sg](https://www.lta.gov.sg/)

@@ -113,6 +113,6 @@ This post is a 10-minute briefing. The full discussion of vendor AI roadmaps and
 - International Electrotechnical Commission. *IEC 61508: Functional safety of electrical/electronic/programmable electronic safety-related systems*.
 - European Committee for Electrotechnical Standardization (CENELEC). *EN 50126, EN 50128, EN 50129: Railway applications standards*.
 - Washington Metropolitan Area Transit Authority. *Asset Management and Predictive Maintenance Reports*. [wmata.com](https://www.wmata.com/)
-- Metropolitan Transportation Authority (NY). *Capital Program and Asset Management Documentation*. [new.mta.info](https://new.mta.info/)
+- Metropolitan Transportation Authority (NY). *Capital Program and Asset Management Documentation*. [www.mta.info](https://www.mta.info/)
 - Bay Area Rapid Transit. *Train Control Modernization Program Status Reports*. [bart.gov](https://www.bart.gov/)
 - Transport for London. *AI and Innovation Reports*. [tfl.gov.uk](https://tfl.gov.uk/)

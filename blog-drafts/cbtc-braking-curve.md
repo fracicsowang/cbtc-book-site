@@ -160,6 +160,6 @@ For the onboard hardware that runs the cycle, see [The Onboard Side of CBTC: Ins
 - International Electrotechnical Commission. *IEC 61508: Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems*.
 - CENELEC. *EN 50129: Railway applications — Safety related electronic systems for signalling*.
 - Federal Transit Administration. *Circular 4220.1: Third Party Contracting Guidance*. [transit.dot.gov](https://www.transit.dot.gov/)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
 - Massachusetts Bay Transportation Authority. *Blue Line Modernization*. [mbta.com/projects](https://www.mbta.com/projects)
 - Chicago Transit Authority. *Red and Purple Modernization*. [transitchicago.com](https://www.transitchicago.com/)

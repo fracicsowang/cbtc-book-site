@@ -121,4 +121,4 @@ For the architectural picture, see [The Onboard Side of CBTC: Inside the VOBC](/
 - International Electrotechnical Commission. *IEC 61508: Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems*.
 - Federal Transit Administration. *Build America, Buy America Act Implementation Guidance*. [transit.dot.gov/BuyAmerica](https://www.transit.dot.gov/buyamerica)
 - US Department of Labor. *Davis-Bacon and Related Acts*. [dol.gov/agencies/whd/government-contracts/construction](https://www.dol.gov/agencies/whd/government-contracts/construction)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)

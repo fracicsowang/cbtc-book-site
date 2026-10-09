@@ -110,8 +110,8 @@ For the procurement-side counterpart, see [How to Write a CBTC RFP That Doesn't 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: Operations, Deployment & Economics*. Independent. ISBN 979-8-258-54295-3. — Chapter 12, "Project Lifecycle"; Chapter 14, "Lifecycle Costs"; Chapter 15, "Vendor Landscape and Technology Trends."
 - IEEE Standards Association. *IEEE Std 1474.1, 1474.2, 1474.3, 1474.4: Communications-Based Train Control Standards*.
 - Federal Transit Administration. (2016). *FTA Report No. 0045: Communications-Based Train Control (CBTC) Technology*. [transit.dot.gov](https://www.transit.dot.gov/)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
-- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/cbtc](https://www.bart.gov/about/projects/cbtc)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
+- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
 - San Francisco Municipal Transportation Agency. *Train Control Upgrade Project*. [sfmta.com/projects/train-control-upgrade-project](https://www.sfmta.com/projects/train-control-upgrade-project)
 - Hitachi Rail. *Acquisition of Thales Ground Transportation Systems*, April 2024.
 - Alstom. *Acquisition of Bombardier Transportation*, January 2021.

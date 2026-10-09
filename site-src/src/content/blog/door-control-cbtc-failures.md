@@ -113,6 +113,6 @@ For the onboard side of the vital permission layer, see [The Onboard Side of CBT
 - International Electrotechnical Commission. *IEC 62290: Railway applications — Urban guided transport management and command/control systems*.
 - US Access Board. *Americans with Disabilities Act Accessibility Guidelines for Transportation Vehicles*. [access-board.gov](https://www.access-board.gov/)
 - Federal Transit Administration. *Transit Cooperative Research Program reports on dwell time and station performance*. [trb.org/TCRP](https://www.trb.org/TCRP)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
-- BART. *Train Control Modernization Program*. [bart.gov/about/projects/tcmp](https://www.bart.gov/about/projects/tcmp)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
+- BART. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
 - CENELEC. *EN 50129: Railway applications — Safety related electronic systems for signalling*.

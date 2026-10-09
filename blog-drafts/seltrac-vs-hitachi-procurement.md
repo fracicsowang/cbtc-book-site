@@ -74,9 +74,9 @@ This post is a procurement orientation. The full treatment of CBTC vendor select
 ## Sources
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: Deployment, Economics, and the Future*. Independent. ISBN 979-8-258-54295-3. — Chapter 15, "Vendor Landscape and Technology Trends"; Chapter 10, "CBTC in the United States."
-- Hitachi Rail. *Acquisition of Thales Ground Transportation Systems*. [hitachirail.com/news](https://www.hitachirail.com/news/)
-- Bay Area Rapid Transit District. *Train Control Modernization Program*. [bart.gov/about/projects/cad](https://www.bart.gov/about/projects/cad)
+- Hitachi Rail. *Acquisition of Thales Ground Transportation Systems*. [hitachirail.com/news](https://www.hitachirail.com/)
+- Bay Area Rapid Transit District. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
-- TransLink. *SkyTrain System Information*. [translink.ca/about-us/about-translink/our-history](https://www.translink.ca/about-us/about-translink/our-history)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
+- TransLink. *SkyTrain System Information*. [translink.ca/about-us/about-translink/operating-companies/british-columbia-rapid-transit-company](https://www.translink.ca/about-us/about-translink/operating-companies/british-columbia-rapid-transit-company)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
 - Federal Transit Administration. *Build America, Buy America Act Implementation Guidance*. [transit.dot.gov/buyamerica](https://www.transit.dot.gov/buyamerica)

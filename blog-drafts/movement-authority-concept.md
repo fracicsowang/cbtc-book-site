@@ -104,4 +104,4 @@ This post is a 10-minute summary. The full treatment lives in [Chapter 3 — CBT
 - IEEE Standards Association. *IEEE Std 1474.3: Standard for CBTC System Design and Functional Allocations*.
 - International Electrotechnical Commission. *IEC 62290-2: Railway applications — Functional requirements specification*.
 - CENELEC. *EN 50129: Railway applications — Communication, signalling and processing systems — Safety related electronic systems for signalling*.
-- MTA New York City Transit. *L Line CBTC Performance Documentation*. [new.mta.info](https://new.mta.info/)
+- MTA New York City Transit. *L Line CBTC Performance Documentation*. [www.mta.info](https://www.mta.info/)

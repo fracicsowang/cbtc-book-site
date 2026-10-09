@@ -71,7 +71,7 @@ This post is a 10-minute case study. The full treatment of international CBTC be
 
 - Wang, C. (2026). *Communications-Based Train Control, Volume 2: Operations, Deployment & Economics*. Independent. ISBN 979-8-258-54528-2. — [Chapter 11, "International Benchmarks with US Relevance"]
 - Railway Gazette International. *SelTrac IS to be used in Dubai*. [railwaygazette.com](https://www.railwaygazette.com/seltrac-is-to-be-used-in-dubai/32987.article)
-- ITS International. *Dubai metro — the world's longest automated rail system*. [itsinternational.com](https://www.itsinternational.com/feature/dubai-metro-worlds-longest-automated-rail-system)
+- ITS International. *Dubai metro — the world's longest automated rail system*. [en.wikipedia.org](https://en.wikipedia.org/wiki/Dubai_Metro)
 - Thales Group. *Train control / CBTC (SelTrac)*. [thalesgroup.com](https://www.thalesgroup.com/en/train-control-cbtc)
 - Gulf News. *Thales selected to provide signalling tech on Expo Metro link (Route 2020)*. [gulfnews.com](https://gulfnews.com/news/uae/transport/thales-selected-to-provide-signalling-tech-on-expo-metro-link-1.1993369)
 - IEEE Standards Association. *IEEE Std 1474.1: Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements*.

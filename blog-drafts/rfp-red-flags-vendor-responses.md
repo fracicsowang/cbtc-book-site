@@ -97,6 +97,6 @@ For the 12-criterion evaluation rubric the eight flags slot into, see [Evaluatin
 - IEEE Standards Association. *IEEE Std 1474.1: Communications-Based Train Control (CBTC) Performance and Functional Requirements*.
 - Federal Transit Administration. *Build America, Buy America Act Implementation Guidance*. [transit.dot.gov/BuyAmerica](https://www.transit.dot.gov/buyamerica)
 - Federal Transit Administration. *Project Management Oversight Program*. [transit.dot.gov/funding/grant-programs/capital-investments/project-management-oversight](https://www.transit.dot.gov/)
-- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/cbtc](https://www.bart.gov/about/projects/cbtc)
-- MTA New York City Transit. *Communications-Based Train Control Status Update*. [new.mta.info/project/communications-based-train-control-cbtc](https://new.mta.info/project/communications-based-train-control-cbtc)
+- Bay Area Rapid Transit. *Train Control Modernization Program*. [bart.gov/about/projects/traincontrol](https://www.bart.gov/about/projects/traincontrol)
+- MTA New York City Transit. *Communications-Based Train Control Status Update*. [www.mta.info/cbtc](https://www.mta.info/cbtc)
 - San Francisco Municipal Transportation Agency. *Train Control Upgrade Project*. [sfmta.com/projects/train-control-upgrade-project](https://www.sfmta.com/projects/train-control-upgrade-project)
