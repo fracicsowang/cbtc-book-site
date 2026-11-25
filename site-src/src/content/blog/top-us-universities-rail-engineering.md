@@ -1,7 +1,7 @@
 ---
-title: "Top US Universities for Rail Engineering Education"
+title: "6 US Universities for Rail Engineering"
 slug: top-us-universities-rail-engineering
-description: "A practitioner's guide to the US universities, institutes, and continuing-education programs where rail engineering is actually taught in 2026. The schools with named rail programs, the schools with adjacent strengths that work, and the gap that still exists between the academic offering and the discipline."
+description: "Explore six U.S. universities for rail engineering and transit research, including Illinois, Rutgers, and Michigan Tech. Find continuing education options."
 date: 2026-06-21
 author: "Chunjun (Francisco) Wang"
 category: career
