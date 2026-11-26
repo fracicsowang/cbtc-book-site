@@ -1,7 +1,7 @@
 ---
-title: "Moving Block Signaling vs. Fixed Block: How It Works"
+title: "Moving Block Explained: Why It Replaced Fixed Block"
 slug: moving-block-explained
-description: "Learn how CBTC calculates safe train separation in real time, why moving block can shorten headways, and what limits capacity on busy metro lines."
+description: "Moving block signaling explained: how it works, why it replaced fixed block, the headway math behind the capacity gain, and where it fails safely."
 date: 2026-05-24
 author: "Chunjun (Francisco) Wang"
 category: definitional
